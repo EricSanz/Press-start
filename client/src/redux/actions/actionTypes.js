@@ -1,0 +1,7 @@
+const actionTypes = {
+    LOAD_VIDEOGAMES: 'LOAD_VIDEOGAMES',
+    LOAD_VIDEOGAMES_ERROR: 'LOAD_VIDEOGAMES_ERROR',
+    SET_LOADING: 'SET_LOADING'
+}
+
+export default actionTypes;
