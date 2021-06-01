@@ -6,7 +6,17 @@ import SearchBar from '../Search/SearchBar';
 
 function Header() {
 
-    const [searchBar, setSearchBar] = useState(false);
+    let [searchBar, setSearchBar] = useState(false);
+
+    // function handleClick() {
+    //     setSearchBar = !searchBar;
+
+    //     const openSearchBar = document.getElementById('search__component');
+
+    //     searchBar ? openSearchBar.style.transform = 'translateY(85px)' : openSearchBar.style.transform = 'translateY(0px)';
+
+    // }
+
 
     return (
         <>
