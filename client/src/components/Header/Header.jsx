@@ -12,7 +12,7 @@ function Header() {
         setLeftSidenav(!leftSidenav);
 
         const toggleLeftSidenav = document.getElementById('leftSidenav__id');
-        leftSidenav ? toggleLeftSidenav.style.transform = 'translateX(0px)' : toggleLeftSidenav.style.transform = 'translateX(350px)'
+        leftSidenav ? toggleLeftSidenav.style.transform = 'translateX(0px)' : toggleLeftSidenav.style.transform = 'translateX(340px)'
     }
 
     return (

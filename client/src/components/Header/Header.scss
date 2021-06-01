@@ -73,12 +73,14 @@ header {
 }
 
 .leftSidenav__container {
-    top: 85px;
+    top: 70px;
     position: fixed;
-    left: -350px;
+    left: -340px;
     transition: .5s;
-    width: 350px;
+    width: 330px;
     height: 100%;
     background-color: #161616;
-    // transform:translateX(200px)
+    // background-color: #f7f19f;
+    box-shadow: 0 0 10px 0 rgba(#161616, .9);
+    border-right: 1px solid #161616;
 }

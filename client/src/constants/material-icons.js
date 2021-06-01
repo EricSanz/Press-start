@@ -9,5 +9,5 @@ export default {
     search: SearchIcon,
     signIn: PersonIcon,
     news: LibraryBooksIcon,
-    cart: ShoppingCartIcon
+    cart: ShoppingCartIcon,
 }
