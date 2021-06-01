@@ -1,3 +1,5 @@
+@import '../../fonts/fonts';
+
 header {
     position: fixed;
     top: 0;
@@ -5,8 +7,9 @@ header {
     width: 100%;
     height: 85px;
     color: #fff;
-    box-shadow: -10px -15px 15px 20px rgb(0,0,0/80%);
+    box-shadow: 0px -15px 20px 15px rgb(0,0,0/80%);
     border-bottom: 1px solid #fff;
+    font-family: $Montserrat;
     z-index: 1;
     .navbar__options {
         position: absolute;
@@ -35,7 +38,7 @@ header {
                 align-items: center;
                 padding-right: 22px;
             }
-            .navbar__option > .icon {
+            .icon {
                 font-size: 25px;
                 margin-bottom: -10px;
             }
@@ -57,7 +60,7 @@ header {
                 align-items: center;
                 padding-left: 22px;
             }
-            .navbar__option > .icon {
+            .icon {
                 font-size: 25px;
                 margin-bottom: -10px;
             }
@@ -67,4 +70,15 @@ header {
             }
         }
     }
+}
+
+.leftSidenav__container {
+    top: 85px;
+    position: fixed;
+    left: -350px;
+    transition: .5s;
+    width: 350px;
+    height: 100%;
+    background-color: #161616;
+    // transform:translateX(200px)
 }

@@ -1,22 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SearchBar from '../Search/SearchBar';
+import LeftSidenav from '../Left-Sidenav/Left-Sidenav';
 
 function Header() {
 
-    let [searchBar, setSearchBar] = useState(false);
+    const [leftSidenav, setLeftSidenav] = useState(false);
 
-    // function handleClick() {
-    //     setSearchBar = !searchBar;
+    function handleSidenav() {
+        setLeftSidenav(!leftSidenav);
 
-    //     const openSearchBar = document.getElementById('search__component');
-
-    //     searchBar ? openSearchBar.style.transform = 'translateY(85px)' : openSearchBar.style.transform = 'translateY(0px)';
-
-    // }
-
+        const toggleLeftSidenav = document.getElementById('leftSidenav__id');
+        leftSidenav ? toggleLeftSidenav.style.transform = 'translateX(0px)' : toggleLeftSidenav.style.transform = 'translateX(350px)'
+    }
 
     return (
         <>
@@ -24,7 +21,7 @@ function Header() {
                 <div className="navbar__options">
                     <div className="navbar__options-left">
                         <div className="navbar__option">
-                            <FontAwesomeIcon className="icon" icon="bars" />
+                            <FontAwesomeIcon className="icon" icon="bars" onClick={() => handleSidenav()} />
                             <p>Menu</p>
                         </div>
                         <div className="navbar__option">
@@ -32,16 +29,13 @@ function Header() {
                             <p>News</p>
                         </div>
                         <div className="navbar__option">
-                            <FontAwesomeIcon className="icon" icon="search" onClick={() => setSearchBar(!searchBar)} />
-                            <p>Search</p>
-                        </div>
-                    </div>
-                    <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
-                    <div className="navbar__options-right">
-                        <div className="navbar__option">
                             <FontAwesomeIcon className="icon" icon="calendar-alt" />
                             <p>Calendar</p>
                         </div>
+                        <SearchBar />
+                    </div>
+                    <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
+                    <div className="navbar__options-right">
                         <div className="navbar__option">
                             <FontAwesomeIcon className="icon" icon="sign-in-alt" />
                             <p>Sign In</p>
@@ -53,7 +47,12 @@ function Header() {
                     </div>
                 </div>
             </header>
-            {searchBar && (<SearchBar />)}
+
+            <div className="leftSidenav__container" id="leftSidenav__id">
+                <LeftSidenav />
+            </div>
+
+
         </>
     )
 }

@@ -1,26 +1,38 @@
+@import '../../fonts/fonts';
+
 .search__container {
     position: relative;
-    display: inline-flex;
+    display: none;
     align-items: center;
-    top: 85px;
-    z-index: 2;
-    width: 100%;
-    height: 50px;
+    height: 45px;
     background-color: #fff;
-    border-bottom: 1px solid #161616;
-    transition: 0.3s;
-    box-shadow: 15px 0 30px 0 rgba(#444343, 0.5);
+    margin-left: 20px;
+    border-radius: 20px;
+    // margin-top: 5px;
     input {
+        // font-weight: bold;
+        font-family: $Montserrat;
         border: none;
         outline: none;
         width: 100%;
-        height: 40px;
+        height: 30px;
         line-height: 80%;
-        font-size: 22px;
-        padding-left: 20px;
-    }
-    .icon {
-        padding-left: 50px;
+        border-radius: 20px;
         font-size: 18px;
+        margin-left: 10px;
+        margin-bottom: -2px;
+    }
+    .navbar__option:hover {
+        color: #E8A92C;
+        cursor: pointer;
+    }
+    .search__icon {
+        color: #161616;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .search__icon:hover {
+        color: #E8A92C;
+        cursor: pointer;
     }
 }
