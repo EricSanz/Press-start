@@ -47,12 +47,9 @@ function Header() {
                     </div>
                 </div>
             </header>
-
             <div className="leftSidenav__container" id="leftSidenav__id">
                 <LeftSidenav />
             </div>
-
-
         </>
     )
 }

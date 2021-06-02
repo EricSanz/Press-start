@@ -17,7 +17,7 @@ function LeftSidenav() {
         <section className="left__sidenav">
             <ul>
                 {categories.map((category) => (
-                    <Link to={category.route} className="link">
+                    <Link to={category.route} className="link" key={category.name}>
                         <li className="left__sidenav-list" onClick={() => closeleftSidenav()}>
                             <p className="left__sidenav-option">{category.name}</p>
                             <span className="left__sidenav-icon">{category.icon}</span>

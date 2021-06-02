@@ -5,7 +5,7 @@ header {
     top: 0;
     background-color: #161616;
     width: 100%;
-    height: 85px;
+    height: 80px;
     color: #fff;
     box-shadow: 0px -15px 20px 15px rgb(0,0,0/80%);
     border-bottom: 1px solid #fff;
@@ -19,14 +19,14 @@ header {
         padding-left: 10%;
         .navbar__logo {
             padding-top: 10px;
-            height: 65px;
+            height: 60px;
         }
         .navbar__logo:hover {
             cursor: pointer;
         }
         .navbar__options-right {
             display: flex;
-            width: 42%;
+            width: 43%;
             justify-content: flex-end;
             align-items: center;
             margin-top: 22px;
@@ -49,7 +49,7 @@ header {
         }
         .navbar__options-left {
             display: flex;
-            width: 42%;
+            width: 43%;
             margin-top: 22px;
             font-size: 14px;
             justify-content: flex-start;
@@ -83,4 +83,5 @@ header {
     // background-color: #f7f19f;
     box-shadow: 0 0 10px 0 rgba(#161616, .9);
     border-right: 1px solid #161616;
+    z-index: 2;
 }
