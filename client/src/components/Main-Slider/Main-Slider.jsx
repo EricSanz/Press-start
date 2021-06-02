@@ -11,8 +11,11 @@ function MainSlider() {
             </div>
             <div className="main-slider__small-images">
                 <div className="small__image-container">
-                    <div className="small__image">
+                    <div className="small__image-1">
                         <p className="title">Immortals Fenyx Rising</p>
+                    </div>
+                    <div className="small__image-2">
+                        <p className="title">Far Cry 6</p>
                     </div>
                 </div>
             </div>
