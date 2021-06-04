@@ -22,7 +22,7 @@ const categories = [
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
-        name: 'Sales',
+        name: 'On Sale',
         route: 'sales',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
 
