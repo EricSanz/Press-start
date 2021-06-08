@@ -1,0 +1,3194 @@
+[
+    {
+        "game": "Immortals Fenyx Rising",
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "developer": "Ubisoft",
+        "editor": "Ubisoft",
+        "images": [
+            "https://static.xtralife.com/conversions/89CX-48MZ270290-fullhd_w1920_h1080_q75-ifr-glidingaphrodite-1600071446.png",
+            "https://static.xtralife.com/conversions/WJCQ-Z3WD270291-fullhd_w1920_h1080_q75-ifr-axeshowcase-1600071447.png",
+            "https://static.xtralife.com/conversions/D9C5-72XK270288-fullhd_w1920_h1080_q75-ifr-minotaurhammer-wings-1600071446.png",
+            "https://static.xtralife.com/conversions/98CX-0962270289-fullhd_w1920_h1080_q75-ifr-harpyattack-1600071446.png",
+            "https://static.xtralife.com/conversions/0MCD-PZYX270287-fullhd_w1920_h1080_q75-ifr-griffinbowarrow-1600071446.png",
+            "https://static.xtralife.com/conversions/60CY-7W30270292-fullhd_w1920_h1080_q75-ifr-constellationpuzzle-1600071447.png"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "03-12-2020",
+                "day": 3,
+                "month": 12,
+                "year": 2020,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/HtqWFh4/immortals-fenyx-rising-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "29.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on PlayStation 5 when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the PlayStation 4 version."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gold",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/YBKS6pm/immortals-fenyx-rising-ps4-gold.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on PlayStation 5 when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Immortals Fenyx Rising, taking full advantage of next-gen hardware, will become available for owners of the PlayStation 4 version."
+                                    ]
+                                },
+                                {
+                                    "title": "The Game",
+                                    "pack": [
+                                        "Copy of the Immortals Fenyx Rising™ game."
+                                    ]
+                                },
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital Content:",
+                                    "pack": [
+                                        "The Hades the Shadowmaster Character Pack. Master the power of shadows and secrets! Includes a Hades-themed armor, helmet, horse, wings & phoenix.",
+                                        "The Orion's Blessed Weapons Pack. Wield the power of Orion and the constellations with this celestial weapon pack. Contains Orion-themed skins for your Sword, Axe, and Bow.",
+                                        "The Prism Wings. Each individual strand of each plume contains in it all imaginable colors of the rainbow. These wings are the pride of Daidalos."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/cT7qMW3/immortals-fenyx-rising-ps5-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "29.95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Gold",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/xmWJVfk/immortals-fenyx-rising-ps5-gold.png",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Game",
+                                    "pack": [
+                                        "Copy of the Immortals Fenyx Rising™ game."
+                                    ]
+                                },
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital Content:",
+                                    "pack": [
+                                        "The Hades the Shadowmaster Character Pack. Master the power of shadows and secrets! Includes a Hades-themed armor, helmet, horse, wings & phoenix.",
+                                        "The Orion's Blessed Weapons Pack. Wield the power of Orion and the constellations with this celestial weapon pack. Contains Orion-themed skins for your Sword, Axe, and Bow.",
+                                        "The Prism Wings. Each individual strand of each plume contains in it all imaginable colors of the rainbow. These wings are the pride of Daidalos."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/TMpYcvS/immortals-fenyx-rising-xbox-one-series.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "29.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Immortals: Fenyx Rising leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "Buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Immortals: Fenyx Rising are available."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gold | Digital",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/2gGQPhk/immortals-fenyx-rising-xbox-one-series-gold-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Immortals: Fenyx Rising leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "Buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Immortals: Fenyx Rising are available."
+                                    ]
+                                },
+                                {
+                                    "title": "The Game",
+                                    "pack": [
+                                        "Copy of the Immortals Fenyx Rising™ game."
+                                    ]
+                                },
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital Content:",
+                                    "pack": [
+                                        "The Hades the Shadowmaster Character Pack. Master the power of shadows and secrets! Includes a Hades-themed armor, helmet, horse, wings & phoenix.",
+                                        "The Orion's Blessed Weapons Pack. Wield the power of Orion and the constellations with this celestial weapon pack. Contains Orion-themed skins for your Sword, Axe, and Bow.",
+                                        "The Prism Wings. Each individual strand of each plume contains in it all imaginable colors of the rainbow. These wings are the pride of Daidalos."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Season Pass",
+                            "price": "39.99",
+                            "cover": "https://i.ibb.co/c2qNt3w/immortals-fenyx-rising-xbox-one-series-season-pass.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/TMpYcvS/immortals-fenyx-rising-xbox-one-series.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "29.95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Gold | Digital",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/2gGQPhk/immortals-fenyx-rising-xbox-one-series-gold-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Game",
+                                    "pack": [
+                                        "Copy of the Immortals Fenyx Rising™ game."
+                                    ]
+                                },
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital Content:",
+                                    "pack": [
+                                        "The Hades the Shadowmaster Character Pack. Master the power of shadows and secrets! Includes a Hades-themed armor, helmet, horse, wings & phoenix.",
+                                        "The Orion's Blessed Weapons Pack. Wield the power of Orion and the constellations with this celestial weapon pack. Contains Orion-themed skins for your Sword, Axe, and Bow.",
+                                        "The Prism Wings. Each individual strand of each plume contains in it all imaginable colors of the rainbow. These wings are the pride of Daidalos."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Season Pass",
+                            "price": "39.99",
+                            "cover": "https://i.ibb.co/c2qNt3w/immortals-fenyx-rising-xbox-one-series-season-pass.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Nintendo Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/HrBWNPF/immortals-fenyx-rising-switch-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "26.95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Season Pass",
+                            "price": "39.99",
+                            "cover": "https://i.ibb.co/prGhYTX/immortals-fenyx-rising-switch-season-pass.jpg",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Season Pass",
+                                    "pack": [
+                                        "Expand your adventure with the season pass! Includes new gameplay experiences and a bonus quest - When the Road Gets Rocky - with dedicated in-game rewards."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "The fate of the world is at stake – you are the gods’ last hope.",
+                "text": [
+                    "Immortals Fenyx Rising™ brings grand mythological adventure to life. Play as Fenyx, a new winged demigod on a quest to save the Greek gods and their home from a dark curse. Take on mythological beasts, master the legendary powers of the gods and defeat Typhon, the deadliest Titan in Greek mythology, in an epic fight for the ages.",
+                    "A fresh and witty take on the open world action adventure genre, featuring dynamic action, combat and stories inspired by Greek mythology. Roam freely across a beautifully stylized world and use extraordinary abilities gifted by the gods against fearsome mythological monsters. Treacherous trials, heroic feats and the very underworld itself await your bravery. Experience a tale for the ages, of gods and monsters, and become the legend you were destined to be."
+                ]
+            },
+            {
+                "title": "WIELD THE POWER OF GODS",
+                "text": [
+                    "The gods of Olympus have blessed you with gifts: the wings of Daidalos, the sword of Achilles, the bow of Odysseus, and more, as well as legendary powers that will help turn the tides of battle. Use them to fight mythical monsters, solve ancient puzzles and explore the vast open world."
+                ]
+            },
+            {
+                "title": "CONFRONT MYTHOLOGICAL ENEMIES",
+                "text": [
+                    "Face off against legendary beasts like Cyclops, Medusa, or Minotaur, and confront corrupted heroes such as Achilles. Take them on in fast-paced aerial and melee combat, combining your god-given abilities and weapons."
+                ]
+            },
+            {
+                "title": "EXPLORE A STYLIZED OPEN WORLD",
+                "text": [
+                    "Discover a beautifully rendered and vibrant fantasy world. Traverse, climb or explore by air across seven unique regions, each inspired by the gods."
+                ]
+            },
+            {
+                "title": "OVERCOME HEROIC TRIALS",
+                "text": [
+                    "Use your wit and special abilities to solve challenging puzzles and mind-bending vaults or partake in high-strategy boss battles to increase your power and upgrade your skills."
+                ]
+            },
+            {
+                "title": "BUILD YOUR LEGEND",
+                "text": [
+                    "Customize your character's appearance and discover new armor and gear inspired by Greek mythology. Gather materials across the world to craft powerful items and upgrade your gear in your quest to fulfill your destiny."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Biomutant",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Rol / RPG"
+        ],
+        "developer": "Experiment 101",
+        "editor": "THQ Nordic",
+        "images": [
+            "https://i.ibb.co/2W5kbVJ/biomutant-image-0.webp",
+            "https://i.ibb.co/WFrDjMC/biomutant-image-1.webp",
+            "https://i.ibb.co/8PNYj7s/biomutant-image-2.webp",
+            "https://i.ibb.co/gyBgy37/biomutant-image-3.webp",
+            "https://i.ibb.co/bKrR6jj/biomutant-image-4.webp",
+            "https://i.ibb.co/T1zBdY4/biomutant-image-5.webp",
+            "https://i.ibb.co/By8VhWg/biomutant-image-6.webp",
+            "https://i.ibb.co/my3fzks/biomutant-image-7.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "25-05-2021",
+                "day": 25,
+                "month": 5,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "52.95",
+                            "cover": "https://i.ibb.co/6X8rBfD/Biomutant-ps4-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "119.99",
+                            "cover": "https://i.ibb.co/2M65jpS/biomutant-ps4-collector.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Biomutant Collector's Edition include:",
+                                    "pack": [
+                                        "Biomutant Standard game",
+                                        "Main character's figure",
+                                        "Official Soundtrack",
+                                        "Art poster DinA1",
+                                        "Collector's box"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Atomic",
+                            "price": "349.95",
+                            "cover": "https://i.ibb.co/KNGPkWy/Biomutant-ps4-atomic.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Biomutant Atomic Edition include:",
+                                    "pack": [
+                                        "Biomutant Standard game",
+                                        "Official Soundtrack",
+                                        "Premium display box",
+                                        "Fabric poster",
+                                        "Steelbook",
+                                        "Oversized mousepad: 80cm x 35cm",
+                                        "T-Shirt",
+                                        "Detailed Biomutant Diorama: 60cm x 30cm"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "52.95",
+                            "cover": "https://i.ibb.co/nQ9vXQH/Biomutant-xbox-one-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "119.99",
+                            "cover": "https://i.ibb.co/hKNyDwh/biomutant-xbox-one-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Biomutant Collector's Edition include:",
+                                    "pack": [
+                                        "Biomutant Standard game",
+                                        "Main character's figure",
+                                        "Official Soundtrack",
+                                        "Art poster DinA1",
+                                        "Collector's box"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Atomic",
+                            "price": "349.95",
+                            "cover": "https://i.ibb.co/vXmxckS/Biomutant-xbox-one-atomic.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Biomutant Atomic Edition include:",
+                                    "pack": [
+                                        "Biomutant Standard game",
+                                        "Official Soundtrack",
+                                        "Premium display box",
+                                        "Fabric poster",
+                                        "Steelbook",
+                                        "Oversized mousepad: 80cm x 35cm",
+                                        "T-Shirt",
+                                        "Detailed Biomutant Diorama: 60cm x 30cm"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/Sv7wGq7/Biomutant-xbox-one-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "52.95",
+                            "cover": "https://i.ibb.co/GTY2ZWP/Biomutant-pc-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "119.99",
+                            "cover": "https://i.ibb.co/FX2szrP/biomutant-pc-collector.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Biomutant Collector's Edition include:",
+                                    "pack": [
+                                        "Biomutant Standard game",
+                                        "Main character's figure",
+                                        "Official Soundtrack",
+                                        "Art poster DinA1",
+                                        "Collector's box"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Atomic",
+                            "price": "349.95",
+                            "cover": "https://i.ibb.co/s3V4cmQ/Biomutant-pc-atomic.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Biomutant Atomic Edition include:",
+                                    "pack": [
+                                        "Biomutant Standard game",
+                                        "Official Soundtrack",
+                                        "Premium display box",
+                                        "Fabric poster",
+                                        "Steelbook",
+                                        "Oversized mousepad: 80cm x 35cm",
+                                        "T-Shirt",
+                                        "Detailed Biomutant Diorama: 60cm x 30cm"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "BIOMUTANT®",
+                "text": [
+                    "Is an open-word, post-apocalyptic Kung-Fu fable RPG, with a unique martial arts styled combat system allowing you to mix melee, shooting and mutant ability action."
+                ]
+            },
+            {
+                "title": "A NEW TAKE ON 3rd PERSON COMBAT:",
+                "text": [
+                    "The martial arts style combat system allows you maximum freedom of movement and agility while mixing shooting, melee and powers from your mutations. Acquiring new Wushu combat styles through progression, and learning from masters you’ll meet, constantly adds to your choices and makes sure combat never gets old."
+                ]
+            },
+            {
+                "title": "EVOLVE YOUR GAME-PLAY:",
+                "text": [
+                    "You’ll be able to re-code your genetic structure to change the way you look and play. This will of course affect your attributes and in addition to this, exposure to bio-contamination in the world will lead to physical mutations such as mantis-claws and barbed tails, while exposure to radioactivity found in bunkers from the old world will affect your mind and unlock psi-mutations including telekinesis, levitation and more."
+                ]
+            },
+            {
+                "title": "NEXT LEVEL OF CRAFTING:",
+                "text": [
+                    "Unleash your creativity when crafting weapons. Mix and match parts to create your own unique single- or double-handed slash, crush and pierce melee weapons. Revolvers, rifles and shotguns and add modifications from cork-screws and battery-powered chainsaw modules to bio-contaminated sludge vials, that’ll give edge to your combat arsenal. There are even characters you’ll meet that’ll craft cool stuff for you, like bionic wings, a jump-pack and even let you modify your Automaton - the scrap-toy sidekick!"
+                ]
+            },
+            {
+                "title": "GEAR UP FOR ADVENTURE:",
+                "text": [
+                    "You have full freedom when equipping your character. Not only when it comes to choosing weapons you created, but also what type of gear you wear. Equip a gas mask and an oxygen tank for exploring the Dead Zones, thermo-resistant clothes for venturing into cryonic areas or protective gear for taking on bio-contaminated creatures, the choice is up to you."
+                ]
+            },
+            {
+                "title": "SURVIVE IN A VIBRANT OPEN WORLD:",
+                "text": [
+                    "You’ll create your own adventure as you journey explore the open world and what lies beneath its surface, by foot, mech, jet-ski, air-balloon and more. Traverse the dying wildland, the tunnels and bunker networks of the underworld, and find your way up the mountains or out in the archipelago. There are lots of discoveries to be made, mysteries to unravel, creatures to confront and weird characters to meet in this vibrant and colorful world."
+                ]
+            },
+            {
+                "title": "AN UNUSUAL STORY WITH AN UNUSUAL END:",
+                "text": [
+                    "Your actions play a major part in the unfolding of a story where End is coming to the New World. A plague is ruining the land and the Tree-of-Life is bleeding death from its roots. The Tribes stand divided, in need of someone strong enough to unite them or bring them all down..."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Cyberpunk 2077",
+        "genres": [
+            "Action",
+            "Rol / RPG"
+        ],
+        "developer": "CD Projekt Red",
+        "editor": "CD Projeckt Red",
+        "images": [
+            "https://i.ibb.co/MsSw7dc/cyberpunk-2077-image-0.webp",
+            "https://i.ibb.co/6JXtZHh/cyberpunk-2077-image-1.webp",
+            "https://i.ibb.co/yXDLd7p/cyberpunk-2077-image-2.webp",
+            "https://i.ibb.co/2PJNxGx/cyberpunk-2077-image-3.webp",
+            "https://i.ibb.co/FmKvt0h/cyberpunk-2077-image-4.webp",
+            "https://i.ibb.co/mCNTRJC/cyberpunk-2077-image-5.webp",
+            "https://i.ibb.co/XzqKYzt/cyberpunk-2077-image-6.webp",
+            "https://i.ibb.co/DK0Brdx/cyberpunk-2077-image-7.webp",
+            "https://i.ibb.co/FgGLLg4/cyberpunk-2077-image-8.webp",
+            "https://i.ibb.co/BgyJxYq/cyberpunk-2077-image-9.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "10-12-2020",
+                "day": 10,
+                "month": 12,
+                "year": 2020,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/NV9YnLD/cyberpunk-2077-ps4-day-one.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "24,99",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on PlayStation 5 when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the PlayStation 4 version."
+                                    ]
+                                },
+                                {
+                                    "title": "The game comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Stickers."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "day One + Guide",
+                            "price": "79.95",
+                            "cover": "https://i.ibb.co/YLwRgzk/cyberpunk-2077-ps4-day-one-guide.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "49,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on PlayStation 5 when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the PlayStation 4 version."
+                                    ]
+                                },
+                                {
+                                    "title": "This pack includes:",
+                                    "pack": [
+                                        "Cyberpunk 2077 Day One Edition.",
+                                        "Collector's Edition Guide Cyberpunk 2077."
+                                    ]
+                                },
+                                {
+                                    "title": "The game comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Stickers."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "194.95",
+                            "cover": "https://i.ibb.co/9WFvTFz/cyberpunk-2077-ps4-collector.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "149,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on PlayStation 5 when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the PlayStation 4 version."
+                                    ]
+                                },
+                                {
+                                    "title": "The Collector’s Edition comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "Collector's Edition Box.",
+                                        "Collectible SteelBook.",
+                                        "25 cm / 10 inch statue depicting V — the game’s protagonist — in action.",
+                                        "Hardcover art book.",
+                                        "Metal pin set.",
+                                        "Quadra V-tech metal keychain.",
+                                        "An annotated copy of A Visitor’s Guide to Night City sealed in an NCPD Evidence Bag.",
+                                        "Embroidered patches.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Sticker bomb set."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "56.95",
+                            "cover": "https://i.ibb.co/hyYtWK1/cyberpunk-2077-xbox-one-day-one.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on Xbox Series X when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the Xbox One version."
+                                    ]
+                                },
+                                {
+                                    "title": "The game comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Stickers."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "day One + Guide",
+                            "price": "79.95",
+                            "cover": "https://i.ibb.co/vqxF9pC/cyberpunk-2077-xbox-one-day-one-guide.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "49,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on Xbox Series X when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the Xbox One version."
+                                    ]
+                                },
+                                {
+                                    "title": "This pack includes:",
+                                    "pack": [
+                                        "Cyberpunk 2077 Day One Edition.",
+                                        "Collector's Edition Guide Cyberpunk 2077."
+                                    ]
+                                },
+                                {
+                                    "title": "The game comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Stickers."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "194.95",
+                            "cover": "https://i.ibb.co/S0nQFb0/cyberpunk-2077-xbox-one-collector.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "149,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on Xbox Series X when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the Xbox One version."
+                                    ]
+                                },
+                                {
+                                    "title": "The Collector’s Edition comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "Collector's Edition Box.",
+                                        "Collectible SteelBook.",
+                                        "25 cm / 10 inch statue depicting V — the game’s protagonist — in action.",
+                                        "Hardcover art book.",
+                                        "Metal pin set.",
+                                        "Quadra V-tech metal keychain.",
+                                        "An annotated copy of A Visitor’s Guide to Night City sealed in an NCPD Evidence Bag.",
+                                        "Embroidered patches.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Sticker bomb set."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "56.95",
+                            "cover": "https://i.ibb.co/bvQrSLp/cyberpunk-2077-xbox-one-digital.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "44.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game will also be playable on Xbox Series X when available.",
+                                    "pack": [
+                                        "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the Xbox One version."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "56.95",
+                            "cover": "https://i.ibb.co/PQgh8Gm/cyberpunk-2077-pc-day-one.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "46,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The game comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Stickers."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "229.99",
+                            "cover": "https://i.ibb.co/kqkkr2F/cyberpunk-2077-pc-collector.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "149,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Collector’s Edition comes with the following physical items:",
+                                    "pack": [
+                                        "Case with game discs.",
+                                        "Collector's Edition Box.",
+                                        "Collectible SteelBook.",
+                                        "25 cm / 10 inch statue depicting V — the game’s protagonist — in action.",
+                                        "Hardcover art book.",
+                                        "Metal pin set.",
+                                        "Quadra V-tech metal keychain.",
+                                        "An annotated copy of A Visitor’s Guide to Night City sealed in an NCPD Evidence Bag.",
+                                        "Embroidered patches.",
+                                        "World Compendium detailing the game’s setting and lore.",
+                                        "Postcards from Night City.",
+                                        "Map of Night City.",
+                                        "Sticker bomb set."
+                                    ]
+                                },
+                                {
+                                    "title": "Digital goodies included:",
+                                    "pack": [
+                                        "Game soundtrack.",
+                                        "Art booklet featuring a selection of art from the game.",
+                                        "Cyberpunk 2020 sourcebook.",
+                                        "Wallpapers for desktop and mobile."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "Discover Cyberpunk:",
+                "text": [
+                    "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.",
+                    "Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City."
+                ]
+            },
+            {
+                "title": "Play as a mercenary outlaw:",
+                "text": [
+                    "Use a variety of upgradeable weapons, hacking skills and body-enhancing implants to become the best hired gun in town.",
+                    "Take down everyone, from corporate security and the police, to gangs and other mercenaries, in order to gain the street cred needed to access better jobs.",
+                    "Spend your hard-earned money on weapons and cyberware or have fun buying cars, motorcycles, and outrageous clothing."
+                ]
+            },
+            {
+                "title": "Live in the city of the future:",
+                "text": [
+                    "Enter the massive open world of Night City, a megalopolis that sets new standards in terms of visuals, complexity and depth.",
+                    "Journey through a city that’s larger than life, explore gang-ridden warzones, trade in its bustling downtown, and raid corporate havens.",
+                    "Make deals with sleazy fixers, desperate celebrities, and renegade artificial intelligences — all fighting tooth and nail to make it big in Night City.",
+                    "Make choices in your journey and watch the story change based on your actions."
+                ]
+            },
+            {
+                "title": "Steal the implant that grants eternal life:",
+                "text": [
+                    "Take the riskiest job of your life and go after a prototype implant that is the key to immortality.",
+                    "Push yourself to the absolute limit to get your hands on Night City’s most valuable implant — a prototype chip that can make you live forever.",
+                    "Face corporate leaders, underground hustlers, and all of the most feared people in Night City — those who will do everything in their power to possess the prototype chip.",
+                    "Choose how to handle this enormous power and who you wish to become."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Nier Replicant ver.1.22474487139...",
+        "genres": [
+            "Action",
+            "Hack & Slash",
+            "Rol / RPG"
+        ],
+        "developer": "Platinum Games",
+        "editor": "Square Enix",
+        "images": [
+            "https://i.ibb.co/qWGz42v/nier-replicant-ps4-sword-info.webp",
+            "https://i.ibb.co/3WGHc3j/nier-replicant-image-0.webp",
+            "https://i.ibb.co/gDt6rMx/nier-replicant-image-1.webp",
+            "https://i.ibb.co/8rf25Jm/nier-replicant-image-2.webp",
+            "https://i.ibb.co/3cmKMhZ/nier-replicant-image-3.webp",
+            "https://i.ibb.co/K5tfb9D/nier-replicant-image-4.webp",
+            "https://i.ibb.co/zGzPDq7/nier-replicant-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "23-04-2021",
+                "day": 23,
+                "month": 4,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "49.95",
+                            "cover": "https://i.ibb.co/SvT31rB/nier-replicant-ps4-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Standard + Sword Replica",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/5sPNY2H/nier-replicant-ps4-sword.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "49,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "This pack includes:",
+                                    "pack": [
+                                        "Nier Replicant ver.1.22474487139... Standard Edition.",
+                                        "16 cm Sword Replica of Nier Automata selected randomly between 10 models."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "49.95",
+                            "cover": "https://i.ibb.co/DzdjC1s/nier-replicant-xbox-one-series-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Standard + Sword Replica",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/bdzr2pc/nier-replicant-xbox-one-series-sword.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "49,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "This pack includes:",
+                                    "pack": [
+                                        "Nier Replicant ver.1.22474487139... Standard Edition.",
+                                        "16 cm Sword Replica of Nier Automata selected randomly between 10 models."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "49.95",
+                            "cover": "https://i.ibb.co/DzdjC1s/nier-replicant-xbox-one-series-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Standard + Sword Replica",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/bdzr2pc/nier-replicant-xbox-one-series-sword.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "49,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "This pack includes:",
+                                    "pack": [
+                                        "Nier Replicant ver.1.22474487139... Standard Edition.",
+                                        "16 cm Sword Replica of Nier Automata selected randomly between 10 models."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "49.95",
+                            "cover": "https://i.ibb.co/mXBR1Gs/nier-replicant-pc-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Standard + Sword Replica",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/j3GYkdR/nier-replicant-pc-sword.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "49,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "This pack includes:",
+                                    "pack": [
+                                        "Nier Replicant ver.1.22474487139... Standard Edition.",
+                                        "16 cm Sword Replica of Nier Automata selected randomly between 10 models."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "An updated version of NieR Replicant, previously only released in Japan:",
+                "text": [
+                    "Discover the one-of-a-kind prequel of the critically-acclaimed masterpiece NieR:Automata. Now with a modern upgrade, experience masterfully revived visuals, a fascinating storyline and more!",
+                    "The protagonist is a kind young man living in a remote village. In order to save his sister Yonah, who fell terminally ill to the Black Scrawl, he sets out with Grimoire Weiss, a strange talking tome, to search for the 'Sealed verses.' Experience the NieR Replicant story for the first time in the west through the eyes of the protagonist as a brother. The original all-star team returns including acclaimed director, YOKO TARO (Drakengard / NieR:Automata), composer Keiichi Okabe (TEKKEN / Drakengard / NieR:Automata), and producer Yosuke Saito (DRAGON QUEST X / NieR:Automata)."
+                ]
+            },
+            {
+                "title": "Features:",
+                "text": [
+                    "Uncover the truth behind the world of NieR and prepare to question everything in this dark, twisting tale.",
+                    "Journey alongside an unlikely group of allies through a ruined world, plagued by sickness and monstrous horrors.",
+                    "A mesmerizing iconic soundtrack, newly recorded by NieR:Automata composer, Keiichi Okabe.",
+                    "Fight back dreadful enemies with a visceral, uniquely customizable blend of swordplay and powerful magic.",
+                    "Customize your character's magic, skills, and weapons with the power of Words."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Zelda Link's Awakening",
+        "genres": [
+            "Adventure",
+            "Rol / RPG"
+        ],
+        "developer": "Nintendo",
+        "editor": "Nintendo",
+        "images": [
+            "https://i.ibb.co/fpYd5Mf/zelda-links-awakening-image-0.webp",
+            "https://i.ibb.co/nrhqX6Y/zelda-links-awakening-image-1.webp",
+            "https://i.ibb.co/CHzmMKN/zelda-links-awakening-image-2.webp",
+            "https://i.ibb.co/xXV3ZSb/zelda-links-awakening-image-3.webp",
+            "https://i.ibb.co/RTqNT53/zelda-links-awakening-image-4.webp",
+            "https://i.ibb.co/F5w63XS/zelda-links-awakening-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/FnY5Rt1/pegi7.png",
+        "release": [
+            {
+                "date": "20-09-2019",
+                "day": 20,
+                "month": 9,
+                "year": 2019,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "Nintendo Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/vz9C6Rv/zelda-links-awakening-switch-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "44,95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Limited",
+                            "price": "79.99",
+                            "cover": "https://i.ibb.co/gJ4c8FM/zelda-links-awakening-switch-limited.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Limited Edition includes:",
+                                    "pack": [
+                                        "The game card.",
+                                        "Limited Edition Box.",
+                                        "A classic Game Boy themed SteelBook.",
+                                        "120-page artbook."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "59.99",
+                            "cover": "https://i.ibb.co/379Hysh/zelda-links-awakening-switch-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Pack Controller 1",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/HpS95GC/zelda-links-awakening-switch-pack-mando1.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Controller Fighting The Legend Of Zelda: Link's Awakening Black",
+                                    "pack": [
+                                        "Start your adventure in the new The Legend of Zelda: Link's Awakening for Nintendo Switch with the best companion to live your adventure, inspired by the relationship founded between The Legend of Zelda and Nintendo GameCube."
+                                    ]
+                                },
+                                {
+                                    "title": "Features:",
+                                    "pack": [
+                                        "GameCube-inspired design that recalls the nostalgic connection between The Legend of Zelda and the GameCube console.",
+                                        "Ergonomic shape, perfect for playing The Legend of Zelda",
+                                        "Detachable analog sticks.",
+                                        "Play with the traditional C-Stick or use a full-size stick.",
+                                        "3 meter cable."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Pack Controller 2",
+                            "price": "79.99",
+                            "cover": "https://i.ibb.co/cyj6ZZB/zelda-links-awakening-switch-pack-mando2.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "59,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Controller Fighting The Legend Of Zelda: Link's Awakening White",
+                                    "pack": [
+                                        "Start your adventure in the new The Legend of Zelda: Link's Awakening for Nintendo Switch with the best companion to live your adventure, inspired by the relationship founded between The Legend of Zelda and Nintendo GameCube."
+                                    ]
+                                },
+                                {
+                                    "title": "Features:",
+                                    "pack": [
+                                        "GameCube-inspired design that recalls the nostalgic connection between The Legend of Zelda and the GameCube console.",
+                                        "Ergonomic shape, perfect for playing The Legend of Zelda",
+                                        "Detachable analog sticks.",
+                                        "Play with the traditional C-Stick or use a full-size stick.",
+                                        "3 meter cable."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "Escape the island",
+                "text": [
+                    "Link has washed ashore on a mysterious island with strange and colourful inhabitants. To escape the island, Link must collect magical instruments across the land and awaken the Wind Fish. Explore a reimagined Koholint Island that’s been faithfully rebuilt in a brand-new art style that will entice fans and newcomers alike. Battle enemies as you conquer numerous dungeons and uncover the hidden secrets of the island. Encounter Super Mario enemies like Goombas, Piranha Plants, and more, and interact with unique locals who help Link on his adventure."
+                ]
+            },
+            {
+                "title": "Features:",
+                "text": [
+                    "As Link, explore a reimagined Koholint Island and collect instruments to awaken the Wind Fish to find a way home.",
+                    "Explore numerous dungeons, riddled with tricks, traps, and enemies, including some from the Super Mario series.",
+                    "Meet and interact with unique locals to get help on your adventure.",
+                    "Listen to a reawakened soundtrack that helps bring life to Koholint Island."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Death Stranding",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Survival Horror"
+        ],
+        "developer": "Kojima Productions",
+        "editor": "Sony",
+        "images": [
+            "https://i.ibb.co/7Wqn1sB/death-stranding-image-0.webp",
+            "https://i.ibb.co/JRZJgqr/death-stranding-image-1.webp",
+            "https://i.ibb.co/ZTh261D/death-stranding-image-2.webp",
+            "https://i.ibb.co/FHrNnhy/death-stranding-image-3.webp",
+            "https://i.ibb.co/k69tfsV/death-stranding-image-4.webp",
+            "https://i.ibb.co/X23rchK/death-stranding-image-5.webp",
+            "https://i.ibb.co/4J3LLDZ/death-stranding-image-6.webp",
+            "https://i.ibb.co/BPMZ6Jf/death-stranding-image-7.webp",
+            "https://i.ibb.co/wWRsphQ/death-stranding-image-8.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "08-11-2019",
+                "day": 8,
+                "month": 11,
+                "year": 2019,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/rH7hzhD/death-stranding-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "17,99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Special",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/7jBKBs4/death-stranding-ps4-limited.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "26,95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Death Stranding Special Edition includes:",
+                                    "pack": [
+                                        "Death Stranding full game in SteelBook® case.",
+                                        "Special Gold “Ludens Mask” Sunglasses (in-game item), earned through gameplay.",
+                                        "Death Stranding: Timefall (Original Music from the World of Death Stranding).",
+                                        "Death Stranding: Timefall (Behind the Scenes footage)."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "189.99",
+                            "cover": "https://i.ibb.co/nQWd9rn/death-stranding-ps4-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Death Stranding Collector's Edition includes:",
+                                    "pack": [
+                                        "Full Game.",
+                                        "SteelBook case.",
+                                        "BB Pod Statue.",
+                                        "Ludens Key ring.",
+                                        "BRIDGES Cargo Case."
+                                    ]
+                                },
+                                {
+                                    "title": "As well as these digital bonuses:",
+                                    "pack": [
+                                        "Complete Avatar Set – receive 10 avatars featuring various characters from the game.",
+                                        "Timefall (Original Music from the World of Death Stranding).",
+                                        "Timefall (Behind the Scenes footage)."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/kmsNLd9/death-stranding-pc-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Death Stranding Standard PC Edition includes:",
+                                    "pack": [
+                                        "Full Game.",
+                                        "SteelBook case."
+                                    ]
+                                },
+                                {
+                                    "title": "As well as these digital bonuses:",
+                                    "pack": [
+                                        "Death Stranding Original Score Expanded Edition digital soundtrack by Ludvig Forssell, including 10 unreleased bonus tracks.",
+                                        "“Selections From ‘The Art of DEATH STRANDING’” Digital Book (by Titan Books)",
+                                        "HD Wallpapers.",
+                                        "CHIRAL GOLD and OMNIREFLECTOR “LUDENS MASK” SUNGLASSES (COLOR VARIANT)*.",
+                                        "GOLD and SILVER POWER SKELETON*.",
+                                        "GOLD and SILVER ALL-TERRAIN SKELETON*.",
+                                        "GOLD and SILVER ARMOUR PLATE*.",
+                                        "CHIRAL GOLD and OMNIREFLECTOR “SAM” SUNGLASSES (COLOR VARIANT)*.",
+                                        "CHIRAL GOLD and OMNIREFLECTOR CAP (COLOR VARIANT)*.",
+                                        "GOLD and SILVER SPEED SKELETON*",
+                                        "GOLD and SILVER ARMOUR PLATE LV2 AND ABOVE*",
+                                        "*Unlocked via game progression"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "An all-new, genre-defying experience:",
+                "text": [
+                    "From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world one step at a time. With spectral creatures plaguing the landscape, and humanity on the verge of a mass extinction, it’s up to Sam to journey across the ravaged continent and save mankind from impending annihilation.",
+                    "What is the mystery of the Death Stranding? What will Sam discover on the road ahead? An unprecedented gameplay experience holds these answers and more. Starring Norman Reedus, Mads Mikkelsen, Léa Seydoux and Lindsay Wagner."
+                ]
+            },
+            {
+                "title": "Features:",
+                "text": [
+                    "As Link, explore a reimagined Koholint Island and collect instruments to awaken the Wind Fish to find a way home.",
+                    "Explore numerous dungeons, riddled with tricks, traps, and enemies, including some from the Super Mario series.",
+                    "Meet and interact with unique locals to get help on your adventure.",
+                    "Listen to a reawakened soundtrack that helps bring life to Koholint Island."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Mass Effect Legendary",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Rol / RPG"
+        ],
+        "developer": "Bioware",
+        "editor": "Electornic Arts",
+        "images": [
+            "https://i.ibb.co/ydDZ2Lk/mass-effect-legendary-image-0.webp",
+            "https://i.ibb.co/9pWSKWX/mass-effect-legendary-image-1.webp",
+            "https://i.ibb.co/bNKfQGT/mass-effect-legendary-image-2.webp",
+            "https://i.ibb.co/10g8qHp/mass-effect-legendary-image-3.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "14-05-2021",
+                "day": 14,
+                "month": 5,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/9y0v1sW/mass-effect-ps4-legendary.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Mass Effect Legendary Edition includes:",
+                                    "pack": [
+                                        "Mass Effect 1 Game.",
+                                        "Mass Effect 2 Game.",
+                                        "Mass Effect 3 Game",
+                                        "42 downloadable content"
+                                    ]
+                                },
+                                {
+                                    "title": "*Playable in PS5 throught update",
+                                    "pack": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/xSyn2HW/mass-effect-xbox-one-series-legendary.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Mass Effect Legendary Edition includes:",
+                                    "pack": [
+                                        "Mass Effect 1 Game.",
+                                        "Mass Effect 2 Game.",
+                                        "Mass Effect 3 Game",
+                                        "42 downloadable content"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "69.99",
+                            "cover": "https://i.ibb.co/ZXt6WtB/mass-effect-xbox-one-series-legendary-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Mass Effect Trilogy Digital Edition includes:",
+                                    "pack": [
+                                        "Mass Effect 1 Game.",
+                                        "Mass Effect 2 Game.",
+                                        "Mass Effect 3 Game",
+                                        "42 downloadable content"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/xSyn2HW/mass-effect-xbox-one-series-legendary.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Mass Effect Legendary Edition includes:",
+                                    "pack": [
+                                        "Mass Effect 1 Game.",
+                                        "Mass Effect 2 Game.",
+                                        "Mass Effect 3 Game",
+                                        "42 downloadable content"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "69.99",
+                            "cover": "https://i.ibb.co/ZXt6WtB/mass-effect-xbox-one-series-legendary-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Mass Effect Trilogy Digital Edition includes:",
+                                    "pack": [
+                                        "Mass Effect 1 Game.",
+                                        "Mass Effect 2 Game.",
+                                        "Mass Effect 3 Game",
+                                        "42 downloadable content"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "Relive the legend of Commander Shepard.",
+                "text": [
+                    "One person is all that stands between humanity and the greatest threat it’s ever faced. Relive the legend of Commander Shepard in the highly acclaimed Mass Effect trilogy with the Mass Effect™ Legendary Edition. Includes single-player base content and DLC from Mass Effect, Mass Effect 2, and Mass Effect 3, plus promo weapons, armors, and packs - all remastered and optimized for 4k Ultra HD."
+                ]
+            },
+            {
+                "title": "Reflect on your choices:",
+                "text": [
+                    "Your choices seamlessly travel from one game to the next. Each decision you make will control the outcome of every mission, every relationship, every battle – and even the fate of the galaxy itself."
+                ]
+            },
+            {
+                "title": "Experience the legend of Shepard:",
+                "text": [
+                    "Create and customise your own character, from appearance and skills to a personalised arsenal then lead your elite recon squad across a galaxy in turmoil."
+                ]
+            },
+            {
+                "title": "Remaster content:",
+                "text": [
+                    "Take command of the Normandy, assemble your crew, and prepare for an unforgettable adventure in the highly acclaimed franchise. Play through the single-player experience of all three Mass Effect trilogy games including over 40 DLC, promo weapons, armors, and packs."
+                ]
+            },
+            {
+                "title": "Remaster core features:",
+                "text": [
+                    "Experience welcome quality of life updates including a single launcher for all three Mass Effect trilogy titles, enhanced performance, gameplay improvements, controller support for PC, and more."
+                ]
+            },
+            {
+                "title": "Additional features & improvements:",
+                "text": [
+                    "Relive the cinematic saga in stunning 4K with enhanced visuals, textures and models. Including modern graphic improvements, updated UI, and more."
+                ]
+            },
+            {
+                "title": "Mass Effect 1 enhancements:",
+                "text": [
+                    "Experience everything you love about the first Mass Effect game, now with improved aiming, squad controls, and cameras. What else do you have to look forward to? Well, let’s just say exploring in the Mako has never been more fun."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Demon's Souls",
+        "genres": [
+            "Souls Like",
+            "Adventure",
+            "Rol / RPG"
+        ],
+        "developer": "Bluepoint Games",
+        "editor": "Japan Studios",
+        "images": [
+            "https://i.ibb.co/48h1Ms2/demons-souls-image-0.webp",
+            "https://i.ibb.co/GsWFztT/demons-souls-image-1.webp",
+            "https://i.ibb.co/vdb9ZXS/demons-souls-image-2.webp",
+            "https://i.ibb.co/dKSbdrM/demons-souls-image-3.webp",
+            "https://i.ibb.co/z53VDXW/demons-souls-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "12-11-2020",
+                "day": 12,
+                "month": 11,
+                "year": 2020,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "72.95",
+                            "cover": "https://i.ibb.co/PYybTCb/demons-souls-ps5-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "64.95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Artorias",
+                            "price": "79.99",
+                            "cover": "https://i.ibb.co/qBMLzTW/demons-souls-ps5-artorias.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": [
+                                        "The Artorias Pack includes:"
+                                    ],
+                                    "pack": [
+                                        "Demon's Souls PS5 Game",
+                                        "Artorias The Abysswalker figure of 17 cm"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "Discover where the journey began:",
+                "text": [
+                    "Experience the original brutal challenge, completely remade from the ground up. All presented in stunning visual quality with enhanced performance, this is the world of Boletaria as you have never seen it before."
+                ]
+            },
+            {
+                "title": "Become the Slayer of Demons:",
+                "text": [
+                    "Venture to the northern kingdom of Boletaria – a once prosperous land of knights, now beset with unspeakable creatures and ravenous demons. Meet strange characters, unhinged and twisted by the world around them, and unravel the unsettling story of Demon’s Souls."
+                ]
+            },
+            {
+                "title": "Master the arts of sorcery and war:",
+                "text": [
+                    "Perfect and hone your skills in combat – know when to push forward and when to bide your time, as with each missed swing and careless mistake, you risk losing the very souls you’ve worked so hard to collect. The rewards for slaying the strongest foes are immense though, and death does not mean the end – it’s just another state of being."
+                ]
+            },
+            {
+                "title": "Face the world’s greatest warriors in PVP combat:",
+                "text": [
+                    "With online* invasions adding to the danger of your quest. Or play cooperatively by summoning allies to aid in your fight against the demons.",
+                    "*Active PS Plus subscription required for online multiplayer."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Outriders",
+        "genres": [
+            "Action",
+            "Shooter",
+            "Rol / RPG"
+        ],
+        "developer": "People Can fly",
+        "editor": "Square Enix",
+        "images": [
+            "https://i.ibb.co/zNmxvB5/outriders-day-one-info.webp",
+            "https://i.ibb.co/WnHK0Pd/outriders-image-0.webp",
+            "https://i.ibb.co/RvSXYjj/outriders-image-1.webp",
+            "https://i.ibb.co/Jr2NcPd/outriders-image-2.webp",
+            "https://i.ibb.co/nCgmCHv/outriders-image-3.webp",
+            "https://i.ibb.co/LxV4TPc/outriders-image-4.webp",
+            "https://i.ibb.co/BcVvd6y/outriders-image-5.webp",
+            "https://i.ibb.co/92RYTBb/outriders-image-6.webp",
+            "https://i.ibb.co/ssmRvVX/outriders-image-7.webp",
+            "https://i.ibb.co/FhXm8L1/outriders-image-8.webp",
+            "https://i.ibb.co/RN5ShYc/outriders-image-9.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "01-04-2021",
+                "day": 1,
+                "month": 4,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/m5zzV6j/outriders-ps4-day-one.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.99",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Day One Edition includes:",
+                                    "pack": [
+                                        "Outriders game",
+                                        "The Hell’s Rangers Male and Female Gear Sets.",
+                                        "The Hell’s Rangers Arsenal of 11 unique Guns.",
+                                        "The Hell’s Rangers Truck Mods and Decals."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/8c8jS5h/outriders-ps5-day-one.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.99",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Day One Edition includes:",
+                                    "pack": [
+                                        "Outriders game",
+                                        "The Hell’s Rangers Male and Female Gear Sets.",
+                                        "The Hell’s Rangers Arsenal of 11 unique Guns.",
+                                        "The Hell’s Rangers Truck Mods and Decals."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/gvkKZjL/outriders-xbox-one-series-day-one.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.99",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Day One Edition includes:",
+                                    "pack": [
+                                        "Outriders game",
+                                        "The Hell’s Rangers Male and Female Gear Sets.",
+                                        "The Hell’s Rangers Arsenal of 11 unique Guns.",
+                                        "The Hell’s Rangers Truck Mods and Decals."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/gvkKZjL/outriders-xbox-one-series-day-one.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.99",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Day One Edition includes:",
+                                    "pack": [
+                                        "Outriders game",
+                                        "The Hell’s Rangers Male and Female Gear Sets.",
+                                        "The Hell’s Rangers Arsenal of 11 unique Guns.",
+                                        "The Hell’s Rangers Truck Mods and Decals."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Day One",
+                            "price": "49.95",
+                            "cover": "https://i.ibb.co/K5cthHB/outriders-pc-day-one.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Day One Edition includes:",
+                                    "pack": [
+                                        "Outriders game",
+                                        "The Hell’s Rangers Male and Female Gear Sets.",
+                                        "The Hell’s Rangers Arsenal of 11 unique Guns.",
+                                        "The Hell’s Rangers Truck Mods and Decals."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "",
+                "text": [
+                    "Outriders is a 1-3 player co-op RPG shooter set in an original, dark and desperate sci-fi universe. As mankind bleeds out in the trenches of Enoch, you’ll create your own Outrider and embark on a journey across the hostile planet. With rich storytelling spanning a diverse world, you’ll leave behind the slums and shanty towns of the First City and traverse forests, mountains and desert in the pursuit of a mysterious signal. Combining intense gunplay with violent powers and an arsenal of increasingly twisted weaponry and gear-sets, Outriders offers countless hours of gameplay from one of the finest shooter developers in the industry – People Can Fly."
+                ]
+            },
+            {
+                "title": "Intensity of a shooter, depth of an RPG:",
+                "text": [
+                    "Outriders’ brutal and bloody combat combines frenetic gunplay, violent powers and deep RPG systems to create a true genre hybrid."
+                ]
+            },
+            {
+                "title": "A dark and desperate journey:",
+                "text": [
+                    "Discover the hostile planet of Enoch as you embark on a journey to the source of a mysterious signal."
+                ]
+            },
+            {
+                "title": "Dynamic 1-3 player co-op:",
+                "text": [
+                    "Play single-player or join up to two friends in drop-in drop-out co-op as you tackle the horrors of a hyper-evolved planet."
+                ]
+            },
+            {
+                "title": "Four unique classes:",
+                "text": [
+                    "Create and customise your own Outrider and choose from four unique classes each with its own skill tree to define your own playstyle."
+                ]
+            },
+            {
+                "title": "Scavenge & adapt:",
+                "text": [
+                    "Customise and upgrade your Outrider with countless items of mod-able guns and gear, as you leave humanity behind."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Days Gone",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Survival Horror"
+        ],
+        "developer": "Bend Studio",
+        "editor": "Sony",
+        "images": [
+            "https://i.ibb.co/Qb5R3Dj/days-gone-image-0.webp",
+            "https://i.ibb.co/CPf7Ycy/days-gone-image-1.webp",
+            "https://i.ibb.co/ftrYHbV/days-gone-image-2.webp",
+            "https://i.ibb.co/FxX9ZY1/days-gone-image-3.webp",
+            "https://i.ibb.co/FxGzwM7/days-gone-image-4.webp",
+            "https://i.ibb.co/St7WcmW/days-gone-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "26-04-2019",
+                "day": 26,
+                "month": 4,
+                "year": 2019,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/XZcG3P4/days-gone-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "19.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Special",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/mNhJmTS/days-gone-ps4-limited.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": [
+                                        "The Days Gone™ Special Edition includes:"
+                                    ],
+                                    "pack": [
+                                        "Days Gone PS4 Game",
+                                        "Steelbook Case",
+                                        "Physical and Digital Art Book",
+                                        "Physical and Digital Original Soundtrack",
+                                        "In-Game Monkey Wrench Skill Unlock",
+                                        "Three In-Game Drifter Bike Skins",
+                                        "Days Gone™ Dynamic Playstation 4 Theme"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "149.95",
+                            "cover": "https://i.ibb.co/D1dXDZ4/days-gone-ps4-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": [
+                                        "The Days Gone™ Collector's Edition includes:"
+                                    ],
+                                    "pack": [
+                                        "Days Gone PS4 Game",
+                                        "Steelbook Case",
+                                        "Physical and Digital Art Book",
+                                        "Physical and Digital Original Soundtrack",
+                                        "In-Game Monkey Wrench Skill Unlock",
+                                        "Three In-Game Drifter Bike Skins",
+                                        "Days Gone™ Dynamic Playstation 4 Theme",
+                                        "6 Days Gone™ Collector's Pins",
+                                        "Days Gone™ Statue",
+                                        "Days Gone™ Patch",
+                                        "4 Decals"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "Expansive Open World Action:",
+                "text": [
+                    "Days Gone is an open-world action game set in the high-desert of the Pacific Northwest two years after a mysterious global pandemic has decimated the world, killing most but transforming millions into mindless, feral creatures. Survivors live in a world where resources are scarce, violence and murder are common and Freakers roam the wilderness.",
+                    "Exemplifying truly free-form gameplay, Days Gone offers freedom to explore, strategize and play “your way” in the vast high-desert of the Pacific Northwest. The hazardous environments, filled with carved out ridges, mountains, caves, cliffs mines and river basins, deliver a breathtaking backdrop to an equally diverse style of gameplay.",
+                    "Players face this violent, new world as Deacon St. John, a bounty hunter, a Drifter who lives in the lawless wilderness outside the civilian encampments. Deacon survives by using skills learned before the world ended, riding for the Mongrels MC, an outlawed motorcycle club, where violence and mayhem were part of the riding the open road.",
+                    "At the center of it all, Days Gone is an exploration of how any of us would react to these harsh conditions, and exploration of loss, love, friendship, revenge and desperation – learning that surviving isn’t living. For Deacon especially, it’s a struggle to ensure that hope never dies."
+                ]
+            },
+            {
+                "title": "Emergent Gameplay:",
+                "text": [
+                    "Featuring fully explorable environments and dynamic AI enemies, players will rely on their own abilities to strategize, craft weapons and tools, explore the world, and engage in combat. With almost every car, building and environment searchable, Days Gone delivers emergent gameplay possibilities, making a player’s approach to combat and discovery a vital part of the experience."
+                ]
+            },
+            {
+                "title": "Stunning, Dynamic Graphics:",
+                "text": [
+                    "Using the power of PlayStation 4 and Unreal Engine 4, Bend Studio has developed a high volume of rendering and gameplay technology to deliver an incredibly realistic open world experience. Realistic weather effects, such as rain, wind, snow and day-night cycles impact the gameplay. The game’s lighting is all real-time and reacts dynamically, the way the human iris does, as players move from one location to the next."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Ratchet & Clank: Rift Apart",
+        "genres": [
+            "Platforms",
+            "Adventure"
+        ],
+        "developer": "Insomniac Games",
+        "editor": "Sony",
+        "images": [
+            "https://i.ibb.co/jggq7DZ/ratchet-clank-image-0.webp",
+            "https://i.ibb.co/BGz2xKW/ratchet-clank-image-1.webp",
+            "https://i.ibb.co/gJrLpcZ/ratchet-clank-image-2.webp",
+            "https://i.ibb.co/QP5z03n/ratchet-clank-image-3.webp",
+            "https://i.ibb.co/XSyV2KJ/ratchet-clank-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/FnY5Rt1/pegi7.png",
+        "release": [
+            {
+                "date": "11-06-2021",
+                "day": 11,
+                "month": 6,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "72.95",
+                            "cover": "https://i.ibb.co/YNN4X4L/ratchet-clank-ps5-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "The intergalactic adventurers are back!",
+                "text": [
+                    "Help them stop a robotic emperor intent on conquering cross-dimensional worlds, with their own universe next in the firing line.",
+                    "Blast your way home with an arsenal of outrageous weaponry.",
+                    "Experience the shuffle of dimensional rifts and dynamic gameplay.",
+                    "Explore never-before-seen planets and alternate dimension versions of old favorites."
+                ]
+            },
+            {
+                "title": "PS5™ FEATURES:",
+                "text": [
+                    "Built from the ground up by acclaimed studio Insomniac Games, go above and beyond with the mind-blowing speed and immersive features of the PS5™ console. Brand-new haptic feedback and adaptive trigger technology creates astonishing physical sensations, bringing in-game actions to life in your hands via the DualSense™ wireless controller."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Blasphemous",
+        "genres": [
+            "Platforms",
+            "Action",
+            "Rol / RPG"
+        ],
+        "developer": "The Game Kitchen",
+        "editor": "Selecta Play",
+        "images": [
+            "https://i.ibb.co/2s610Tf/blasphemous-image-0.webp",
+            "https://i.ibb.co/6nQtvTm/blasphemous-image-1.webp",
+            "https://i.ibb.co/ZSTrDXd/blasphemous-image-2.webp",
+            "https://i.ibb.co/hybP6Rg/blasphemous-image-3.webp",
+            "https://i.ibb.co/D1H1kB4/blasphemous-image-4.webp",
+            "https://i.ibb.co/Vgx2QH0/blasphemous-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": [
+            {
+                "date": "20-07-2021",
+                "day": 20,
+                "month": 7,
+                "year": 2021,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Deluxe",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/Lx9NCXW/blasphemous-ps4-deluxe.png",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                {
+                                    "title": "Deluxe Edition includes:",
+                                    "pack": [
+                                        "Two bonus skins: Slash any enemy that stands in your way with the ‘Alloy of Sin’ and ‘Golden Burden’ skins.",
+                                        "Digital Soundtrack",
+                                        "Digital Artbook",
+                                        "Digital Comic",
+                                        "StickerSheet",
+                                        "Map of Cvstodia"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Deluxe",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/kKmztxL/blasphemous-xbox-one-series-deluxe.png",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                {
+                                    "title": "Deluxe Edition includes:",
+                                    "pack": [
+                                        "Two bonus skins: Slash any enemy that stands in your way with the ‘Alloy of Sin’ and ‘Golden Burden’ skins.",
+                                        "Digital Soundtrack",
+                                        "Digital Artbook",
+                                        "Digital Comic",
+                                        "StickerSheet",
+                                        "Map of Cvstodia"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Deluxe",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/kKmztxL/blasphemous-xbox-one-series-deluxe.png",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                {
+                                    "title": "Deluxe Edition includes:",
+                                    "pack": [
+                                        "Two bonus skins: Slash any enemy that stands in your way with the ‘Alloy of Sin’ and ‘Golden Burden’ skins.",
+                                        "Digital Soundtrack",
+                                        "Digital Artbook",
+                                        "Digital Comic",
+                                        "StickerSheet",
+                                        "Map of Cvstodia"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Deluxe",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/sws4HNd/blasphemous-switch-deluxe.png",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                {
+                                    "title": "Deluxe Edition includes:",
+                                    "pack": [
+                                        "Two bonus skins: Slash any enemy that stands in your way with the ‘Alloy of Sin’ and ‘Golden Burden’ skins.",
+                                        "Digital Soundtrack",
+                                        "Digital Artbook",
+                                        "Digital Comic",
+                                        "StickerSheet",
+                                        "Map of Cvstodia"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "",
+                "text": [
+                    "Blasphemous is a brutal action-platformer with skilled hack’n slash combat set in the nightmare world of Cvstodia. Explore, upgrade your abilities, and perform savage executions on the hordes of enemies that stand between you and your quest to break eternal damnation."
+                ]
+            },
+            {
+                "title": "Features:",
+                "text": [
+                    "Explore a Non-Linear World: Overcome fearsome enemies and deadly traps as you venture through a variety of different landscapes, and search for redemption in the dark gothic world of Cvstodia.",
+                    "Brutal Combat: Release the power of Mea Culpa, a sword born from guilt itself, to slaughter your foes. Acquire devastating new combos and special moves as you purge all in your path.",
+                    "Executions: Unleash your wrath and relish in the gory dismemberment of your adversaries - all in beautifully rendered, pixel-perfect execution animations.",
+                    "Customise Your Build: Discover and equip Relics, Rosary Beads, Prayers and Sword Hearts to give you the new abilities and stat boosts you need to survive. Experiment with different combinations to suit your playstyle.",
+                    "Intense Boss Battles: Hordes of gigantic, twisted creatures stand between you and your goal. Learn how they move, survive their devastating attacks and emerge victorious.",
+                    "Unlock the Mysteries of Cvstodia: The world is full of tormented souls. Some offer you aid, some may ask for something in return. Uncover the stories and fates of these tortured characters to gain rewards and a deeper understanding of the dark world you inhabit."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Returnal",
+        "genres": [
+            "Platforms",
+            "Shooter",
+            "Adventure"
+        ],
+        "developer": "Housemarque",
+        "editor": "Sony",
+        "images": [
+            "https://i.ibb.co/sH7JG12/returnal-image-0.webp",
+            "https://i.ibb.co/nRPHb9G/returnal-image-1.webp",
+            "https://i.ibb.co/2vtk926/returnal-image-2.webp",
+            "https://i.ibb.co/5ctwjN9/returnal-image-3.webp",
+            "https://i.ibb.co/FqkfB61/returnal-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": [
+            {
+                "date": "30-04-2021",
+                "day": 30,
+                "month": 4,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "72.95",
+                            "cover": "https://i.ibb.co/0y4SHRg/returnal-ps5-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "BREAK THE CYCLE",
+                "text": [
+                    "After crash-landing on this shape-shifting world, Selene must search through the barren landscape of an ancient civilization for her escape. Isolated and alone, she finds herself fighting tooth and nail for survival. Again and again, she’s defeated – forced to restart her journey every time she dies.",
+                    "Through relentless roguelike gameplay, you’ll discover that just as the planet changes with every cycle, so do the items at your disposal. Every loop offers new combinations, forcing you to push your boundaries and approach combat with a different strategy each time.",
+                    "Brought to life by stunning visual effects, the dark beauty of the decaying world around you is packed with explosive surprises. From high stakes, bullet hell-fuelled combat, to visceral twists and turns through stark and contrasting environments. You’ll explore, discover and fight your way through an unforgiving journey, where mystery stalks your every move.",
+                    "Designed for extreme replayability, the procedural world of Returnal invites you to dust yourself off in the face of defeat and take on new, evolving challenges with every rebirth."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Scarlet Nexus",
+        "genres": [
+            "Manga",
+            "Adventure"
+        ],
+        "developer": "Bandai Namco",
+        "editor": "Bandai Namco",
+        "images": [
+            "https://i.ibb.co/rfxTdVF/scalert-nexus-image-0.jpg",
+            "https://i.ibb.co/PYwtYBg/scalert-nexus-image-1.jpg",
+            "https://i.ibb.co/1fZtcxm/scalert-nexus-image-2.webp",
+            "https://i.ibb.co/bWBj2kv/scalert-nexus-image-3.webp",
+            "https://i.ibb.co/VWyNDzx/scalert-nexus-image-4.webp",
+            "https://i.ibb.co/ZfsRxSM/scalert-nexus-image-5.jpg"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": [
+            {
+                "date": "25-06-2021",
+                "day": 25,
+                "month": 6,
+                "year": 2021,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/f2vkzPr/scalert-nexus-ps4-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/54qJ0Cz/scalert-nexus-ps5-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/HD2qd5h/scalert-nexus-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/HD2qd5h/scalert-nexus-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "",
+                "text": [
+                    "In a far distant future, a psionic hormone was discovered in the human brain, granting people extra-sensory powers and changing the world as we know it. Just as humanity was entering this new era, deranged mutants known as Others began to descend from the sky with a thirst for human brains. Highly resistant to conventional attack methods, extreme measures needed to be taken to battle the overwhelming threat and preserve humanity.",
+                    "Those with acute extra-sensory abilities, known as psionics, were our chance to fight the onslaught from above. To this day, psionics have been scouted for their talents and recruited to the Other Suppression Force (OSF), humanity’s last line of defense. Take on the role of Yuito Sumeragi, a new recruit to the OSF aiming to become an elite psionic like the one who saved him as a child. Armed with a talent in psycho-kinesis, explore the futuristic city of New Himuka and uncover the mysteries of a Brain Punk future caught between technology and psychic abilities in SCARLET NEXUS."
+                ]
+            },
+            {
+                "title": "Kinetic Psychic Combat:",
+                "text": [
+                    "Using psycho-kinetic abilities, the world around you becomes your greatest weapon. Lift, break and throw pieces of your environment to build your attack combos and lay waste to your enemies."
+                ]
+            },
+            {
+                "title": "Exterminate the Others:",
+                "text": [
+                    "Deranged mutants that descended from the sky, highly resistant to conventional attack methods and defenses. Tormented by the constant pain of their mutation, they seek brains of living organisms to calm their madness."
+                ]
+            },
+            {
+                "title": "Discover a Brain Punk future:",
+                "text": [
+                    "Explore and protect a futuristic Japanese landscape that combines inspirations from classic anime and western science fiction."
+                ]
+            },
+            {
+                "title": "Deep Story Driven Experience:",
+                "text": [
+                    "Dive into a complex story of bonds, courage and heroism crafted by minds behind the iconic Tales of Vesperia."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "The Legend of Zelda: Skyward Sword HD",
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "developer": "Nintendo",
+        "editor": "Nintendo",
+        "images": [
+            "https://i.ibb.co/h94VY8h/the-legend-of-zelda-skyward-sword-hd-image-0.webp",
+            "https://i.ibb.co/RbMSgff/the-legend-of-zelda-skyward-sword-hd-image-1.webp",
+            "https://i.ibb.co/nf1sD75/the-legend-of-zelda-skyward-sword-hd-image-2.webp",
+            "https://i.ibb.co/xq0QZsm/the-legend-of-zelda-skyward-sword-hd-image-3.webp",
+            "https://i.ibb.co/YTGTjV2/the-legend-of-zelda-skyward-sword-hd-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "16-07-2021",
+                "day": 16,
+                "month": 7,
+                "year": 2021,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/MZY7nHq/the-legend-of-zelda-skyward-sword-hd-switch-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        },
+                        {
+                            "name": "Standard + Poster",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/7WV4BTV/the-legend-of-zelda-skyward-sword-hd-switch-poster.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "",
+                "text": [
+                    "In a far distant future, a psionic hormone was discovered in the human brain, granting people extra-sensory powers and changing the world as we know it. Just as humanity was entering this new era, deranged mutants known as Others began to descend from the sky with a thirst for human brains. Highly resistant to conventional attack methods, extreme measures needed to be taken to battle the overwhelming threat and preserve humanity.",
+                    "Depicting the earliest story in The Legend of Zelda timeline, Link must travel between a world above the clouds and the great unknown below in search of his childhood friend, Zelda. Armed with his trusty sword and shield, Link will face off against powerful foes, solve tricky puzzles and soar through the skies atop a huge bird called a Loftwing on this epic adventure.",
+                    "When playing with two Joy-Con controllers, these become your sword and shield. Swing the right Joy-Con to have Link swing his sword in-game and use the left Joy-Con to raise his shield to block enemy attacks. Physical movements like these can also be used to make use of different tools and items, such as wielding a bow and arrow or throwing bombs.",
+                    "For the first time, you can also play this adventure using button controls, allowing the game to be played in handheld mode or on Nintendo Switch Lite. When using this control scheme, you can control Link’s sword by simply tilting the right control stick in a chosen direction."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Shin Megami tensei III Nocturne HD Remaster",
+        "genres": [
+            "Manga",
+            "Rol / RPG"
+        ],
+        "developer": "Atlus",
+        "editor": "Atlus",
+        "images": [
+            "https://i.ibb.co/dKDCNQt/shin-megami-tensei-3-remaster-image-0.webp",
+            "https://i.ibb.co/YZ2V3CK/shin-megami-tensei-3-remaster-image-1.webp",
+            "https://i.ibb.co/n0m5FRF/shin-megami-tensei-3-remaster-image-2.webp",
+            "https://i.ibb.co/pKrnFjG/shin-megami-tensei-3-remaster-image-3.webp",
+            "https://i.ibb.co/hdrPttL/shin-megami-tensei-3-remaster-image-4.webp",
+            "https://i.ibb.co/6PQwRMt/shin-megami-tensei-3-remaster-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": [
+            {
+                "date": "25-05-2021",
+                "day": 25,
+                "month": 5,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "44.95",
+                            "cover": "https://i.ibb.co/X4bXsb5/shin-megami-tensei-3-remaster-ps4-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "49.99",
+                            "cover": "https://i.ibb.co/3CTdKpb/shin-megami-tensei-3-remaster-switch-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "title": "Reawaken your inner demon",
+                "text": [
+                    "What begins as a normal day in Tokyo turns out to be everything but, when the Conception – an ethereal apocalypse – is invoked. The remains of the world are swallowed by chaos, as a demonic revolution descends into a broken city. Caught between a battle of Gods and demons, the choices you make can bring life, rebirth, or death, and determine who triumphs."
+                ]
+            },
+            {
+                "title": "This genre-defining, infamously punishing RPG is back and now includes:",
+                "text": [
+                    "Remastered 3D models and backgrounds.",
+                    "Additional difficulty settings for players of all skill levels.",
+                    "Suspend save -- save your progress whenever you need!.",
+                    "Voiced audio -- choose between Japanese and English VO."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "It Takes Two",
+        "genres": [
+            "Adventure",
+            "Co-op"
+        ],
+        "developer": "Hazelight",
+        "editor": "Electronic Arts",
+        "images": [
+            "https://i.ibb.co/h1nJrCr/it-takes-two-image-0.webp",
+            "https://i.ibb.co/W5LF78M/it-takes-two-image-1.webp",
+            "https://i.ibb.co/jhSj37w/it-takes-two-image-2.webp",
+            "https://i.ibb.co/DRkNtMx/it-takes-two-image-3.webp",
+            "https://i.ibb.co/CbpcPKq/it-takes-two-image-4.webp",
+            "https://i.ibb.co/K5w69pg/it-takes-two-image-5.webp",
+            "https://i.ibb.co/gtNy8M0/it-takes-two-image-6.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "26-03-2021",
+                "day": 26,
+                "month": 3,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "36.95",
+                            "cover": "https://i.ibb.co/Wy3JPB7/it-takes-two-ps4-ps5-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "26.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "*Playable in PS5 throught update",
+                                    "pack": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "36.95",
+                            "cover": "https://i.ibb.co/JsTtnzT/it-takes-two-xboxone-xboxseries-standard.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "26.95",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "36.95",
+                            "cover": "https://i.ibb.co/JsTtnzT/it-takes-two-xboxone-xboxseries-standard.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "26.95",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "36.95",
+                            "cover": "https://i.ibb.co/yBdDYw9/it-takes-two-pc-standard.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "26.95",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "Pure Co-Op Perfection",
+                "text": [
+                    "Embark on the craziest journey of your life in It Takes Two, a genre-bending platform adventure created purely for co-op. Play as the clashing couple Cody and May, two humans turned into dolls by a magic spell. Trapped in a fantastical world, they’re reluctantly challenged with saving their fractured relationship by the suave love guru Dr. Hakim. A huge variety of gleefully disruptive gameplay challenges stand between them and their return to normal.",
+                    "Invite a friend to join online co-op for free with Friend’s Pass*, and experience a thrilling adventure built purely for two. Choose from couch or online co-op with split-screen play, and face ever-changing challenges where working together is the only way forward."
+                ]
+            },
+            {
+                "title": "Gleefully Disruptive Gameplay",
+                "text": [
+                    "With It Takes Two, you never know what you’re up against next. Filled with genre-bending challenges and new character abilities to master in every level, you’ll experience a metaphorical merging of gameplay and narrative that pushes the boundaries of interactive storytelling."
+                ]
+            },
+            {
+                "title": "A Universal Tale of Relationships",
+                "text": [
+                    "Discover a light-hearted and touching story of the challenges in getting along. Help Cody and May learn how to overcome their differences. Meet a diverse cast of strange and endearing characters. Join forces, and go on an adventure you’ll treasure – together!"
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    }
+]
