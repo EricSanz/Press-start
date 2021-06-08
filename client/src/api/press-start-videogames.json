@@ -2722,7 +2722,7 @@
             "Adventure"
         ],
         "developer": "Bandai Namco",
-        "editor": "Bandai Namco",
+        "editor": "Namco",
         "images": [
             "https://i.ibb.co/rfxTdVF/scalert-nexus-image-0.jpg",
             "https://i.ibb.co/PYwtYBg/scalert-nexus-image-1.jpg",
@@ -3186,6 +3186,186 @@
                 "title": "A Universal Tale of Relationships",
                 "text": [
                     "Discover a light-hearted and touching story of the challenges in getting along. Help Cody and May learn how to overcome their differences. Meet a diverse cast of strange and endearing characters. Join forces, and go on an adventure you’ll treasure – together!"
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Ni no Kuni II: Revenant Kingdom",
+        "genres": [
+            "Adventure",
+            "Manga",
+            "Rol / RPG"
+        ],
+        "developer": "Level-5",
+        "editor": "Namco",
+        "images": [
+            "https://i.ibb.co/G31wcd3/ni-no-kuni-2-image-0.webp",
+            "https://i.ibb.co/D4VHVwL/ni-no-kuni-2-image-1.webp",
+            "https://i.ibb.co/WcNzMNz/ni-no-kuni-2-image-2.webp",
+            "https://i.ibb.co/nRvkjyn/ni-no-kuni-2-image-3.webp",
+            "https://i.ibb.co/khZkXkM/ni-no-kuni-2-image-4.webp",
+            "https://i.ibb.co/31qhDCG/ni-no-kuni-2-image-5.webp",
+            "https://i.ibb.co/27spb2k/ni-no-kuni-2-image-6.webp",
+            "https://i.ibb.co/kq3wVy3/ni-no-kuni-2-image-7.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "23-03-2018",
+                "day": 23,
+                "month": 3,
+                "year": 2018,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "26.95",
+                            "cover": "https://i.ibb.co/3Cf9Q51/ni-no-kuni-2-pas4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "19.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "King's",
+                            "price": "149.95",
+                            "cover": "https://i.ibb.co/1G6nmpd/ni-no-kuni-2-ps4-pc-collector.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "89.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The King's edition includes:",
+                                    "pack": [
+                                        "Ni no Kuni II: revenants Kingdom Game.",
+                                        "Season Pass.",
+                                        "Steelbook.",
+                                        "The Sound of Ni no Kuni - Vinil Soundtrack.",
+                                        "The Evolution of a King's 20cm figure.",
+                                        "The Art of Ni no Kuni - exclusive art book of 148 pages.",
+                                        "The Kingmakers - Ni no Kuni's Making-of"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Season pass",
+                            "price": "19.99",
+                            "cover": "https://i.ibb.co/gdPB88z/ni-no-kuni-2-ps4-season-pass.png",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Princess",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/pWrKy18/ni-no-kuni-2-switch-princess.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Princess edition includes:",
+                                    "pack": [
+                                        "Ni no Kuni II: revenants Kingdom Game.",
+                                        "Season Pass."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "36.95",
+                            "cover": "https://i.ibb.co/JsTtnzT/it-takes-two-xboxone-xboxseries-standard.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "26.95",
+                            "is_content": false,
+                            "content": []
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "Stellar production",
+                "text": [
+                    "Level-5's mastery of the RPG genre is combined with music created by renowned Joe Hisaishi and character design by animation artist Yoshiyuki Momose."
+                ]
+            },
+            {
+                "title": "Captivating story",
+                "text": [
+                    "A charming and tragic story reveals how Evan, a young prince, learns to become a leader and build a kingdom."
+                ]
+            },
+            {
+                "title": "Role playing mastery",
+                "text": [
+                    "New and traditional RPG elements expertly crafted and designed with dozens of locations to explore, hundreds of creatures to contend with, and tons of missions and secrets to unravel through an extensive journey."
+                ]
+            },
+            {
+                "title": "Another World",
+                "text": [
+                    "Stunning graphics recreate the world of Ni no Kuni and immerse players in an incredibly vibrant animated land filled with a new cast of characters to meet."
+                ]
+            },
+            {
+                "title": "Dynamic Combats",
+                "text": [
+                    "Stunning graphics recreate the world of Ni no Kuni and immerse players in an incredibly vibrant animated land filled with a new cast of characters to meet."
                 ]
             }
         ],
