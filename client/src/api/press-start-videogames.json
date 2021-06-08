@@ -3508,7 +3508,8 @@
             "https://i.ibb.co/9pxrBrB/the-elder-scrolls-online-summerset-image-1.jpg",
             "https://i.ibb.co/Wt4b8p0/the-elder-scrolls-online-summerset-image-2.jpg",
             "https://i.ibb.co/s1KTD54/the-elder-scrolls-online-summerset-image-3.jpg",
-            "https://i.ibb.co/m4q9p5D/the-elder-scrolls-online-summerset-image-4.jpg"
+            "https://i.ibb.co/m4q9p5D/the-elder-scrolls-online-summerset-image-4.jpg",
+            "https://i.ibb.co/VW1yCwn/the-elder-scrolls-online-summerset-image-5.jpg"
         ],
         "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
         "release": [
@@ -3636,6 +3637,301 @@
                 "title": "New Group Activities",
                 "text": [
                     "Band together with friends to conquer new challenges, including a new Trial, Delves, Group Events, and more."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Final Fantasy XIV Online: Shadowbringers",
+        "genres": [
+            "Adventure",
+            "MMORPG"
+        ],
+        "developer": "Square Enix",
+        "editor": "Square Enix",
+        "images": [
+            "https://i.ibb.co/n6Snhf0/final-fantasy-xiv-online-image-0.webp",
+            "https://i.ibb.co/dcJGF84/final-fantasy-xiv-online-image-1.webp",
+            "https://i.ibb.co/6N04YrN/final-fantasy-xiv-online-image-2.webp",
+            "https://i.ibb.co/Kqk9JV0/final-fantasy-xiv-online-image-3.webp",
+            "https://i.ibb.co/Pr3hg2f/final-fantasy-xiv-online-image-4.webp",
+            "https://i.ibb.co/yFxvJyK/final-fantasy-xiv-online-image-5.webp",
+            "https://i.ibb.co/HhWp0NC/final-fantasy-xiv-online-image-6.webp",
+            "https://i.ibb.co/02q6W1G/final-fantasy-xiv-online-image-7.webp",
+            "https://i.ibb.co/5TLVZdG/final-fantasy-xiv-online-image-8.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": [
+            {
+                "date": "02-07-2019",
+                "day": 2,
+                "month": 7,
+                "year": 2019,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "39.95",
+                            "cover": "https://i.ibb.co/cg1ky8V/final-fantasy-xiv-online-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "19.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "29.95",
+                            "cover": "https://i.ibb.co/WfZfbJk/final-fantasy-xiv-online-pc-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "The next Saga is here!",
+                "text": [
+                    "Take part in the next saga of the critically acclaimed Final Fantasy XIV Online with the next legendary expansion pack... SHADOWBRINGERS!",
+                    "Explore breathtaking new environments, encounter exotic new races, master exciting new jobs, and fight alongside prominent characters with the new Trust system as you embark on a new journey as the Warrior of Darkness!",
+                    "With over 14 million adventurers worldwide, join the next chapter and become what you must. Become the Warrior of Darkness!"
+                ]
+            },
+            {
+                "title": "KEY FEATURES:",
+                "text": [
+                    "New jobs.",
+                    "New playable race.",
+                    "Level cap increase from 70 to 80.",
+                    "Journey through expansive new areas.",
+                    "New primals.",
+                    "New beast tribes.",
+                    "A plethora of new dungeons to explore.",
+                    "Challenging new 8-players raids.",
+                    "An exciting new series of alliance raids.",
+                    "Tackle dungeons solo while fighting alongside prominent characters with the new Trust system.",
+                    "Relive the adventures from your past with your current level and gear via the New Game+ system.",
+                    "The Restoration of the Holy See of Ishgard - In the aftermath of the Dragonsong War, Disciples of the Hand and Land work together to rebuild Ishgard."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Red Dead Redemption 2",
+        "genres": [
+            "Action"
+        ],
+        "developer": "Rockstar",
+        "editor": "Rockstar",
+        "images": [
+            "https://i.ibb.co/TgTKxgD/red-dead-redemption-2-image-0.jpg",
+            "https://i.ibb.co/Msvd75V/red-dead-redemption-2-image-1.jpg",
+            "https://i.ibb.co/yqL5vJm/red-dead-redemption-2-image-2.jpg",
+            "https://i.ibb.co/ryPhCKR/red-dead-redemption-2-image-3.jpg",
+            "https://i.ibb.co/Jq9b6v0/red-dead-redemption-2-image-4.jpg",
+            "https://i.ibb.co/DRX94tg/red-dead-redemption-2-image-5.jpg",
+            "https://i.ibb.co/cX559pp/red-dead-redemption-2-image-6.jpg",
+            "https://i.ibb.co/yFX0LPh/red-dead-redemption-2-image-7.jpg"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "26-10-2018",
+                "day": 26,
+                "month": 10,
+                "year": 2018,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "26.95",
+                            "cover": "https://i.ibb.co/QKd94zV/red-dead-redemption-2-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "22.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Ultimate",
+                            "price": "99.99",
+                            "cover": "https://i.ibb.co/sQY0c7w/red-dead-redemption-2-ps4-ultimate.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "69.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Ultimate Edition includes:",
+                                    "pack": [
+                                        "All of the Story Mode content from the Special Edition plus additional bonuses for online.",
+                                        "Steelbook.",
+                                        "Also includes Ultimate Edition Printed World Map and Exclusive Collectible SteelBook."
+                                    ]
+                                },
+                                {
+                                    "title": "Also featuring Red Dead Online",
+                                    "pack": [
+                                        "With the gameplay of Red Dead Redemption 2 as its foundation, Red Dead Online transforms the vast and deeply detailed landscapes, cities, towns and habitats of Red Dead Redemption 2 into a new, living online world ready to be shared by multiple players. Create and customize your character, tailor your abilities to suit your play style and head out into a new frontier full of things to experience."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "26.95",
+                            "cover": "https://i.ibb.co/Mg3fjkV/red-dead-redemption-2-xbox-one-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "22.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Ultimate",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/MNPgb0f/red-dead-redemption-2-xbox-one-ultimate.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.99",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Ultimate Edition includes:",
+                                    "pack": [
+                                        "All of the Story Mode content from the Special Edition plus additional bonuses for online.",
+                                        "Steelbook.",
+                                        "Also includes Ultimate Edition Printed World Map and Exclusive Collectible SteelBook."
+                                    ]
+                                },
+                                {
+                                    "title": "Also featuring Red Dead Online",
+                                    "pack": [
+                                        "With the gameplay of Red Dead Redemption 2 as its foundation, Red Dead Online transforms the vast and deeply detailed landscapes, cities, towns and habitats of Red Dead Redemption 2 into a new, living online world ready to be shared by multiple players. Create and customize your character, tailor your abilities to suit your play style and head out into a new frontier full of things to experience."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/xmy3Ss9/red-dead-redemption-2-pc-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Pack Guide",
+                            "price": "79.95",
+                            "cover": "https://i.ibb.co/HDRQLMp/red-dead-redemption-2-pc-guide.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "69.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Pack Guide Edition includes:",
+                                    "pack": [
+                                        "Red dead Redemption 2 Game - Downloable code",
+                                        "Red Dead Redemption Guide Collector's edition."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "America, 1899:",
+                "text": [
+                    "The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed.",
+                    "After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him."
                 ]
             }
         ],
