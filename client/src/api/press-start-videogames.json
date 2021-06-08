@@ -3370,5 +3370,131 @@
             }
         ],
         "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "World of Warcraft: Battle for Azeroth",
+        "genres": [
+            "Adventure",
+            "Action",
+            "Rol / RPG",
+            "MMORPG"
+        ],
+        "developer": "Blizzard",
+        "editor": "Blizzard",
+        "images": [
+            "https://i.ibb.co/z5Jk2NH/world-of-warcraft-battle-for-azeroth-image-0.webp",
+            "https://i.ibb.co/wzBGdjh/world-of-warcraft-battle-for-azeroth-image-1.webp",
+            "https://i.ibb.co/r6tf8Jh/world-of-warcraft-battle-for-azeroth-image-2.webp",
+            "https://i.ibb.co/qr3nTdJ/world-of-warcraft-battle-for-azeroth-image-3.webp",
+            "https://i.ibb.co/8c5tqL4/world-of-warcraft-battle-for-azeroth-image-4.webp",
+            "https://i.ibb.co/5rD0KtM/world-of-warcraft-battle-for-azeroth-image-5.webp",
+            "https://i.ibb.co/K6XjgGb/world-of-warcraft-battle-for-azeroth-image-6.webp",
+            "https://i.ibb.co/JrN9Hdr/world-of-warcraft-battle-for-azeroth-image-7.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "14-08-2018",
+                "day": 14,
+                "month": 8,
+                "year": 2018,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "39.95",
+                            "cover": "https://i.ibb.co/3Cf9Q51/ni-no-kuni-2-pas4-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "99.99",
+                            "cover": "https://i.ibb.co/1G6nmpd/ni-no-kuni-2-ps4-pc-collector.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "59.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Collector's edition includes:",
+                                    "pack": [
+                                        "World of Warcraft: Battle for Azeroth Game.",
+                                        "Double-sided Alliance and Horde Badge of Loyalty.",
+                                        "Hardcover double book: Elegy and A Just War.",
+                                        "Battle for Azeroth Digital Soundtrack.",
+                                        "Seabraid Stallion Mount (Alliance).",
+                                        "The decked out ravasaur mount (Horde).",
+                                        "Tortu, the Tortollan baby pet, for World of Warcraft",
+                                        "The 'Azeroth on Fire' card back for Hearthstone®",
+                                        "The Primal Flamesaber mount for Heroes of the Storm®",
+                                        "Horde and Alliance graffiti for StarCraft® II",
+                                        "A collection of faction-themed items for Overwatch®"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "Proclaim your allegiance:",
+                "text": [
+                    " Azeroth paid a heavy price to end the Legion's apocalyptic crusade; However, when the world's wounds have yet to heal, the battered trust between the Alliance and the Horde could take even longer to heal. With this millennial conflict reignited, it's time to rally your allies and lead your faction's cause, as the future of Azeroth will be forged in the flames of war."
+                ]
+            },
+            {
+                "title": "Delve into a Divided World",
+                "text": [
+                    "Live the eternal conflict of the Warcraft saga. Fight to level 120, follow the trail of the Blood God's corruption to the Rotten Catacombs, unlock the secrets of a lost titanic chamber, escape the realm of the Drust dead, and more in six new quest-filled zones world bosses, new world bosses, new gangs, etc.",
+                    "Determine who will shape the future of Azeroth, the Horde or the Alliance."
+                ]
+            },
+            {
+                "title": "Recruit Allied Races",
+                "text": [
+                    "Explore Azeroth with one of six new playable Allied Races, including the four you encountered in your campaign against the Legion. Go on a quest to earn their favor and unlock them, adding strength to your faction. Create a new character and level up to earn a distinctive set of dynastic armor."
+                ]
+            },
+            {
+                "title": "Plunder Unexplored Islands",
+                "text": [
+                    "Set sail for the hitherto unknown islands of Azeroth. Fight in groups of three to get the island's resources before cunning rivals (or enemy players). You'll encounter ever-evolving challenges as you traverse the icy landscapes near Northrend, open the mysterious gates of an abandoned Gilnean castle, or wage war between elementals."
+                ]
+            },
+            {
+                "title": "Assault the War Fronts",
+                "text": [
+                    "Head to the front and take part in a massive 20-player co-op warfront to claim a strategic location. Build your faction's forces, lead the charge of your troops to lay siege to the target, and battle enemy commanders in their final battle in this new PvE mode inspired by classic Warcraft real-time strategy battles."
+                ]
+            },
+            {
+                "title": "Imbue your Armor with Titanic Power",
+                "text": [
+                    "Obtain the Heart of Azeroth, a legendary necklace entrusted to you by Magni Bronzebeard. Infuse it with Azerite, a priceless resource that appeared after the Legion, and customize your armor with new powers and traits."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
     }
 ]
