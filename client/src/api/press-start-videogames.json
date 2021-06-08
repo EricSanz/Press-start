@@ -3376,7 +3376,6 @@
         "genres": [
             "Adventure",
             "Action",
-            "Rol / RPG",
             "MMORPG"
         ],
         "developer": "Blizzard",
@@ -3460,7 +3459,7 @@
             {
                 "title": "Proclaim your allegiance:",
                 "text": [
-                    " Azeroth paid a heavy price to end the Legion's apocalyptic crusade; However, when the world's wounds have yet to heal, the battered trust between the Alliance and the Horde could take even longer to heal. With this millennial conflict reignited, it's time to rally your allies and lead your faction's cause, as the future of Azeroth will be forged in the flames of war."
+                    "Azeroth paid a heavy price to end the Legion's apocalyptic crusade; However, when the world's wounds have yet to heal, the battered trust between the Alliance and the Horde could take even longer to heal. With this millennial conflict reignited, it's time to rally your allies and lead your faction's cause, as the future of Azeroth will be forged in the flames of war."
                 ]
             },
             {
@@ -3492,6 +3491,151 @@
                 "title": "Imbue your Armor with Titanic Power",
                 "text": [
                     "Obtain the Heart of Azeroth, a legendary necklace entrusted to you by Magni Bronzebeard. Infuse it with Azerite, a priceless resource that appeared after the Legion, and customize your armor with new powers and traits."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "The Elder Scrolls Online: Summerset",
+        "genres": [
+            "MMORPG"
+        ],
+        "developer": "Bethesda",
+        "editor": "Bethesda",
+        "images": [
+            "https://i.ibb.co/h9MKHd0/the-elder-scrolls-online-summerset-image-0.jpg",
+            "https://i.ibb.co/9pxrBrB/the-elder-scrolls-online-summerset-image-1.jpg",
+            "https://i.ibb.co/Wt4b8p0/the-elder-scrolls-online-summerset-image-2.jpg",
+            "https://i.ibb.co/s1KTD54/the-elder-scrolls-online-summerset-image-3.jpg",
+            "https://i.ibb.co/m4q9p5D/the-elder-scrolls-online-summerset-image-4.jpg"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "05-06-2018",
+                "day": 5,
+                "month": 6,
+                "year": 2018,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/74LBrGT/the-elder-scrolls-online-summerset-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "19.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/RPtT9vj/the-elder-scrolls-online-summerset-xbox-one-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "34.95",
+                            "cover": "https://i.ibb.co/Qbrm1CK/the-elder-scrolls-online-summerset-pc-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "A New Elder Scrolls Online Chapter for everyone",
+                "text": [
+                    "The Elder Scrolls Online: Summerset builds on ESO’s Chapter structure introduced last year with ESO: Morrowind. Chapters deliver massive amounts of new content and features that are equally accessible and fun for both existing and new ESO players.",
+                    "New Players: New players can jump right into The Elder Scrolls Online: Summerset and start a character in a fresh tutorial and starter area, without needing to play previous ESO content. Since the original base game is included with The Elder Scrolls Online: Summerset, new players also have access to hundreds of hours of additional adventures throughout Tamriel. New players get immediate access to the full base game with any Summerset digital pre-purchase.",
+                    "Existing Players: ESO veterans will be able to upgrade and take their existing hero to Summerset to begin new adventures. No matter their level, existing characters will find level-appropriate content from the moment they step into Summerset.",
+                    "Haven’t played ESO in a while? The Elder Scrolls Online: Summerset is a best chance to jump back into ESO and continue adventures or start anew. Players only need to reinstall the game, log in, and start playing again."
+                ]
+            },
+            {
+                "title": "Journey to the Mysterious Summerset",
+                "text": [
+                    "Summerset is a massive new zone filled with new characters, stories, landmarks, and adventures. Players will traverse a stunning landscape fill with tropical lagoons, forests bursting with vibrant colors, and grand cliffside vistas while visiting massive and gorgeous manicured cities that reflect the sophisticated tastes of the High Elves."
+                ]
+            },
+            {
+                "title": "An All New Skill Line - Join the Psijic Order",
+                "text": [
+                    "The secretive Psijic Order, the precursor to the Mages Guild seen in other Elder Scrolls games, makes an appearance in The Elder Scrolls Online: Summerset. For the first time ever, the player will be able to travel to their home island of Artaeum and join the ranks of these mysterious mages to gain access to their mystical powers, unlocking powerful new abilities."
+                ]
+            },
+            {
+                "title": "More Incredible Elder Scrolls Stories",
+                "text": [
+                    "Continuing the epic meta-story that began in 2015 with the Orsinium DLC Game Pack, players will once again face the Daedric conspiracy that threatens to destroy all of Tamriel. At the behest of Queen Ayrenn, who has opened Summerset to foreigners by royal decree, players will embark on a sweeping adventure to rejoin the infamous Khajiit spy Razum-dar, meet the mighty sages of the Crystal Tower, and fight for Tamriel’s fate once more. Amongst the beauty of the ancestral home of the High Elves, shadows rise and rumors spread of strange disappearances. A corrupting influence works to destroy High Elf society from within, and now, whispers stir of Daedric followers organizing in the shadows."
+                ]
+            },
+            {
+                "title": "Expanded Crafting System - Jewelry Crafting",
+                "text": [
+                    "The Elder Scrolls Online: Summerset introduces one of players’ most requested features, an all-new crafting ability - Jewelry Crafting. Players will be able to forge potent new gear to bolster their power for their new adventures, leveraging their experience and resources to gain every advantage to succeed on their quest."
+                ]
+            },
+            {
+                "title": "New Group Activities",
+                "text": [
+                    "Band together with friends to conquer new challenges, including a new Trial, Delves, Group Events, and more."
                 ]
             }
         ],
