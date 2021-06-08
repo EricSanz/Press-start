@@ -3936,5 +3936,170 @@
             }
         ],
         "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Deathloop",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Shooter"
+        ],
+        "developer": "Bethesda",
+        "editor": "Bethesda",
+        "images": [
+            "https://i.ibb.co/Kjkfc6m/deathloop-image-0.jpg",
+            "https://i.ibb.co/7NdvrvR/deathloop-image-1.jpg",
+            "https://i.ibb.co/2d8zyRf/deathloop-image-2.jpg",
+            "https://i.ibb.co/tsfWwBP/deathloop-image-3.jpg",
+            "https://i.ibb.co/MPRd7n4/deathloop-image-4.jpg",
+            "https://i.ibb.co/37cTbsJ/deathloop-image-5.jpg",
+            "https://i.ibb.co/6Fj4hs0/deathloop-image-6.jpg",
+            "https://i.ibb.co/Ydnr8xF/deathloop-image-7.jpg"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "14-09-2021",
+                "day": 14,
+                "month": 9,
+                "year": 2021,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/S6vYyfM/deathloop-ps5-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Deluxe",
+                            "price": "79.95",
+                            "cover": "https://i.ibb.co/h9cn75n/deathloop-ps5-deluxe.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Deathloop Deluxe Edition includes:",
+                                    "pack": [
+                                        "Deathloop game",
+                                        "Original game soundtrack selections.",
+                                        "Two trinkets (equippable buffs).",
+                                        "Transtar Trencher weapon (PS5 Exclusive)",
+                                        "'Sharpshooter' Julianna + .44 Karat Fourpounder Skins",
+                                        "'Party Crasher' Colt + Eat The Rich Tribunal Skins"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/S6vYyfM/deathloop-ps5-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Deluxe",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/h9cn75n/deathloop-ps5-deluxe.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Deathloop Deluxe Edition includes:",
+                                    "pack": [
+                                        "Deathloop game",
+                                        "Original game soundtrack selections.",
+                                        "Two trinkets (equippable buffs).",
+                                        "'Sharpshooter' Julianna + .44 Karat Fourpounder Skins",
+                                        "'Party Crasher' Colt + Eat The Rich Tribunal Skins"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "title": "",
+                "text": [
+                    "DEATHLOOP is an innovative first person shooter launching for PlayStation 5 and PC from Arkane Lyon, the award-winning studio behind the critically acclaimed Dishonored franchise. The studio’s new IP will continue Arkane’s signature gameplay design, challenging gamers to play their own way. As Colt, players are trapped in a time loop on the enigmatic island of Blackreef, doomed to repeat the same day for eternity. The only chance for escape is to break the loop by unearthing information and assassinating eight key targets before the day resets. However, lurking in the shadows is rival assassin Julianna, equipped with her own equally powerful abilities and weapons, on a mission to protect the loop by assassinating Colt, and restarting the cycle. Players can also choose to take control of Julianna, turning DEATHLOOP into a deadly game of hunter-vs-hunted."
+                ]
+            },
+            {
+                "title": "Signature Arkane Gameplay",
+                "text": [
+                    "Arkane’s reputation for unique immersive gameplay will allow players to choose their preferred playstyle, stealthily sneaking through levels or barreling into the fight, guns-blazing. Armed with a powerful roster of otherworldly powers, as well as an arsenal of savage weaponry, players will combine these deadly tools for takedowns that are as striking as they are devastating. By choosing their powers and weapons, players will fight to survive this deadly game of hunter vs hunted."
+                ]
+            },
+            {
+                "title": "Exclusively for Next-Gen PlayStation 5",
+                "text": [
+                    "DEATHLOOP is a new IP for a new generation, launching on console exclusively for PlayStation 5 and on PC. The game will leverage the console's graphics to bring Arkane’s unique artistic vision to life like never before and will take advantage of new cutting-edge features, like haptic feedback and adaptive triggers, to make each encounter feel unique and impactful."
+                ]
+            },
+            {
+                "title": "Arkane’s Single Player Gameplay Injected with Deadly Multiplayer",
+                "text": [
+                    "DEATHLOOP is Arkane’s take on an assassination multiplayer experience, seamlessly blending single player gameplay with multiplayer drama. Players will experience the main story as Colt, hunting down targets across the island of Blackreef to break the loop and earn his freedom. Players can also choose to take control of rival assassin Julianna, sneaking into another player’s campaign to kill Colt and keep him imprisoned in the loop. The multiplayer experience is completely optional, and players can choose to have Julianna controlled by AI within their campaign."
+                ]
+            },
+            {
+                "title": "Loops = Knowledge, Knowledge = Power",
+                "text": [
+                    "Each new loop in DEATHLOOP is an opportunity to learn from the past and adapt. Finding clues and uncovering hints is key to taking out targets before the day resets. Discover relationships, learn schedules, and do whatever must be done to gain the necessary knowledge. Players will apply what they’ve learned in previous loops to try different paths, choose to sneak or attack, and devise other new strategies to eventually reach their targets. If at first you don’t succeed: die, die, again."
+                ]
+            },
+            {
+                "title": "The Island of Blackreef – Paradise or Prison",
+                "text": [
+                    "Arkane is renowned for magnificently artistic worlds with multiple pathways and emergent gameplay. DEATHLOOP will present a stunning, retro-future, 60s-inspired environment, that feels like a character within itself. While Blackreef may be a stylish wonderland, for Colt it is his prison, a world ruled by decadence where death has no meaning, and delinquents party forever while keeping him captive."
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
     }
 ]
