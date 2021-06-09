@@ -4196,5 +4196,200 @@
             }
         ],
         "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Pokemon Legends: Arceus",
+        "genres": [
+            "Action",
+            "Rol / RPG"
+        ],
+        "developer": "Nintendo",
+        "editor": "Nintendo",
+        "images": [
+            "https://i.ibb.co/m8sfnTG/pokemon-legends-arceus-image-0.webp",
+            "https://i.ibb.co/Ph9FbQz/pokemon-legends-arceus-image-1.webp",
+            "https://i.ibb.co/rZ1rK8M/pokemon-legends-arceus-image-2.webp",
+            "https://i.ibb.co/XysvKRy/pokemon-legends-arceus-image-3.webp",
+            "https://i.ibb.co/LQwnLPG/pokemon-legends-arceus-image-4.webp",
+            "https://i.ibb.co/yQn5JVy/pokemon-legends-arceus-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/FnY5Rt1/pegi7.png",
+        "release": [
+            {
+                "date": "28-01-2022",
+                "day": 28,
+                "month": 1,
+                "year": 2022,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/wzkqzw4/pokemon-legends-arceus-switch-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "Get ready for a new kind of great Pokémon adventure in Pokémon Legends: Arceus, a new game from Game Freak that combines action and exploration with the roots of the role-playing games of the Pokémon series. Explore natural expanses to catch Pokémon by learning their behavior, sneaking up on you, and tossing a well-aimed Poké Ball. You can also throw the Poké Ball that contains your friendly Pokémon near a wild Pokémon to enter battle without problems. This new angle of Pokémon play will offer a personal and immersive experience that will be brought to life by both Pokémon and humans."
+                ],
+                "features": [
+                    {
+                        "title": "Travel to the ancient Sinnoh region",
+                        "text": [
+                            "Explore the Sinnoh region from the Pokémon Diamond Version and Pokémon Pearl Version games, but long before the events of those titles. In this era, the Sinnoh region is full of Pokémon that live in harsh environments. Get ready to create the first Pokédex in the region and discover the secrets of a distant time. At the beginning of your adventure, you can choose Rowlet, Cyndaquil, or Oshawott as your trusted partner. Along the way, a mystery surrounding the Pokémon known as Arceus will begin to unfold."
+                        ]
+                    },
+                    {
+                        "title": "Features:",
+                        "text": [
+                            "Build the first Pokédex in the history of the Sinnoh region.",
+                            "Explore the Sinnoh region of the past.",
+                            "Action meets role-playing games in this new version of the Pokémon series.",
+                            "Learn about Pokémon Arceus, the key to this mysterious story."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+    },
+    {
+        "game": "Xenoblade Chronicles: Definitive Edition",
+        "genres": [
+            "Action",
+            "Rol / RPG"
+        ],
+        "developer": "Monolith Soft",
+        "editor": "Monolith Soft",
+        "images": [
+            "https://i.ibb.co/J3gtCG9/xenoblade-chronicles-definitive-image-0.webp",
+            "https://i.ibb.co/Rz8Qyv8/xenoblade-chronicles-definitive-image-1.webp",
+            "https://i.ibb.co/tHVwfLt/xenoblade-chronicles-definitive-image-2.webp",
+            "https://i.ibb.co/2MN3VJV/xenoblade-chronicles-definitive-image-3.webp",
+            "https://i.ibb.co/RYnhqJ6/xenoblade-chronicles-definitive-image-4.webp",
+            "https://i.ibb.co/x6R1Ljm/xenoblade-chronicles-definitive-image-5.webp",
+            "https://i.ibb.co/CtHyNy5/xenoblade-chronicles-definitive-image-6.webp",
+            "https://i.ibb.co/SBtMP1G/xenoblade-chronicles-definitive-image-7.webp",
+            "https://i.ibb.co/0G2hTzL/xenoblade-chronicles-definitive-image-8.webp",
+            "https://i.ibb.co/4d5M6Y7/xenoblade-chronicles-definitive-image-9.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "29-05-2020",
+                "day": 29,
+                "month": 5,
+                "year": 2020,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/PNbJYhJ/xenoblade-chronicles-definitive-switch-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.99",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Limited",
+                            "price": "99.99",
+                            "cover": "https://i.ibb.co/v1j3YbB/xenoblade-chronicles-definitive-switch-limited.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Limited Edition includes:",
+                                    "pack": [
+                                        "Xenoblade Chronicles: Definitive Edition Game",
+                                        "Steelbook",
+                                        "Musical Selection of the game on Vinyl and Digital",
+                                        "Exclusive Poster",
+                                        "256 pages Artbook in color"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "59.99",
+                            "cover": "https://i.ibb.co/ZJw4XtJ/xenoblade-chronicles-definitive-switch-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "On top of two great titans faced centuries ago, Bionis and Mekonis, civilization, life and evil flourish. The people of Mekonis take up arms against their neighbors with a cruel and mechanized army that ravages everything in its path. You play Shulk, a young and passionate boy from Colony 9 of Bionis who discovers that he is capable of wielding the legendary sword Monado. You will go on a great journey with your friends to restore peace to both worlds."
+                ],
+                "features": [
+                    {
+                        "title": "Features:",
+                        "text": [
+                            "The acclaimed title that gave birth to the legend of the genre has returned, fully remastered with HD graphics and ready to delight everyone who owns Nintendo Switch.",
+                            "Get ready for a GIANT adventure. Whether you played it on Wii or not, you will be amazed by the beauty of its story and a main plot with many hours of adventure.",
+                            "New content awaits you. Connected Futures - A completely new episode is available from the start of the game.",
+                            "A complete combat system at your service. Combine the different characters, classes and strengths to create your perfect tactic in each confrontation.",
+                            "Make your characters unique. Develop their skills, enhance their characteristics, customize them to your needs and equip them with numerous weapons. Creating the perfect squad is at your fingertips.",
+                            "Turn up the volume. The game's OST originally created by Japanese master Yasunori Mitsuda has been fully remastered for this edition.",
+                            "Thanks to its dual voice system, you can easily switch between the original English or Japanese.",
+                            "Save the world at your own pace. Thanks to the portable mode of the Nintendo Switch family of consoles, play at your own pace, win hours of play and take this epic adventure anywhere."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
     }
 ]
