@@ -391,7 +391,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/rc5KmTv/immortals-fenyx-rising-card.png"
+            }
+        ]
     },
     {
         "game": "Biomutant",
@@ -692,7 +698,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/TBsTr9x/biomutant-card.png"
+            }
+        ]
     },
     {
         "game": "Cyberpunk 2077",
@@ -1133,7 +1145,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/cxDXKhG/cyberpunk-2077-card.png"
+            }
+        ]
     },
     {
         "game": "Nier Replicant ver.1.22474487139...",
@@ -1358,7 +1376,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/LJ22C6q/nier-replicant-card.png"
+            }
+        ]
     },
     {
         "game": "Zelda Link's Awakening",
@@ -1518,7 +1542,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/dQpy9dT/zelda-links-awakening-card.png"
+            }
+        ]
     },
     {
         "game": "Death Stranding",
@@ -1691,7 +1721,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/pj5J65Y/death-stranding-card.png"
+            }
+        ]
     },
     {
         "game": "Mass Effect Legendary",
@@ -1917,7 +1953,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/ZfgFKnf/Mass-Effect-card.png"
+            }
+        ]
     },
     {
         "game": "Demon's Souls",
@@ -2029,7 +2071,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/C71rFRP/demons-souls-card.png"
+            }
+        ]
     },
     {
         "game": "Outriders",
@@ -2270,7 +2318,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/TgKS5wC/outriders-card.png"
+            }
+        ]
     },
     {
         "game": "Days Gone",
@@ -2410,7 +2464,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/0yRpT3z/days-gone-card.png"
+            }
+        ]
     },
     {
         "game": "Ratchet & Clank: Rift Apart",
@@ -2496,7 +2556,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/hWJDYzt/ratchet-clank-card.png"
+            }
+        ]
     },
     {
         "game": "Blasphemous",
@@ -2688,7 +2754,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/yX47wp2/blasphemous-card.png"
+            }
+        ]
     },
     {
         "game": "Returnal",
@@ -2762,7 +2834,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/377FL94/returnal-card.png"
+            }
+        ]
     },
     {
         "game": "Scarlet Nexus",
@@ -2919,7 +2997,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/PrTyQyN/scarlet-nexus-card.png"
+            }
+        ]
     },
     {
         "game": "The Legend of Zelda: Skyward Sword HD",
@@ -3001,7 +3085,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/8dQJNrw/the-legend-of-zelda-skyward-sword-card.png"
+            }
+        ]
     },
     {
         "game": "Shin Megami tensei III Nocturne HD Remaster",
@@ -3097,7 +3187,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/Gpgzyjk/shin-megami-tensei-iii-nocturne-hd-remaster-card.png"
+            }
+        ]
     },
     {
         "game": "It Takes Two",
@@ -3255,7 +3351,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/jbctLG6/it-takes-two-card.png"
+            }
+        ]
     },
     {
         "game": "Ni no Kuni II: Revenant Kingdom",
@@ -3443,7 +3545,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/2S89Hwh/ni-no-kuni-2-card.png"
+            }
+        ]
     },
     {
         "game": "World of Warcraft: Battle for Azeroth",
@@ -3569,7 +3677,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/n7g8Tvq/world-of-warcraft-battle-for-azeroth-card.png"
+            }
+        ]
     },
     {
         "game": "The Elder Scrolls Online: Summerset",
@@ -3724,7 +3838,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/TRDLhLv/the-elder-scrolls-summerset-card.png"
+            }
+        ]
     },
     {
         "game": "Final Fantasy XIV Online: Shadowbringers",
@@ -3836,7 +3956,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/JHGq23J/final-fantasy-xiv-shadowbringers-card.png"
+            }
+        ]
     },
     {
         "game": "Red Dead Redemption 2",
@@ -4029,7 +4155,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/DkzY60c/red-dead-redemption-2-card.png"
+            }
+        ]
     },
     {
         "game": "Deathloop",
@@ -4195,7 +4327,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/HY3LGkb/deathloop-card.png"
+            }
+        ]
     },
     {
         "game": "Pokemon Legends: Arceus",
@@ -4275,7 +4413,13 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/ZhsVXry/pokemon-legends-arceus-card.png"
+            }
+        ]
     },
     {
         "game": "Xenoblade Chronicles: Definitive Edition",
@@ -4390,6 +4534,12 @@
                 ]
             }
         ],
-        "photoSlider": "https://static.xtralife.com/conversions/1MCQ-6YZ5270385-fullhd_w1920_h1080_q75-immortals-fenyx-rising-slidera1-1600157567.png"
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/7JyJMF2/xenoblade-chronicles-card.png"
+            }
+        ]
     }
 ]
