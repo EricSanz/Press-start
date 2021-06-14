@@ -4541,5 +4541,1670 @@
                 "card": "https://i.ibb.co/7JyJMF2/xenoblade-chronicles-card.png"
             }
         ]
+    },
+    {
+        "game": "Elden Ring",
+        "genres": [
+            "Rol / RPG",
+            "Adventure"
+        ],
+        "developer": "From Software",
+        "editor": "Bandai Namco",
+        "images": [
+            "https://i.ibb.co/WVrNjJj/elden-ring-image-0.webp",
+            "https://i.ibb.co/N2wGbnh/elden-ring-image-1.webp",
+            "https://i.ibb.co/jk1DZ9Z/elden-ring-image-2.webp",
+            "https://i.ibb.co/MGw6r1j/elden-ring-image-3.webp",
+            "https://i.ibb.co/yVkXf3h/elden-ring-image-4.webp",
+            "https://i.ibb.co/bd7fytz/elden-ring-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "21-01-2022",
+                "day": 21,
+                "month": 1,
+                "year": 2022,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/9ct0hSJ/elden-ring-ps4-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Free Update",
+                                    "pack": [
+                                        "A free upgrade to the PlayStation 5 version will be available for players who purchase ELDEN RING on PlayStation 4"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/TbLmvYV/elden-ring-ps5-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/FBwN8Hb/elden-ring-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Upgrade",
+                                    "pack": [
+                                        "Smart Delivery will be supported for Xbox One and Xbox Series X|S"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/cYCLsGm/elden-ring-xbox-one-series-digital.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "62.95",
+                            "cover": "https://i.ibb.co/FBwN8Hb/elden-ring-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "69.95",
+                            "cover": "https://i.ibb.co/cYCLsGm/elden-ring-xbox-one-series-digital.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PC",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/jbmnMW1/elden-ring-pc-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": true
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "The Golden Order has been broken. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between. ELDEN RING, developed by FromSoftware Inc. and produced by BANDAI NAMCO Entertainment Inc., is a fantasy action-RPG and FromSoftware’s largest game to date, set within a world full of mystery and peril.",
+                    "In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered. Marika's offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will. And now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between. Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the Elden Ring.",
+                    "And become the Elden Lord."
+                ],
+                "features": [
+                    {
+                        "title": "A new Fantasy World",
+                        "text": [
+                            "Journey through the Lands Between, a new fantasy world created by Hidetaka Miyazaki, creator of the influential DARK SOULS video game series, and George R. R. Martin, author of The New York Times best-selling fantasy series, A Song of Ice and Fire. Unravel the mysteries of the Elden Ring’s power. Encounter adversaries with profound backgrounds, characters with their own unique motivations for helping or hindering your progress, and fearsome creatures."
+                        ]
+                    },
+                    {
+                        "title": "World exploration in the lands between",
+                        "text": [
+                            "ELDEN RING features vast fantastical landscapes and shadowy, complex dungeons that are connected seamlessly. Traverse the breathtaking world on foot or on horseback, alone or online with other players, and fully immerse yourself in the grassy plains, suffocating swamps, spiraling mountains, foreboding castles and other sites of grandeur on a scale never seen before in a FromSoftware title."
+                        ]
+                    },
+                    {
+                        "title": "Genre-defining gameplay",
+                        "text": [
+                            "Create your character in FromSoftware's refined action-RPG and define your playstyle by experimenting with a wide variety of weapons, magical abilities, and skills found throughout the world. Charge into battle, pick off enemies one-by-one using stealth, or even call upon allies for aid. Many options are at your disposal as you decide how to approach exploration and combat."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/gM5RGtp/elden-ring-card.png"
+            }
+        ]
+    },
+    {
+        "game": "Monark",
+        "genres": [
+            "Rol / RPG",
+            "Adventure"
+        ],
+        "developer": "Nippon Ichi Software",
+        "editor": "FuRyu",
+        "images": [
+            "https://i.ibb.co/F04NKfp/monark-image-0.webp",
+            "https://i.ibb.co/XxMkvwx/monark-image-1.webp",
+            "https://i.ibb.co/d60Yk5T/monark-image-2.webp",
+            "https://i.ibb.co/j4TrFn8/monark-image-3.webp",
+            "https://i.ibb.co/TB56sG7/monark-image-4.webp",
+            "https://i.ibb.co/vZwv4Wb/monark-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "",
+                "day": 0,
+                "month": 0,
+                "year": 2022,
+                "not": "Early's",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Deluxe",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/4Ytkh8K/monark-ps4-deluxe.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Deluxe edition includes:",
+                                    "pack": [
+                                        "Monark's game",
+                                        "Downloadable code for the Soundtrack",
+                                        "ArtBook"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "deluxe",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/JrVgqrf/monark-ps5-deluxe-webp.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Deluxe edition includes:",
+                                    "pack": [
+                                        "Monark's game",
+                                        "Downloadable code for the Soundtrack",
+                                        "ArtBook"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/xCd1cRv/monark-switch-deluxe.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Deluxe edition includes:",
+                                    "pack": [
+                                        "Monark's game",
+                                        "Downloadable code for the Soundtrack",
+                                        "ArtBook"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "How far will you go to save your loved ones? Will you be able to cope with the threats around you? Can you face yourself?",
+                    "A mysterious and deadly mist has engulfed Shin Mikado Academy and plunged your entire world into madness. To save your friends, all you have to do is enter the Other World, a dimension full of demons that is beyond the real world. In this enigmatic kingdom, you will have to embrace the Authority of Vanity to conjure a battalion of demons, whose power emanates from the Ego of their master.",
+                    "Develop your Ego through various psychological tests to embrace the power of your demons and lead your troops into combat to face the seven Covenants who are corrupting the academy. Embrace the power of your madness to increase your strength, but be careful not to delve too deep if you don't want to risk being lost forever. Your classmates and professors will help you on your quest to end the anomalies that dominate campus."
+                ],
+                "features": [
+                    {
+                        "title": "Descent into madness:",
+                        "text": [
+                            "Jump between exploring the fog of the real world and fighting in the enigmatic Otherworld. Call your allies, face your enemies and unravel the mysteries surrounding your academy. Will you be able to save the world or will you lose your mind and end up destroying yourself?"
+                        ]
+                    },
+                    {
+                        "title": "In the mist and beyond:",
+                        "text": [
+                            "Enter a dark realm where reality and your own personality collide. The mysterious worlds you will explore are brought to life by a dark and surreal neo-fantasy art style, with complex character designs and evocative environments."
+                        ]
+                    },
+                    {
+                        "title": "The power of the Ego:",
+                        "text": [
+                            "Strengthen your Ego and customize the appearance and abilities of your demons. Unlock different types of demons and lead them in combat thanks to the free-style tactical system, which allows you to position your units in the way you consider most suitable to destroy your enemies."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/HG59CDZ/monark-card.png"
+            }
+        ]
+    },
+    {
+        "game": "Lost Judgment",
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "developer": "Sega",
+        "editor": "sega",
+        "images": [
+            "https://i.ibb.co/Qr3pkwz/lost-judgement-image-0.webp",
+            "https://i.ibb.co/tCWSZqG/lost-judgement-image-1.webp",
+            "https://i.ibb.co/q7CZKhd/lost-judgement-image-2.webp",
+            "https://i.ibb.co/JtKMtgk/lost-judgement-image-3.webp",
+            "https://i.ibb.co/JB443q9/lost-judgement-image-4.webp",
+            "https://i.ibb.co/xYr21xB/lost-judgement-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "24-09-2021",
+                "day": 24,
+                "month": 9,
+                "year": 2021,
+                "not": "",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/nzd6Jv1/lost-judgement-ps4.jpg",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/MMZQYdN/lost-judgement-ps5.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/MMZQYdN/lost-judgement-ps5.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/MMZQYdN/lost-judgement-ps5.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "How far will you go to save your loved ones? Will you be able to cope with the threats around you? Can you face yourself?",
+                    "A mysterious and deadly mist has engulfed Shin Mikado Academy and plunged your entire world into madness. To save your friends, all you have to do is enter the Other World, a dimension full of demons that is beyond the real world. In this enigmatic kingdom, you will have to embrace the Authority of Vanity to conjure a battalion of demons, whose power emanates from the Ego of their master.",
+                    "Develop your Ego through various psychological tests to embrace the power of your demons and lead your troops into combat to face the seven Covenants who are corrupting the academy. Embrace the power of your madness to increase your strength, but be careful not to delve too deep if you don't want to risk being lost forever. Your classmates and professors will help you on your quest to end the anomalies that dominate campus.",
+                    "How could Ehara have committed two crimes at once? Was the sexual battery just a cover up? Has Ehara gamed the entire justice system? As victims surface and Yagami digs farther into the truth, he is faced with a question: Defend the law, or enact justice?",
+                    "From just a single stumble, one can become a monster…"
+                ],
+                "features": [
+                    {
+                        "title": "Law and Disorder",
+                        "text": [
+                            "Lost Judgment once again puts players in the sneakers of lawyer turned street-fighting detective Takayuki Yagami. Joined by his partner, ex-yazuka Masaharu Kaito, the crime-fighting duo is called on to investigate a seemingly perfect crime whose lead suspect has an airtight alibi. What starts out as a tale of revenge reveals a tangled web of conspiracy involving several unlikely factions taking advantage of a broken law system. But as victims pile up and Yagami unravels the truth, he must choose between defending the law or exacting justice."
+                        ]
+                    },
+                    {
+                        "title": "Freeform Combat",
+                        "text": [
+                            "Yagami’s distinct martial arts forms grant him mastery of any situation from group ambushes to single-target takedowns. Harness Crane, Tiger, and the new Snake stance, a graceful style that can deflect and return an opponent's strikes, using their energy against them."
+                        ]
+                    },
+                    {
+                        "title": "Investigative Action",
+                        "text": [
+                            "Yagami’s arsenal of detective tricks grows with new gadgets, stealthily tracking suspects, and crafty methods of infiltration. Leave no stone unturned in pursuit of the truth."
+                        ]
+                    },
+                    {
+                        "title": "No Place Finer",
+                        "text": [
+                            "Immerse yourself in the bustling downtowns of Tokyo and Yokohama at your own pace within an authentic setting that only the RGG Studio can deliver. Game at Club SEGA, find your next favorite hangout, take on cases from locals need, and beyond."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/4MXLHgG/lost-judgment-card.png"
+            }
+        ]
+    },
+    {
+        "game": "Judgment",
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "developer": "Sega",
+        "editor": "sega",
+        "images": [
+            "https://i.ibb.co/3vn4sb8/judgment-imagen-0.webp",
+            "https://i.ibb.co/H7BdGL8/judgment-imagen-1.webp",
+            "https://i.ibb.co/7vLn19k/judgment-imagen-2.webp",
+            "https://i.ibb.co/8DkzRnB/judgment-imagen-3.webp",
+            "https://i.ibb.co/VYj6vsn/judgment-imagen-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "21-04-2021",
+                "day": 21,
+                "month": 4,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/KxTyN5r/judgment-ps4-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "This edition includes:",
+                                    "pack": [
+                                        "Judgment Game",
+                                        "Ryu Ga Gotaku Studio Sticker"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/wdv1WYv/judgment-ps5-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "54.95",
+                            "cover": "https://i.ibb.co/60dckpC/judgment-xbox-series-standard.png",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "From the team that brought you the critically acclaimed Yakuza series comes Judgment, a gritty tale of disgraced attorney Takayuki Yagami in his quest for redemption. Haunted by his past, he takes up arms as a private detective, clawing his way through Kamurocho’s underground crime network to investigate a string of grisly murders. In this psychological thriller, the balance between justice and mercy teeters on the edge.",
+                    "Track suspects, discover clues, and bring evidence to court - but be careful, there are dark characters at every turn. Can you distinguish between friend and foe? Take advantage of two unique battle styles to take down adversaries in electrifying encounters. Packed with Hollywood-worthy combat sequences and cinematic twists and turns, this mystery will surely keep you on your toes.",
+                    "This upgraded version of Judgment contains all previously released DLC and improved visuals."
+                ],
+                "features": [
+                    {
+                        "title": "Features",
+                        "text": [
+                            "Refined visuals in 60 frames per second.",
+                            "Includes all previously released DLC.",
+                            "Improved load times."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/Hx96y3Z/judgment-card.png"
+            }
+        ]
+    },
+    {
+        "game": "Assassin's Creed Valhalla",
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "developer": "Ubisoft",
+        "editor": "Ubisoft",
+        "images": [
+            "https://i.ibb.co/mXhmW0X/assassins-creed-valhalla-image-0.webp",
+            "https://i.ibb.co/3B4St05/assassins-creed-valhalla-image-1.webp",
+            "https://i.ibb.co/qrb7xys/assassins-creed-valhalla-image-2.webp",
+            "https://i.ibb.co/HKnDzzc/assassins-creed-valhalla-image-3.webp",
+            "https://i.ibb.co/QHqdSCL/assassins-creed-valhalla-image-4.webp",
+            "https://i.ibb.co/SVYqbf6/assassins-creed-valhalla-image-5.webp",
+            "https://i.ibb.co/f2LDqC1/assassins-creed-valhalla-image-6.webp",
+            "https://i.ibb.co/TrstGRP/assassins-creed-valhalla-image-7.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "12-11-2020",
+                "day": 12,
+                "month": 11,
+                "year": 2020,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/yk9v9L8/assassins-creed-valhalla-ps4-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Upgrade to PlayStation®5 Version:",
+                                    "pack": [
+                                        "Assassin’s Creed Valhalla PlayStation®4 game on Blu-Ray Disc™ must be kept inserted in a PlayStation®5 console to play the corresponding Assassin’s Creed Valhalla PlayStation®5 digital version at no additional cost, when available."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gold",
+                            "price": "89.95",
+                            "cover": "https://i.ibb.co/D4nyF1z/assassins-creed-valhalla-ps4-gold.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Upgrade to PlayStation®5 Version:",
+                                    "pack": [
+                                        "Assassin’s Creed Valhalla PlayStation®4 game on Blu-Ray Disc™ must be kept inserted in a PlayStation®5 console to play the corresponding Assassin’s Creed Valhalla PlayStation®5 digital version at no additional cost, when available."
+                                    ]
+                                },
+                                {
+                                    "title": "The Gold Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gold + Eivor figure",
+                            "price": "139.95",
+                            "cover": "https://i.ibb.co/pKk7jrJ/assassins-creed-valhalla-ps4-gold-figure.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Upgrade to PlayStation®5 Version:",
+                                    "pack": [
+                                        "Assassin’s Creed Valhalla PlayStation®4 game on Blu-Ray Disc™ must be kept inserted in a PlayStation®5 console to play the corresponding Assassin’s Creed Valhalla PlayStation®5 digital version at no additional cost, when available."
+                                    ]
+                                },
+                                {
+                                    "title": "The Gold Edition + Eivor Figure of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass",
+                                        "Eivor Wolf's Killer figure"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/HrKyNjk/assassins-creed-valhalla-ps5-standard.webp",
+                            "stock": true,
+                            "sale": true,
+                            "salePrice": "39.95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Gold",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/q9v7FsB/assassins-creed-valhalla-ps5-gold.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Gold Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/Mn2fdMS/assassins-creed-valhalla-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "39.95",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Assassin’s Creed Valhalla leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Assassin’s Creed Valhalla are available."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gold",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/y0rkd2t/assassins-creed-valhalla-xbox-one-series-gold.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Assassin’s Creed Valhalla leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Assassin’s Creed Valhalla are available."
+                                    ]
+                                },
+                                {
+                                    "title": "The Gold Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Standard Digital",
+                            "price": "64.95",
+                            "cover": "https://i.ibb.co/cYZLX97/assassins-creed-valhalla-xbox-one-series-standard-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Assassin’s Creed Valhalla leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Assassin’s Creed Valhalla are available."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gold Digital",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/TTvyKYW/assassins-creed-valhalla-xbox-one-series-gold-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Assassin’s Creed Valhalla leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Assassin’s Creed Valhalla are available."
+                                    ]
+                                },
+                                {
+                                    "title": "The Gold Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Season Pass",
+                            "price": "39.99",
+                            "cover": "https://i.ibb.co/JFYKF73/assassins-creed-valhalla-xbox-one-series-season-pass.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Enhance your Assassin's Creed Valhalla experience with the Season Pass, which includes:",
+                                    "pack": [
+                                        "The Legend of Beowulf Bonus Quest: Discover the monstrous truth behind the legend of Beowulf. Available now.",
+                                        "Wrath of the Druids Expansion: Travel to Ireland and discover the mysteries of an ancient Druidic cult. Fight your way through enchanted forests and stunning landscapes as you gain influence among the Gaelic kings.",
+                                        "The Siege of Paris Expansion: Relive the most ambitious battle in Viking history. Infiltrate the fortified city of Paris, discover enemy secrets and form strategic alliances to safeguard the future of your clan."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/Mn2fdMS/assassins-creed-valhalla-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": true,
+                            "salePrice": "39.95",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Gold",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/y0rkd2t/assassins-creed-valhalla-xbox-one-series-gold.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Gold Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Standard Digital",
+                            "price": "64.95",
+                            "cover": "https://i.ibb.co/cYZLX97/assassins-creed-valhalla-xbox-one-series-standard-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Gold Digital",
+                            "price": "94.95",
+                            "cover": "https://i.ibb.co/TTvyKYW/assassins-creed-valhalla-xbox-one-series-gold-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Gold Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Assassin’s Creed Valhalla game.",
+                                        "The Season Pass"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Season Pass",
+                            "price": "39.99",
+                            "cover": "https://i.ibb.co/JFYKF73/assassins-creed-valhalla-xbox-one-series-season-pass.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Enhance your Assassin's Creed Valhalla experience with the Season Pass, which includes:",
+                                    "pack": [
+                                        "The Legend of Beowulf Bonus Quest: Discover the monstrous truth behind the legend of Beowulf. Available now.",
+                                        "Wrath of the Druids Expansion: Travel to Ireland and discover the mysteries of an ancient Druidic cult. Fight your way through enchanted forests and stunning landscapes as you gain influence among the Gaelic kings.",
+                                        "The Siege of Paris Expansion: Relive the most ambitious battle in Viking history. Infiltrate the fortified city of Paris, discover enemy secrets and form strategic alliances to safeguard the future of your clan."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "Ninth century AD. Driven from Norway by endless wars and dwindling resources, a Viking raider, Eivor, leads a clan of Norsemen across the icy North Sea to the rich lands of England’s broken kingdoms. Their mission: establish a new permanent home, no matter the cost.",
+                    "In Assassin’s Creed® Valhalla, you are Eivor, a fierce Viking warrior raised on tales of battle and glory. Explore a mysterious and beautiful open world set against the brutal backdrop of England’s Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.",
+                    "Wars will rage. Kingdoms will fall. This is the age of the Vikings."
+                ],
+                "features": [
+                    {
+                        "title": "Write your viking saga",
+                        "text": [
+                            "Advanced RPG mechanics allow you to shape the growth of your character and influence the world around you. With every choice you make, from political alliances and combat strategy to dialogue and gear progression, you will carve your own path to glory."
+                        ]
+                    },
+                    {
+                        "title": "Visceral combat system",
+                        "text": [
+                            "Dual-wield powerful weapons such as axes, swords, and even shields to relive the ruthless fighting style of the Viking warriors. Brutally decapitate your foes, vanquish them from afar, or stealthily assassinate targets with your hidden blade. Challenge yourself with the most varied collection of deadly enemies ever found in an Assassin’s Creed game."
+                        ]
+                    },
+                    {
+                        "title": "A dark age open world",
+                        "text": [
+                            "Sail from the harsh and mysterious shores of Norway to the beautiful but forbidding kingdoms of England and beyond. Immerse yourself in the Viking way of life through fishing, hunting, drinking games, and more."
+                        ]
+                    },
+                    {
+                        "title": "Lead epic raids",
+                        "text": [
+                            "Launch massive assaults against Saxon troops and fortresses throughout England. Lead your clan in surprise attacks from your longship and pillage enemy territories to bring riches and resources back to your people."
+                        ]
+                    },
+                    {
+                        "title": "Grow your settlement",
+                        "text": [
+                            "Construct and upgrade buildings that allow for deep customization, including a barracks, blacksmith, tattoo parlor, and more. Recruit new members to your clan and personalize your Viking experience."
+                        ]
+                    },
+                    {
+                        "title": "Mercenary vikings",
+                        "text": [
+                            "Create and customize a unique Viking raider within your clan and share it online with friends to use during their own raids."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/DrBb0Sz/assassins-creed-valhalla-card.png"
+            }
+        ]
+    },
+    {
+        "game": "Hogwarts Legacy",
+        "genres": [
+            "Adventure",
+            "Rol / RPG"
+        ],
+        "developer": "TT Games",
+        "editor": "Warner Bros",
+        "images": [
+            "https://i.ibb.co/M8RRMyd/hogwarts-legacy-image-0.webp",
+            "https://i.ibb.co/Hgn7r8p/hogwarts-legacy-image-1.webp",
+            "https://i.ibb.co/WvKsFGR/hogwarts-legacy-image-2.webp",
+            "https://i.ibb.co/tcvYw8w/hogwarts-legacy-image-3.webp",
+            "https://i.ibb.co/p4xsKyC/hogwarts-legacy-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": [
+            {
+                "date": "",
+                "day": 0,
+                "month": 0,
+                "year": 2022,
+                "not": "Early's",
+                "released": false
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "64.95",
+                            "cover": "https://i.ibb.co/Ky4KJd5/hogwarts-legacy-ps4-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "74.95",
+                            "cover": "https://i.ibb.co/6ZxJq1j/hogwarts-legacy-ps5-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "74.95",
+                            "cover": "https://i.ibb.co/gmWdJzp/hogwarts-legacy-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "74.95",
+                            "cover": "https://i.ibb.co/gmWdJzp/hogwarts-legacy-xbox-one-series-standard.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "Hogwarts Legacy, an open-world, single-player, action role-playing videogame (RPG) set in the 1800s wizarding world. Players will experience life as a student at Hogwarts School of Witchcraft and Wizardry like never before, as they live the unwritten and embark on a dangerous journey to uncover a hidden truth of the wizarding world. Developed by Avalanche and published by Warner Bros. Games under the Portkey Games label, Hogwarts Legacy will release in 2021 for PlayStation®5, PlayStation®4, PlayStation®4 Pro, Xbox Series X, Xbox Series S and Xbox One consoles.",
+                    "Hogwarts Legacy is filled with immersive magic, putting players at the centre of their adventure to become the witch or wizard they choose to be. They will grow their character’s abilities as they master powerful spells, hone combat skills and select companions to help them face off against deadly enemies. Players will also encounter missions and scenarios that will pose difficult choices and determine what they stand for.",
+                    "'Hogwarts Legacy gives players control over their own experience with RPG gameplay unlike anything else in the Wizarding World, which will continue to build fan appeal in the Portkey Games label,' said David Haddad, President, Warner Bros. Games. 'Avalanche has brought to life this rich and deep world, full of action-packed magic, as well as a detailed, mysterious story to engage fans and gamers alike.'",
+                    "As the climactic story begins, players grow their magical abilities by mastering spells, brewing potions and taming fantastic beasts. Along the way, they will uncover an expansive world filled with perilous dangers tied to the wizarding world’s long forgotten past and an unusual ability that only they possess. The open-world journey takes players beyond Hogwarts to new and familiar wizarding world locations including the Forbidden Forest and Hogsmeade Village."
+                ],
+                "features": [
+                    {
+                        "title": "",
+                        "text": [
+                            ""
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/njLt9r3/hogwarts-legacy-card.png"
+            }
+        ]
+    },
+    {
+        "game": "The Legend of Zelda: Breath of the Wild",
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "developer": "Nintendo",
+        "editor": "Nintendo",
+        "images": [
+            "https://i.ibb.co/tZpqbMz/the-legend-of-zelda-breath-of-the-wild-image-0.webp",
+            "https://i.ibb.co/X5ZzftB/the-legend-of-zelda-breath-of-the-wild-image-1.webp",
+            "https://i.ibb.co/2Kdjyt1/the-legend-of-zelda-breath-of-the-wild-image-2.webp",
+            "https://i.ibb.co/smQMr9d/the-legend-of-zelda-breath-of-the-wild-image-3.webp",
+            "https://i.ibb.co/5B0xgWS/the-legend-of-zelda-breath-of-the-wild-image-4.webp",
+            "https://i.ibb.co/6mCbXq4/the-legend-of-zelda-breath-of-the-wild-image-5.webp",
+            "https://i.ibb.co/NFWB5rH/the-legend-of-zelda-breath-of-the-wild-image-6.webp",
+            "https://i.ibb.co/8X6C4jj/the-legend-of-zelda-breath-of-the-wild-image-7.webp",
+            "https://i.ibb.co/1qtc7Mm/the-legend-of-zelda-breath-of-the-wild-image-8.webp",
+            "https://i.ibb.co/tmd6q86/the-legend-of-zelda-breath-of-the-wild-image-9.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": [
+            {
+                "date": "03-03-2017",
+                "day": 3,
+                "month": 3,
+                "year": 2017,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "Switch",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "56.95",
+                            "cover": "https://i.ibb.co/ZNH8VdD/the-legend-of-zelda-breath-of-the-wild-switch-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Digital",
+                            "price": "69.99",
+                            "cover": "https://i.ibb.co/BNPW3hG/the-legend-of-zelda-breath-of-the-wild-switch-standard-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Season pass",
+                            "price": "19.99",
+                            "cover": "https://i.ibb.co/qYWypgZ/the-legend-of-zelda-breath-of-the-wild-switch-season-pass.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": false,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": true,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "The Game Awards 2017- Winner of Game of the Year, Best Game Direction and Best Action/Adventure Game.",
+                    "Prepare for the biggest The Legend of Zelda adventure yet, with an open-air style that breaks new boundaries while honouring the origins of the acclaimed series. Explore a world of unprecedented size and discover more than 100 puzzle-filled shrines, plus a wide variety of weapons, outfits, and gear.",
+                    "Players won’t want to stop playing, and they won’t have to, since Nintendo Switch allows them to continue the adventure anywhere, anytime."
+                ],
+                "features": [
+                    {
+                        "title": "",
+                        "text": [
+                            ""
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/QYsVTzM/the-legend-of-zelda-breath-of-the-wild-card.png"
+            }
+        ]
+    },
+    {
+        "game": "Resident Evil Village",
+        "genres": [
+            "Survival Horror"
+        ],
+        "developer": "Capcom",
+        "editor": "Bandai Capcom",
+        "images": [
+            "https://i.ibb.co/vL3vzs7/resident-evil-village-image-0.webp",
+            "https://i.ibb.co/F8FcxZY/resident-evil-village-image-1.webp",
+            "https://i.ibb.co/fH9H3QD/resident-evil-village-image-2.webp",
+            "https://i.ibb.co/nD4NP1k/resident-evil-village-image-3.webp",
+            "https://i.ibb.co/bKjFSf5/resident-evil-village-image-4.webp",
+            "https://i.ibb.co/tKSZYWj/resident-evil-village-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/LY3pXhR/pegi18.png",
+        "release": [
+            {
+                "date": "07-05-2021",
+                "day": 7,
+                "month": 5,
+                "year": 2021,
+                "not": "",
+                "released": true
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "version": "PlayStation 4",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/d7rNgtT/resident-evil-village-ps4-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Upgrade to PlayStation®5 Version:",
+                                    "pack": [
+                                        "Resident Evil Village PlayStation®4 game on Blu-Ray Disc™ must be kept inserted in a PlayStation®5 console to play the corresponding Resident Evil Village PlayStation®5 digital version at no additional cost, when available."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "279.99",
+                            "cover": "https://i.ibb.co/9ht8kmh/resident-evil-village-ps4-ps5-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Upgrade to PlayStation®5 Version:",
+                                    "pack": [
+                                        "Resident Evil Village PlayStation®4 game on Blu-Ray Disc™ must be kept inserted in a PlayStation®5 console to play the corresponding Resident Evil Village PlayStation®5 digital version at no additional cost, when available."
+                                    ]
+                                },
+                                {
+                                    "title": "The Collector's Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Resident Evil Village game.",
+                                        "Chris Redfield figure.",
+                                        "Art print + Steelbook.",
+                                        "B2 size cloth map.",
+                                        "Art book.",
+                                        "Collector's Box packaging.",
+                                        "Trauma Pack DLC Card"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": true,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "PlayStation 5",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/d2LQ9yP/resident-evil-village-ps5-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "279.99",
+                            "cover": "https://i.ibb.co/PQ61Vb8/resident-evil-village-ps4-ps5-xbox-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Collector's Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Resident Evil Village game.",
+                                        "Chris Redfield figure.",
+                                        "Art print + Steelbook.",
+                                        "B2 size cloth map.",
+                                        "Art book.",
+                                        "Collector's Box packaging.",
+                                        "Trauma Pack DLC Card"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": true,
+                "xboxOne": false,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox One",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/fM23c6Q/resident-evil-village-xbox-one-series-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Resident Evil Village leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Resident Evil Village are available."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "279.99",
+                            "cover": "https://i.ibb.co/PQ61Vb8/resident-evil-village-ps4-ps5-xbox-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Collector's Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Resident Evil Village game.",
+                                        "Chris Redfield figure.",
+                                        "Art print + Steelbook.",
+                                        "B2 size cloth map.",
+                                        "Art book.",
+                                        "Collector's Box packaging.",
+                                        "Trauma Pack DLC Card"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Standard Digital",
+                            "price": "69.99",
+                            "cover": "https://i.ibb.co/8gzvyGT/resident-evil-village-xbox-one-series-standard-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "Resident Evil Village leverages the Smart Delivery technology",
+                                    "pack": [
+                                        "buy the game once and play it on either Xbox One or Xbox Series X when both the console and that version of Resident Evil Village are available."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": true,
+                "xboxSeriesSX": false,
+                "nintendoSwitch": false,
+                "pc": false
+            },
+            {
+                "platform": {
+                    "version": "Xbox Series S/X",
+                    "edition": [
+                        {
+                            "name": "Standard",
+                            "price": "59.95",
+                            "cover": "https://i.ibb.co/fM23c6Q/resident-evil-village-xbox-one-series-standard.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                ""
+                            ]
+                        },
+                        {
+                            "name": "Collector's",
+                            "price": "279.99",
+                            "cover": "https://i.ibb.co/PQ61Vb8/resident-evil-village-ps4-ps5-xbox-collector.webp",
+                            "stock": false,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                {
+                                    "title": "The Collector's Edition of the game includes:",
+                                    "pack": [
+                                        "Copy of the Resident Evil Village game.",
+                                        "Chris Redfield figure.",
+                                        "Art print + Steelbook.",
+                                        "B2 size cloth map.",
+                                        "Art book.",
+                                        "Collector's Box packaging.",
+                                        "Trauma Pack DLC Card"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Standard Digital",
+                            "price": "69.99",
+                            "cover": "https://i.ibb.co/8gzvyGT/resident-evil-village-xbox-one-series-standard-digital.webp",
+                            "stock": true,
+                            "sale": false,
+                            "salePrice": "",
+                            "is_content": true,
+                            "content": [
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                "ps4": false,
+                "ps5": false,
+                "xboxOne": false,
+                "xboxSeriesSX": true,
+                "nintendoSwitch": false,
+                "pc": false
+            }
+        ],
+        "description": [
+            {
+                "global": [
+                    "Experience survival horror like never before in Resident Evil Village, which will utilize the power of PlayStation 5 and Xbox Series X to elevate each desperate fight to survive by showcasing the most realistic and terrifying graphics to date. The all-new title is the eighth major installment in the storied Resident Evil franchise, which established the survival horror genre nearly 25 years ago.",
+                    "Set a few years after the horrifying events in the critically acclaimed Resident Evil 7 biohazard, the all-new storyline begins with Ethan Winters and his wife Mia living peacefully in a new location, free from their past nightmares. Just as they are building their new life together, tragedy befalls them once again. Chris Redfield, the legendary hero from the Resident Evil series, is reacquainted with the couple and horribly disrupts their life, spiraling Ethan into chaos. A devastated Ethan finds himself in a remote snow-capped village seeking answers after being thrown into an entirely new nightmare."
+                ],
+                "features": [
+                    {
+                        "title": "Features",
+                        "text": [
+                            "All New Resident Evil Experience – Picking up where Resident Evil 7 biohazard left off, Resident Evil Village is the eighth major installment in the flagship Resident Evil series. The game sees the reunited Ethan and Mia Winters living happily together and putting their shared nightmares of the Baker’s plantation behind them… until their life is upended and Ethan becomes the focal point of a new nightmare.",
+                            "Next Generation Technology – RE Engine paired with the new technological power of PlayStation 5 and Xbox Series X will deliver hyper-detailed graphics, bringing the shadowy village and its haunting residents to life. Resident Evil Village will showcase the most realistic survival horror experience to date.",
+                            "First-Person Action – Players will assume the role of Ethan Winters and experience every up-close battle and terrifying pursuit through a first-person perspective.",
+                            "Familiar Faces and New Foes – Chris Redfield has typically been a hero in the Resident Evil series, but his appearance in Resident Evil Village seemingly shrouds him in sinister motives. A host of new adversaries inhabiting the enigmatic village will relentlessly hunt Ethan and hinder his every move as he attempts to make sense of the new nightmare he finds himself in.",
+                            "A Living, Breathing Village – More than just a mysterious backdrop for the horrifying events that unfold in the game, the village is a character in its own right with mysteries for Ethan to uncover and terrors to escape from."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "is_main": false,
+                "main": "",
+                "card": "https://i.ibb.co/KxbLzrj/resident-evil-village-card.png"
+            }
+        ]
     }
 ]
