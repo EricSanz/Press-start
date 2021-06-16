@@ -1,5 +1,11 @@
 import axios from 'axios';
 import actionTypes from './actionTypes';
+import constants from '../../constants/dbUrls';
+
+const {
+    baseUrl,
+    videogamesUrl,
+} = constants;
 
 function setLoading() {
     return {
@@ -10,7 +16,7 @@ function setLoading() {
 export function requestVideogames() {
     return async (dispatch) => {
         dispatch(setLoading());
-        const backEndPoint = 'http://localhost:5000/pressStartDb/videogames';
+        const backEndPoint = `${baseUrl}${videogamesUrl}`;
         try {
             const videogames = await axios.get(backEndPoint);
             dispatch(loadVideogamesSuccess(videogames.data));
