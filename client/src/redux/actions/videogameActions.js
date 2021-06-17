@@ -13,23 +13,10 @@ function setLoading() {
     };
 };
 
-export function requestVideogames() {
-    return async (dispatch) => {
-        dispatch(setLoading());
-        const backEndPoint = `${baseUrl}${videogamesUrl}`;
-        try {
-            const videogames = await axios.get(backEndPoint);
-            dispatch(loadVideogamesSuccess(videogames.data));
-        } catch (dataError) {
-            dispatch(loadVideogamesError(dataError));
-        }
-    };
-};
-
-function loadVideogamesSuccess(data) {
+function loadVideogamesSuccess(videogamesList) {
     return {
         type: actionTypes.LOAD_VIDEOGAMES,
-        data,
+        videogamesList,
     };
 };
 
@@ -37,5 +24,19 @@ function loadVideogamesError(error) {
     return {
         type: actionTypes.LOAD_VIDEOGAMES_ERROR,
         error,
+    };
+};
+
+export function loadVideogames() {
+    return async (dispatch) => {
+        dispatch(setLoading());
+        const backEndPoint = `${baseUrl}${videogamesUrl}`;
+        try {
+            const videogamesList = await axios.get(backEndPoint);
+            console.log(videogamesList)
+            dispatch(loadVideogamesSuccess(videogamesList.data));
+        } catch (error) {
+            dispatch(loadVideogamesError(error));
+        }
     };
 };
