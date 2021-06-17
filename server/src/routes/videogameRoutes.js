@@ -6,7 +6,7 @@ function videogameRouter(VideogameModel) {
 
     const controller = videogameController(VideogameModel);
 
-    router.route('/').get(controller.getVideogame);
+    router.route('/all-games').get(controller.getVideogames);
 
     return router;
 
