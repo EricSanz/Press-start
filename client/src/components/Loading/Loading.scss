@@ -1,3 +1,11 @@
-.loading__image {
-    height: 60px;
+@import "../styles/colors";
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading__image {
+        background-color: $greylightbackground;
+        height: 60px;
+    }
 }

@@ -3,7 +3,9 @@ import './Loading.scss';
 
 function Loading() {
     return (
-        <img className="loading__image" src="https://i.ibb.co/V92hF3X/loading.gif" alt="loading" />
+        <div className="loading">
+            <img className="loading__image" src="https://i.ibb.co/V92hF3X/loading.gif" alt="loading" />
+        </div>
     )
 }
 
