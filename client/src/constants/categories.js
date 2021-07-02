@@ -8,7 +8,7 @@ const categories = [
     },
     {
         name: 'All Videogames',
-        route: 'videogames',
+        route: 'all-games',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
@@ -25,49 +25,41 @@ const categories = [
         name: 'On Sale',
         route: 'sales',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'PlayStation 4',
         route: 'ps4',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'PlayStation 5',
         route: 'ps5',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'Xbox One',
         route: 'xbox-one',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'Xbox Series S/X',
         route: 'xbox-series',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'Nintendo Switch',
         route: 'nintendo-switch',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'PC Gaming',
         route: 'pc',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
     {
         name: 'Merchandising',
         route: 'merchandising',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-
     },
 ]
 
