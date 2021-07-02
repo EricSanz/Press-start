@@ -1,6 +1,146 @@
-.list__container {
+@import "../styles/colors";
+
+.list__loading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 100px;
+    padding-top: 20px;
+    background: $whitecolor;
 }
+
+.list__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    background: $greylightbackground;
+    .videogame__list {
+        .videogame__card {
+            background: $whitecolor;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            .videogame__card-title {
+                background: $goldencolor;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: -10px;
+                margin-top: 0px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .videogame__favorite--container {
+                position: absolute;
+                top: 45px;
+                right: 65px;
+                background: $goldencolor;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 18px;
+            }
+            .videogame__card-image{
+                max-width: 260px;
+                margin-top: 10px;
+                margin-bottom: -5px;
+            }
+            .videogame__buy--container {
+                position: absolute;
+                top: 45px;
+                right: 15px;
+                background: $goldencolor;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 18px;
+            }
+            .price__onsale {
+                margin-top: 8px;
+            }
+            .videogame__card-price--container {
+                background: $blackbackground;
+                color: $whitecolor;
+                display: flex;
+                font-weight: bold;
+                font-size: 17px;
+                justify-content: space-evenly;
+                position: relative;
+                .videogame__onsale-text {
+                    position: absolute;
+                    width: 100%;
+                    background: $redcolor;
+                    bottom: 40px;
+                    display: flex;
+                    .onsale__text {
+                        font-size: 16px;
+                        padding-left: 100px;
+                        margin-top: 2px;
+                        margin-bottom: 2px;
+                    }
+                }
+                .videogame__card-price {
+                    display: flex;
+                    font-weight: bold;
+                    font-size: 17px;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: $blackbackground;
+                    color: $whitecolor;
+                    margin-bottom: -8px;
+                    position: relative;
+                    .price__nosale {
+                        padding-right: 25px;
+                        margin-top: 8px;
+                    }
+                    .price__nosale::after {
+                        border-bottom: 0.18em solid $redcolor;
+                        content: "";
+                        width: 60px;
+                        position: absolute;
+                        left: 0px;
+                        top: 17px;
+                        transform: rotate(-15deg);
+                    }
+                }
+            }
+        }
+        .videogame__card:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+            background: $goldencolor;
+            .videogame__card-title {
+                background: $blackbackground;
+                color: $whitecolor;
+            }
+            .videogame__favorite--container {
+                background: $blackbackground;
+                color: $whitecolor;
+            }
+            .videogame__favorite--container:hover {
+                color: $redlightcolor;
+            }
+            .videogame__buy--container {
+                background: $blackbackground;
+                color: $whitecolor;
+            }
+            .videogame__buy--container:hover {
+                color: $greencolor;
+            }
+        }
+    }
+}
+
 
 .noup {
     margin-top: 100px;
