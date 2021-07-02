@@ -1,4 +1,5 @@
 @import '../../fonts/fonts';
+@import "../styles/colors";
 
 header {
     position: fixed;
@@ -6,9 +7,9 @@ header {
     background-color: #161616;
     width: 100%;
     height: 80px;
-    color: #fff;
+    color: $whitecolor;
     box-shadow: 0px -15px 20px 15px rgb(0,0,0/80%);
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $whitecolor;
     font-family: $Montserrat;
     z-index: 1;
     .navbar__options {
@@ -43,7 +44,7 @@ header {
                 margin-bottom: -10px;
             }
             .navbar__option:hover {
-                color: #E8A92C;
+                color: $goldenstrongcolor;
                 cursor: pointer;
             }
         }
@@ -65,7 +66,7 @@ header {
                 margin-bottom: -10px;
             }
             .navbar__option:hover {
-                color: #E8A92C;
+                color: $goldenstrongcolor;
                 cursor: pointer;
             }
         }
@@ -79,7 +80,7 @@ header {
     transition: .5s;
     width: 330px;
     height: 100%;
-    background-color: #161616;
+    background-color: $blackbackground;
     // background-color: #f7f19f;
     box-shadow: 0 0 10px 0 rgba(#161616, .9);
     border-right: 1px solid #161616;
