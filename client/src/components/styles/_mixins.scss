@@ -1,0 +1,106 @@
+@mixin cross-fader($items, $visibility, $transition) {
+    // Number of items
+    $n: $items;
+  
+    // Item visibility (seconds)
+    $a: $visibility;
+  
+    // Transition speed (seconds)
+    $b: $transition;
+  
+    // Animation length
+    $t: ($a + $b) * $n;
+  
+    // Item delay length
+    $d: $t / $n;
+  
+    // Keyframe percentages
+    $pct-1: percentage(0);
+    $pct-2: percentage($a / $t);
+    $pct-3: percentage(($a + $b) / $t);
+    $pct-4: percentage(1 - $b / $t);
+    $pct-5: percentage(1);
+  
+    // Animation properties
+    @if $n > 1 {
+      $id: unique-id();
+  
+      animation-name: $id;
+      animation-duration: $t * 1s;
+      animation-iteration-count: infinite;
+  
+      @for $i from 1 to $n {
+        &:nth-child(#{$i}) {
+          animation-delay: $d * ($n - $i) * 1s;
+        }
+      }
+  
+      @keyframes #{$id} {
+        #{$pct-1},
+        #{$pct-2},
+        #{$pct-5} {
+          opacity: 1;
+          visibility: visible;
+        }
+  
+        #{$pct-3},
+        #{$pct-4} {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+}
+
+@mixin cross-fader-mini($items, $visibility, $transition) {
+    // Number of items
+    $n: $items;
+  
+    // Item visibility (seconds)
+    $a: $visibility;
+  
+    // Transition speed (seconds)
+    $b: $transition;
+  
+    // Animation length
+    $t: ($a + $b) * $n;
+  
+    // Item delay length
+    $d: $t / $n;
+  
+    // Keyframe percentages
+    $pct-1: percentage(0);
+    $pct-2: percentage($a / $t);
+    $pct-3: percentage(($a + $b) / $t);
+    $pct-4: percentage(1 - $b / $t);
+    $pct-5: percentage(1);
+  
+    // Animation properties
+    @if $n > 1  {
+      $id: unique-id();
+  
+      animation-name: $id;
+      animation-duration: $t * 1s;
+      animation-iteration-count: infinite;
+  
+      @for $i from 1 to $n {
+        &:nth-child(#{$i}) {
+          animation-delay: $d * ($n - $i) * 1s;
+        }
+      }
+  
+      @keyframes #{$id} {
+        #{$pct-1}, 
+        #{$pct-2},
+        #{$pct-5} {
+          opacity: 1;
+        }
+        #{$pct-3} {
+            opacity: 0.5;
+        }
+        #{$pct-4} {
+          opacity: 0.5;
+        }
+      }
+    }
+}
