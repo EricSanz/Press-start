@@ -3,9 +3,9 @@ import { Switch, Route } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
 import VideogamesList from './components/List/VideogamesList';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faEnvelopeOpenText, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faEnvelopeOpenText)
+library.add(faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faEnvelopeOpenText, faHeart)
 
 function App() {
   return (
