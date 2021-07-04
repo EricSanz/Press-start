@@ -997,7 +997,7 @@
                             "is_content": true,
                             "content": [
                                 {
-                                    "title": "The game will also be playable on Xbox Series X when available.",
+                                    "title": "The game will also be playable on Xbox Series S/X when available.",
                                     "pack": [
                                         "At a later date, a free upgrade to Cyberpunk 2077, taking full advantage of next-gen hardware, will become available for owners of the Xbox One version."
                                     ]
@@ -3147,7 +3147,7 @@
         "platforms": [
             {
                 "platform": {
-                    "version": "Switch",
+                    "version": "Nintendo Switch",
                     "edition": [
                         {
                             "name": "Standard",
