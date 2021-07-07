@@ -6,7 +6,9 @@ function videogameRouter(VideogameModel) {
 
     const controller = videogameController(VideogameModel);
 
-    router.route('/all-games').get(controller.getVideogames);
+    router.route('/all-games')
+        .get(controller.getVideogames)
+        .post(controller.postEdition)
 
     return router;
 
