@@ -1,0 +1,141 @@
+@import "../../styles/colors";
+
+.videogame__list {
+    .videogame__card {
+        background: $whitecolor;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        .title__container {
+            height: 55px;
+            background: $goldencolor;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .videogame__card-title {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: -10px;
+            margin-top: 0px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .videogame__favorite--container {
+            position: absolute;
+            top: 65px;
+            right: 65px;
+            background: $goldencolor;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+        .videogame__card-image{
+            width: 220px;
+            height: 270px;
+            // max-width: 260px;
+            // max-height: 325px;
+        }
+        .videogame__buy--container {
+            position: absolute;
+            top: 65px;
+            right: 15px;
+            background: $goldencolor;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+        .price__onsale {
+            margin-top: 8px;
+        }
+        .videogame__card-price--container {
+            background: $blackbackground;
+            color: $whitecolor;
+            display: flex;
+            font-weight: bold;
+            font-size: 17px;
+            justify-content: space-evenly;
+            position: relative;
+            .videogame__onsale-text {
+                position: absolute;
+                width: 100%;
+                background: $redcolor;
+                bottom: 40px;
+                display: flex;
+                justify-content: center;
+                .onsale__text {
+                    font-size: 16px;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                }
+            }
+            .videogame__card-price {
+                display: flex;
+                font-weight: bold;
+                font-size: 17px;
+                justify-content: space-evenly;
+                align-items: center;
+                background: $blackbackground;
+                color: $whitecolor;
+                margin-bottom: -8px;
+                position: relative;
+                .price__nosale {
+                    padding-right: 25px;
+                    margin-top: 8px;
+                }
+                .price__nosale::after {
+                    border-bottom: 0.18em solid $redcolor;
+                    content: "";
+                    width: 60px;
+                    position: absolute;
+                    left: 0px;
+                    top: 17px;
+                    transform: rotate(-15deg);
+                }
+            }
+        }
+    }
+    .videogame__card:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        background: $goldencolor;
+        .title__container {
+            background: $blackbackground;
+
+        }
+        .videogame__card-title {
+            color: $whitecolor;
+        }
+        .videogame__favorite--container {
+            background: $blackbackground;
+            color: $whitecolor;
+        }
+        .videogame__favorite--container:hover {
+            color: $redlightcolor;
+        }
+        .videogame__buy--container {
+            background: $blackbackground;
+            color: $whitecolor;
+        }
+        // .videogame__buy--container:hover {
+        //     color: $greencolor;
+        // }
+        .green:hover {
+            color: $greencolor;
+        }
+        .red:hover {
+            color: $redcolor;
+        }
+    }
+}
