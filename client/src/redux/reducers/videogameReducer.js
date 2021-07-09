@@ -22,6 +22,19 @@ export default function videogameReducer(state = {}, action) {
                 error: action.error
             };
             break;
+        case actionTypes.LOAD_VIDEOGAME:
+            newState = {
+                ...state,
+                loading: false,
+                videogame: action.videogame,
+            };
+            break;
+        case actionTypes.LOAD_VIDEOGAME_ERROR:
+            newState = {
+                loading: false,
+                error: action.error
+            };
+            break;
         default:
             newState = state;
             break;
