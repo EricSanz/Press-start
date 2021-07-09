@@ -8,7 +8,10 @@ function videogameRouter(VideogameModel) {
 
     router.route('/all-games')
         .get(controller.getVideogames)
-        .post(controller.postEdition)
+        .post(controller.postEdition);
+    
+    router.route('/product/:id')
+        .get(controller.getOneVideogame);
 
     return router;
 
