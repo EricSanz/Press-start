@@ -5,6 +5,7 @@ import constants from '../../constants/dbUrls';
 const {
     baseUrl,
     videogamesUrl,
+    videogameUrl,
 } = constants;
 
 function setLoading() {
@@ -40,3 +41,30 @@ export function loadVideogames() {
         }
     };
 };
+
+function loadOneVideogameSuccess(videogame) {
+    return {
+        type: actionTypes.LOAD_VIDEOGAME,
+        videogame,
+    };
+};
+
+function loadOneVideogameError(error) {
+    return {
+        type: actionTypes.LOAD_VIDEOGAME_ERROR,
+        error,
+    };
+};
+
+export function loadOneVideogame(videogameId) {
+    return async (dispatch) => {
+        const backEndPoint = `${baseUrl}${videogameUrl}${videogameId}`;
+        try {
+            const videogame = await axios.get(backEndPoint);
+            console.log(videogame);
+            dispatch(loadOneVideogameSuccess(videogame.data))
+        } catch (error) {
+            dispatch(loadOneVideogameError(error))
+        }
+    }
+}
