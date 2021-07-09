@@ -8,6 +8,13 @@ function videogameController(VideogameModel) {
             ? res.send(errorGettingVideogames) : res.json(videogames)));
     }
 
+    function getOneVideogame(req, res) {
+        const { id } = req.params;
+
+        VideogameModel.findById( id, (errorGettingVideogame, videogame) => ((errorGettingVideogame)
+            ? res.send(errorGettingVideogame) : res.json(videogame)));
+    }
+
     function postEdition({ body }, res) {
         const videogameId = body.id;
         VideogameModel.findOne({ id: videogameId }, (errorFindUser, videogame) => {
@@ -33,6 +40,7 @@ function videogameController(VideogameModel) {
 
     return {
         getVideogames,
+        getOneVideogame,
         postEdition
     };
 }
