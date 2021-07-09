@@ -1,7 +1,11 @@
 const { Schema, model } = require('mongoose');
 
 const videogameSchema = new Schema({
-    game: String,
+    game: {
+        first_title: String,
+        second_title: String,
+        dual_title: Boolean
+    },
     id: Number,
     genres: Array,
     developer: String,
