@@ -2,4 +2,5 @@
 export default {
     baseUrl: 'http://localhost:5000/',
     videogamesUrl: 'all-games',
+    videogameUrl: 'product/',
 };
