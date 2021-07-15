@@ -18,10 +18,10 @@ function Card({Games}) {
                     </div>
                 )}
                 <div className="videogame__favorite--container">
-                    <FontAwesomeIcon icon="heart"/>
+                    <FontAwesomeIcon className="heart-icon" icon="heart"/>
                 </div>
                 <div className="videogame__buy--container">
-                    <FontAwesomeIcon icon="shopping-cart" className={Games.edition.stock ? "green" : "red"} />
+                    <FontAwesomeIcon icon="shopping-cart" className={Games.edition.stock ? "shopping-cart__green" : "shopping-cart__red"} />
                 </div>
                 <Link to={`product/${Games._id}`}>
                     <img className="videogame__card-image" alt={Games.id} src={Games.edition.cover}></img>

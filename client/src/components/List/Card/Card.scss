@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/keyframes";
 
 .videogame__list {
     .videogame__card {
@@ -122,20 +123,24 @@
             color: $whitecolor;
         }
         .videogame__favorite--container:hover {
+            .heart-icon {
+                animation: pulse 1250ms infinite;
+            }
             color: $redlightcolor;
         }
         .videogame__buy--container {
             background: $blackbackground;
             color: $whitecolor;
         }
-        // .videogame__buy--container:hover {
-        //     color: $greencolor;
-        // }
-        .green:hover {
-            color: $greencolor;
-        }
-        .red:hover {
-            color: $redcolor;
+        .videogame__buy--container:hover {
+            .shopping-cart__green {
+                color: $greencolor;
+                animation: pulse 1250ms infinite;
+            }
+            .shopping-cart__red {
+                color: $redcolor;
+                // animation: pulse 1250ms infinite;
+            }
         }
     }
 }
