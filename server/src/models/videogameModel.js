@@ -36,7 +36,7 @@ const videogameSchema = new Schema({
         sale: Boolean,
         salePrice: String,
         is_content: Boolean,
-        contentt_image: Array,
+        content_image: Array,
         content: [
             {
                 title: String,
@@ -56,7 +56,8 @@ const videogameSchema = new Schema({
         }
     ],
     card: String,
-    other_editions: [{ type: Schema.Types.ObjectId, ref: 'Videogame' }]
+    other_editions: [{ type: Schema.Types.ObjectId, ref: 'videogame' }],
+    other_platforms: [{ type: Schema.Types.ObjectId, ref: 'videogame' }]
 });
 
-module.exports = model('Videogame', videogameSchema);
+module.exports = model('videogame', videogameSchema);
