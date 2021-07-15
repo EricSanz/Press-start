@@ -8,57 +8,57 @@ const categories = [
     },
     {
         name: 'All Videogames',
-        route: 'all-games',
+        route: '/all-games',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'New Releases',
-        route: 'new-releases',
+        route: '/new-releases',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'Coming Soon',
-        route: 'coming-soon',
+        route: '/coming-soon',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'On Sale',
-        route: 'sales',
+        route: '/sales',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'PlayStation 4',
-        route: 'ps4',
+        route: '/ps4',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'PlayStation 5',
-        route: 'ps5',
+        route: '/ps5',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'Xbox One',
-        route: 'xbox-one',
+        route: '/xbox-one',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'Xbox Series S/X',
-        route: 'xbox-series',
+        route: '/xbox-series',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'Nintendo Switch',
-        route: 'nintendo-switch',
+        route: '/nintendo-switch',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'PC Gaming',
-        route: 'pc',
+        route: '/pc',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
         name: 'Merchandising',
-        route: 'merchandising',
+        route: '/merchandising',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
 ]
