@@ -11,7 +11,7 @@ function videogameController(VideogameModel) {
     function getOneVideogame(req, res) {
         const { id } = req.params;
 
-        VideogameModel.findById( id, (errorGettingVideogame, videogame) => ((errorGettingVideogame)
+        VideogameModel.findById(id).populate('other_editions').populate('other_platforms').exec((errorGettingVideogame, videogame) => ((errorGettingVideogame)
             ? res.send(errorGettingVideogame) : res.json(videogame)));
     }
 
@@ -26,11 +26,34 @@ function videogameController(VideogameModel) {
                     const videogameFilter = videogame.other_editions.filter((videogame) => String(videogame) !== body.videogame);
                     videogame.other_editions = videogameFilter;
                     videogame.save();
-                    res.send('delete');
+                    res.send('deleted');
                 } else {
                     videogame.other_editions = [...videogame.other_editions, body.videogame];
                     videogame.save();
-                    res.json('save');
+                    res.json('saved');
+                }
+            } else {
+                res.send(errorFindUser);
+            }
+        });
+    }
+
+    function putPlatform({ body }, res) {
+        const videogameId = body.id;
+        VideogameModel.findOne({ id: videogameId }, (errorFindUser, videogame) => {
+            if (videogame) {
+                const findVideogame = videogame.other_platforms.some(
+                    (videogame) => String(videogame) === body.videogame,
+                );
+                if (findVideogame) {
+                    const videogameFilter = videogame.other_platforms.filter((videogame) => String(videogame) !== body.videogame);
+                    videogame.other_platforms = videogameFilter;
+                    videogame.save();
+                    res.send('deleted');
+                } else {
+                    videogame.other_platforms = [...videogame.other_platforms, body.videogame];
+                    videogame.save();
+                    res.json('saved');
                 }
             } else {
                 res.send(errorFindUser);
@@ -41,7 +64,8 @@ function videogameController(VideogameModel) {
     return {
         getVideogames,
         getOneVideogame,
-        postEdition
+        postEdition,
+        putPlatform
     };
 }
 
