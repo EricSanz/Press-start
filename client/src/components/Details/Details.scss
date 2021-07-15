@@ -1,3 +1,29 @@
+@import "../styles/colors";
+
 main {
-    padding: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    .main__left {
+        position: relative;
+        padding-top: 150px;
+        padding-left: 5%;
+        padding-right: 5%;
+        left: 0;
+        width: 30%;
+        background: $greybackground;
+        border-right: 1px solid $greyborder;
+        .editions__container {
+            display: flex;
+        }
+    }
+    .main__right {
+        position: relative;
+        width: 60%;
+        background: $whitecolor;
+
+    }
 }
