@@ -1,0 +1,21 @@
+@import "../../styles/colors";
+
+
+.editions__main {
+    padding-left: 15px;
+    padding-right: 15px;
+    .editions {
+        background-color: $greylightbackground;
+        border-radius: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        .edition {
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+}
