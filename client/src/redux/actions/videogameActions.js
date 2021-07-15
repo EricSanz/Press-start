@@ -58,6 +58,7 @@ function loadOneVideogameError(error) {
 
 export function loadOneVideogame(videogameId) {
     return async (dispatch) => {
+        dispatch(setLoading());
         const backEndPoint = `${baseUrl}${videogameUrl}${videogameId}`;
         try {
             const videogame = await axios.get(backEndPoint);
