@@ -6,8 +6,8 @@ import "./Edition-Button.scss";
 
 function EditionButton({dispatch, editions}) {
     return (
-        <div className="editions__main">
-            <Link to={`${editions._id}`} style={{ textDecoration: 'none' }} onClick={() => dispatch(loadOneVideogame(editions._id))}>
+        <div className="editions__buttons">
+            <Link className="editions__links" to={`${editions._id}`} onClick={() => dispatch(loadOneVideogame(editions._id))}>
                 <div className="editions">
                     <p className="edition">{editions.edition.name}</p>
                 </div>
