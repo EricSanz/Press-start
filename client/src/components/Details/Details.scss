@@ -10,14 +10,41 @@ main {
     .main__left {
         position: relative;
         padding-top: 150px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
         left: 0;
-        width: 30%;
+        width: 34%;
         background: $greybackground;
         border-right: 1px solid $greyborder;
-        .editions__container {
+        .editions__container, & .platforms__container {
             display: flex;
+            align-items: center;
+            .editions__title, & .platforms__title {
+                padding-right: 10px;
+                font-weight: bold;
+            }
+            .selected-edition__container, & .selected-platform__container {
+                font-weight: 600;
+                border-radius: 10px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                .selected-edition, & .selected-platform {
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+            .selected-edition__container {
+                background-color: $blackbackground;
+                color: $whitecolor;
+            }
+            .selected-platform__container {
+                background-color: $goldenstrongcolor;
+                color: $blackbackground;
+            }
         }
     }
     .main__right {

@@ -25,21 +25,27 @@ function Details ({dispatch, videogame, match, loading}) {
                         <p>{videogame.game.first_title}</p>
                         <p>{videogame.id}</p>                        
                         {videogame.other_platforms.length > 0 ? (
-                            <p>Other platforms:</p>
+                            <div className="platforms__container">
+                                <p className="platforms__title">Platforms:</p>
+                                <div className="selected-platform__container">
+                                    <p className="selected-platform">{videogame.edition.version}</p>
+                                </div>
+                                {videogame.other_platforms.length > 0 && videogame.other_platforms.map((platforms) => (
+                                    <PlatformButton platforms={platforms}/>
+                                    ))}
+                            </div>
                         ) : null}
-                        <div className="editions__container">
-                            {videogame.other_platforms.length > 0 && videogame.other_platforms.map((platforms) => (
-                                <PlatformButton platforms={platforms}/>
-                            ))}
-                        </div>
                         {videogame.other_editions.length > 0 ? (
-                            <p>Other Editions:</p>
+                            <div className="editions__container">
+                                <p className="editions__title">Editions:</p>
+                                <div className="selected-edition__container">
+                                    <p className="selected-edition">{videogame.edition.name}</p>
+                                </div>
+                                {videogame.other_editions.length > 0 && videogame.other_editions.map((editions) => (
+                                    <EditionButton editions={editions}/>
+                                    ))}
+                            </div>
                         ) : null}
-                        <div className="editions__container">
-                            {videogame.other_editions.length > 0 && videogame.other_editions.map((editions) => (
-                                <EditionButton editions={editions}/>
-                            ))}
-                        </div>
                     </>
                 )}
             </div>
