@@ -6,8 +6,8 @@ import './Platform-Button.scss';
 
 function PlatformButton({dispatch, platforms}) {
     return (
-        <div className="platforms__main">
-            <Link to={`${platforms._id}`} style={{ textDecoration: 'none' }} onClick={() => dispatch(loadOneVideogame(platforms._id))}>
+        <div className="platforms__buttons">
+            <Link className="platforms__links" to={`${platforms._id}`} style={{ textDecoration: 'none' }} onClick={() => dispatch(loadOneVideogame(platforms._id))}>
                 <div className="platforms">
                     <p className="platform">{platforms.edition.version}</p>
                 </div>
