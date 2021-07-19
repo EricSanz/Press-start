@@ -15,7 +15,6 @@ header {
     .navbar__options {
         position: absolute;
         display: flex;
-        // justify-content: space-between;
         width: 80%;
         padding-left: 10%;
         .navbar__logo {
@@ -81,7 +80,6 @@ header {
     width: 330px;
     height: 100%;
     background-color: $blackbackground;
-    // background-color: #f7f19f;
     box-shadow: 0 0 10px 0 rgba(#161616, .9);
     border-right: 1px solid #161616;
     z-index: 2;
