@@ -4,7 +4,7 @@
 .videogame__list {
     .videogame__card {
         background: $whitecolor;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
         margin: 10px;
         border-radius: 10px;
         overflow: hidden;
@@ -27,38 +27,53 @@
         }
         .videogame__favorite--container {
             position: absolute;
-            top: 65px;
-            right: 65px;
+            top: 62px;
+            right: 50px;
             background: $goldencolor;
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            font-size: 18px;
+            font-size: 14px;
         }
         .videogame__card-image{
-            width: 220px;
-            height: 270px;
-            // max-width: 260px;
-            // max-height: 325px;
+            padding-top: 36px;
+            margin-left: 14px;
+            margin-right: 14px;
+            width: 200px;
+            height: 250px;
+        }
+        .videogame__platform--container, & .videogame__platform--ps4, & .videogame__platform--ps5, & .videogame__platform--xbox, & .videogame__platform--nintendo, & .videogame__platform--pc {
+            position: absolute;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            top: 62px;
+            left: 0;
+            height: 35px;
+            width: 105px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            background: $blackbackground;
+            color: $whitecolor;
+            font-size: 10px;
+            font-weight: 600;
         }
         .videogame__buy--container {
             position: absolute;
-            top: 65px;
-            right: 15px;
+            top: 62px;
+            right: 10px;
             background: $goldencolor;
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            font-size: 18px;
-        }
-        .price__onsale {
-            margin-top: 8px;
+            font-size: 14px;
         }
         .videogame__card-price--container {
             background: $blackbackground;
@@ -72,7 +87,7 @@
                 position: absolute;
                 width: 100%;
                 background: $redcolor;
-                bottom: 40px;
+                bottom: 42px;
                 display: flex;
                 justify-content: center;
                 .onsale__text {
@@ -83,17 +98,15 @@
             }
             .videogame__card-price {
                 display: flex;
-                font-weight: bold;
                 font-size: 17px;
                 justify-content: space-evenly;
                 align-items: center;
                 background: $blackbackground;
                 color: $whitecolor;
-                margin-bottom: -8px;
+                height: 40px;
                 position: relative;
                 .price__nosale {
                     padding-right: 25px;
-                    margin-top: 8px;
                 }
                 .price__nosale::after {
                     border-bottom: 0.18em solid $redcolor;
@@ -101,7 +114,7 @@
                     width: 60px;
                     position: absolute;
                     left: 0px;
-                    top: 17px;
+                    top: 21px;
                     transform: rotate(-15deg);
                 }
             }
@@ -112,11 +125,27 @@
         transform: scale(1.03);
         background: $goldencolor;
         .title__container {
-            background: $blackbackground;
-
-        }
-        .videogame__card-title {
             color: $whitecolor;
+            background: $blackbackground;
+        }
+        .videogame__platform--ps4 {
+            background: $ps4color;
+        }
+        .videogame__platform--ps5 {
+            background: $ps5color;
+            color: $blackbackground;
+            font-weight: bold;
+        }
+        .videogame__platform--xbox {
+            background: $xboxcolor;
+        }
+        .videogame__platform--nintendo {
+            background: $nintendocolor;
+        }
+        .videogame__platform--pc {
+            background: $pccolor;
+            font-size: 12px;
+            font-weight: bold;
         }
         .videogame__favorite--container {
             background: $blackbackground;
@@ -139,7 +168,6 @@
             }
             .shopping-cart__red {
                 color: $redcolor;
-                // animation: pulse 1250ms infinite;
             }
         }
     }
