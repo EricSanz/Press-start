@@ -69,3 +69,16 @@ export function loadOneVideogame(videogameId) {
         }
     }
 }
+
+export function filterVideogameByName(videogameName) {
+    return {
+      type: actionTypes.FILTER_VIDEOGAME_LIST,
+      videogameName,
+    };
+}
+  
+export function fillVideogameList() {
+    return {
+      type: actionTypes.FILL_VIDEOGAME_LIST,
+    };
+}
