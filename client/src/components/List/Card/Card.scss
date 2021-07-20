@@ -9,6 +9,7 @@
         border-radius: 10px;
         overflow: hidden;
         position: relative;
+        transition: 0.3s;
         .title__container {
             height: 55px;
             background: $goldencolor;
@@ -39,7 +40,8 @@
             font-size: 14px;
         }
         .videogame__card-image{
-            padding-top: 36px;
+            padding-top: 40px;
+            padding-bottom: 10px;
             margin-left: 14px;
             margin-right: 14px;
             width: 200px;
@@ -122,7 +124,7 @@
     }
     .videogame__card:hover {
         cursor: pointer;
-        transform: scale(1.03);
+        transform: scale(1.05);
         background: $goldencolor;
         .title__container {
             color: $whitecolor;
