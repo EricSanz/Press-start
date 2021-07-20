@@ -14,11 +14,11 @@
     color: $whitecolor;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    transition: 0.3s;
+    transition: 0.7s;
     .search--icon {
         position: absolute;
         left: 350px;
-        transition: 0.3s;
+        transition: 0.7s;
     }
     .search--input {
         display: none;
@@ -33,7 +33,6 @@
         border-top-right-radius: 10px;
         outline: none;
         border: none;
-        transition: 0.3s;
     }
     .search--icon:hover {
         color: $goldenstrongcolor;
