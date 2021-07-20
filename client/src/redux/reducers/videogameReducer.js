@@ -35,6 +35,23 @@ export default function videogameReducer(state = {}, action) {
                 error: action.error
             };
             break;
+        case actionTypes.FILTER_VIDEOGAME_LIST:
+            const filteredVideogames = state.videogamesList.filter((videogame) => (
+                videogame.game.first_title.includes(action.videogameName)
+            ))
+            newState = {
+                ...state,
+                loading: false,
+                filteredVideogameList: filteredVideogames
+            };
+            break;
+        case actionTypes.FILL_VIDEOGAME_LIST:
+            newState = {
+                ...state,
+                loading: false,
+                filteredVideogameList: state.videogamesList
+            };
+            break;
         default:
             newState = state;
             break;
