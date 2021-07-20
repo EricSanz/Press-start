@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import '../Search/SearchBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { connect } from 'react-redux';
+import { filterVideogameByName, fillVideogameList } from '../../redux/actions/videogameActions';
 
-export default function SearchBar() {
+
+function SearchBar({ videogamesList, dispatch, loading, error, filteredVideogameList }) {
 
     const [searchBar, setSearchBar] = useState(false);
     const [searchIcon, setSearchIcon] = useState(false);
@@ -21,10 +24,30 @@ export default function SearchBar() {
         searchInput ? searchInputDisplay.style.display = 'none' : searchInputDisplay.style.display = 'block';
     }
 
+    function handleChange({ target }) {
+        const { value } = target;
+        if (value.length >= 3) {
+          dispatch(filterVideogameByName(`${value[0].toUpperCase()}${value.slice(1)}`));
+        } else {
+          dispatch(fillVideogameList());
+        }
+      }
+
     return (
         <div className="search__filter" id="search">
             <FontAwesomeIcon id="search__icon" className="search--icon" icon="search" onClick={() => handleSearchBar()} />
-            <input className="search--input" id="search__input" type="text" placeholder="Search..." />
+            <input className="search--input" id="search__input" type="text" placeholder="Search..." onChange={(event) => { handleChange(event); }} />
         </div>
     )
 }
+
+function mapStateToProps({ videogameReducer }) {
+    return {
+        videogamesList: videogameReducer.videogamesList,
+        filteredVideogameList: videogameReducer.filteredVideogameList,
+        loading: videogameReducer.loading,
+        error: videogameReducer.error,
+    }
+}
+
+export default connect(mapStateToProps)(SearchBar);
