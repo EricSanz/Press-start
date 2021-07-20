@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import SearchBar from '../Search/SearchBar';
 import LeftSidenav from '../Left-Sidenav/Left-Sidenav';
 
 function Header() {
@@ -32,7 +31,6 @@ function Header() {
                             <FontAwesomeIcon className="icon" icon="calendar-alt" />
                             <p>Calendar</p>
                         </div>
-                        <SearchBar />
                     </div>
                     <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
                     <div className="navbar__options-right">
