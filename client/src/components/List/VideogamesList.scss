@@ -10,11 +10,12 @@
 }
 
 .list__container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
-    padding-top: 20px;
+    margin-top: 80px;
+    padding-top: 100px;
     background: $greylightbackground;
 }
 
