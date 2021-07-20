@@ -8,7 +8,7 @@ import { loadVideogames } from '../../redux/actions/videogameActions';
 import Card from './Card/Card';
 import './VideogamesList.scss';
 
-function VideogameList({ videogamesList, dispatch, loading, error }) {
+function VideogameList({ videogamesList, dispatch, loading, error, filteredVideogameList }) {
 
     useEffect(() => {
         if (!videogamesList?.length) {
@@ -16,13 +16,23 @@ function VideogameList({ videogamesList, dispatch, loading, error }) {
         }
     }, [videogamesList?.length]);
 
+    const displayVideogameList = (
+        <>
+            {!filteredVideogameList?.length && videogamesList?.length && videogamesList.map((videogame) => (
+                <Card Games={videogame}/>
+            ))}
+            {filteredVideogameList?.length > 0 && filteredVideogameList.map((videogame) => (
+                <Card Games={videogame}/>
+            ))}
+            {/* {!filteredVideogameList?.length && <h3>A videogame with that name does not exist</h3>} */}
+        </>
+    )
+
     return (
         <div className={loading ? "list__loading" : "list__container"}>
             {loading ? null : <SearchBar />}
             {error && <h3 className="noup">There has been an error loading the videogames, sorry and try again later.</h3>}
-            {loading ? <Loading /> : videogamesList && videogamesList.map((videogame) => (
-                <Card Games={videogame}/>
-            ))}
+            {loading ? <Loading /> : videogamesList?.length > 0 && displayVideogameList }
         </div>
     )
 }
@@ -30,6 +40,7 @@ function VideogameList({ videogamesList, dispatch, loading, error }) {
 function mapStateToProps({ videogameReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
+        filteredVideogameList: videogameReducer.filteredVideogameList,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
     }
