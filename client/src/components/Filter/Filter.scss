@@ -1,0 +1,51 @@
+@import '../styles/colors';
+
+.filter__button {
+    position: fixed;
+    top: 190px;
+    left: 0;
+    width: 65px;
+    height: 150px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background: $redlightcolor;
+    box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    .filter__tag {
+        transform: rotate(90deg);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #filter__tag__close-id {
+        display: none;
+    }
+    .filter__icon {
+        padding-top: 20px;
+    }
+    #filter__icon__left-id {
+        display: none;
+    }
+}
+
+.filter__button:hover {
+    cursor: pointer;
+}
+
+.filter__options {
+    position: fixed;
+    top: 190px;
+    left: -330px;
+    background: $redstrongcolor;
+    height: 600px;
+    width: 330px;
+    transition: 1s;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
+
+}
