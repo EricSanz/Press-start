@@ -3,8 +3,8 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Loading from '../Loading/Loading';
 import SearchComponent from '../Search/Search';
+import FilterComponent from '../Filter/Filter';
 import { loadVideogames } from '../../redux/actions/videogameActions';
-// import { bindActionCreators } from 'redux';
 import Card from './Card/Card';
 import './VideogamesList.scss';
 
@@ -23,7 +23,7 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
             ))}
             {filteredVideogameList?.length > 0 && filteredVideogameList.map((videogame) => (
                 <Card Games={videogame}/>
-            ))}            
+            ))}
         </>
     )
 
@@ -34,8 +34,9 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
     )
 
     return (
-        <div className={loading ? "list__loading" : "list__container"}>
+        <div className={loading ? "list__loading" : "list__container"} id="list__container-id">
             {loading ? null : <SearchComponent />}
+            {loading ? null : <FilterComponent />}
             {error && <h3 className="noup">There has been an error loading the videogames, sorry and try again later.</h3>}
             {filteredVideogameList?.length < 1 && notExist}
             {loading ? <Loading /> : videogamesList?.length > 0 && displayVideogameList }
