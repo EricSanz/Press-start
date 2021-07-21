@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import '../Search/SearchBar.scss';
+import '../Search/Search.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { connect } from 'react-redux';
 import { filterVideogameByName, fillVideogameList } from '../../redux/actions/videogameActions';
 
 
-function SearchBar({ dispatch, filteredVideogameList }) {
+function SearchComponent({ dispatch }) {
 
     const [searchBar, setSearchBar] = useState(false);
     const [searchIcon, setSearchIcon] = useState(false);
@@ -51,4 +51,4 @@ function mapStateToProps({ videogameReducer }) {
     }
 }
 
-export default connect(mapStateToProps)(SearchBar);
+export default connect(mapStateToProps)(SearchComponent);
