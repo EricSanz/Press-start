@@ -23,8 +23,13 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
             ))}
             {filteredVideogameList?.length > 0 && filteredVideogameList.map((videogame) => (
                 <Card Games={videogame}/>
-            ))}
-            {/* {!filteredVideogameList?.length && <h3>A videogame with that name does not exist</h3>} */}
+            ))}            
+        </>
+    )
+
+    const notExist = (
+        <>
+            {filteredVideogameList?.length === 0 && <h3 className="notExist">A videogame with that name does not exist</h3>}
         </>
     )
 
@@ -32,6 +37,7 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
         <div className={loading ? "list__loading" : "list__container"}>
             {loading ? null : <SearchBar />}
             {error && <h3 className="noup">There has been an error loading the videogames, sorry and try again later.</h3>}
+            {filteredVideogameList?.length < 1 && notExist}
             {loading ? <Loading /> : videogamesList?.length > 0 && displayVideogameList }
         </div>
     )
