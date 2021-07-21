@@ -11,7 +11,7 @@ function SearchComponent({ dispatch }) {
     const [searchIcon, setSearchIcon] = useState(false);
     const [searchInput, setSearchInput] = useState(false);
 
-    function handleSearchBar() {
+    function handleSearch() {
         setSearchBar(!searchBar);
         setSearchIcon(!searchIcon);
         setSearchInput(!searchInput);
@@ -24,7 +24,7 @@ function SearchComponent({ dispatch }) {
         searchInput ? searchInputDisplay.style.display = 'none' : searchInputDisplay.style.display = 'block';
     }
 
-    function handleChange({ target }) {
+    function handleInput({ target }) {
         let { value } = target;
         if (value.length >= 3) {
             value = (`${value[0].toUpperCase()}${value.slice(1)}`)
@@ -36,8 +36,8 @@ function SearchComponent({ dispatch }) {
 
     return (
         <div className="search__filter" id="search">
-            <FontAwesomeIcon id="search__icon" className="search--icon" icon="search" onClick={() => handleSearchBar()} />
-            <input className="search--input" id="search__input" type="text" placeholder="Search..." onChange={(event) => { handleChange(event); }} />
+            <FontAwesomeIcon id="search__icon" className="search--icon" icon="search" onClick={() => handleSearch()} />
+            <input className="search--input" id="search__input" type="text" placeholder="Search..." onChange={(event) => { handleInput(event); }} />
         </div>
     )
 }
