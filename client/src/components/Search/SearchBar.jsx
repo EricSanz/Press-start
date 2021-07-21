@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { filterVideogameByName, fillVideogameList } from '../../redux/actions/videogameActions';
 
 
-function SearchBar({ videogamesList, dispatch, loading, error, filteredVideogameList }) {
+function SearchBar({ dispatch, filteredVideogameList }) {
 
     const [searchBar, setSearchBar] = useState(false);
     const [searchIcon, setSearchIcon] = useState(false);
@@ -25,13 +25,14 @@ function SearchBar({ videogamesList, dispatch, loading, error, filteredVideogame
     }
 
     function handleChange({ target }) {
-        const { value } = target;
+        let { value } = target;
         if (value.length >= 3) {
-          dispatch(filterVideogameByName(`${value[0].toUpperCase()}${value.slice(1)}`));
+            value = (`${value[0].toUpperCase()}${value.slice(1)}`)
+            dispatch(filterVideogameByName(value));
         } else {
-          dispatch(fillVideogameList());
+            dispatch(fillVideogameList());
         }
-      }
+    }
 
     return (
         <div className="search__filter" id="search">

@@ -2,8 +2,9 @@
 @import '../styles/colors';
 
 .search__filter {
-    position: absolute;
-    top: 25px;
+    position: fixed;
+    z-index: 2;
+    top: 105px;
     left: -330px;
     display: flex;
     align-items: center;
