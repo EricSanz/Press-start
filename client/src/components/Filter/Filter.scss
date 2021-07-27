@@ -4,13 +4,13 @@
     position: fixed;
     top: 190px;
     left: 0;
-    width: 65px;
+    width: 55px;
     height: 150px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     background: $redlightcolor;
     box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
-    transition: 0.7s;
+    transition: 1s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,14 +38,13 @@
 
 .filter__options {
     position: fixed;
-    top: 190px;
-    left: -330px;
+    top: 350px;
+    left: -250px;
     background: $redstrongcolor;
-    height: 600px;
-    width: 330px;
+    height: 450px;
+    width: 250px;
     transition: 1s;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
-
 }
