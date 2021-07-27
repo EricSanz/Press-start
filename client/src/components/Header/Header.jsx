@@ -11,7 +11,11 @@ function Header() {
         setLeftSidenav(!leftSidenav);
 
         const toggleLeftSidenav = document.getElementById('leftSidenav__id');
-        leftSidenav ? toggleLeftSidenav.style.transform = 'translateX(0px)' : toggleLeftSidenav.style.transform = 'translateX(340px)'
+        const openLeftSidenav = document.getElementById('open__icon');
+        const closeLeftSidenav = document.getElementById('close__icon');
+        leftSidenav ? toggleLeftSidenav.style.transform = 'translateX(0px)' : toggleLeftSidenav.style.transform = 'translateX(340px)';
+        leftSidenav ? openLeftSidenav.style.display = 'block' : openLeftSidenav.style.display = 'none';
+        leftSidenav ? closeLeftSidenav.style.display = 'none' : closeLeftSidenav.style.display = 'block';
     }
 
     return (
@@ -20,7 +24,8 @@ function Header() {
                 <div className="navbar__options">
                     <div className="navbar__options-left">
                         <div className="navbar__option">
-                            <FontAwesomeIcon className="icon" icon="bars" onClick={() => handleSidenav()} />
+                            <FontAwesomeIcon id="open__icon" className="icon open" icon="bars" onClick={() => handleSidenav()} />
+                            <FontAwesomeIcon id="close__icon" className="icon close" icon="times" onClick={() => handleSidenav()} />
                             <p>Menu</p>
                         </div>
                         <div className="navbar__option">

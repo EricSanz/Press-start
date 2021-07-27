@@ -43,7 +43,7 @@ header {
                 margin-bottom: -10px;
             }
             .navbar__option:hover {
-                transition: 0.3s;
+                transition: 1s;
                 color: $goldenstrongcolor;
                 cursor: pointer;
             }
@@ -65,8 +65,14 @@ header {
                 font-size: 25px;
                 margin-bottom: -10px;
             }
+            .open {
+                display: block;
+            }
+            .close {
+                display: none;
+            }
             .navbar__option:hover {
-                transition: 0.3s;
+                transition: 1s;
                 color: $goldenstrongcolor;
                 cursor: pointer;
             }
