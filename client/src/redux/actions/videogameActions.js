@@ -82,3 +82,16 @@ export function fillVideogameList() {
       type: actionTypes.FILL_VIDEOGAME_LIST,
     };
 }
+
+export function filterVideogameByPlatform(videogames) {
+    return {
+        type: actionTypes.FILTER_VIDEOGAME_BY_PLATFORM,
+        videogames,
+    }
+}
+
+export function fillVideogameByPlatformList() {
+    return {
+        type: actionTypes.FILL_VIDEOGAME_BY_PLATFORM_LIST,
+    };
+}
