@@ -8,7 +8,7 @@ import { loadVideogames } from '../../redux/actions/videogameActions';
 import Card from './Card/Card';
 import './VideogamesList.scss';
 
-function VideogameList({ videogamesList, dispatch, loading, error, filteredVideogameList }) {
+function VideogameList({ videogamesList, dispatch, loading, error, filteredVideogameList, ps4Videogames}) {
 
     useEffect(() => {
         if (!videogamesList?.length) {
@@ -18,11 +18,20 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
 
     const displayVideogameList = (
         <>
-            {!filteredVideogameList?.length && videogamesList?.length && videogamesList.map((videogame) => (
+            {!filteredVideogameList?.length && !ps4Videogames?.length && videogamesList?.length && videogamesList.map((videogame) => (
                 <Card Games={videogame}/>
             ))}
-            {filteredVideogameList?.length > 0 && filteredVideogameList.map((videogame) => (
+
+            {filteredVideogameList?.length > 0 && ps4Videogames?.length > 0 && filteredVideogameList.map((videogame) => (
+                videogame.ps4 ? <Card Games={videogame}/> : null
+            ))}
+
+            {filteredVideogameList?.length > 0 && !ps4Videogames?.length && filteredVideogameList.map((videogame) => (
                 <Card Games={videogame}/>
+            ))}
+
+            {ps4Videogames?.length > 0 && !filteredVideogameList?.length && ps4Videogames.map((videogame) => (
+                <Card Games={videogame} />
             ))}
         </>
     )
@@ -48,6 +57,7 @@ function mapStateToProps({ videogameReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
         filteredVideogameList: videogameReducer.filteredVideogameList,
+        ps4Videogames: videogameReducer.ps4Videogames,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
     }
