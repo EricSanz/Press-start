@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {filterVideogameByPlatform, fillVideogameByPlatformList, fillVideogameList} from '../../redux/actions/videogameActions'
+import { filterVideogameByPlatform, fillVideogameByPlatformList } from '../../redux/actions/videogameActions'
 import './Filter.scss';
 import '../List/VideogamesList.scss';
 
