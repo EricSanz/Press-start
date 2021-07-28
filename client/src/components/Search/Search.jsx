@@ -37,7 +37,7 @@ function SearchComponent({ dispatch }) {
     return (
         <div className="search__filter" id="search">
             <FontAwesomeIcon id="search__icon" className="search--icon" icon="search" onClick={() => handleSearch()} />
-            <input className="search--input" id="search__input" type="text" placeholder="Search..." onChange={(event) => { handleInput(event); }} />
+            <input className="search--input" id="search__input" type="text" placeholder="Search..." onChange={(event) => { handleInput(event) }} />
         </div>
     )
 }
