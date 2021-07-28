@@ -31,31 +31,31 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
                 <Card Games={videogame}/>
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && ps4Checked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && ps4Checked.checked && filteredVideogameList.map((videogame) => (
                 videogame.ps4 ? <Card Games={videogame}/> : null
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && ps5Checked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && ps5Checked.checked && filteredVideogameList.map((videogame) => (
                 videogame.ps5 ? <Card Games={videogame}/> : null
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && xboxOneChecked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && xboxOneChecked.checked && filteredVideogameList.map((videogame) => (
                 videogame.xboxOne ? <Card Games={videogame}/> : null
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && xboxSeriesSXChecked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && xboxSeriesSXChecked.checked && filteredVideogameList.map((videogame) => (
                 videogame.xboxSeriesSX ? <Card Games={videogame}/> : null
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && nintendoSwitchChecked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && nintendoSwitchChecked.checked && filteredVideogameList.map((videogame) => (
                 videogame.nintendoSwitch ? <Card Games={videogame}/> : null
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && pcChecked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && pcChecked.checked && filteredVideogameList.map((videogame) => (
                 videogame.pc ? <Card Games={videogame}/> : null
             ))}
 
-            {filteredVideogameList?.length > 0 && platformVideogames && allPlatformsChecked.checked && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && allPlatformsChecked.checked && filteredVideogameList.map((videogame) => (
                 <Card Games={videogame}/>
             ))}
 
