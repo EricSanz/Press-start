@@ -36,7 +36,7 @@ export default function videogameReducer(state = {}, action) {
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_LIST:
-            const filteredVideogames = state.videogamesList.filter((videogame) => (
+            let filteredVideogames = state.videogamesList.filter((videogame) => (
                 videogame.game.first_title.includes(action.videogameName)
             ))
             newState = {
@@ -53,38 +53,41 @@ export default function videogameReducer(state = {}, action) {
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_BY_PLATFORM:
-            let platformVideogames = []; 
+            let platformVideogames;
             console.log(action.videogames);
                 switch (action.videogames) {
                     case "ps4":
-                            state.videogamesList.map((videogame) => (
-                                videogame.ps4 ? platformVideogames.push(videogame) : null
-                            ))
+                        platformVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.ps4 === true
+                        ))
                     break;
                     case "ps5":
-                        state.videogamesList.map((videogame) => (
-                            videogame.ps5 ? platformVideogames.push(videogame) : null
+                        platformVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.ps5 === true
                         ))
                     break;
                     case "xboxOne":
-                        state.videogamesList.map((videogame) => (
-                            videogame.xboxOne ? platformVideogames.push(videogame) : null
+                        platformVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.xboxOne === true
                         ))
                     break;
                     case "xboxSeriesSX":
-                        state.videogamesList.map((videogame) => (
-                            videogame.xboxSeriesSX ? platformVideogames.push(videogame) : null
+                        platformVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.xboxSeriesSX === true
                         ))
                     break;
                     case "nintendoSwitch":
-                        state.videogamesList.map((videogame) => (
-                            videogame.nintendoSwitch ? platformVideogames.push(videogame) : null
+                        platformVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.nintendoSwitch === true
                         ))
                     break;
                     case "pc":
-                        state.videogamesList.map((videogame) => (
-                            videogame.pc ? platformVideogames.push(videogame) : null
+                        platformVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.pc === true
                         ))
+                    break;
+                    case "allPlatforms":
+                        platformVideogames = state.videogamesList
                     break;
                     default:
                     break;
@@ -100,7 +103,7 @@ export default function videogameReducer(state = {}, action) {
             newState = {
                 ...state,
                 loading: false,
-                platformVideogames: []
+                filteredVideogameList: []
             };
             break;
         default:

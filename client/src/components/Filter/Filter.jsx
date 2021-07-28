@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {filterVideogameByPlatform, fillVideogameByPlatformList} from '../../redux/actions/videogameActions'
+import {filterVideogameByPlatform, fillVideogameByPlatformList, fillVideogameList} from '../../redux/actions/videogameActions'
 import './Filter.scss';
 import '../List/VideogamesList.scss';
 
@@ -47,6 +47,10 @@ function FilterComponent({dispatch}) {
             </div>
             <div className="filter__options" id="filter__options-id">
                 <p>Platforms:</p>
+                <div>
+                  <input type="radio" id="allPlatforms" value="allPlatforms" name="platform" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="allPlatforms">All Platforms</label>
+                </div>
                 <div>
                   <input type="radio" id="ps4" value="ps4" name="platform" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="ps4">PlayStation 4</label>

@@ -22,6 +22,7 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
     const xboxSeriesSXChecked = document.getElementById('xboxSeriesSX');
     const nintendoSwitchChecked = document.getElementById('nintendoSwitch');
     const pcChecked = document.getElementById('pc');
+    const allPlatformsChecked = document.getElementById('allPlatforms');
 
     const displayVideogameList = (
 
@@ -52,6 +53,10 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
 
             {filteredVideogameList?.length > 0 && platformVideogames && pcChecked.checked && filteredVideogameList.map((videogame) => (
                 videogame.pc ? <Card Games={videogame}/> : null
+            ))}
+
+            {filteredVideogameList?.length > 0 && platformVideogames && allPlatformsChecked.checked && filteredVideogameList.map((videogame) => (
+                <Card Games={videogame}/>
             ))}
 
             {filteredVideogameList?.length > 0 && !platformVideogames?.length && filteredVideogameList.map((videogame) => (
