@@ -55,6 +55,22 @@ function FilterComponent({dispatch}) {
                   <input type="radio" id="ps5" value="ps5" name="platform" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="ps5">PlayStation 5</label>
                 </div>
+                <div>
+                  <input type="radio" id="xboxOne" value="xboxOne" name="platform" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="xboxOne">Xbox One</label>
+                </div>
+                <div>
+                  <input type="radio" id="xboxSeriesSX" value="xboxSeriesSX" name="platform" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="xboxSeriesSX">Xbox Series S/X</label>
+                </div>
+                <div>
+                  <input type="radio" id="nintendoSwitch" value="nintendoSwitch" name="platform" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="nintendoSwitch">Nintendo Switch</label>
+                </div>
+                <div>
+                  <input type="radio" id="pc" value="pc" name="platform" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="pc">PC</label>
+                </div>
             </div>
         </>
     )

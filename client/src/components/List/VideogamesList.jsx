@@ -18,6 +18,10 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
 
     const ps4Checked = document.getElementById('ps4');
     const ps5Checked = document.getElementById('ps5');
+    const xboxOneChecked = document.getElementById('xboxOne');
+    const xboxSeriesSXChecked = document.getElementById('xboxSeriesSX');
+    const nintendoSwitchChecked = document.getElementById('nintendoSwitch');
+    const pcChecked = document.getElementById('pc');
 
     const displayVideogameList = (
 
@@ -32,6 +36,22 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
 
             {filteredVideogameList?.length > 0 && platformVideogames && ps5Checked.checked && filteredVideogameList.map((videogame) => (
                 videogame.ps5 ? <Card Games={videogame}/> : null
+            ))}
+
+            {filteredVideogameList?.length > 0 && platformVideogames && xboxOneChecked.checked && filteredVideogameList.map((videogame) => (
+                videogame.xboxOne ? <Card Games={videogame}/> : null
+            ))}
+
+            {filteredVideogameList?.length > 0 && platformVideogames && xboxSeriesSXChecked.checked && filteredVideogameList.map((videogame) => (
+                videogame.xboxSeriesSX ? <Card Games={videogame}/> : null
+            ))}
+
+            {filteredVideogameList?.length > 0 && platformVideogames && nintendoSwitchChecked.checked && filteredVideogameList.map((videogame) => (
+                videogame.nintendoSwitch ? <Card Games={videogame}/> : null
+            ))}
+
+            {filteredVideogameList?.length > 0 && platformVideogames && pcChecked.checked && filteredVideogameList.map((videogame) => (
+                videogame.pc ? <Card Games={videogame}/> : null
             ))}
 
             {filteredVideogameList?.length > 0 && !platformVideogames?.length && filteredVideogameList.map((videogame) => (

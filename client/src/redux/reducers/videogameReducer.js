@@ -66,6 +66,26 @@ export default function videogameReducer(state = {}, action) {
                             videogame.ps5 ? platformVideogames.push(videogame) : null
                         ))
                     break;
+                    case "xboxOne":
+                        state.videogamesList.map((videogame) => (
+                            videogame.xboxOne ? platformVideogames.push(videogame) : null
+                        ))
+                    break;
+                    case "xboxSeriesSX":
+                        state.videogamesList.map((videogame) => (
+                            videogame.xboxSeriesSX ? platformVideogames.push(videogame) : null
+                        ))
+                    break;
+                    case "nintendoSwitch":
+                        state.videogamesList.map((videogame) => (
+                            videogame.nintendoSwitch ? platformVideogames.push(videogame) : null
+                        ))
+                    break;
+                    case "pc":
+                        state.videogamesList.map((videogame) => (
+                            videogame.pc ? platformVideogames.push(videogame) : null
+                        ))
+                    break;
                     default:
                     break;
                 }
@@ -80,7 +100,7 @@ export default function videogameReducer(state = {}, action) {
             newState = {
                 ...state,
                 loading: false,
-                ps4Videogames: []
+                platformVideogames: []
             };
             break;
         default:
