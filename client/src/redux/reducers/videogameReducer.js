@@ -53,30 +53,27 @@ export default function videogameReducer(state = {}, action) {
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_BY_PLATFORM:
-            let ps4Videogames = []; 
-            // state.videogamesList.map((videogame) => (
-            //     videogame.ps4 ? ps4Videogames.push(videogame) : null
-            // ))
+            let platformVideogames = []; 
             console.log(action.videogames);
                 switch (action.videogames) {
                     case "ps4":
                             state.videogamesList.map((videogame) => (
-                                videogame.ps4 ? ps4Videogames.push(videogame) : null
+                                videogame.ps4 ? platformVideogames.push(videogame) : null
                             ))
                     break;
                     case "ps5":
                         state.videogamesList.map((videogame) => (
-                            videogame.ps5 ? ps4Videogames.push(videogame) : null
+                            videogame.ps5 ? platformVideogames.push(videogame) : null
                         ))
                     break;
                     default:
                     break;
                 }
-            console.log(ps4Videogames);
+            console.log(platformVideogames);
             newState = {
                 ...state,
                 loading: false,
-                ps4Videogames: ps4Videogames
+                platformVideogames: platformVideogames
             }
             break;
         case actionTypes.FILL_VIDEOGAME_BY_PLATFORM_LIST:

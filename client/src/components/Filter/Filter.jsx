@@ -31,18 +31,10 @@ function FilterComponent({dispatch}) {
         inputNav ? filterTagClose.style.display = 'block' : filterTagClose.style.display = 'none';
     }
 
-    function handleChangeChecked({target}) {
+    function handleChangeChecked({ target }) {
         setPlatformFilter(!platformFilter);
-        // let { value } = target;
-        // console.log(event.target.checked)
-        target.checked ? dispatch(filterVideogameByPlatform(target.name)) : dispatch(fillVideogameByPlatformList());
-        // !ps4Filter ? ps4Videogames.
 
-        // if (target.checked) {
-        //     dispatch(filterVideogamePs4());
-        // } else {
-        //     dispatch(fillVideogameList());
-        // }
+        target.checked ? dispatch(filterVideogameByPlatform(target.value)) : dispatch(fillVideogameByPlatformList());
     }
 
     return (
@@ -56,11 +48,11 @@ function FilterComponent({dispatch}) {
             <div className="filter__options" id="filter__options-id">
                 <p>Platforms:</p>
                 <div>
-                  <input type="checkbox" id="ps4" name="ps4" onChange={(name) => handleChangeChecked(name)}/>
+                  <input type="radio" id="ps4" value="ps4" name="platform" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="ps4">PlayStation 4</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="ps5" name="ps5" onChange={(name) => handleChangeChecked(name)}/>
+                  <input type="radio" id="ps5" value="ps5" name="platform" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="ps5">PlayStation 5</label>
                 </div>
             </div>
