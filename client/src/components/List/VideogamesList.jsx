@@ -8,7 +8,7 @@ import { loadVideogames } from '../../redux/actions/videogameActions';
 import Card from './Card/Card';
 import './VideogamesList.scss';
 
-function VideogameList({ videogamesList, dispatch, loading, error, filteredVideogameList, platformVideogamesList, salesVideogamesList }) {
+function VideogameList({ videogamesList, dispatch, loading, error, filteredVideogameList, platformVideogames, salesVideogamesList}) {
 
     useEffect(() => {
         if (!videogamesList?.length) {
@@ -23,20 +23,15 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
     const nintendoSwitchChecked = document.getElementById('nintendoSwitch');
     const pcChecked = document.getElementById('pc');
     const allPlatformsChecked = document.getElementById('allPlatforms');
-    const notSaleChecked = document.getElementById('notSale');
-    const onSaleChecked = document.getElementById('onSale');
 
     const displayVideogameList = (
-        <>
-            {!filteredVideogameList?.length && !platformVideogamesList?.length && !salesVideogamesList?.length && videogamesList?.length && videogamesList.map((videogame) => (
+
+        <>  
+            {!filteredVideogameList?.length && !platformVideogames?.length && !salesVideogamesList?.length && videogamesList?.length && videogamesList.map((videogame) => (
                 <Card Games={videogame}/>
             ))}
 
             {filteredVideogameList?.length > 0 && ps4Checked.checked && filteredVideogameList.map((videogame) => (
-                videogame.ps4 ? <Card Games={videogame}/> : null
-            ))}
-
-            {filteredVideogameList?.length > 0 && salesVideogamesList?.length && ps4Checked.checked && filteredVideogameList.map((videogame) => (
                 videogame.ps4 ? <Card Games={videogame}/> : null
             ))}
 
@@ -63,54 +58,14 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
             {filteredVideogameList?.length > 0 && allPlatformsChecked.checked && filteredVideogameList.map((videogame) => (
                 <Card Games={videogame}/>
             ))}
-            {/* ESTOS DE ARRIBA */}
 
-            {/* {filteredVideogameList?.length > 0 && filteredVideogameList.map((videogame) => (
-                <Card Games={videogame}/>
-            ))} */}
-
-            {/* {filteredVideogameList?.length > 0 && salesVideogamesList?.length > 0 && onSaleChecked.checked && ps4Checked.checked && filteredVideogameList.map((videogame) => (
-                videogame.edition.sale ? <Card Games={videogame}/> : null
-                <Card Games={videogame}/>
-            ))} */}
-
-            {/* {filteredVideogameList?.length > 0 && ps4Checked.checked && filteredVideogameList.map((videogame) => (
-                videogame.edition.sale ? <Card Games={videogame}/> : null
-            ))} */}
-
-            {salesVideogamesList?.length > 0 && !filteredVideogameList?.length && salesVideogamesList.map((videogame) => (
-                videogame.edition.sale ? <Card Games={videogame}/> : null  
-            ))}
-            {/* ESTE DE ARRIBA */}
-
-{/* !platformVideogamesList?.length && !filteredVideogameList?.length && ps4Checked.checked &&  */}
-
-            {/* {salesVideogamesList?.length > 0 && !filteredVideogameList?.length && salesVideogamesList.map((videogame) => (
-                <Card Games={videogame}/>
-                videogame.edition.sale ? <Card Games={videogame}/> : null
-            ))} */}
-            
-            {/* {salesVideogames?.length > 0 && onSaleChecked.checked && ps4Checked.checked && salesVideogames.map((videogame) => (
-                <Card Games={videogame}/>
-            ))} */}
-
-            {/* {salesVideogames?.length > 0 && onSaleChecked.checked && ps5Checked.checked && salesVideogames.map((videogame) => (
-                <Card Games={videogame}/>
-            ))} */}
-
-            {filteredVideogameList?.length > 0 && !platformVideogamesList?.length && !salesVideogamesList?.length && filteredVideogameList.map((videogame) => (
+            {filteredVideogameList?.length > 0 && !platformVideogames?.length && filteredVideogameList.map((videogame) => (
                 <Card Games={videogame}/>
             ))}
-            {/* ESTE DE ARRIBA */}
 
-            {platformVideogamesList?.length > 0 && !filteredVideogameList?.length && platformVideogamesList.map((videogame) => (
-                <Card Games={videogame}/>
-            ))}
-            {/* ESTE DE ARRIBA */}
-
-            {/* {platformVideogamesList?.length > 0 && !filteredVideogameList?.length && ps4Checked.checked && platformVideogamesList.map((videogame) => (
+            {platformVideogames?.length > 0 && !filteredVideogameList?.length && platformVideogames.map((videogame) => (
                 <Card Games={videogame} />
-            ))} */}
+            ))}
         </>
     )
 
@@ -135,7 +90,7 @@ function mapStateToProps({ videogameReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
         filteredVideogameList: videogameReducer.filteredVideogameList,
-        platformVideogamesList: videogameReducer.platformVideogamesList,
+        platformVideogames: videogameReducer.platformVideogames,
         salesVideogamesList: videogameReducer.salesVideogamesList,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
