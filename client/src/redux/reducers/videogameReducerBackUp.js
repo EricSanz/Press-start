@@ -2,6 +2,8 @@ import actionTypes from '../actions/actionTypes';
 
 export default function videogameReducer(state = {}, action) {
     let newState = null;
+    let platformVideogames;
+    let filteredVideogames;
     switch (action.type) {
         case actionTypes.SET_LOADING:
             newState = { ...state, loading: true };
@@ -36,7 +38,7 @@ export default function videogameReducer(state = {}, action) {
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_LIST:
-            let filteredVideogames = state.videogamesList.filter((videogame) => (
+            filteredVideogames = state.videogamesList.filter((videogame) => (
                 videogame.game.first_title.includes(action.videogameName)
             ))
             newState = {
@@ -53,57 +55,107 @@ export default function videogameReducer(state = {}, action) {
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_BY_PLATFORM:
-            let platformVideogames;
             console.log(action.videogames);
                 switch (action.videogames) {
                     case "ps4":
-                        platformVideogames = state.videogamesList.filter((videogame) => (
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
                             videogame.ps4 === true
                         ))
                     break;
                     case "ps5":
-                        platformVideogames = state.videogamesList.filter((videogame) => (
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
                             videogame.ps5 === true
                         ))
                     break;
                     case "xboxOne":
-                        platformVideogames = state.videogamesList.filter((videogame) => (
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
                             videogame.xboxOne === true
                         ))
                     break;
                     case "xboxSeriesSX":
-                        platformVideogames = state.videogamesList.filter((videogame) => (
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
                             videogame.xboxSeriesSX === true
                         ))
                     break;
                     case "nintendoSwitch":
-                        platformVideogames = state.videogamesList.filter((videogame) => (
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
                             videogame.nintendoSwitch === true
                         ))
                     break;
                     case "pc":
-                        platformVideogames = state.videogamesList.filter((videogame) => (
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
                             videogame.pc === true
                         ))
                     break;
                     case "allPlatforms":
-                        platformVideogames = state.videogamesList
+                        filteredVideogames = state.videogamesList
                     break;
+                    // case "onSale":
+                    //     platformVideogames = state.videogamesList.filter((videogame) => (
+                    //         videogame.edition.sale === true
+                    //     ))
+                    // break;
                     default:
                     break;
                 }
-            console.log(platformVideogames);
+            console.log(filteredVideogames);
             newState = {
                 ...state,
                 loading: false,
-                platformVideogames: platformVideogames
+                // filteredVideogameList: filteredVideogames,
+                platformVideogamesList: filteredVideogames
             }
             break;
         case actionTypes.FILL_VIDEOGAME_BY_PLATFORM_LIST:
             newState = {
                 ...state,
                 loading: false,
-                filteredVideogameList: []
+                // filteredVideogameList: [],
+                platformVideogamesList: [],
+            };
+            break;
+        case actionTypes.FILTER_VIDEOGAME_BY_SALE:
+            // let salesVideogames = [];
+            const ps4Checked = document.getElementById('ps4');
+            const ps5Checked = document.getElementById('ps5');
+            switch (action.videogames) {
+                case 'onSale':
+                    if (ps4Checked) {
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.edition.sale === true && videogame.ps4 === true
+                        ))
+                    } else if (ps5Checked.checked) {
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.edition.sale === true && videogame.ps5 === true
+                        ))
+                    } else {
+                        filteredVideogames = state.videogamesList.filter((videogame) => (
+                            videogame.edition.sale === true
+                        ))
+                    }
+                    break;
+                case 'notSale':
+
+                    break;
+                default:
+                    // filteredVideogames = []
+                    break;
+            }
+            // salesVideogames = state.videogamesList.filter((videogame) => (
+            //     videogame.edition.sale === true && videogame.ps4 === true
+            // ))
+            console.log(filteredVideogames);
+            newState = {
+                ...state,
+                loading: false,
+                salesVideogamesList: filteredVideogames
+            }
+            break;
+        case actionTypes.FILL_VIDEOGAME_BY_SALE_LIST:
+            newState = {
+                ...state,
+                loading: false,
+                salesVideogamesList: []
             };
             break;
         default:

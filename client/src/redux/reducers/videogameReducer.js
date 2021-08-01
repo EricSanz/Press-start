@@ -2,7 +2,6 @@ import actionTypes from '../actions/actionTypes';
 
 export default function videogameReducer(state = {}, action) {
     let newState = null;
-    let platformVideogames;
     let filteredVideogames;
     switch (action.type) {
         case actionTypes.SET_LOADING:
@@ -55,78 +54,211 @@ export default function videogameReducer(state = {}, action) {
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_BY_PLATFORM:
+            const ps4Checked = document.getElementById('ps4');
+            const ps5Checked = document.getElementById('ps5');
+            const xboxOneChecked = document.getElementById('xboxOne');
+            const xboxSeriesSXChecked = document.getElementById('xboxSeriesSX');
+            const nintendoSwitchChecked = document.getElementById('nintendoSwitch');
+            const pcChecked = document.getElementById('pc');
+            const allPlatformsChecked = document.getElementById('allPlatforms');
+            const onSaleChecked = document.getElementById('onSale');
+            const notSaleChecked = document.getElementById('notSale');
             console.log(action.videogames);
                 switch (action.videogames) {
                     case "ps4":
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.ps4 === true
-                        ))
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps4 === true && videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps4 === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps4 === true
+                            ))
+                        }
                     break;
                     case "ps5":
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.ps5 === true
-                        ))
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps5 === true && videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps5 === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps5 === true
+                            ))
+                        }
                     break;
                     case "xboxOne":
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.xboxOne === true
-                        ))
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxOne === true && videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxOne === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxOne === true
+                            ))
+                        }
                     break;
                     case "xboxSeriesSX":
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.xboxSeriesSX === true
-                        ))
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxSeriesSX === true && videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxSeriesSX === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxSeriesSX === true
+                            ))
+                        }
                     break;
                     case "nintendoSwitch":
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.nintendoSwitch === true
-                        ))
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.nintendoSwitch === true && videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.nintendoSwitch === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.nintendoSwitch === true
+                            ))
+                        }
                     break;
                     case "pc":
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.pc === true
-                        ))
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.pc === true && videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.pc === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.pc === true
+                            ))
+                        }
                     break;
                     case "allPlatforms":
-                        filteredVideogames = state.videogamesList
+                        if (onSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true
+                            ))
+                        } else if (notSaleChecked.checked) {
+                            filteredVideogames = state.videogamesList
+                        } else {
+                            filteredVideogames = state.videogamesList
+                        }
                     break;
-                    // case "onSale":
-                    //     platformVideogames = state.videogamesList.filter((videogame) => (
-                    //         videogame.edition.sale === true
-                    //     ))
-                    // break;
+                    case "onSale":
+                        if (ps4Checked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true && videogame.ps4 === true
+                            ))
+                        } else if (ps5Checked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true && videogame.ps5 === true
+                            ))
+                        } else if (xboxOneChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true && videogame.xboxOne === true
+                            ))
+                        } else if (xboxSeriesSXChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true && videogame.xboxSeriesSX === true
+                            ))
+                        } else if (nintendoSwitchChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true && videogame.nintendoSwitch === true
+                            ))
+                        } else if (pcChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true && videogame.pc === true
+                            ))
+                        } else if (allPlatformsChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true
+                            ))
+                        } else {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.edition.sale === true
+                            ))
+                        }
+                    break;
+                    case "notSale":
+                        if (ps4Checked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps4 === true
+                            ))
+                        } else if (ps5Checked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.ps5 === true
+                            ))
+                        } else if (xboxOneChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxOne === true
+                            ))
+                        } else if (xboxSeriesSXChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.xboxSeriesSX === true
+                            ))
+                        } else if (nintendoSwitchChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.nintendoSwitch === true
+                            ))
+                        } else if (pcChecked.checked) {
+                            filteredVideogames = state.videogamesList.filter((videogame) => (
+                                videogame.pc === true
+                            ))
+                        } else if (allPlatformsChecked.checked) {
+                            filteredVideogames = state.videogamesList
+
+                        } else {
+                            filteredVideogames = state.videogamesList
+                        }
+                    break;
                     default:
+                        filteredVideogames = state.videogamesList
                     break;
                 }
             console.log(filteredVideogames);
             newState = {
                 ...state,
                 loading: false,
-                // filteredVideogameList: filteredVideogames,
-                platformVideogamesList: filteredVideogames
+                platformVideogames: filteredVideogames
             }
             break;
         case actionTypes.FILL_VIDEOGAME_BY_PLATFORM_LIST:
             newState = {
                 ...state,
                 loading: false,
-                // filteredVideogameList: [],
-                platformVideogamesList: [],
+                platformVideogames: state.videogamesList
             };
             break;
         case actionTypes.FILTER_VIDEOGAME_BY_SALE:
-            // let salesVideogames = [];
-            const ps4Checked = document.getElementById('ps4');
-            const ps5Checked = document.getElementById('ps5');
+            // const ps4Checked = document.getElementById('ps4');
+            // const ps5Checked = document.getElementById('ps5');
             switch (action.videogames) {
-                case 'onSale':
+                case "onSale":
                     if (ps4Checked.checked) {
                         filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.edition.sale === true && videogame.ps4 === true
-                        ))
-                    } else if (ps5Checked.checked) {
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.edition.sale === true && videogame.ps5 === true
+                            videogame.ps4 === true && videogame.edition.sale === true
                         ))
                     } else {
                         filteredVideogames = state.videogamesList.filter((videogame) => (
@@ -134,28 +266,27 @@ export default function videogameReducer(state = {}, action) {
                         ))
                     }
                     break;
-                case 'notSale':
-
-                    break;
+                case "notSale":
+                    filteredVideogames = state.videogamesList.filter((videogame) => (
+                        videogame.edition.sale === false
+                    ))
+                    break;   
                 default:
-                    // filteredVideogames = []
                     break;
             }
-            // salesVideogames = state.videogamesList.filter((videogame) => (
-            //     videogame.edition.sale === true && videogame.ps4 === true
-            // ))
             console.log(filteredVideogames);
             newState = {
                 ...state,
                 loading: false,
-                salesVideogamesList: filteredVideogames
+                salesVideogamesList: filteredVideogames,
+                filteredVideogameList: state.videogamesList
             }
             break;
         case actionTypes.FILL_VIDEOGAME_BY_SALE_LIST:
             newState = {
                 ...state,
                 loading: false,
-                salesVideogamesList: []
+                filteredVideogameList: []
             };
             break;
         default:
