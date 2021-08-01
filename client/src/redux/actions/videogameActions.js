@@ -95,16 +95,3 @@ export function fillVideogameByPlatformList() {
         type: actionTypes.FILL_VIDEOGAME_BY_PLATFORM_LIST,
     };
 }
-
-export function filterVideogameBySale(videogames) {
-    return {
-        type: actionTypes.FILTER_VIDEOGAME_BY_SALE,
-        videogames,
-    }
-}
-
-export function fillVideogameBySaleList() {
-    return {
-        type: actionTypes.FILL_VIDEOGAME_BY_SALE_LIST,
-    };
-}

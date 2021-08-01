@@ -251,48 +251,9 @@ export default function videogameReducer(state = {}, action) {
                 platformVideogames: state.videogamesList
             };
             break;
-        case actionTypes.FILTER_VIDEOGAME_BY_SALE:
-            // const ps4Checked = document.getElementById('ps4');
-            // const ps5Checked = document.getElementById('ps5');
-            switch (action.videogames) {
-                case "onSale":
-                    if (ps4Checked.checked) {
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.ps4 === true && videogame.edition.sale === true
-                        ))
-                    } else {
-                        filteredVideogames = state.videogamesList.filter((videogame) => (
-                            videogame.edition.sale === true
-                        ))
-                    }
-                    break;
-                case "notSale":
-                    filteredVideogames = state.videogamesList.filter((videogame) => (
-                        videogame.edition.sale === false
-                    ))
-                    break;   
-                default:
-                    break;
-            }
-            console.log(filteredVideogames);
-            newState = {
-                ...state,
-                loading: false,
-                salesVideogamesList: filteredVideogames,
-                filteredVideogameList: state.videogamesList
-            }
-            break;
-        case actionTypes.FILL_VIDEOGAME_BY_SALE_LIST:
-            newState = {
-                ...state,
-                loading: false,
-                filteredVideogameList: []
-            };
-            break;
         default:
             newState = state;
             break;
     }
-
     return newState;
 }
