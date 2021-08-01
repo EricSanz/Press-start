@@ -1,7 +1,7 @@
 import Header from './components/Header/Header';
 import { Switch, Route } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
-import VideogamesList from './components/List/VideogamesList';
+import VideogamesList from './components/List/videogamesList';
 import Details from './components/Details/Details';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft , faEnvelopeOpenText, faHeart, faTimes } from '@fortawesome/free-solid-svg-icons';
