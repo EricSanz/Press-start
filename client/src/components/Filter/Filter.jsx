@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { filterVideogameByPlatform, fillVideogameByPlatformList, filterVideogameBySale, fillVideogameBySaleList } from '../../redux/actions/videogameActions'
+import { filterVideogameByPlatform, fillVideogameByPlatformList } from '../../redux/actions/videogameActions'
 import './Filter.scss';
 import '../List/VideogamesList.scss';
 
 function FilterComponent({dispatch}) {
 
     const [inputNav, setInputNav] = useState(false);
-    const [platformFilter, setPlatformFilter] = useState(false);
-    const [salesFilter, setSalesFilter] = useState(false);
 
     function handleInputNav() {
 
@@ -33,37 +31,7 @@ function FilterComponent({dispatch}) {
     }
 
     function handleChangeChecked({ target }) {
-        setPlatformFilter(!platformFilter);
-
-        const onSaleOption = document.getElementById('onSale');
-        onSaleOption.checked ? dispatch(fillVideogameBySaleList()) : console.log('hola');
-        if (onSaleOption.checked) {
-          onSaleOption.checked = false;
-        }
-
-        target.checked ? dispatch(filterVideogameByPlatform(target.value)) : dispatch(fillVideogameByPlatformList());
-    }
-
-    function handleChangeSales({ target }) {
-      setSalesFilter(!salesFilter);
-
-      const ps4Option = document.getElementById('ps4');
-      const ps5Option = document.getElementById('ps5');
-      const xboxOneOption = document.getElementById('xboxOne');
-      const xboxSeriesSXOption = document.getElementById('xboxSeriesSX');
-      const nintendoSwitch5Option = document.getElementById('nintendoSwitch');
-      const pcOption = document.getElementById('pc');
-      const allPlatformsOption = document.getElementById('allPlatforms');
-
-      ps4Option.checked ? dispatch(fillVideogameByPlatformList()) : console.log('hola');
-      ps5Option.checked ? dispatch(fillVideogameByPlatformList()) : ps5Option.checked = false;
-      xboxOneOption.checked ? dispatch(fillVideogameByPlatformList()) : console.log('hola');
-      xboxSeriesSXOption.checked ? dispatch(fillVideogameByPlatformList()) : console.log('hola');
-      nintendoSwitch5Option.checked ? dispatch(fillVideogameByPlatformList()) : console.log('hola');
-      pcOption.checked ? dispatch(fillVideogameByPlatformList()) : console.log('hola');
-      allPlatformsOption.checked ? dispatch(fillVideogameByPlatformList()) : console.log('hola');
-      target.checked ? dispatch(filterVideogameBySale(target.value)) : dispatch(fillVideogameBySaleList());
-
+      target.checked ? dispatch(filterVideogameByPlatform(target.value)) : dispatch(fillVideogameByPlatformList());
     }
 
     return (
@@ -104,13 +72,13 @@ function FilterComponent({dispatch}) {
                   <input type="radio" id="pc" value="pc" name="platform" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="pc">PC</label>
                 </div>
-                <p>Prices:</p>
+                <p></p>
                 <div>
-                  <input type="radio" id="notSale" value="notSale" name="sales" onChange={(value) => handleChangeSales(value)}/>
-                  <label for="notSale">Normal Price</label>
+                  <input type="radio" id="notSale" value="notSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="notSale">All Prices</label>
                 </div>
                 <div>
-                  <input type="radio" id="onSale" value="onSale" name="sales" onChange={(value) => handleChangeSales(value)}/>
+                  <input type="radio" id="onSale" value="onSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="onSale">On sale</label>
                 </div>
             </div>
@@ -122,7 +90,6 @@ function FilterComponent({dispatch}) {
 function mapStateToProps({ videogameReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
-        salesVideogames: videogameReducer.salesVideogames,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
     }
