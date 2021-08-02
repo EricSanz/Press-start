@@ -81,6 +81,15 @@ function FilterComponent({dispatch}) {
                   <input type="radio" id="onSale" value="onSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
                   <label for="onSale">On sale</label>
                 </div>
+                <p></p>
+                <div>
+                  <input type="radio" id="lowHigh" value="lowHigh" name="prices" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="lowHigh">Lowest to highest</label>
+                </div>
+                <div>
+                  <input type="radio" id="highLow" value="highLow" name="prices" onChange={(value) => handleChangeChecked(value)}/>
+                  <label for="highLow">Highest to lowest</label>
+                </div>
             </div>
         </>
     )
