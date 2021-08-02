@@ -104,13 +104,52 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "ps5":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true && videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true && videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                            }
+                            // filteredVideogames = state.videogamesList.filter((videogame) => (
+                            //     videogame.ps5 === true
+                            // ))
                         } else if (lowHighChecked.checked) {
                             platformFilterVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.ps5 === true
