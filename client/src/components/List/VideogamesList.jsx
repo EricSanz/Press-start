@@ -91,18 +91,9 @@ function mapStateToProps({ videogameReducer }) {
         videogamesList: videogameReducer.videogamesList,
         filteredVideogameList: videogameReducer.filteredVideogameList,
         platformVideogames: videogameReducer.platformVideogames,
-        salesVideogamesList: videogameReducer.salesVideogamesList,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
     }
 }
-
-// function mapDispatchToProps(dispatch) {
-//     return {
-//         actions: bindActionCreators({
-//             requestVideogames,
-//         }, dispatch),
-//     };
-// }
 
 export default connect(mapStateToProps)(VideogameList);
