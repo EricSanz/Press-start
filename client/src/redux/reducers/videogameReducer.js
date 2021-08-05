@@ -71,31 +71,49 @@ export default function videogameReducer(state = {}, action) {
                 switch (action.videogames) {
                     case "ps4":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true && videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true && videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true
-                            ))
-                        } else if (lowHighChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                            }
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.ps4 === true
@@ -147,27 +165,6 @@ export default function videogameReducer(state = {}, action) {
                                     videogame.ps5 === true
                                 ))
                             }
-                            // filteredVideogames = state.videogamesList.filter((videogame) => (
-                            //     videogame.ps5 === true
-                            // ))
-                        } else if (lowHighChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.ps5 === true
@@ -176,31 +173,49 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "xboxOne":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true && videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true && videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true
-                            ))
-                        } else if (lowHighChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                            }
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.xboxOne === true
@@ -209,31 +224,49 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "xboxSeriesSX":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true && videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true && videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true
-                            ))
-                        } else if (lowHighChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                            }
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.xboxSeriesSX === true
@@ -242,31 +275,49 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "nintendoSwitch":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true && videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true && videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true
-                            ))
-                        } else if (lowHighChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                            }
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.nintendoSwitch === true
@@ -275,31 +326,49 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "pc":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true && videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true && videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true
-                            ))
-                        } else if (lowHighChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                            }
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.pc === true
@@ -308,56 +377,186 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "allPlatforms":
                         if (onSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                            }
                         } else if (notSaleChecked.checked) {
-                            filteredVideogames = state.videogamesList
-                        } else if (lowHighChecked.checked) {
-                            filteredVideogames = state.videogamesList.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
-                        } else if (highLowChecked.checked) {
-                            filteredVideogames = state.videogamesList.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (lowHighChecked.checked) {
+                                filteredVideogames = state.videogamesList.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                filteredVideogames = state.videogamesList.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList
+                            }
                         } else {
                             filteredVideogames = state.videogamesList
                         }
                     break;
                     case "onSale":
                         if (ps4Checked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true && videogame.ps4 === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.ps4 === true
+                                ))                                
+                            }
                         } else if (ps5Checked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true && videogame.ps5 === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.ps5 === true
+                                ))                                
+                            }
                         } else if (xboxOneChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true && videogame.xboxOne === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.xboxOne === true
+                                ))                                
+                            }
                         } else if (xboxSeriesSXChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true && videogame.xboxSeriesSX === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.xboxSeriesSX === true
+                                ))                                
+                            }
                         } else if (nintendoSwitchChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true && videogame.nintendoSwitch === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.nintendoSwitch === true
+                                ))                                
+                            }
                         } else if (pcChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true && videogame.pc === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true && videogame.pc === true
+                                ))                                
+                            }
                         } else if (allPlatformsChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.edition.sale === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a.edition.salePrice - b.edition.salePrice
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                   b.edition.salePrice - a.edition.salePrice
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))                                
+                            }
                         } else {
                             filteredVideogames = state.videogamesList.filter((videogame) => (
                                 videogame.edition.sale === true
@@ -366,92 +565,316 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case "notSale":
                         if (ps4Checked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))                                
+                            }
                         } else if (ps5Checked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))                                
+                            }
                         } else if (xboxOneChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))                                
+                            }
                         } else if (xboxSeriesSXChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))                                
+                            }
                         } else if (nintendoSwitchChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))                                
+                            }
                         } else if (pcChecked.checked) {
-                            filteredVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true
-                            ))
+                            if (lowHighChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))                                
+                            }
                         } else if (allPlatformsChecked.checked) {
+                            if (lowHighChecked.checked) {
+                                filteredVideogames = state.videogamesList.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else if (highLowChecked.checked) {
+                                filteredVideogames = state.videogamesList.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList                           
+                            }
                             filteredVideogames = state.videogamesList
-
                         } else {
                             filteredVideogames = state.videogamesList
                         }
                     break;
                     case 'lowHigh':
                         if (ps4Checked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
                         } else if (ps5Checked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
                         } else if (xboxOneChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
                         } else if (xboxSeriesSXChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
                         } else if (nintendoSwitchChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
                         } else if (pcChecked.checked) {
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
+                        } else if (allPlatformsChecked.checked) {
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    a - b
+                                ))
+                            }
+                        } else if (onSaleChecked.checked) {
                             platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true
+                                videogame.edition.sale === true
                             ))
                             filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                a - b
+                                a.edition.salePrice - b.edition.salePrice
                             ))
-                        } else if (allPlatformsChecked.checked) {
+                        } else if (notSaleChecked.checked) {
                             filteredVideogames = state.videogamesList.sort((a,b) => (
                                 a = a.edition.sale ? a.edition.salePrice : a.edition.price,
                                 b = b.edition.sale ? b.edition.salePrice : b.edition.price,
@@ -467,60 +890,150 @@ export default function videogameReducer(state = {}, action) {
                     break;
                     case 'highLow':
                         if (ps4Checked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps4 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps4 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
                         } else if (ps5Checked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.ps5 === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.ps5 === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
                         } else if (xboxOneChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxOne === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxOne === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
                         } else if (xboxSeriesSXChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.xboxSeriesSX === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.xboxSeriesSX === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
                         } else if (nintendoSwitchChecked.checked) {
-                            platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.nintendoSwitch === true
-                            ))
-                            filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
-                            ))
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.nintendoSwitch === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
                         } else if (pcChecked.checked) {
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true && videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.pc === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
+                        } else if (allPlatformsChecked.checked) {
+                            if (onSaleChecked.checked) {
+                                platformFilterVideogames = state.videogamesList.filter((videogame) => (
+                                    videogame.edition.sale === true
+                                ))
+                                filteredVideogames = platformFilterVideogames.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            } else {
+                                filteredVideogames = state.videogamesList.sort((a,b) => (
+                                    a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                                    b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                                    b - a
+                                ))
+                            }
+                        } else if (onSaleChecked.checked) {
                             platformFilterVideogames = state.videogamesList.filter((videogame) => (
-                                videogame.pc === true
+                                videogame.edition.sale === true
                             ))
                             filteredVideogames = platformFilterVideogames.sort((a,b) => (
-                                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                                b - a
+                                b.edition.salePrice - a.edition.salePrice
                             ))
-                        } else if (allPlatformsChecked.checked) {
+                        } else if (notSaleChecked.checked) {
                             filteredVideogames = state.videogamesList.sort((a,b) => (
                                 a = a.edition.sale ? a.edition.salePrice : a.edition.price,
                                 b = b.edition.sale ? b.edition.salePrice : b.edition.price,
@@ -533,11 +1046,6 @@ export default function videogameReducer(state = {}, action) {
                                 b - a
                             ))
                         }
-                        // filteredVideogames = state.videogamesList.sort((a,b) => (
-                        //     a = a.edition.sale ? a.edition.salePrice : a.edition.price,
-                        //     b = b.edition.sale ? b.edition.salePrice : b.edition.price,
-                        //     b - a
-                        // ))
                     break;
                     default:
                         filteredVideogames = state.videogamesList
