@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import '../Search/Search.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { connect } from 'react-redux';
-import { filterVideogameByName, fillVideogameList, fillVideogameByPlatformList } from '../../redux/actions/videogameActions';
-
+import { filterVideogameByName, fillVideogameList } from '../../redux/actions/videogameActions';
 
 function SearchComponent({ dispatch }) {
 
@@ -25,13 +24,11 @@ function SearchComponent({ dispatch }) {
     }
 
     function handleInput({ target }) {
-        const ps5Option = document.getElementById('ps5');
         let { value } = target;
         if (value.length >= 3) {
             value = (`${value[0].toUpperCase()}${value.slice(1)}`)
             dispatch(filterVideogameByName(value));
         } else {
-            // dispatch(fillVideogameByPlatformList());
             dispatch(fillVideogameList());
         }
     }
