@@ -42,59 +42,61 @@ function FilterComponent({dispatch}) {
                 <FontAwesomeIcon id="filter__icon__right-id" className="filter__icon" icon="angle-double-right" />
                 <FontAwesomeIcon id="filter__icon__left-id" className="filter__icon" icon="angle-double-left" />
             </div>
-            <div className="filter__options" id="filter__options-id">
-                <p>Platforms:</p>
+            <div className="filter__options-container" id="filter__options-id">
+              <div className="filter__options-toolbar">
+                <p className="filter__title">Platforms:</p>
+                <p></p>
                 <div>
                   <input type="radio" id="allPlatforms" value="allPlatforms" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="allPlatforms">All Platforms</label>
+                  <label className="label--allplatforms" for="allPlatforms">All Platforms</label>
                 </div>
                 <div>
                   <input type="radio" id="ps4" value="ps4" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="ps4">PlayStation 4</label>
+                  <label className="label--ps4" for="ps4">PlayStation 4</label>
                 </div>
                 <div>
                   <input type="radio" id="ps5" value="ps5" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="ps5">PlayStation 5</label>
+                  <label className="label--ps5" for="ps5">PlayStation 5</label>
                 </div>
                 <div>
                   <input type="radio" id="xboxOne" value="xboxOne" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="xboxOne">Xbox One</label>
+                  <label className="label--xboxone" for="xboxOne">Xbox One</label>
                 </div>
                 <div>
                   <input type="radio" id="xboxSeriesSX" value="xboxSeriesSX" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="xboxSeriesSX">Xbox Series S/X</label>
+                  <label className="label--xboxseriesxs" for="xboxSeriesSX">Xbox Series S/X</label>
                 </div>
                 <div>
                   <input type="radio" id="nintendoSwitch" value="nintendoSwitch" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="nintendoSwitch">Nintendo Switch</label>
+                  <label className="label--nintendoswitch" for="nintendoSwitch">Nintendo Switch</label>
                 </div>
                 <div>
                   <input type="radio" id="pc" value="pc" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="pc">PC</label>
+                  <label className="label--pc" for="pc">PC</label>
                 </div>
-                <p></p>
+                <p className="filter__title">Prices:</p>
                 <div>
                   <input type="radio" id="notSale" value="notSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="notSale">All Prices</label>
+                  <label className="label--notsale" for="notSale">All Prices</label>
                 </div>
                 <div>
                   <input type="radio" id="onSale" value="onSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="onSale">On sale</label>
+                  <label className="label--onsale" for="onSale">On sale</label>
                 </div>
-                <p></p>
+                <p className="filter__title">Order:</p>
                 <div>
                   <input type="radio" id="lowHigh" value="lowHigh" name="prices" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="lowHigh">Lowest to highest</label>
+                  <label className="label--lowhigh" for="lowHigh">Lowest to highest</label>
                 </div>
                 <div>
                   <input type="radio" id="highLow" value="highLow" name="prices" onChange={(value) => handleChangeChecked(value)}/>
-                  <label for="highLow">Highest to lowest</label>
+                  <label className="label--highlow" for="highLow">Highest to lowest</label>
                 </div>
+              </div>
             </div>
         </>
     )
 }
-
 
 function mapStateToProps({ videogameReducer }) {
     return {

@@ -1,4 +1,5 @@
 @import '../styles/colors';
+@import '../../fonts/fonts';
 
 .filter__button {
     position: fixed;
@@ -36,15 +37,79 @@
     cursor: pointer;
 }
 
-.filter__options {
+.filter__options-container {
     position: fixed;
     top: 350px;
     left: -250px;
-    background: $redstrongcolor;
-    height: 450px;
+    background: $blackbackground;
+    height: 650px;
     width: 250px;
     transition: 1s;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
+    .filter__options-toolbar {
+        .filter__title {
+            color: $whitecolor;
+            padding-left: 20px;
+            height: 0px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        input[type='radio'] {
+            opacity: 0;
+            width: 10px
+        }
+        label {
+            display: flex;
+            justify-content: center;
+            background-color: $whitecolor;
+            color: $blackbackground;
+            padding: 8px 20px;
+            margin: -8px 20px;
+            font-family: $Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid $blackbackground;
+            border-radius: 6px;
+        }
+        input[type='radio']:checked + .label--ps4 {
+            background-color: $ps4color;
+            color: $whitecolor;
+        }
+        input[type='radio']:checked + .label--ps5 {
+            background-color: $greyborder;
+        }
+        input[type='radio']:checked + .label--xboxone {
+            background-color: $xboxcolor;
+            color: $whitecolor;
+        }
+        input[type='radio']:checked + .label--xboxseriesxs {
+            background-color: $xboxcolor;
+            color: $whitecolor;
+        }
+        input[type='radio']:checked + .label--nintendoswitch {
+            background-color: $nintendocolor;
+            color: $whitecolor;
+        }
+        input[type='radio']:checked + .label--pc {
+            background-color: $pccolor;
+            color: $whitecolor;
+        }
+        input[type='radio']:checked + .label--notsale {
+            background-color: $goldenstrongcolor;
+        }
+        input[type='radio']:checked + .label--onsale {
+            background-color: $goldenstrongcolor;
+        }
+        input[type='radio']:checked + .label--lowhigh {
+            background-color: $goldenstrongcolor;
+        }
+        input[type='radio']:checked + .label--highlow {
+            background-color: $goldenstrongcolor;
+        }
+        input[type='radio']:checked + .label--allplatforms {
+            background-color: $goldenstrongcolor;
+        }
+    } 
 }
