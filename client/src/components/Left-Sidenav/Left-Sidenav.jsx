@@ -8,10 +8,12 @@ function LeftSidenav() {
 
     function closeleftSidenav() {
         const closeSidenav = document.getElementById('leftSidenav__id');
+        const openLeftSidenav = document.getElementById('open__icon');
+        const closeLeftSidenav = document.getElementById('close__icon');
         closeSidenav.style.transform = 'translateX(0px)';
+        openLeftSidenav.style.display = 'block';
+        closeLeftSidenav.style.display = 'none';
     }
-
-    // style={{ textDecoration: 'none' }}
 
     return (
         <section className="left__sidenav">
