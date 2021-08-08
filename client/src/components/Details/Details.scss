@@ -1,4 +1,5 @@
 @import "../styles/colors";
+@import "../../fonts/fonts";
 
 main {
     position: absolute;
@@ -16,9 +17,37 @@ main {
         width: 34%;
         background: $greybackground;
         border-right: 1px solid $greyborder;
+        .title__container {
+            left: 0;
+            top: 120px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            .title__videogame {
+                font-family: $Montserrat;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .title--addon {
+                font-size: 14px;
+                font-family: $Montserrat;
+                margin-top: -15px;
+            }
+        }
+        .cover__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cover--img {
+                width: 400px;
+            }
+        }
         .editions__container, & .platforms__container {
             display: flex;
             align-items: center;
+            margin-top: 5px;
             .editions__title, & .platforms__title {
                 padding-right: 10px;
                 font-weight: bold;

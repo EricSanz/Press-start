@@ -22,8 +22,13 @@ function Details ({dispatch, videogame, match, loading}) {
             <div className="main__left">
                 {loading ? <Loading/> : videogame && (
                     <>
-                        <p>{videogame.game.first_title}</p>
-                        <p>{videogame.id}</p>                        
+                        <div className="title__container">
+                            <p className="title__videogame">{videogame.game.first_title}</p>
+                            <p className="title--addon">{videogame.edition.version} ({videogame.edition.name} Edition)</p>
+                        </div>
+                        <div className="cover__container">
+                            <img className="cover--img" src={videogame.edition.cover} alt={videogame.id} />
+                        </div>
                         {videogame.other_platforms.length > 0 ? (
                             <div className="platforms__container">
                                 <p className="platforms__title">Platforms:</p>
