@@ -55,7 +55,19 @@ function Details ({dispatch, videogame, match, loading}) {
                 )}
             </div>
             <div className="main__right">
-
+                {loading ? <Loading /> : videogame && (
+                    <>
+                        <div className="rating__global--container">
+                            <p className="rating__global--title">Rating:</p>
+                            <div className="rating__global--stars">
+                                <div className="stars__rating--top" style={{width: "71%"}}><span>★</span>
+                                <span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div className="stars__ratring--bottom"><span>★</span><span>★</span>
+                                <span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                        </div>
+                    </>
+                )}
             </div>
         </main>
     )

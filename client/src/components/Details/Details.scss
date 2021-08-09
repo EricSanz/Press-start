@@ -80,6 +80,44 @@ main {
         position: relative;
         width: 60%;
         background: $whitecolor;
-
+        .rating__global--container {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 60px;
+            top: 170px;
+            .rating__global--title {
+                font-family: $Montserrat;
+                font-weight: 600;
+                padding-top: 6px;
+                padding-right: 10px;
+            }
+            .rating__global--stars {
+                unicode-bidi: bidi-override;
+                color: $greyborder;
+                font-size: 25px;
+                // height: 25px;
+                width: 100px;
+                margin: 0 auto;
+                position: relative;
+                padding: 0;
+                text-shadow: 0px 1px 0 $greystarlayout;
+                .stars__rating--top {
+                    color: $goldencolor;
+                    padding: 0;
+                    position: absolute;
+                    z-index: 1;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                }
+                .stars__rating--bottom {
+                    padding: 0;
+                    display: block;
+                    z-index: 0;
+                }
+            }
+        }
     }
 }
