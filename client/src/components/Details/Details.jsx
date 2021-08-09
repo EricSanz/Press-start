@@ -26,6 +26,11 @@ function Details ({dispatch, videogame, match, loading}) {
                             <p className="title__videogame">{videogame.game.first_title}</p>
                             <p className="title--addon">{videogame.edition.version} ({videogame.edition.name} Edition)</p>
                         </div>
+                        {videogame.edition.sale ? (
+                            <div className="onsale__tag">
+                                <p>On Sale</p>
+                            </div>
+                        ) : null}
                         <div className="cover__container">
                             <img className="cover--img" src={videogame.edition.cover} alt={videogame.id} />
                         </div>
@@ -65,7 +70,18 @@ function Details ({dispatch, videogame, match, loading}) {
                                 <div className="stars__ratring--bottom"><span>★</span><span>★</span>
                                 <span>★</span><span>★</span><span>★</span></div>
                             </div>
+                            <p className="rating__global--opinions">from X Number of other players</p>
                         </div>
+                        {videogame.edition.sale ? (
+                            <div className="onsale__price--container">
+                                <p className="normal__price">{videogame.edition.price}€</p>
+                                <p className="onsale__price">{videogame.edition.salePrice}€</p>
+                            </div>
+                        ) : (
+                            <div className="normal__price--container">
+                                <p className="normal__price">{videogame.edition.price}€</p>
+                            </div>
+                        )}
                     </>
                 )}
             </div>

@@ -18,8 +18,8 @@ main {
         background: $greybackground;
         border-right: 1px solid $greyborder;
         .title__container {
-            left: 0;
-            top: 120px;
+            // left: 0;
+            // top: 120px;
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -35,6 +35,20 @@ main {
                 font-family: $Montserrat;
                 margin-top: -15px;
             }
+        }
+        .onsale__tag {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 60px;
+            top: 170px;
+            font-weight: 600;
+            border-radius: 10px;
+            height: 50px;
+            width: 100px;
+            background-color: $redlightcolor;
+
         }
         .cover__container {
             display: flex;
@@ -85,7 +99,7 @@ main {
             align-items: center;
             position: absolute;
             left: 60px;
-            top: 170px;
+            top: 150px;
             .rating__global--title {
                 font-family: $Montserrat;
                 font-weight: 600;
@@ -117,6 +131,34 @@ main {
                     display: block;
                     z-index: 0;
                 }
+            }
+            .rating__global--opinions {
+                font-family: $Montserrat;
+                padding-top: 8px;
+                padding-left: 14px;
+            }
+        }
+        .onsale__price--container {
+            position: relative;
+            top: 200px;
+            left: 60px;
+            display: inline-flex;
+            font-size: 25px;
+            .normal__price {
+                padding-right: 25px;
+            }
+            .normal__price::after {
+                border-bottom: 0.2em solid $redcolor;
+                content: "";
+                width: 83px;
+                opacity: .7;
+                position: absolute;
+                left: 0px;
+                top: 38px;
+                transform: rotate(-15deg);
+            }
+            .onsale__price {
+                font-weight: 600;
             }
         }
     }
