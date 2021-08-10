@@ -28,7 +28,11 @@ main {
             .title__videogame {
                 font-family: $Montserrat;
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 18px;
+            }
+            .second__title__videogame {
+                font-family: $Montserrat;
+                font-size: 15px;
             }
             .title--addon {
                 font-size: 14px;
@@ -41,12 +45,12 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            right: 60px;
-            top: 170px;
+            right: 30px;
+            top: 167px;
             font-weight: 600;
             border-radius: 10px;
             height: 50px;
-            width: 100px;
+            width: 90px;
             background-color: $redlightcolor;
         }
         .cover__container {
@@ -54,18 +58,21 @@ main {
             align-items: center;
             justify-content: center;
             .cover--img {
-                width: 400px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width: 350px;
             }
         }
-        .editions__container, & .platforms__container {
+        .editions__container, .platforms__container {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin-top: 5px;
-            .editions__title, & .platforms__title {
+            .editions__title, .platforms__title {
                 padding-right: 10px;
                 font-weight: bold;
             }
-            .selected-edition__container, & .selected-platform__container {
+            .selected-edition__container, .selected-platform__container {
                 font-weight: 600;
                 border-radius: 10px;
                 height: 30px;
@@ -73,7 +80,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 padding: 5px;
-                .selected-edition, & .selected-platform {
+                .selected-edition, .selected-platform {
                     padding: 10px;
                     text-align: center;
                     font-size: 12px;
@@ -137,28 +144,50 @@ main {
                 padding-left: 14px;
             }
         }
-        .onsale__price--container {
+        .onsale__price--container, .normal__price--container {
             position: relative;
-            top: 200px;
+            top: 180px;
             left: 60px;
             display: inline-flex;
-            font-size: 25px;
+            font-size: 30px;
             .normal__price {
-                padding-right: 25px;
+                padding-right: 20px;
             }
             .normal__price::after {
                 border-bottom: 0.2em solid $redcolor;
                 content: "";
-                width: 83px;
+                width: 95px;
                 opacity: .7;
                 position: absolute;
                 left: 0px;
-                top: 38px;
+                top: 45px;
                 transform: rotate(-15deg);
             }
             .onsale__price {
                 font-weight: 600;
             }
+        }
+        .sold__out__container, .add__cart__container, .preorder__container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 60px;
+            top: 170px;
+            font-weight: 600;
+            font-size: 21px;
+            border-radius: 10px;
+            height: 55px;
+            width: 250px;
+        }
+        .sold__out__container {
+            background-color: $redlightcolor;
+        }
+        .add__cart__container {
+            background-color: $goldencolor;
+        }
+        .preorder__container {
+            background-color: $greystarlayout;
         }
     }
 }

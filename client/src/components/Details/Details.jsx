@@ -23,7 +23,11 @@ function Details ({dispatch, videogame, match, loading}) {
                 {loading ? <Loading/> : videogame && (
                     <>
                         <div className="title__container">
-                            <p className="title__videogame">{videogame.game.first_title}</p>
+                            {videogame.game.dual_title ? (
+                                <p className="title__videogame">{videogame.game.first_title} <span className="second__title__videogame">{videogame.game.second_title}</span></p>
+                            ) : (
+                                <p className="title__videogame">{videogame.game.first_title}</p>
+                            )}
                             <p className="title--addon">{videogame.edition.version} ({videogame.edition.name} Edition)</p>
                         </div>
                         {videogame.edition.sale ? (
@@ -70,7 +74,7 @@ function Details ({dispatch, videogame, match, loading}) {
                                 <div className="stars__ratring--bottom"><span>★</span><span>★</span>
                                 <span>★</span><span>★</span><span>★</span></div>
                             </div>
-                            <p className="rating__global--opinions">from X Number of other players</p>
+                            <p className="rating__global--opinions">from X Number of players</p>
                         </div>
                         {videogame.edition.sale ? (
                             <div className="onsale__price--container">
@@ -80,6 +84,23 @@ function Details ({dispatch, videogame, match, loading}) {
                         ) : (
                             <div className="normal__price--container">
                                 <p className="normal__price">{videogame.edition.price}€</p>
+                            </div>
+                        )}
+                        {videogame.edition.stock ? (
+                            <>
+                                {videogame.release.released ? (
+                                    <div className="add__cart__container">
+                                        <p>ADD TO CART</p>
+                                    </div>
+                                ) : (
+                                    <div className="preorder__container">
+                                        <p>PRE-ORDER</p>
+                                    </div>
+                                )}
+                            </>
+                        ) : (
+                            <div className="sold__out__container">
+                                <p>SOLD OUT</p>
                             </div>
                         )}
                     </>
