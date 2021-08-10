@@ -11,16 +11,14 @@ const videogameSchema = new Schema({
     developer: String,
     images: Array,
     pegi: String,
-    release: [
-        {
-            date: String,
-            day: String,
-            month: String,
-            year: String,
-            no_date: String,
-            released: Boolean,
-        }
-    ],
+    release: {
+        date: String,
+        day: String,
+        month: String,
+        year: String,
+        no_date: String,
+        released: Boolean,
+    },
     ps4: Boolean,
     ps5: Boolean,
     xboxOne: Boolean,
