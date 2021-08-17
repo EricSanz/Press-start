@@ -95,3 +95,9 @@ export function fillVideogameByPlatformList() {
         type: actionTypes.FILL_VIDEOGAME_BY_PLATFORM_LIST,
     };
 }
+
+export function fillFullVideogameList() {
+    return {
+        type: actionTypes.FILL_FULL_VIDEOGAME_LIST,
+    };
+}
