@@ -1115,6 +1115,15 @@ export default function videogameReducer(state = {}, action) {
                 platformVideogames: filteredVideogames
             };
             break;
+        case actionTypes.FILL_FULL_VIDEOGAME_LIST:
+            filteredVideogames = state.videogamesList
+            console.log('hey');
+            newState = {
+                ...state,
+                loading: false,
+                platformVideogames: filteredVideogames
+            };
+            break;
         case actionTypes.FILTER_VIDEOGAME_BY_PLATFORM:
             console.log(action.videogames);
                 switch (action.videogames) {
