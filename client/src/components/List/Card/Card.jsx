@@ -1,9 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { fillFullVideogameList } from '../../../redux/actions/videogameActions';
 import './Card.scss';
 
-function Card({Games}) {
+function Card({Games, dispatch}) {
 
     function cardColor() {
         switch (Games.edition.version) {
@@ -50,7 +52,7 @@ function Card({Games}) {
                 <div className="videogame__buy--container">
                     <FontAwesomeIcon icon="shopping-cart" className={Games.edition.stock ? "shopping-cart__green" : "shopping-cart__red"} />
                 </div>
-                <Link to={`product/${Games._id}`}>
+                <Link to={`product/${Games._id}`} onClick={() => dispatch(fillFullVideogameList())}>
                     <img className="videogame__card-image" alt={Games.id} src={Games.edition.cover}></img>
                 </Link>
                 <div className="videogame__card-price--container">
@@ -75,4 +77,14 @@ function Card({Games}) {
     )
 }
 
-export default Card;
+function mapStateToProps({ videogameReducer }) {
+    return {
+        videogamesList: videogameReducer.videogamesList,
+        filteredVideogameList: videogameReducer.filteredVideogameList,
+        platformVideogames: videogameReducer.platformVideogames,
+        loading: videogameReducer.loading,
+        error: videogameReducer.error,
+    }
+}
+
+export default connect(mapStateToProps)(Card);
