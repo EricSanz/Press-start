@@ -84,6 +84,33 @@ function Details ({dispatch, videogame, match, loading}) {
             <div className="main__right">
                 {loading ? <Loading /> : videogame && (
                     <>
+                        <div className="videogame__info--wrapper">
+                            <div className="info--wrapper">
+                                {videogame.edition.is_content ? (
+                                    <>
+                                        <button className="info__button left__button">Content</button>
+                                        <button className="info__button middle__button">Screens</button>
+                                        <button className="info__button right__button">Description</button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <button className="info__button left__button">Screens</button>
+                                        <button className="info__button right__button">Description</button>
+                                    </>
+                                )}
+                            </div>
+                            <div className="content__info">
+
+                            </div>
+                            <div className="screens__info">
+                                {videogame.images.map((image) => (
+                                        <img className="videogame__images" src={image} alt="images" />
+                                    ))}
+                            </div>
+                            <div className="description__info">
+
+                            </div>
+                        </div>
                         <div className="info__container">
                             <div className="price__cart--option">
                                 {videogame.edition.sale ? (

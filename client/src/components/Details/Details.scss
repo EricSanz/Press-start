@@ -125,6 +125,43 @@ main {
         position: relative;
         width: 60%;
         background: $whitecolor;
+        // overflow-x: hidden;
+        .videogame__info--wrapper {
+            position: relative;
+            top: 165px;
+            // max-height: 550px;
+            .info--wrapper {
+                padding-left: 75px;
+                height: 60px;
+                border-bottom: 1px solid $greyborder;
+                .info__button {
+                    font-family: $Montserrat;
+                    font-size: 16px;
+                    outline: none;
+                    border: none;
+                    height: 100%;
+                    background-color: $blackbackground;
+                    color: $whitecolor;
+                    width: 160px;
+                    border: 2px solid $whitecolor;
+                }
+                .left__button {
+                    border-top-left-radius: 10px;
+                }
+            }
+            .content__info, .screens__info, .description__info {
+                position: relative;
+                left: 30px;
+            }
+            .screens__info {
+                max-height: 490px;
+                overflow-x: hidden;
+                .videogame__images {
+                    width: 335px;
+                    margin: 10px;
+                }
+            }
+        }
         .info__container {
             width: 100vh;
             position: relative;
