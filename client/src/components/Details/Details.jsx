@@ -11,12 +11,30 @@ import './Details.scss';
 function Details ({dispatch, videogame, match, loading}) {
 
     const [id] = useState(match.params.videogameId);
+    const [changeCss, setChangeCss] = useState(true);
 
     useEffect(() => {
         if (!videogame || videogame._id !== id) {
             dispatch(loadOneVideogame(id))
         }
     }, [])
+
+    function selectedTab({target}) {
+        const contentOption = document.getElementById('label__content');
+        if (target.value === 'screens' || target.value === 'description') {
+            if (changeCss === false) {
+                setChangeCss(!changeCss)
+            }
+            changeCss ? contentOption.style.backgroundColor = '#161616' : contentOption.style.backgroundColor = '#e8a92c'
+            // contentOption.style.color = '#fff';
+            // contentOption.style.fontWeight = '600';
+            console.log('Hey')
+        }
+
+        if (target.value === 'content') {
+            contentOption.style.backgroundColor = '#e8a92c';
+        }
+    }
 
     return (
         <main>
@@ -88,9 +106,21 @@ function Details ({dispatch, videogame, match, loading}) {
                             <div className="info--wrapper">
                                 {videogame.edition.is_content ? (
                                     <>
-                                        <button className="info__button left__button">Content</button>
-                                        <button className="info__button middle__button">Screens</button>
-                                        <button className="info__button right__button">Description</button>
+                                        {/* <button id="content" className="info__button left__button" onClick={(id) => selectedTab(id)}>Content</button> */}
+                                        <div>
+                                            <input type="radio" id="content" value="content" name="options" onChange={(value) => selectedTab(value)}/>
+                                            <label className="label--content label--left" id="label__content" for="content">Content</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="screens" value="screens" name="options" onChange={(value) => selectedTab(value)}/>
+                                            <label className="label--screens" for="screens">Screens</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTab(value)}/>
+                                            <label className="label--description" for="description">Description</label>
+                                        </div>
+                                        {/* <button id="screens" className="info__button middle__button">Screens</button> */}
+                                        {/* <button className="info__button right__button">Description</button> */}
                                     </>
                                 ) : (
                                     <>
@@ -107,7 +137,7 @@ function Details ({dispatch, videogame, match, loading}) {
                                         <img className="videogame__images" src={image} alt="images" />
                                     ))}
                             </div>
-                            <div className="description__info">
+                            <div className="description__info" id="description">
 
                             </div>
                         </div>

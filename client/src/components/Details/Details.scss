@@ -137,9 +137,47 @@ main {
             width: 58vw;
             // max-height: 550px;
             .info--wrapper {
+                display: flex;
+                align-items: center;
                 padding-left: 75px;
                 height: 60px;
                 border-bottom: 1px solid $greyborder;
+                input[type='radio'] {
+                    opacity: 0;
+                    width: 10px;
+                    // height: 100px;
+                }
+                label {
+                    display: flex;
+                    color: $whitecolor;
+                    padding: 15px 30px;
+                    margin-right: 2px;
+                    margin-bottom: 20px;
+                    font-family: $Montserrat;
+                    font-size: 20px;
+                    background-color: $blackbackground;
+                }
+                .label--left {
+                    border-top-left-radius: 15px;
+                    background-color: $goldenstrongcolor;
+                    color: $blackbackground;
+                    font-weight: 600;
+                }
+                input[type='radio']:checked + .label--content {
+                    background-color: $goldenstrongcolor;
+                    color: $blackbackground;
+                    font-weight: 600;
+                }
+                input[type='radio']:checked + .label--screens {
+                    background-color: $goldenstrongcolor;
+                    color: $blackbackground;
+                    font-weight: 600;
+                }
+                input[type='radio']:checked + .label--description {
+                    background-color: $goldenstrongcolor;
+                    color: $blackbackground;
+                    font-weight: 600;
+                }
                 .info__button {
                     font-family: $Montserrat;
                     font-size: 16px;
@@ -151,7 +189,13 @@ main {
                     width: 160px;
                     border: 2px solid $whitecolor;
                 }
+                .info__button:hover {
+                    cursor: pointer;
+                }
                 .left__button {
+                    background-color: $goldenstrongcolor;
+                    color: $blackbackground;
+                    font-weight: bold;
                     border-top-left-radius: 10px;
                 }
             }
