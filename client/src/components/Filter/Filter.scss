@@ -73,6 +73,9 @@
             border: 1px solid $blackbackground;
             border-radius: 6px;
         }
+        label:hover {
+            cursor: pointer;
+        }
         input[type='radio']:checked + .label--ps4 {
             background-color: $ps4color;
             color: $whitecolor;
