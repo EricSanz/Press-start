@@ -145,7 +145,6 @@ main {
                 input[type='radio'] {
                     opacity: 0;
                     width: 10px;
-                    // height: 100px;
                 }
                 label {
                     display: flex;
@@ -156,6 +155,9 @@ main {
                     font-family: $Montserrat;
                     font-size: 20px;
                     background-color: $blackbackground;
+                }
+                label:hover {
+                    cursor: pointer;
                 }
                 .label--left {
                     border-top-left-radius: 15px;
@@ -168,7 +170,7 @@ main {
                     color: $blackbackground;
                     font-weight: 600;
                 }
-                input[type='radio']:checked + .label--screens {
+                input[type='radio']:checked + .label--pictures {
                     background-color: $goldenstrongcolor;
                     color: $blackbackground;
                     font-weight: 600;
@@ -178,20 +180,6 @@ main {
                     color: $blackbackground;
                     font-weight: 600;
                 }
-                .info__button {
-                    font-family: $Montserrat;
-                    font-size: 16px;
-                    outline: none;
-                    border: none;
-                    height: 100%;
-                    background-color: $blackbackground;
-                    color: $whitecolor;
-                    width: 160px;
-                    border: 2px solid $whitecolor;
-                }
-                .info__button:hover {
-                    cursor: pointer;
-                }
                 .left__button {
                     background-color: $goldenstrongcolor;
                     color: $blackbackground;
@@ -199,11 +187,11 @@ main {
                     border-top-left-radius: 10px;
                 }
             }
-            .content__info, .screens__info, .description__info {
+            .content__info, .pictures__info, .description__info {
                 position: relative;
                 left: 30px;
             }
-            .screens__info {
+            .pictures__info {
                 max-height: 490px;
                 overflow-x: hidden;
                 .videogame__images {
@@ -211,14 +199,14 @@ main {
                     margin: 10px;
                 }
             }
-            .screens__info::-webkit-scrollbar {
+            .pictures__info::-webkit-scrollbar {
                 width: 12px;
             }
-            .screens__info::-webkit-scrollbar-track {
+            .pictures__info::-webkit-scrollbar-track {
                 background: $goldenstrongcolor;
                 border-radius: 20px;
             }
-            .screens__info::-webkit-scrollbar-thumb {
+            .pictures__info::-webkit-scrollbar-thumb {
                 background-color: $blackbackground;
                 border-radius: 20px;
                 border: 3px solid $goldenstrongcolor;

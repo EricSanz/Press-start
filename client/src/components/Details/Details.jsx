@@ -11,7 +11,6 @@ import './Details.scss';
 function Details ({dispatch, videogame, match, loading}) {
 
     const [id] = useState(match.params.videogameId);
-    const [changeCss, setChangeCss] = useState(true);
 
     useEffect(() => {
         if (!videogame || videogame._id !== id) {
@@ -19,20 +18,59 @@ function Details ({dispatch, videogame, match, loading}) {
         }
     }, [])
 
-    function selectedTab({target}) {
+    function selectedTabOption({target}) {
         const contentOption = document.getElementById('label__content');
-        if (target.value === 'screens' || target.value === 'description') {
-            if (changeCss === false) {
-                setChangeCss(!changeCss)
-            }
-            changeCss ? contentOption.style.backgroundColor = '#161616' : contentOption.style.backgroundColor = '#e8a92c'
-            // contentOption.style.color = '#fff';
-            // contentOption.style.fontWeight = '600';
-            console.log('Hey')
+        const contentInfo = document.getElementById('content__info');
+        const picturesInfo = document.getElementById('pictures__info');
+        const descriptionInfo = document.getElementById('description__info');
+
+        if (target.value === 'pictures' ) {
+            contentOption.style.backgroundColor = '#161616';
+            contentOption.style.color = '#fff';
+            contentOption.style.fontWeight = 'normal';
+            picturesInfo.style.display = 'block';
+            contentInfo.style.display = 'none';
+            descriptionInfo.style.display = 'none';
+        }
+
+        if (target.value === 'description') {
+            contentOption.style.backgroundColor = '#161616';
+            contentOption.style.color = '#fff';
+            contentOption.style.fontWeight = 'normal';
+            descriptionInfo.style.display = 'block';
+            contentInfo.style.display = 'none';
+            picturesInfo.style.display = 'none';
         }
 
         if (target.value === 'content') {
             contentOption.style.backgroundColor = '#e8a92c';
+            contentOption.style.color = '#161616';
+            contentOption.style.fontWeight = '600';
+            contentInfo.style.display = 'block';
+            picturesInfo.style.display = 'none';
+            descriptionInfo.style.display = 'none';
+        }
+    }
+
+    function selectedTabOption2({target}) {
+        const picturesOption = document.getElementById('label__pictures');
+        const picturesInfo = document.getElementById('pictures__info');
+        const descriptionInfo = document.getElementById('description__info');
+
+        if (target.value === 'description') {
+            picturesOption.style.backgroundColor = '#161616';
+            picturesOption.style.color = '#fff';
+            picturesOption.style.fontWeight = 'normal'
+            descriptionInfo.style.display = 'block';
+            picturesInfo.style.display = 'none';
+        }
+        
+        if (target.value === 'pictures') {
+            picturesOption.style.backgroundColor = '#e8a92c';
+            picturesOption.style.color = '#161616';
+            picturesOption.style.fontWeight = '600';
+            picturesInfo.style.display = 'block';
+            descriptionInfo.style.display = 'none';
         }
     }
 
@@ -106,40 +144,58 @@ function Details ({dispatch, videogame, match, loading}) {
                             <div className="info--wrapper">
                                 {videogame.edition.is_content ? (
                                     <>
-                                        {/* <button id="content" className="info__button left__button" onClick={(id) => selectedTab(id)}>Content</button> */}
                                         <div>
-                                            <input type="radio" id="content" value="content" name="options" onChange={(value) => selectedTab(value)}/>
+                                            <input type="radio" id="content" value="content" name="options" onChange={(value) => selectedTabOption(value)}/>
                                             <label className="label--content label--left" id="label__content" for="content">Content</label>
                                         </div>
                                         <div>
-                                            <input type="radio" id="screens" value="screens" name="options" onChange={(value) => selectedTab(value)}/>
-                                            <label className="label--screens" for="screens">Screens</label>
+                                            <input type="radio" id="pictures" value="pictures" name="options" onChange={(value) => selectedTabOption(value)}/>
+                                            <label className="label--pictures" for="pictures">Pictures</label>
                                         </div>
                                         <div>
-                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTab(value)}/>
+                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTabOption(value)}/>
                                             <label className="label--description" for="description">Description</label>
                                         </div>
-                                        {/* <button id="screens" className="info__button middle__button">Screens</button> */}
-                                        {/* <button className="info__button right__button">Description</button> */}
                                     </>
                                 ) : (
                                     <>
-                                        <button className="info__button left__button">Screens</button>
-                                        <button className="info__button right__button">Description</button>
+                                        <div>
+                                            <input type="radio" id="pictures" value="pictures" name="options" onChange={(value) => selectedTabOption2(value)}/>
+                                            <label className="label--pictures label--left" id="label__pictures" for="pictures">Pictures</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTabOption2(value)}/>
+                                            <label className="label--description" for="description">Description</label>
+                                        </div>
                                     </>
                                 )}
                             </div>
-                            <div className="content__info">
+                            {videogame.edition.is_content ? (
+                                <>
+                                    <div className="content__info" id="content__info">
 
-                            </div>
-                            <div className="screens__info">
-                                {videogame.images.map((image) => (
-                                        <img className="videogame__images" src={image} alt="images" />
-                                    ))}
-                            </div>
-                            <div className="description__info" id="description">
-
-                            </div>
+                                    </div>
+                                    <div className="pictures__info" id="pictures__info">
+                                        {videogame.images.map((image) => (
+                                            <img className="videogame__images" src={image} alt="images" />
+                                        ))}
+                                    </div>
+                                    <div className="description__info" id="description__info">
+                                        
+                                    </div>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="pictures__info" id="pictures__info">
+                                        {videogame.images.map((image) => (
+                                            <img className="videogame__images" src={image} alt="images" />
+                                        ))}
+                                    </div>
+                                    <div className="description__info" id="description__info">
+                                        
+                                    </div>
+                                </>
+                            )}
                         </div>
                         <div className="info__container">
                             <div className="price__cart--option">
