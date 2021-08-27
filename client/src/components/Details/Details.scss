@@ -2,20 +2,21 @@
 @import "../../fonts/fonts";
 
 main {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     .main__left {
-        position: relative;
+        position: fixed;
         padding-top: 150px;
         padding-left: 3%;
         padding-right: 3%;
         left: 0;
+        height: 100vh;
         // width: 34%;
-        width: 70vw;
+        width: 35.56vw;
         // width: calc(100vw - 30%);
         background: $greybackground;
         border-right: 1px solid $greyborder;
@@ -125,9 +126,11 @@ main {
     }
     .main__right {
         position: relative;
+        left: 41.55vw;
+        // left: calc(100vw - 35.6%);
         // width: 60%;
         // width: calc(100vw + 30%);
-        width: 130vw;
+        // width: 130vw;
         background: $whitecolor;
         // overflow-x: hidden;
         .videogame__info--wrapper {
@@ -191,6 +194,23 @@ main {
                 position: relative;
                 left: 30px;
             }
+            .content__info {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                overflow-x: hidden;
+                .content__image--container {
+                    display: flex;
+                    align-items: center;
+                    .content__image {
+                        max-width: 500px;
+                        max-height: 500px;
+                    }
+                }
+                .content__info__pack {
+
+                }
+            }
             .pictures__info {
                 max-height: 490px;
                 overflow-x: hidden;
@@ -198,6 +218,9 @@ main {
                     width: 335px;
                     margin: 10px;
                 }
+            }
+            .description__info {
+                width: 500px;
             }
             .pictures__info::-webkit-scrollbar {
                 width: 12px;

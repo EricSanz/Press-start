@@ -173,7 +173,23 @@ function Details ({dispatch, videogame, match, loading}) {
                             {videogame.edition.is_content ? (
                                 <>
                                     <div className="content__info" id="content__info">
-
+                                        {videogame.edition.content_image[0] === '' ? null : (
+                                            <div className="content__image--container">
+                                                {videogame.edition.content_image.map((contentImage) => (
+                                                    <img className="content__image" src={contentImage} alt={videogame.game.first_title} />
+                                                ))}
+                                            </div>
+                                        )}
+                                        <div className="content__info__pack">
+                                            {videogame.edition.content.map((info) => (
+                                                <>
+                                                    <p>{info.title}</p>
+                                                    {info.pack.map((packInfo) => (
+                                                        <p>{packInfo}</p>
+                                                    ))}
+                                                </>
+                                            ))}
+                                        </div>
                                     </div>
                                     <div className="pictures__info" id="pictures__info">
                                         {videogame.images.map((image) => (
