@@ -207,6 +207,7 @@ main {
                     margin-bottom: 20px;
                     margin-bottom: 6px;
                     .packInfo__title {
+                        border-bottom: 1px solid $blackbackground;
                         font-weight: 600;
                         font-size: 20px;
                         padding-top: 20px;
@@ -237,11 +238,14 @@ main {
                     font-weight: 600;
                 }
                 .features__title {
-                    padding-top: 20px;
-                    font-weight: bold;
-                    font-size: 20px;
+                    border-bottom: 1px solid $blackbackground;
+                    font-style: oblique;
+                    padding-top: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
                 }
                 .features__text {
+                    font-size: 15px;
                     margin-bottom: 6px;
                 }
             }
