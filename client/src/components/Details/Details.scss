@@ -19,7 +19,7 @@ main {
         width: 35.56vw;
         // width: calc(100vw - 30%);
         background: $greybackground;
-        border-right: 1px solid $greyborder;
+        // border-right: 1px solid $greyborder;
         .title__container {
             // left: 0;
             // top: 120px;
@@ -127,6 +127,7 @@ main {
     .main__right {
         position: relative;
         left: 41.55vw;
+        border-left: 1px solid $greyborder;
         // left: calc(100vw - 35.6%);
         // width: 60%;
         // width: calc(100vw + 30%);
@@ -192,44 +193,80 @@ main {
             }
             .content__info, .pictures__info, .description__info {
                 position: relative;
-                left: 30px;
+                padding-left: 30px;
+                border-bottom: 1px solid $greyborder;
             }
             .content__info {
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 overflow-x: hidden;
+                max-height: 490px;
+                overflow-x: hidden;
+                margin-top: 10px;
+                padding-bottom: 10px;
                 .content__image--container {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
+                    margin-top: 15px;
                     .content__image {
-                        max-width: 500px;
-                        max-height: 500px;
+                        max-height: 350px;
                     }
                 }
                 .content__info__pack {
-
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    // font-size: 15px;
+                    margin-bottom: 6px;
+                    .packInfo__title {
+                        font-weight: 600;
+                        font-size: 20px;
+                        padding-top: 20px;
+                    }
+                    .packInfo__list {
+                        margin-bottom: 6px;
+                    }
                 }
             }
             .pictures__info {
                 max-height: 490px;
                 overflow-x: hidden;
+                margin-top: 10px;
+                padding-bottom: 10px;
                 .videogame__images {
-                    width: 335px;
+                    width: 325px;
                     margin: 10px;
                 }
             }
             .description__info {
-                width: 500px;
+                // width: 500px;
+                max-height: 490px;
+                overflow-x: hidden;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                // margin-bottom: 10px;
+                .description__gloabl__title {
+                    font-weight: 600;
+                }
+                .features__title {
+                    padding-top: 20px;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .features__text {
+                    margin-bottom: 6px;
+                    // font-size: 15px;
+                }
             }
-            .pictures__info::-webkit-scrollbar {
+            .content__info::-webkit-scrollbar, .pictures__info::-webkit-scrollbar, .description__info::-webkit-scrollbar {
                 width: 12px;
             }
-            .pictures__info::-webkit-scrollbar-track {
+            .content__info::-webkit-scrollbar-track, .pictures__info::-webkit-scrollbar-track, .description__info::-webkit-scrollbar-track {
                 background: $goldenstrongcolor;
                 border-radius: 20px;
             }
-            .pictures__info::-webkit-scrollbar-thumb {
+            .content__info::-webkit-scrollbar-thumb, .pictures__info::-webkit-scrollbar-thumb, .description__info::-webkit-scrollbar-thumb {
                 background-color: $blackbackground;
                 border-radius: 20px;
                 border: 3px solid $goldenstrongcolor;

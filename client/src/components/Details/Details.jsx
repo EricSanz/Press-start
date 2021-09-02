@@ -183,9 +183,9 @@ function Details ({dispatch, videogame, match, loading}) {
                                         <div className="content__info__pack">
                                             {videogame.edition.content.map((info) => (
                                                 <>
-                                                    <p>{info.title}</p>
+                                                    <p className="packInfo__title">{info.title}</p>
                                                     {info.pack.map((packInfo) => (
-                                                        <p>{packInfo}</p>
+                                                        <li className="packInfo__list">{packInfo}</li>
                                                     ))}
                                                 </>
                                             ))}
@@ -197,7 +197,22 @@ function Details ({dispatch, videogame, match, loading}) {
                                         ))}
                                     </div>
                                     <div className="description__info" id="description__info">
-                                        
+                                        {videogame.description.map((global_title) => (
+                                            <p className="description__gloabl__title">{global_title.global}</p>
+                                        ))}
+                                        {videogame.description.map((videogame) => (
+                                            <>
+                                                {videogame.features.map((featuresTitle) => (
+                                                    <>
+                                                        <p className="features__title">{featuresTitle.title}</p>
+                                                        {featuresTitle.text.map((featuresInfo) => (
+                                                            <li className="features__text">{featuresInfo}</li>
+                                                        ))}
+                                                    </>
+                                                ))}
+                                            </>
+
+                                        ))}
                                     </div>
                                 </>
                             ) : (
