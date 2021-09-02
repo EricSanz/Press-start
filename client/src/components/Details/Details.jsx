@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Loading from '../Loading/Loading';
 import EditionButton from './Edition-Button/Edition-Button';
 import PlatformButton from './Platform-Button/Platform-Button';
+import Popup from 'reactjs-popup';
+import './Pop-Up/Popup.scss';
+// import 'reactjs-popup/dist/index.css';
 import './Details.scss';
 
 function Details ({dispatch, videogame, match, loading}) {
@@ -176,7 +179,18 @@ function Details ({dispatch, videogame, match, loading}) {
                                         {videogame.edition.content_image[0] === '' ? null : (
                                             <div className="content__image--container">
                                                 {videogame.edition.content_image.map((contentImage) => (
-                                                    <img className="content__image" src={contentImage} alt={videogame.game.first_title} />
+                                                    <Popup trigger={<img className="content__image" src={contentImage} alt={videogame.game.first_title} />} modal nested>
+                                                        {close => (
+                                                            <div className="modal">
+                                                                <div className="modal__content">
+                                                                    <button className="close__modal" onClick={close} >
+                                                                        <FontAwesomeIcon className="times-icon" icon="times"/>
+                                                                    </button>
+                                                                    <img className="content__image" src={contentImage} alt={videogame.game.first_title} />
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                    </Popup>
                                                 ))}
                                             </div>
                                         )}
