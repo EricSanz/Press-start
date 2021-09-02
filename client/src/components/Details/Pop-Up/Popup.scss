@@ -1,0 +1,41 @@
+@import "../../styles/colors";
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .close__modal {
+            margin-bottom: 5px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            outline: none;
+            .times-icon {
+                font-size: 24px;
+            }
+        }
+        .close__modal:hover {
+            cursor: pointer;
+            background-color: $goldencolor;
+            .times-icon {
+                font-size: 28px;
+                transition: 0.6s;
+            }
+            transition: 0.6s;
+
+        }
+        .content__image {
+            width: 70%;
+        }
+    }
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
