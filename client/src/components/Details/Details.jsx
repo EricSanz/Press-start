@@ -186,7 +186,7 @@ function Details ({dispatch, videogame, match, loading}) {
                                                                     <button className="close__modal" onClick={close} >
                                                                         <FontAwesomeIcon className="times-icon" icon="times"/>
                                                                     </button>
-                                                                    <img className="content__image" src={contentImage} alt={videogame.game.first_title} />
+                                                                    <img className="modal__image" src={contentImage} alt={videogame.game.first_title} />
                                                                 </div>
                                                             </div>
                                                         )}
@@ -207,7 +207,19 @@ function Details ({dispatch, videogame, match, loading}) {
                                     </div>
                                     <div className="pictures__info" id="pictures__info">
                                         {videogame.images.map((image) => (
-                                            <img className="videogame__images" src={image} alt="images" />
+                                            <Popup trigger={<img className="videogame__images" src={image} alt="images" />} modal nested>
+                                                {close => (
+                                                    <div className="modal">
+                                                        <div className="modal__content">
+                                                            <button className="close__modal" onClick={close} >
+                                                                <FontAwesomeIcon className="times-icon" icon="times"/>
+                                                            </button>
+                                                            <img className="modal__image" src={image} alt="images" />
+                                                        </div>
+                                                    </div>
+                                                )}
+                                            </Popup>
+                                            // <img className="videogame__images" src={image} alt="images" />
                                         ))}
                                     </div>
                                     <div className="description__info" id="description__info">
