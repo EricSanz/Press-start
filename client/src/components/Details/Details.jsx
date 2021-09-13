@@ -14,12 +14,52 @@ import './Details.scss';
 function Details ({dispatch, videogame, match, loading}) {
 
     const [id] = useState(match.params.videogameId);
+    const [expandShipping, setExpandShipping] = useState(true); 
+    const [expandWarranty, setExpandWarranty] = useState(true);
+    const [expandReturn, setExpandReturn] = useState(true);
 
     useEffect(() => {
         if (!videogame || videogame._id !== id) {
             dispatch(loadOneVideogame(id))
         }
     }, [])
+
+    function expandInfo({target}) {
+
+        switch (target.id) {
+            case 'shipping':
+                const shipping = document.getElementById('shipping__conditions');
+                const shipping_title = document.getElementById('shipping__title');
+                const shipping_icon = document.getElementById('shipping__icon');
+                setExpandShipping(!expandShipping);
+                expandShipping ? shipping.style.display = 'block' : shipping.style.display = 'none';
+                expandShipping ? shipping_title.style.backgroundColor = '#f0f2f2' : shipping_title.style.backgroundColor = '#fff';
+                expandShipping ? shipping_icon.style.transform = 'rotate(180deg)' : shipping_icon.style.transform = 'rotate(0deg)';
+                break;
+            case 'warranty':
+                const warranty = document.getElementById('product__warranty');
+                const warranty_title = document.getElementById('warranty__title');
+                const warranty_icon = document.getElementById('warranty__icon');
+                setExpandWarranty(!expandWarranty);
+                expandWarranty ? warranty.style.display = 'block' : warranty.style.display = 'none';
+                expandWarranty ? warranty_title.style.backgroundColor = '#f0f2f2' : warranty_title.style.backgroundColor = '#fff';
+                expandWarranty ? warranty_icon.style.transform = 'rotate(180deg)' : warranty_icon.style.transform = 'rotate(0deg)';
+                
+                break;
+            case 'return':
+                const returnConditions = document.getElementById('return__conditions');
+                const return_title = document.getElementById('return__title');
+                const return_icon = document.getElementById('return__icon');
+                setExpandReturn(!expandReturn);
+                expandReturn ? returnConditions.style.display = 'block' : returnConditions.style.display = 'none';
+                expandReturn ? return_title.style.backgroundColor = '#f0f2f2' : return_title.style.backgroundColor = '#fff';
+                expandReturn ? return_icon.style.transform = 'rotate(180deg)' : return_icon.style.transform = 'rotate(0deg)';
+                break;
+            default:
+                break;
+        }
+
+    }
 
     function selectedTabOption({target}) {
         const contentOption = document.getElementById('label__content');
@@ -143,118 +183,7 @@ function Details ({dispatch, videogame, match, loading}) {
             <div className="main__right">
                 {loading ? <Loading /> : videogame && (
                     <>
-                        <div className="videogame__info--wrapper">
-                            <div className="info--wrapper">
-                                {videogame.edition.is_content ? (
-                                    <>
-                                        <div>
-                                            <input type="radio" id="content" value="content" name="options" onChange={(value) => selectedTabOption(value)}/>
-                                            <label className="label--content label--left" id="label__content" for="content">Content</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="pictures" value="pictures" name="options" onChange={(value) => selectedTabOption(value)}/>
-                                            <label className="label--pictures" for="pictures">Pictures</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTabOption(value)}/>
-                                            <label className="label--description" for="description">Description</label>
-                                        </div>
-                                    </>
-                                ) : (
-                                    <>
-                                        <div>
-                                            <input type="radio" id="pictures" value="pictures" name="options" onChange={(value) => selectedTabOption2(value)}/>
-                                            <label className="label--pictures label--left" id="label__pictures" for="pictures">Pictures</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTabOption2(value)}/>
-                                            <label className="label--description" for="description">Description</label>
-                                        </div>
-                                    </>
-                                )}
-                            </div>
-                            {videogame.edition.is_content ? (
-                                <>
-                                    <div className="content__info" id="content__info">
-                                        {videogame.edition.content_image[0] === '' ? null : (
-                                            <div className="content__image--container">
-                                                {videogame.edition.content_image.map((contentImage) => (
-                                                    <Popup trigger={<img className="content__image" src={contentImage} alt={videogame.game.first_title} />} modal nested>
-                                                        {close => (
-                                                            <div className="modal">
-                                                                <div className="modal__content">
-                                                                    <button className="close__modal" onClick={close} >
-                                                                        <FontAwesomeIcon className="times-icon" icon="times"/>
-                                                                    </button>
-                                                                    <img className="modal__image" src={contentImage} alt={videogame.game.first_title} />
-                                                                </div>
-                                                            </div>
-                                                        )}
-                                                    </Popup>
-                                                ))}
-                                            </div>
-                                        )}
-                                        <div className="content__info__pack">
-                                            {videogame.edition.content.map((info) => (
-                                                <>
-                                                    <p className="packInfo__title">{info.title}</p>
-                                                    {info.pack.map((packInfo) => (
-                                                        <li className="packInfo__list">{packInfo}</li>
-                                                    ))}
-                                                </>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="pictures__info" id="pictures__info">
-                                        {videogame.images.map((image) => (
-                                            <Popup trigger={<img className="videogame__images" src={image} alt="images" />} modal nested>
-                                                {close => (
-                                                    <div className="modal">
-                                                        <div className="modal__content">
-                                                            <button className="close__modal" onClick={close} >
-                                                                <FontAwesomeIcon className="times-icon" icon="times"/>
-                                                            </button>
-                                                            <img className="modal__image" src={image} alt="images" />
-                                                        </div>
-                                                    </div>
-                                                )}
-                                            </Popup>
-                                            // <img className="videogame__images" src={image} alt="images" />
-                                        ))}
-                                    </div>
-                                    <div className="description__info" id="description__info">
-                                        {videogame.description.map((global_title) => (
-                                            <p className="description__gloabl__title">{global_title.global}</p>
-                                        ))}
-                                        {videogame.description.map((videogame) => (
-                                            <>
-                                                {videogame.features.map((featuresTitle) => (
-                                                    <>
-                                                        <p className="features__title">{featuresTitle.title}</p>
-                                                        {featuresTitle.text.map((featuresInfo) => (
-                                                            <li className="features__text">{featuresInfo}</li>
-                                                        ))}
-                                                    </>
-                                                ))}
-                                            </>
-
-                                        ))}
-                                    </div>
-                                </>
-                            ) : (
-                                <>
-                                    <div className="pictures__info" id="pictures__info">
-                                        {videogame.images.map((image) => (
-                                            <img className="videogame__images" src={image} alt="images" />
-                                        ))}
-                                    </div>
-                                    <div className="description__info" id="description__info">
-                                        
-                                    </div>
-                                </>
-                            )}
-                        </div>
-                        <div className="info__container">
+                    <div className="info__container">
                             <div className="price__cart--option">
                                 {videogame.edition.sale ? (
                                     <div className="onsale__price--container">
@@ -313,6 +242,160 @@ function Details ({dispatch, videogame, match, loading}) {
                                     <img className="pegi" src={videogame.pegi} alt="pegi" />
                                 </div>
                             </div>
+                        </div>
+                        <div className="conditions__warranty--container">
+                            <div className="shipping__conditions--title" id="shipping__title">
+                                <p id="shipping" onClick={(id) => expandInfo(id)}>Shipping Conditions:<span><FontAwesomeIcon id="shipping__icon" className="icons" icon="angle-double-down"/></span></p>  
+                                <div id="shipping__conditions" className="shipping__conditions--content">
+                                    <p>Press Start guarantees the immediate shipment of all products available at the time of order confirmation as long as it is on a working day and before 18:00 hours. Orders confirmed after 18:00 hours or during holidays, Saturdays and Sundays, will be handled the first working day after it. We have a 24-48 hours delivery service for the whole Peninsula and different options for the Canary Islands, Andorra, Ceuta, Melilla and the rest of Europe. In the case of product reservations, the delivery of the product will be made on the day of the official launch. For digital products, delivery is made by e-mail to the e-mail address registered with the account. The redemption code is sent immediately after order confirmation with your payment.</p>
+                                </div>
+                            </div>
+                            <div className="product__warranty--title" id="warranty__title">
+                                <p id="warranty" onClick={(id) => expandInfo(id)}>Product Warranty:<span><FontAwesomeIcon id="warranty__icon" className="icons" icon="angle-double-down"/></span></p>
+                                <div id="product__warranty" className="product__warranty--content">
+                                    <p>When the delivered products do not conform to the contract or have defects within two years from the date of delivery, users may contact xtralife via email tienda@xtralife.com. The users must inform xtralife of the lack of conformity of the products within two months after they have knowledge of them. xtralife will carry out the collection of the product to the effects of examining the defect and to proceed, in its case, to the repair or substitution of the same one, in accordance with the established in the General Law for the Defense of the Consumers and Users. In cases where the user could not demand the repair or replacement of the product, the price will be reduced or the contract will be terminated, at the user's option.<br/>For more information, see our Terms and Conditions.</p>
+                                </div>
+                            </div>
+                            <div className="return__conditions--title" id="return__title">
+                                <p id="return" onClick={(id) => expandInfo(id)}>Return Conditions:<span><FontAwesomeIcon id="return__icon" className="icons" icon="angle-double-down"/></span></p>
+                                <div id="return__conditions" className="return__conditions--content">
+                                    <p>Users may request the return of the products within 14 calendar days of receipt, without having to justify their decision and without penalty of any kind, via email to tienda@xtralife.com or by making any other unequivocal statement indicating their decision to withdraw from the contract. Under no circumstances may video games or software products that have been opened and/or unsealed and/or clearly used by the user after delivery, as well as software downloads and/or products with digital content that are not provided on a material support be returned. <br/>For more information, see our Terms and Conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="videogame__info--wrapper">
+                            <div className="info--wrapper">
+                                {videogame.edition.is_content ? (
+                                    <>
+                                        <div>
+                                            <input type="radio" id="content" value="content" name="options" onChange={(value) => selectedTabOption(value)}/>
+                                            <label className="label--content label--left" id="label__content" for="content">Content</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="pictures" value="pictures" name="options" onChange={(value) => selectedTabOption(value)}/>
+                                            <label className="label--pictures" for="pictures">Pictures</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTabOption(value)}/>
+                                            <label className="label--description" for="description">Description</label>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div>
+                                            <input type="radio" id="pictures" value="pictures" name="options" onChange={(value) => selectedTabOption2(value)}/>
+                                            <label className="label--pictures label--left" id="label__pictures" for="pictures">Pictures</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="description" value="description" name="options" onChange={(value) => selectedTabOption2(value)}/>
+                                            <label className="label--description" for="description">Description</label>
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+                            {videogame.edition.is_content ? (
+                                <>
+                                    <div className="content__info" id="content__info">
+                                        {videogame.edition.content_image[0] === '' ? null : (
+                                            <div className="content__image--container">
+                                                {videogame.edition.content_image.map((contentImage) => (
+                                                    <Popup trigger={<img className="content__image" src={contentImage} alt={videogame.game.first_title} />} modal nested>
+                                                        {close => (
+                                                            <div className="modal">
+                                                                <div className="modal__content">
+                                                                    <button className="close__modal" onClick={close} >
+                                                                        <FontAwesomeIcon className="times-icon" icon="times"/>
+                                                                    </button>
+                                                                    <img className="modal__image" src={contentImage} alt={videogame.game.first_title} />
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                    </Popup>
+                                                ))}
+                                            </div>
+                                        )}
+                                        <div className="content__info__pack">
+                                            {videogame.edition.content.map((info) => (
+                                                <>
+                                                    <p className="packInfo__title">{info.title}</p>
+                                                    {info.pack.map((packInfo) => (
+                                                        <p className="packInfo__list">{packInfo}</p>
+                                                    ))}
+                                                </>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="pictures__info" id="pictures__info">
+                                        {videogame.images.map((image) => (
+                                            <Popup trigger={<img className="videogame__images" src={image} alt="images" />} modal nested>
+                                                {close => (
+                                                    <div className="modal">
+                                                        <div className="modal__content">
+                                                            <button className="close__modal" onClick={close} >
+                                                                <FontAwesomeIcon className="times-icon" icon="times"/>
+                                                            </button>
+                                                            <img className="modal__image" src={image} alt="images" />
+                                                        </div>
+                                                    </div>
+                                                )}
+                                            </Popup>
+                                        ))}
+                                    </div>
+                                    <div className="description__info" id="description__info">
+                                        {videogame.description.map((global_title) => (
+                                            <p className="description__gloabl__title">{global_title.global}</p>
+                                        ))}
+                                        {videogame.description.map((videogame) => (
+                                            <>
+                                                {videogame.features.map((featuresTitle) => (
+                                                    <>
+                                                        <p className="features__title">{featuresTitle.title}</p>
+                                                        {featuresTitle.text.map((featuresInfo) => (
+                                                            <p className="features__text">{featuresInfo}</p>
+                                                        ))}
+                                                    </>
+                                                ))}
+                                            </>
+                                        ))}
+                                    </div>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="pictures__info pictures__active" id="pictures__info">
+                                        {videogame.images.map((image) => (
+                                            <Popup trigger={<img className="videogame__images" src={image} alt="images" />} modal nested>
+                                                {close => (
+                                                    <div className="modal">
+                                                        <div className="modal__content">
+                                                            <button className="close__modal" onClick={close} >
+                                                                <FontAwesomeIcon className="times-icon" icon="times"/>
+                                                            </button>
+                                                            <img className="modal__image" src={image} alt="images" />
+                                                        </div>
+                                                    </div>
+                                                )}
+                                            </Popup>
+                                        ))}
+                                    </div>
+                                    <div className="description__info" id="description__info">
+                                        {videogame.description.map((global_title) => (
+                                            <p className="description__gloabl__title">{global_title.global}</p>
+                                        ))}
+                                        {videogame.description.map((videogame) => (
+                                            <>
+                                                {videogame.features.map((featuresTitle) => (
+                                                    <>
+                                                        <p className="features__title">{featuresTitle.title}</p>
+                                                        {featuresTitle.text.map((featuresInfo) => (
+                                                            <p className="features__text">{featuresInfo}</p>
+                                                        ))}
+                                                    </>
+                                                ))}
+                                            </>
+                                        ))}
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </>
                 )}

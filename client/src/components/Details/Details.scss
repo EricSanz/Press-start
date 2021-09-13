@@ -191,7 +191,7 @@ main {
                 overflow-x: hidden;
                 max-height: 490px;
                 overflow-x: hidden;
-                margin-top: 10px;
+                // margin-top: 10px;
                 padding-bottom: 10px;
                 .content__image--container {
                     display: flex;
@@ -203,17 +203,25 @@ main {
                     }
                 }
                 .content__info__pack {
-                    margin-top: 20px;
+                    // margin-top: 20px;
                     margin-bottom: 20px;
                     margin-bottom: 6px;
                     .packInfo__title {
                         border-bottom: 1px solid $blackbackground;
                         font-weight: 600;
-                        font-size: 20px;
-                        padding-top: 20px;
+                        font-size: 18px;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        padding-left: 15px;
+                        // padding-right: 15px;
+                        // width: fit-content;
+                        border-top-left-radius: 10px;
+                        // background-color: $goldencolorlighten;
                     }
                     .packInfo__list {
-                        margin-bottom: 6px;
+                        font-size: 14px;
+                        margin-left: 40px;
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -228,6 +236,9 @@ main {
                     margin: 10px;
                 }
             }
+            .pictures__active {
+                display: block;
+            }
             .description__info {
                 display: none;
                 max-height: 490px;
@@ -240,12 +251,17 @@ main {
                 .features__title {
                     border-bottom: 1px solid $blackbackground;
                     font-style: oblique;
-                    padding-top: 10px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
                     font-weight: 600;
                     font-size: 18px;
+                    // background-color: $goldencolorlighten;
+                    border-top-left-radius: 10px;
+                    padding-left: 15px;
                 }
                 .features__text {
-                    font-size: 15px;
+                    font-size: 14px;
+                    margin-left: 40px;
                     margin-bottom: 6px;
                 }
             }
@@ -262,12 +278,41 @@ main {
                 border: 3px solid $goldenstrongcolor;
             }
         }
+        .conditions__warranty--container {
+            position: relative;
+            top: 130px;
+            padding-left: 5em;
+            .shipping__conditions--title, .product__warranty--title, .return__conditions--title {
+                transition: 1s;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom: 1px solid $greyborder;
+                position: relative;
+                font-weight: 600;
+                width: 58em;
+                padding-left: 1em;
+                padding-top: .1em;
+                .icons {
+                    transition: 1s;
+                    position: absolute;
+                    right: 1em;
+                }
+                .shipping__conditions--content, .product__warranty--content, .return__conditions--content {
+                    font-weight: normal;
+                    display: none;
+                    width: 57em;
+                }
+            }
+            .shipping__conditions--title:hover, .product__warranty--title:hover, .return__conditions--title:hover {
+                cursor: pointer;
+            }
+        }
         .info__container {
-            width: 110vh;
+            width: 64em;
             position: relative;
             display: flex;
             height: 150px;
-            top: 195px;
+            top: 125px;
             justify-content: center;
             align-items: center;
             .price__cart--option {
