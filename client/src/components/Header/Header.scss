@@ -81,14 +81,27 @@ header {
 }
 
 .leftSidenav__container {
-    top: 70px;
+    top: 80px;
     position: fixed;
     left: -340px;
     transition: .5s;
-    width: 330px;
-    height: 100%;
+    width: 20em;
+    height: 100vh;
+    overflow-x: hidden;
     background-color: $blackbackground;
     box-shadow: 0 0 10px 0 rgba(#161616, .9);
     border-right: 1px solid #161616;
     z-index: 5;
+}
+
+@media (max-width: 768px ){
+    .leftSidenav__container {
+        width: 15em;
+    }
+}
+
+@media (max-width: 425px ){
+    .leftSidenav__container {
+        width: 10em;
+    }
 }

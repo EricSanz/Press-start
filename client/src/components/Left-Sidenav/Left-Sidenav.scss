@@ -29,7 +29,7 @@
             outline: none;
             cursor: pointer;
             .left__sidenav-option {
-                padding-left: 40px;
+                padding-left: 35px;
             }
             .left__sidenav-icon {
                 padding-top: 2px;
@@ -44,7 +44,7 @@
             background-color: $goldencolor;
             border-top: 1px solid $whitecolor;
             border-bottom: 1px solid $whitecolor;
-            padding-left: 40px;
+            padding-left: 35px;
             .title-newsletter {
                 display: flex;
                 align-items: center;
@@ -74,6 +74,57 @@
                 }
                 button:active {
                     color: $goldencolor;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px ){
+    .left__sidenav {
+        ul {
+            .link {
+                font-size: 16px;
+            }
+            .left__sidenav-newsletter {
+                .input-newsletter {
+                    button {
+                        width: 173px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px ){
+    .left__sidenav {
+        ul {
+            .link {
+                font-size: 14px;
+            }
+            .left__sidenav-list {
+                .left__sidenav-option {
+                    padding-left: 15px;
+                }
+                .left__sidenav-icon {
+                    margin-right: 15px;
+                }
+            }
+            .left__sidenav-newsletter {
+                padding-left: 15px;
+                .title-newsletter {
+                    .subscribe-newsletter {
+                        font-size: 12px;
+                    }
+                }
+                .input-newsletter {
+                    input {
+                        width: 125px;
+                    }
+                    button {
+                        width: 133px;
+                    }
                 }
             }
         }
