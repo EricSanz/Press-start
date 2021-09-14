@@ -27,23 +27,13 @@ const categories = [
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
-        name: 'PlayStation 4',
-        route: '/ps4',
+        name: 'PlayStation',
+        route: '/playstation',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
-        name: 'PlayStation 5',
-        route: '/ps5',
-        icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-    },
-    {
-        name: 'Xbox One',
-        route: '/xbox-one',
-        icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
-    },
-    {
-        name: 'Xbox Series S/X',
-        route: '/xbox-series',
+        name: 'Xbox',
+        route: '/xbox',
         icon: <FontAwesomeIcon className="icon" icon="angle-double-right" />
     },
     {
