@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LeftSidenav from '../Left-Sidenav/Left-Sidenav';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -41,7 +42,9 @@ function Header() {
                             <p>Calendar</p>
                         </div>
                     </div>
-                    <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
+                    <Link to={''} className="link" key={'Home'}>
+                        <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
+                    </Link>
                     <div className="navbar__options-right">
                         <div className="navbar__option">
                             <FontAwesomeIcon className="icon" icon="sign-in-alt" />
