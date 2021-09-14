@@ -52,6 +52,7 @@ header {
             display: flex;
             width: 43%;
             margin-top: 22px;
+            align-items: center;
             font-size: 14px;
             justify-content: flex-start;
             .navbar__option {
@@ -80,6 +81,10 @@ header {
     }
 }
 
+.mini__navbar {
+    display: none;
+}
+
 .leftSidenav__container {
     top: 80px;
     position: fixed;
@@ -95,12 +100,67 @@ header {
 }
 
 @media (max-width: 768px ){
+    header {
+        .navbar__options {
+            .navbar__logo {
+                padding-top: 20px;
+                height: 40px;
+            }
+            .navbar__options-right {
+                font-size: 12px;
+                .navbar__option {
+                }
+            }
+            .navbar__options-left {
+                font-size: 12px;
+                .navbar__option {
+                }
+            }
+        }
+    }
     .leftSidenav__container {
         width: 15em;
     }
 }
 
 @media (max-width: 425px ){
+    header {
+        height: 85px;
+        .navbar__options {
+            justify-content: center;
+            .navbar__logo {
+                padding-top: 10px;
+                height: 35px;
+            }
+            .navbar__options-right {
+                display: none;
+            }
+            .navbar__options-left {
+                display: none;
+            }
+        }
+    }
+    .mini__navbar {
+        display: flex;
+        position: relative;
+        top: 55px;
+        justify-content: space-around;
+        font-size: 20px;
+        margin-top: -5px;
+        padding-top: 7px;
+        border-top: 1px solid $whitecolor;
+        transition: 1s;
+        .icon:hover {
+            color: $goldenstrongcolor;
+            cursor: pointer;
+        }
+        .open {
+            display: block;
+        }
+        .close {
+            display: none;
+        }
+    }
     .leftSidenav__container {
         width: 10em;
     }

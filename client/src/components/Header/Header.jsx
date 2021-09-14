@@ -13,9 +13,13 @@ function Header() {
         const toggleLeftSidenav = document.getElementById('leftSidenav__id');
         const openLeftSidenav = document.getElementById('open__icon');
         const closeLeftSidenav = document.getElementById('close__icon');
+        const openLeftMiniSidenav = document.getElementById('open__mininavbar__icon');
+        const closeLeftMiniSidenav = document.getElementById('close__mininavbar__icon');
         leftSidenav ? toggleLeftSidenav.style.transform = 'translateX(0px)' : toggleLeftSidenav.style.transform = 'translateX(340px)';
         leftSidenav ? openLeftSidenav.style.display = 'block' : openLeftSidenav.style.display = 'none';
         leftSidenav ? closeLeftSidenav.style.display = 'none' : closeLeftSidenav.style.display = 'block';
+        leftSidenav ? openLeftMiniSidenav.style.display = 'block' : openLeftMiniSidenav.style.display = 'none';
+        leftSidenav ? closeLeftMiniSidenav.style.display = 'none' : closeLeftMiniSidenav.style.display = 'block';
     }
 
     return (
@@ -48,6 +52,14 @@ function Header() {
                             <p>Cart</p>
                         </div>
                     </div>
+                </div>
+                <div className="mini__navbar">
+                    <FontAwesomeIcon id="open__mininavbar__icon" className="icon open" icon="bars" onClick={() => handleSidenav()} />
+                    <FontAwesomeIcon id="close__mininavbar__icon" className="icon close" icon="times" onClick={() => handleSidenav()} />
+                    <FontAwesomeIcon className="icon" icon="newspaper" />
+                    <FontAwesomeIcon className="icon" icon="calendar-alt" />
+                    <FontAwesomeIcon className="icon" icon="sign-in-alt" />
+                    <FontAwesomeIcon className="icon" icon="shopping-cart" />
                 </div>
             </header>
             <div className="leftSidenav__container" id="leftSidenav__id">
