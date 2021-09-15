@@ -39,6 +39,7 @@
 
 .filter__options-container {
     position: fixed;
+    z-index: 8;
     top: 242px;
     left: -250px;
     background: $blackbackground;

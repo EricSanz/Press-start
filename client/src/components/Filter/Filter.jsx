@@ -21,13 +21,12 @@ function FilterComponent({dispatch}) {
         const filterTagOpen = document.getElementById('filter__tag__open-id');
         const filterTagClose = document.getElementById('filter__tag__close-id');
         inputNav ? openInputNav.style.transform = 'translateX(250px)' : openInputNav.style.transform = 'translateX(0px)';
-        inputNav ? cardContainer.style['padding-left'] = '150px' : cardContainer.style['padding-left'] = '0px';
+        inputNav ? cardContainer.style['padding-left'] = '235px' : cardContainer.style['padding-left'] = '0px';
         inputNav ? filterIconRight.style.display = 'none' : filterIconRight.style.display = 'block';
         inputNav ? filterIconLeft.style.display = 'block' : filterIconLeft.style.display = 'none';
         inputNav ? filterButton.style.background = '#161616af' : filterButton.style.background = '#e15b64';
         inputNav ? filterButton.style.color = '#fff' : filterButton.style.color = '#161616';
         inputNav ? filterButton.style.transform = 'translateX(46px) translateY(-50px) rotate(-90deg)' : filterButton.style.transform = 'translateX(0px) translateY(0px) rotate(0deg)';
-        // inputNav ? filterButton.style.transform = 'translateX(50px)' : filterButton.style.transform = 'translateX(0px)';
         inputNav ? filterTagOpen.style.display = 'none' : filterTagOpen.style.display = 'block';
         inputNav ? filterTagClose.style.display = 'block' : filterTagClose.style.display = 'none';
     }
