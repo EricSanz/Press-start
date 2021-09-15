@@ -11,7 +11,7 @@ header {
     box-shadow: 0px -15px 20px 15px rgb(0,0,0/80%);
     border-bottom: 1px solid $whitecolor;
     font-family: $Montserrat;
-    z-index: 1;
+    z-index: 2;
     .navbar__options {
         position: absolute;
         display: flex;
@@ -83,6 +83,7 @@ header {
 
 .mini__navbar {
     display: none;
+    z-index: 2;
 }
 
 .leftSidenav__container {
