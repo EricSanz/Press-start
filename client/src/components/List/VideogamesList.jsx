@@ -14,7 +14,7 @@ function VideogameList({ videogamesList, dispatch, loading, error, filteredVideo
         if (!videogamesList?.length) {
             dispatch(loadVideogames());
         }
-    }, [videogamesList?.length, filteredVideogameList?.length]);
+    }, [videogamesList?.length, filteredVideogameList?.length, platformVideogames?.length]);
 
     const displayVideogameList = (
 
