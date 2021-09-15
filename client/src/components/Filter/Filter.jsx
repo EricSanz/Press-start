@@ -7,7 +7,7 @@ import '../List/VideogamesList.scss';
 
 function FilterComponent({dispatch}) {
 
-    const [inputNav, setInputNav] = useState(false);
+    const [inputNav, setInputNav] = useState(true);
 
     function handleInputNav() {
 
@@ -26,6 +26,8 @@ function FilterComponent({dispatch}) {
         inputNav ? filterIconLeft.style.display = 'block' : filterIconLeft.style.display = 'none';
         inputNav ? filterButton.style.background = '#161616af' : filterButton.style.background = '#e15b64';
         inputNav ? filterButton.style.color = '#fff' : filterButton.style.color = '#161616';
+        inputNav ? filterButton.style.transform = 'translateX(46px) translateY(-50px) rotate(-90deg)' : filterButton.style.transform = 'translateX(0px) translateY(0px) rotate(0deg)';
+        // inputNav ? filterButton.style.transform = 'translateX(50px)' : filterButton.style.transform = 'translateX(0px)';
         inputNav ? filterTagOpen.style.display = 'none' : filterTagOpen.style.display = 'block';
         inputNav ? filterTagClose.style.display = 'block' : filterTagClose.style.display = 'none';
     }
