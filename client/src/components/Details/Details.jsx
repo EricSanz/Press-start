@@ -117,14 +117,6 @@ function Details ({dispatch, videogame, match, loading}) {
         }
     }
 
-    function genreCount(genre) {
-        if (genre.indexOf() < 1 ) {
-
-        } else {
-
-        }
-    }
-
     return (
         <main className="main">
             <div className="main__left">
