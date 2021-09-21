@@ -1,504 +1,15 @@
 @import "../styles/colors";
 @import "../../fonts/fonts";
 
-// main {
-//     position: relative;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     display: flex;
-//     .main__left {
-//         position: fixed;
-//         // flex: 1;
-//         padding-top: 150px;
-//         padding-left: 3%;
-//         padding-right: 3%;
-//         left: 0;
-//         height: 100%;
-//         width: 35.56vw;
-//         background: $greybackground;
-//         .title__container {
-//             display: flex;
-//             flex-direction: column;
-//             width: 100%;
-//             padding-left: 10px;
-//             border-top-left-radius: 20px;
-//             border-top-right-radius: 20px;
-//             .title__videogame {
-//                 font-family: $Montserrat;
-//                 font-weight: bold;
-//                 font-size: 18px;
-//             }
-//             .second__title__videogame {
-//                 font-family: $Montserrat;
-//                 font-size: 15px;
-//             }
-//             .title--addon {
-//                 font-size: 14px;
-//                 font-family: $Montserrat;
-//                 margin-top: -15px;
-//             }
-//         }
-//         .onsale__tag {
-//             position: absolute;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             right: 150px;
-//             top: 167px;
-//             font-weight: 600;
-//             border-radius: 10px;
-//             height: 50px;
-//             width: 100px;
-//             background-color: $redlightcolor;
-//             box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
-//         }
-//         .videogame__favorite {
-//             position: absolute;
-//             top: 167px;
-//             right: 80px;
-//             width: 50px;
-//             height: 50px;
-//             background-color: $whitecolor ;
-//             border-radius: 10px;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
-//             .heart-icon {
-//                 font-size: 24px;
-//                 color: $blackbackground;
-//             }
-//             .heart-icon:hover {
-//                 cursor: pointer;
-//                 color: $redlightcolor;
-//             }
-//         }
-//         .cover__container {
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             padding-left: 10px;
-//             .cover--img {
-//                 padding-top: 20px;
-//                 padding-bottom: 20px;
-//                 width: 350px;
-//             }
-//         }
-//         .editions__container, .platforms__container {
-//             display: flex;
-//             flex-wrap: wrap;
-//             align-items: center;
-//             margin-top: 5px;
-//             padding-left: 10px;
-//             .editions__title, .platforms__title {
-//                 padding-right: 10px;
-//                 font-weight: bold;
-//             }
-//             .selected-edition__container, .selected-platform__container {
-//                 font-weight: 600;
-//                 border-radius: 10px;
-//                 height: 30px;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 padding: 5px;
-//                 .selected-edition, .selected-platform {
-//                     padding: 10px;
-//                     text-align: center;
-//                     font-size: 12px;
-//                 }
-//             }
-//             .selected-edition__container {
-//                 background-color: $blackbackground;
-//                 color: $whitecolor;
-//             }
-//             .selected-platform__container {
-//                 background-color: $goldenstrongcolor;
-//                 color: $blackbackground;
-//             }
-//         }
-//     }
-//     .main__right {
-//         position: relative;
-//         left: 41.55vw;
-//         height: 120vh;
-//         // flex: 0;
-//         border-left: 1px solid $greyborder;
-//         background: $whitecolor;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         // justify-content: center;
-//         .videogame__info--wrapper {
-//             position: relative;
-//             top: 165px;
-//             // width: 5em;
-//             // max-width: 900px;
-//             padding-left: 5em;
-//             // width: 58vw;
-//             .info--wrapper {
-//                 display: flex;
-//                 align-items: center;
-//                 padding-left: 75px;
-//                 height: 60px;
-//                 border-bottom: 1px solid $greyborder;
-//                 input[type='radio'] {
-//                     opacity: 0;
-//                     width: 10px;
-//                 }
-//                 label {
-//                     display: flex;
-//                     color: $whitecolor;
-//                     padding: 15px 30px;
-//                     margin-right: 2px;
-//                     margin-bottom: 20px;
-//                     font-family: $Montserrat;
-//                     font-size: 20px;
-//                     background-color: $blackbackground;
-//                 }
-//                 label:hover {
-//                     cursor: pointer;
-//                 }
-//                 .label--left {
-//                     border-top-left-radius: 15px;
-//                     background-color: $goldenstrongcolor;
-//                     color: $blackbackground;
-//                     font-weight: 600;
-//                 }
-//                 input[type='radio']:checked + .label--content {
-//                     background-color: $goldenstrongcolor;
-//                     color: $blackbackground;
-//                     font-weight: 600;
-//                 }
-//                 input[type='radio']:checked + .label--pictures {
-//                     background-color: $goldenstrongcolor;
-//                     color: $blackbackground;
-//                     font-weight: 600;
-//                 }
-//                 input[type='radio']:checked + .label--description {
-//                     background-color: $goldenstrongcolor;
-//                     color: $blackbackground;
-//                     font-weight: 600;
-//                 }
-//                 .left__button {
-//                     background-color: $goldenstrongcolor;
-//                     color: $blackbackground;
-//                     font-weight: bold;
-//                     border-top-left-radius: 10px;
-//                 }
-//             }
-//             .content__info, .pictures__info, .description__info {
-//                 position: relative;
-//                 padding-left: 30px;
-//                 border-bottom: 1px solid $greyborder;
-//             }
-//             .content__info {
-//                 position: relative;
-//                 display: flex;
-//                 justify-content: center;
-//                 // align-items: center;
-//                 // flex-direction: column;
-//                 overflow-x: hidden;
-//                 max-height: 490px;
-//                 overflow-x: hidden;
-//                 // margin-top: 10px;
-//                 padding-bottom: 10px;
-//                 .content__image--container {
-//                     display: flex;
-//                     align-items: center;
-//                     justify-content: center;
-//                     margin-top: 15px;
-//                     .content__image {
-//                         max-height: 350px;
-//                     }
-//                 }
-//                 .content__info__pack {
-//                     // margin-top: 20px;
-//                     margin-bottom: 20px;
-//                     margin-bottom: 6px;
-//                     .packInfo__title {
-//                         border-bottom: 1px solid $blackbackground;
-//                         font-weight: 600;
-//                         font-size: 18px;
-//                         padding-top: 7px;
-//                         padding-bottom: 7px;
-//                         padding-left: 15px;
-//                         // padding-right: 15px;
-//                         // width: fit-content;
-//                         border-top-left-radius: 10px;
-//                         // background-color: $goldencolorlighten;
-//                     }
-//                     .packInfo__list {
-//                         font-size: 14px;
-//                         margin-left: 40px;
-//                         margin-bottom: 10px;
-//                     }
-//                 }
-//             }
-//             .pictures__info {
-//                 max-height: 490px;
-//                 overflow-x: hidden;
-//                 margin-top: 10px;
-//                 padding-bottom: 10px;
-//                 display: none;
-//                 .videogame__images {
-//                     width: 325px;
-//                     margin: 10px;
-//                 }
-//             }
-//             .pictures__active {
-//                 display: block;
-//             }
-//             .description__info {
-//                 display: none;
-//                 max-height: 490px;
-//                 overflow-x: hidden;
-//                 margin-top: 10px;
-//                 padding-bottom: 10px;
-//                 .description__gloabl__title {
-//                     font-weight: 600;
-//                 }
-//                 .features__title {
-//                     border-bottom: 1px solid $blackbackground;
-//                     font-style: oblique;
-//                     padding-top: 7px;
-//                     padding-bottom: 7px;
-//                     font-weight: 600;
-//                     font-size: 18px;
-//                     // background-color: $goldencolorlighten;
-//                     border-top-left-radius: 10px;
-//                     padding-left: 15px;
-//                 }
-//                 .features__text {
-//                     font-size: 14px;
-//                     margin-left: 40px;
-//                     margin-bottom: 6px;
-//                 }
-//             }
-//             .content__info::-webkit-scrollbar, .pictures__info::-webkit-scrollbar, .description__info::-webkit-scrollbar {
-//                 width: 12px;
-//             }
-//             .content__info::-webkit-scrollbar-track, .pictures__info::-webkit-scrollbar-track, .description__info::-webkit-scrollbar-track {
-//                 background: $goldenstrongcolor;
-//                 border-radius: 20px;
-//             }
-//             .content__info::-webkit-scrollbar-thumb, .pictures__info::-webkit-scrollbar-thumb, .description__info::-webkit-scrollbar-thumb {
-//                 background-color: $blackbackground;
-//                 border-radius: 20px;
-//                 border: 3px solid $goldenstrongcolor;
-//             }
-//         }
-//         .conditions__warranty--container {
-//             position: relative;
-//             top: 130px;
-//             padding-left: 5em;
-//             .shipping__conditions--title, .product__warranty--title, .return__conditions--title {
-//                 transition: 1s;
-//                 border-top-left-radius: 10px;
-//                 border-top-right-radius: 10px;
-//                 border-bottom: 1px solid $greyborder;
-//                 position: relative;
-//                 font-weight: 600;
-//                 width: 58em;
-//                 padding-left: 1em;
-//                 padding-top: .1em;
-//                 .icons {
-//                     transition: 1s;
-//                     position: absolute;
-//                     right: 1em;
-//                 }
-//                 .shipping__conditions--content, .product__warranty--content, .return__conditions--content {
-//                     font-weight: normal;
-//                     display: none;
-//                     width: 57em;
-//                 }
-//             }
-//             .shipping__conditions--title:hover, .product__warranty--title:hover, .return__conditions--title:hover {
-//                 cursor: pointer;
-//             }
-//         }
-//         .info__container {
-//             width: 64em;
-//             position: relative;
-//             display: flex;
-//             height: 150px;
-//             top: 125px;
-//             justify-content: center;
-//             align-items: center;
-//             .price__cart--option {
-//                 position: relative;
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 justify-content: center;
-//                 .onsale__price--container, .normal__price--container {
-//                     position: relative;
-//                     justify-content: center;
-//                     align-items: center;
-//                     background-color: $blackbackground;
-//                     color: $whitecolor;
-//                     border-top-left-radius: 10px;
-//                     border-top-right-radius: 10px;
-//                     border-bottom: 2px solid $whitecolor;
-//                     height: 55px;
-//                     width: 390px;
-//                     display: inline-flex;
-//                     font-size: 30px;
-//                     margin-top: 5px;
-//                     margin-bottom: -5px;
-//                     .normal__price {
-//                         font-weight: 600;
-//                     }
-//                     .normal__price__onsale {
-//                         padding-right: 20px;
-//                     }
-//                     .normal__price__onsale::after {
-//                         border-bottom: 0.2em solid $redcolor;
-//                         content: "";
-//                         width: 100px;
-//                         opacity: .7;
-//                         position: absolute;
-//                         left: 85px;
-//                         top: 25px;
-//                         transform: rotate(-15deg);
-//                     }
-//                     .onsale__price {
-//                         font-weight: 600;
-//                     }
-//                 }
-//                 .sold__out__container, .add__cart__container, .preorder__container {
-//                     font-family: $Montserrat;
-//                     display: flex;
-//                     justify-content: center;
-//                     align-items: center;
-//                     font-weight: 600;
-//                     font-size: 24px;
-//                     border-bottom-left-radius: 10px;
-//                     border-bottom-right-radius: 10px;
-//                     margin-top: 5px;
-//                     height: 50px;
-//                     width: 390px;
-//                     outline: none;
-//                     border: none;
-//                     box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
-//                 }
-//                 .add__cart__container, .preorder__container {
-//                     cursor: pointer;
-//                 }
-//                 .sold__out__container {
-//                     background-color: $redlightcolor;
-//                 }
-//                 .add__cart__container {
-//                     background-color: $goldencolor;
-//                 }
-//                 .add__cart__container:hover {
-//                     background-color: $goldenstrongcolor;
-//                 }
-//                 .preorder__container {
-//                     background-color: $greystarlayout;
-//                 }
-//             }
-//             .general__info__container {
-//                 position: relative;
-//                 left: 30px;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 .developer__genres__rating--info {
-//                     display: flex;
-//                     flex-direction: column;
-//                     .rating__container {
-//                         display: flex;
-//                         margin-bottom: -20px;
-//                         align-items: center;
-//                         .rating__title {
-//                             font-family: $Montserrat;
-//                             font-weight: 600;
-//                             padding-top: 6px;
-//                             padding-right: 10px;
-//                         }
-//                         .rating__stars {
-//                             unicode-bidi: bidi-override;
-//                             color: $greyborder;
-//                             font-size: 25px;
-//                             width: 100px;
-//                             margin: 0 auto;
-//                             position: relative;
-//                             padding: 0;
-//                             text-shadow: 0px 1px 0 $greystarlayout;
-//                             .stars__top {
-//                                 color: $goldencolor;
-//                                 padding: 0;
-//                                 position: absolute;
-//                                 z-index: 1;
-//                                 display: block;
-//                                 top: 0;
-//                                 left: 0;
-//                                 overflow: hidden;
-//                             }
-//                             .stars__bottom {
-//                                 padding: 0;
-//                                 display: block;
-//                                 z-index: 0;
-//                             }
-//                         }
-//                         .rating__opinions {
-//                             font-family: $Montserrat;
-//                             padding-top: 8px;
-//                             padding-left: 14px;
-//                         }
-//                     }
-//                     .developer__genres__container {
-//                         display: flex;
-//                         flex-direction: column;
-//                         .genres__container {
-//                             margin-bottom: -20px;
-//                             display: flex;
-//                             .genres__title {
-//                                 font-weight: bold;
-//                                 padding-right: 10px;
-//                             }
-//                             .genres {
-//                                 padding-right: 10px;
-//                             }
-//                         }
-//                         .developer__container {
-//                             display: flex;
-//                             .developer__title {
-//                                 font-weight: bold;
-//                                 padding-right: 10px;
-//                             }
-//                         }
-//                     }
-//                 }
-//                 .pegi__container {
-//                     position: relative;
-//                     left: 30px;
-//                     top: 10px;
-//                     .pegi {
-//                         width: 55px;
-//                         height: 70px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
 .main {
     width: 100vw;
     height: 100vh;
     display: flex;
-    // flex-direction: row;
     .main__left {
         position: fixed;
         padding-top: 150px;
         padding-left: 4em;
         padding-right: 4em;
-        // left: 0;
         flex: 1;
         height: 100%;
         width: 37em;
@@ -608,33 +119,20 @@
     }
     .main__right {
         position: relative;
-        // height: 100vh;
         flex: 2;
-        // border-left: 1px solid $greyborder;
         background: $whitecolor;
         margin-left: 46em;
-        // width: 30em;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
         .videogame__info--wrapper {
             position: relative;
             top: 165px;
-            // width: 5em;
-            // max-width: 900px;
             margin-left: 6.5em;
-            // left: 2em;
             width: 59em;
             border-bottom: 1px solid $greyborder;
             padding-bottom: .7em;
-            // width: 58vw;
             .info--wrapper {
                 display: flex;
                 align-items: center;
                 padding-left: 1em;
-                // margin-right: 2.5em;
-                // margin-left: 2.5em;
                 height: 45px;
                 border-bottom: 1px solid $greyborder;
                 margin-bottom: .5em;
@@ -688,10 +186,8 @@
             }
             .content__info, .pictures__info, .description__info {
                 position: relative;
-                // border-bottom: 1px solid $greyborder;
                 height: 20em;
                 width: 59em;
-                // padding-left: 2.5em;
                 overflow-x: hidden;
             }
             .content__info--image {
@@ -708,23 +204,8 @@
             .content__info {
                 position: relative;
                 display: flex;
-                // justify-content: center;
-                // align-items: center;
-                // flex-direction: column;
-                // overflow-x: hidden;
-                // max-height: 490px;
                 padding-bottom: 10px;
-                // .content__image--container {
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
-                //     .content__image {
-                //         max-height: 350px;
-                //     }
-                // }
                 .content__info__pack {
-                    // margin-top: 20px;
-                    // margin-bottom: 20px;
                     margin-bottom: 6px;
                     .packInfo__title {
                         border-bottom: 1px solid $blackbackground;
@@ -734,10 +215,7 @@
                         padding-bottom: 7px;
                         padding-left: 15px;
                         margin-right: .5em;
-                        // padding-right: 15px;
-                        // width: fit-content;
                         border-top-left-radius: 10px;
-                        // background-color: $goldencolorlighten;
                     }
                     .packInfo__list {
                         font-size: 14px;
@@ -748,8 +226,6 @@
                 }
             }
             .pictures__info {
-                // max-height: 490px;
-                // overflow-x: hidden;
                 margin-top: 10px;
                 padding-bottom: 10px;
                 display: none;
@@ -763,8 +239,6 @@
             }
             .description__info {
                 display: none;
-                // max-height: 490px;
-                // overflow-x: hidden;
                 margin-top: 10px;
                 padding-bottom: 10px;
                 .description__global__title {
@@ -779,7 +253,6 @@
                     padding-bottom: 7px;
                     font-weight: 600;
                     font-size: 18px;
-                    // background-color: $goldencolorlighten;
                     border-top-left-radius: 10px;
                     padding-left: 15px;
                 }
