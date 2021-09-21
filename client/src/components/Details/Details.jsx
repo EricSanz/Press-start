@@ -32,7 +32,7 @@ function Details ({dispatch, videogame, match, loading}) {
                 const shipping_title = document.getElementById('shipping__title');
                 const shipping_icon = document.getElementById('shipping__icon');
                 setExpandShipping(!expandShipping);
-                expandShipping ? shipping.style.display = 'block' : shipping.style.display = 'none';
+                expandShipping ? shipping.style.display = 'flex' : shipping.style.display = 'none';
                 expandShipping ? shipping_title.style.backgroundColor = '#f0f2f2' : shipping_title.style.backgroundColor = '#fff';
                 expandShipping ? shipping_icon.style.transform = 'rotate(180deg)' : shipping_icon.style.transform = 'rotate(0deg)';
                 break;
@@ -41,7 +41,7 @@ function Details ({dispatch, videogame, match, loading}) {
                 const warranty_title = document.getElementById('warranty__title');
                 const warranty_icon = document.getElementById('warranty__icon');
                 setExpandWarranty(!expandWarranty);
-                expandWarranty ? warranty.style.display = 'block' : warranty.style.display = 'none';
+                expandWarranty ? warranty.style.display = 'flex' : warranty.style.display = 'none';
                 expandWarranty ? warranty_title.style.backgroundColor = '#f0f2f2' : warranty_title.style.backgroundColor = '#fff';
                 expandWarranty ? warranty_icon.style.transform = 'rotate(180deg)' : warranty_icon.style.transform = 'rotate(0deg)';
                 
@@ -51,7 +51,7 @@ function Details ({dispatch, videogame, match, loading}) {
                 const return_title = document.getElementById('return__title');
                 const return_icon = document.getElementById('return__icon');
                 setExpandReturn(!expandReturn);
-                expandReturn ? returnConditions.style.display = 'block' : returnConditions.style.display = 'none';
+                expandReturn ? returnConditions.style.display = 'flex' : returnConditions.style.display = 'none';
                 expandReturn ? return_title.style.backgroundColor = '#f0f2f2' : return_title.style.backgroundColor = '#fff';
                 expandReturn ? return_icon.style.transform = 'rotate(180deg)' : return_icon.style.transform = 'rotate(0deg)';
                 break;
@@ -70,7 +70,7 @@ function Details ({dispatch, videogame, match, loading}) {
         if (target.value === 'pictures' ) {
             contentOption.style.backgroundColor = '#161616';
             contentOption.style.color = '#fff';
-            contentOption.style.fontWeight = 'normal';
+            contentOption.style.fontWeight = '600';
             picturesInfo.style.display = 'block';
             contentInfo.style.display = 'none';
             descriptionInfo.style.display = 'none';
@@ -79,7 +79,7 @@ function Details ({dispatch, videogame, match, loading}) {
         if (target.value === 'description') {
             contentOption.style.backgroundColor = '#161616';
             contentOption.style.color = '#fff';
-            contentOption.style.fontWeight = 'normal';
+            contentOption.style.fontWeight = '600';
             descriptionInfo.style.display = 'block';
             contentInfo.style.display = 'none';
             picturesInfo.style.display = 'none';
@@ -103,7 +103,7 @@ function Details ({dispatch, videogame, match, loading}) {
         if (target.value === 'description') {
             picturesOption.style.backgroundColor = '#161616';
             picturesOption.style.color = '#fff';
-            picturesOption.style.fontWeight = 'normal'
+            picturesOption.style.fontWeight = '600'
             descriptionInfo.style.display = 'block';
             picturesInfo.style.display = 'none';
         }
@@ -117,8 +117,16 @@ function Details ({dispatch, videogame, match, loading}) {
         }
     }
 
+    function genreCount(genre) {
+        if (genre.indexOf() < 1 ) {
+
+        } else {
+
+        }
+    }
+
     return (
-        <main>
+        <main className="main">
             <div className="main__left">
                 {loading ? <Loading/> : videogame && (
                     <>
@@ -229,7 +237,13 @@ function Details ({dispatch, videogame, match, loading}) {
                                         <div className="genres__container">
                                             <p className="genres__title">Genres:</p>
                                             {videogame.genres.map((genre) => (
-                                                <p className="genres">{genre}</p>
+                                                <>
+                                                    {videogame.genres.indexOf(genre) < 1 ? (
+                                                        <p className="genres">{genre}</p>
+                                                    ) : (
+                                                        <p className="genres"><span>&nbsp;/	&nbsp;&nbsp;</span>{genre}</p>
+                                                    )}
+                                                </>
                                             ))}
                                         </div>
                                         <div className="developer__container">
@@ -295,7 +309,7 @@ function Details ({dispatch, videogame, match, loading}) {
                             </div>
                             {videogame.edition.is_content ? (
                                 <>
-                                    <div className="content__info" id="content__info">
+                                    <div className="content__info content__info--image" id="content__info">
                                         {videogame.edition.content_image[0] === '' ? null : (
                                             <div className="content__image--container">
                                                 {videogame.edition.content_image.map((contentImage) => (
@@ -343,7 +357,7 @@ function Details ({dispatch, videogame, match, loading}) {
                                     </div>
                                     <div className="description__info" id="description__info">
                                         {videogame.description.map((global_title) => (
-                                            <p className="description__gloabl__title">{global_title.global}</p>
+                                            <p className="description__global__title">{global_title.global}</p>
                                         ))}
                                         {videogame.description.map((videogame) => (
                                             <>
@@ -379,7 +393,7 @@ function Details ({dispatch, videogame, match, loading}) {
                                     </div>
                                     <div className="description__info" id="description__info">
                                         {videogame.description.map((global_title) => (
-                                            <p className="description__gloabl__title">{global_title.global}</p>
+                                            <p className="description__global__title">{global_title.global}</p>
                                         ))}
                                         {videogame.description.map((videogame) => (
                                             <>
