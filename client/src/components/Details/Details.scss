@@ -124,7 +124,7 @@
         margin-left: 46em;
         .videogame__info--wrapper {
             position: relative;
-            top: 165px;
+            top: 205px;
             margin-left: 6.5em;
             width: 59em;
             border-bottom: 1px solid $greyborder;
@@ -278,7 +278,7 @@
         }
         .conditions__warranty--container {
             position: relative;
-            top: 130px;
+            top: 160px;
             padding-left: 6.5em;
             .shipping__conditions--title, .product__warranty--title, .return__conditions--title {
                 transition: 1s;
@@ -314,6 +314,9 @@
             top: 125px;
             justify-content: center;
             align-items: center;
+            .in__stock {
+                padding-top: 3.5em;
+            }
             .price__cart--option {
                 position: relative;
                 display: flex;
@@ -385,6 +388,22 @@
                 }
                 .preorder__container {
                     background-color: $greystarlayout;
+                }
+                .in__stock--p {
+                    font-style: oblique;
+                    .check__icon {
+                        color: $greencolor;
+                    }
+                    .link__info {
+                        color: $blackbackground;
+                        text-decoration: none;
+                        font-family: $Montserrat;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+                    .link__info:active {
+                        color: #161616;
+                    }
                 }
             }
             .general__info__container {

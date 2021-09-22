@@ -8,7 +8,6 @@ import EditionButton from './Edition-Button/Edition-Button';
 import PlatformButton from './Platform-Button/Platform-Button';
 import Popup from 'reactjs-popup';
 import './Pop-Up/Popup.scss';
-// import 'reactjs-popup/dist/index.css';
 import './Details.scss';
 
 function Details ({dispatch, videogame, match, loading}) {
@@ -184,7 +183,7 @@ function Details ({dispatch, videogame, match, loading}) {
                 {loading ? <Loading /> : videogame && (
                     <>
                     <div className="info__container">
-                            <div className="price__cart--option">
+                            <div className={videogame.edition.stock ? "price__cart--option in__stock" : "price__cart--option"}>
                                 {videogame.edition.sale ? (
                                     <div className="onsale__price--container">
                                         <p className="normal__price__onsale">{videogame.edition.price}€</p>
@@ -198,9 +197,13 @@ function Details ({dispatch, videogame, match, loading}) {
                                 {videogame.edition.stock ? (
                                     <>
                                         {videogame.release.released ? (
-                                            <button className="add__cart__container">
-                                                <p>ADD TO CART</p>
-                                            </button>
+                                            <>
+                                                <button className="add__cart__container">
+                                                    <p>ADD TO CART</p>
+                                                </button>
+                                                <p className="in__stock--p">In Stock <span><FontAwesomeIcon className="check__icon" icon="check-circle"/></span>&nbsp; Immediate shipping! &nbsp; <Link to="/delivering-options" className="link__info" >+ Info</Link></p>
+                                            </>
+
                                         ) : (
                                             <button className="preorder__container">
                                                 <p>PRE-ORDER</p>
@@ -249,6 +252,9 @@ function Details ({dispatch, videogame, match, loading}) {
                                 </div>
                             </div>
                         </div>
+                        {/* {videogame.edition.stock ? (
+                            <p className="in__stock">In Stock <span><FontAwesomeIcon className="check__icon" icon="check-circle"/></span>&nbsp; Immediate shipping! &nbsp; <Link to="/delivering-options">+ Info</Link></p>
+                        ) : null} */}
                         <div className="conditions__warranty--container">
                             <div className="shipping__conditions--title" id="shipping__title">
                                 <p id="shipping" onClick={(id) => expandInfo(id)}>Shipping Conditions:<span><FontAwesomeIcon id="shipping__icon" className="icons" icon="angle-double-down"/></span></p>  
