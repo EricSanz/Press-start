@@ -4,9 +4,9 @@ import Landing from './components/Landing/Landing';
 import VideogamesList from './components/List/VideogamesList';
 import Details from './components/Details/Details';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes)
+library.add(faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes, faCheckCircle)
 
 function App() {
   return (
