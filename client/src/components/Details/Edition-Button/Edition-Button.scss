@@ -27,3 +27,20 @@
         }
     }
 }
+
+@media (max-width: 1536px ) {
+    .editions__buttons {
+        .editions__links {
+            .editions {
+                height: 25px;
+                padding: 4px;
+                margin-top: 2px;
+                .edition {
+                    padding: 2px;
+                }
+            }
+            .editions:hover {
+            }
+        }
+    }
+}
