@@ -26,3 +26,20 @@
         }
     }
 }
+
+@media (max-width: 1536px ) {
+    .platforms__buttons {
+        .platforms__links {
+            .platforms {
+                height: 25px;
+                padding: 4px;
+                margin-top: 2px;
+                .platform {
+                    padding: 2px;
+                }
+            }
+            .platforms:hover {
+            }
+        }
+    }
+}
