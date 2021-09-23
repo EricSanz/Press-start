@@ -108,3 +108,53 @@
         }
     }
 }
+
+@media (max-width: 1536px ) {
+    .right__sidenav {
+        .signIn__register {
+            top: 2em;
+            .signIn__register--option {
+                padding: .5em 1.7em;
+                font-size: 16px;
+            }
+        }
+        .signIn__menu {
+            .email__input, .password__input {
+                padding-left: 1em;
+                width: 17.5em;
+                height: 2.5em;
+            }
+            .email__input {
+                top: 4em;
+            }
+            .password__input {
+                top: 4.5em;
+            }
+            .password__icon {
+                top: 1.8em;
+                left: 5.7em;
+                font-size: 18px;
+            }
+            .signIn__button {
+                top: 3.6em;
+                width: 13.8em;
+                height: 2em;
+                font-size: 18px;
+            }
+            .p__signin {
+                top: 4.3em;
+            }
+            .logos__container {
+                width: 20em;
+                top: 4.2em;
+            }
+    
+            .logos__container > img {
+                padding-left: .5em;
+                padding-right: .5em;
+                width: 3.5em;
+                height: 3.5em;
+            }
+        }
+    }
+}
