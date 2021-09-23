@@ -121,6 +121,12 @@ header {
     z-index: 5;
 }
 
+@media (max-width: 1536px ) {
+    .rightSidenav__container {
+        height: 50vh;
+    }
+}
+
 @media (max-width: 768px ){
     header {
         .navbar__options {
@@ -130,13 +136,9 @@ header {
             }
             .navbar__options-right {
                 font-size: 12px;
-                .navbar__option {
-                }
             }
             .navbar__options-left {
                 font-size: 12px;
-                .navbar__option {
-                }
             }
         }
     }
