@@ -24,11 +24,14 @@ function RightSidenav() {
     function activeOption() {
         const signInOption = document.getElementById('signIn__option');
         const registerOption = document.getElementById('register__option');
+        const signInMenu = document.getElementById('signIn__menu--id');
+        const registerMenu = document.getElementById('register__menu--id');
 
         setToggleActiveOption(!toggleActiveOption);
 
         toggleActiveOption ? signInOption.className = 'active signIn__register--option' : signInOption.className = 'option signIn__register--option';
         toggleActiveOption ? registerOption.className = 'option signIn__register--option' : registerOption.className = 'active signIn__register--option';
+        toggleActiveOption ? signInMenu.style.display = 'flex' : signInMenu.style.display = 'none';
     }
 
     return (
@@ -37,7 +40,7 @@ function RightSidenav() {
                 <button id="signIn__option" className="active signIn__register--option" onClick={() => activeOption()}>Sign In</button>
                 <button id="register__option" className="option signIn__register--option" onClick={() => activeOption()}>Register</button>
             </div>
-            <div className="signIn__menu">
+            <div id="signIn__menu--id" className="signIn__menu">
                 <input className="email__input" type="text" placeholder="Email" />
                 <input id="password" className="password__input" type="text" placeholder="Password" />
                 <FontAwesomeIcon id="see__password" className="password__icon not--slashed" icon="eye" onClick={() => seeHidePassword()}/>
@@ -48,6 +51,9 @@ function RightSidenav() {
                     <img src={googleLogo} alt="google" />
                     <img src={facebookLogo} alt="facebook" />
                 </div>
+            </div>
+            <div id="register__menu--id" className="register__menu">
+
             </div>
         </div>
     )
