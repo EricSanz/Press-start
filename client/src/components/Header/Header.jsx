@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LeftSidenav from '../Left-Sidenav/Left-Sidenav';
+import RightSidenav from '../Right-Sidenav/Right-Sidenav';
 import { Link } from 'react-router-dom';
 
 function Header() {
 
     const [leftSidenav, setLeftSidenav] = useState(false);
+    const [rightSidenav, setRightSidenav] = useState(false);
 
-    function handleSidenav() {
+    function handleLeftSidenav() {
         setLeftSidenav(!leftSidenav);
 
         const toggleLeftSidenav = document.getElementById('leftSidenav__id');
@@ -23,14 +25,28 @@ function Header() {
         leftSidenav ? closeLeftMiniSidenav.style.display = 'none' : closeLeftMiniSidenav.style.display = 'block';
     }
 
+    function handleRightSidenav() {
+        setRightSidenav(!rightSidenav);
+
+        const toggleRightSidenav = document.getElementById('rightSidenav__id');
+        const openRightSidenav = document.getElementById('open__rightSidenav__icon');
+        const closeRightSidenav = document.getElementById('close__rightSidenav__icon');
+        const openRightMiniSidenav = document.getElementById('open__rightmini__icon');
+        const closeRightMiniSidenav = document.getElementById('close__rightmini__icon');
+
+        rightSidenav ? toggleRightSidenav.style.transform = 'translateX(340px)' : toggleRightSidenav.style.transform = 'translate(-340px)';
+        rightSidenav ? openRightSidenav.style.display = 'block' : openRightSidenav.style.display = 'none';
+        rightSidenav ? closeRightSidenav.style.display = 'none' : closeRightSidenav.style.display = 'block';
+    }
+
     return (
         <>
             <header>
                 <div className="navbar__options">
                     <div className="navbar__options-left">
                         <div className="navbar__option">
-                            <FontAwesomeIcon id="open__icon" className="icon open" icon="bars" onClick={() => handleSidenav()} />
-                            <FontAwesomeIcon id="close__icon" className="icon close" icon="times" onClick={() => handleSidenav()} />
+                            <FontAwesomeIcon id="open__icon" className="icon open" icon="bars" onClick={() => handleLeftSidenav()} />
+                            <FontAwesomeIcon id="close__icon" className="icon close" icon="times" onClick={() => handleLeftSidenav()} />
                             <p>Menu</p>
                         </div>
                         <div className="navbar__option">
@@ -47,7 +63,8 @@ function Header() {
                     </Link>
                     <div className="navbar__options-right">
                         <div className="navbar__option">
-                            <FontAwesomeIcon className="icon" icon="sign-in-alt" />
+                            <FontAwesomeIcon id="open__rightSidenav__icon" className="icon open__right" icon="sign-in-alt" onClick={() => handleRightSidenav()}/>
+                            <FontAwesomeIcon id="close__rightSidenav__icon" className="icon close__right" icon="sign-in-alt" onClick={() => handleRightSidenav()}/>
                             <p>Sign In</p>
                         </div>
                         <div className="navbar__option">
@@ -57,16 +74,20 @@ function Header() {
                     </div>
                 </div>
                 <div className="mini__navbar">
-                    <FontAwesomeIcon id="open__mininavbar__icon" className="icon open" icon="bars" onClick={() => handleSidenav()} />
-                    <FontAwesomeIcon id="close__mininavbar__icon" className="icon close" icon="times" onClick={() => handleSidenav()} />
+                    <FontAwesomeIcon id="open__mininavbar__icon" className="icon open" icon="bars" onClick={() => handleLeftSidenav()} />
+                    <FontAwesomeIcon id="close__mininavbar__icon" className="icon close" icon="times" onClick={() => handleLeftSidenav()} />
                     <FontAwesomeIcon className="icon" icon="newspaper" />
                     <FontAwesomeIcon className="icon" icon="calendar-alt" />
-                    <FontAwesomeIcon className="icon" icon="sign-in-alt" />
+                    <FontAwesomeIcon id="open__rightmini__icon" className="icon open__right" icon="sign-in-alt" onClick={() => handleRightSidenav()}/>
+                    <FontAwesomeIcon id="close__rightmini__icon" className="icon close__right" icon="sign-in-alt" onClick={() => handleRightSidenav()}/>
                     <FontAwesomeIcon className="icon" icon="shopping-cart" />
                 </div>
             </header>
             <div className="leftSidenav__container" id="leftSidenav__id">
                 <LeftSidenav />
+            </div>
+            <div className="rightSidenav__container" id="rightSidenav__id">
+                <RightSidenav />
             </div>
         </>
     )
