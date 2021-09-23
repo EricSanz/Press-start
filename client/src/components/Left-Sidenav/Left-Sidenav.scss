@@ -3,8 +3,9 @@
 
 .left__sidenav {
     background-color: $blackbackground;
+    top: -10px;
+    position: relative;
     ul{
-        // height: 100vh;
         text-decoration: none;
         padding-left: 0;
         list-style: none;
@@ -20,7 +21,6 @@
         }
         .left__sidenav-list {
             display: flex;
-            // height: 3.5em;
             align-items: center;
             justify-content: space-between;
             background-color: $goldencolor;
@@ -75,6 +75,29 @@
                 button:active {
                     color: $goldencolor;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1536px ) {
+    .left__sidenav {
+        top: -10px;
+        position: relative;
+        ul{
+            .link {
+                font-size: 16px;
+            }
+            .left__sidenav-list {
+                .left__sidenav-icon {
+                    margin-right: 35px;
+                }
+            }
+            .left__sidenav-newsletter {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0px;
             }
         }
     }
