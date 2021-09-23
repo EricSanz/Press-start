@@ -20,42 +20,91 @@
             border: none;
         }
         .signIn__register--option:hover {
-            background-color: $goldencolor;
-            cursor: pointer;
+            transition: 1s;
         }
         .active {
             background-color: $goldencolor;
+            margin-right: .5em;
+            margin-left: .5em;
         }
         .option {
-            margin-left: 1em;
+            background-color: $whitecolor;
+            margin-left: .5em;
+            margin-right: .5em;
+        }
+        .option:hover {
+            background-color: $goldencolor;
+            cursor: pointer;
         }
     }
-    .email__input, .password__input {
-        font-family: $Montserrat;
-        padding-left: 1em;
-        position: relative;
-        width: 19em;
-        height: 2.5em;
-        outline: none;
-        border: none;
-    }
-    .email__input {
-        top: 5em;
-    }
-    .password__input {
-        top: 6em;
-    }
-    .password__icon {
-        z-index: 2;
-        position: relative;
-        top: 2.65em;
-        font-size: 20px;
-        left: 5.7em;
-    }
-    .not--slashed {
-        display: block;
-    }
-    .slashed {
-        display: none;
+    .signIn__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .email__input, .password__input {
+            font-family: $Montserrat;
+            padding-left: 1em;
+            position: relative;
+            width: 19em;
+            height: 2.5em;
+            outline: none;
+            border: none;
+        }
+        .email__input {
+            top: 5em;
+        }
+        .password__input {
+            top: 6em;
+        }
+        .password__icon {
+            z-index: 2;
+            position: relative;
+            top: 2.65em;
+            font-size: 20px;
+            left: 5.7em;
+        }
+        .not--slashed {
+            display: block;
+        }
+        .slashed {
+            display: none;
+        }
+        .signIn__button {
+            position: relative;
+            font-family: $Montserrat;
+            outline: none;
+            border: none;
+            top: 3.7em;
+            width: 13.35em;
+            height: 2em;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: $goldencolor;
+        }
+        .signIn__button:hover {
+            cursor: pointer;
+            background-color: $goldenstrongcolor;
+            transition: 1s;
+        }
+        .p__signin {
+            top: 5em;
+            position: relative;
+            color: $whitecolor;
+        }
+        .logos__container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20em;
+            top: 5em;
+        }
+
+        .logos__container > img {
+            padding-left: .5em;
+            padding-right: .5em;
+            width: 3.5em;
+            height: 3.5em;
+        }
     }
 }
