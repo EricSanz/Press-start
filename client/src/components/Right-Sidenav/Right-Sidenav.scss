@@ -1,0 +1,61 @@
+@import '../../fonts/fonts';
+@import '../styles/colors';
+
+.right__sidenav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .signIn__register {
+        position: relative;
+        top: 2.5em;
+        .signIn__register--option {
+            padding: .7em 1.5em;
+            color: $blackbackground;
+            font-family: $Montserrat;
+            font-weight: 600;
+            font-size: 18px;
+            background-color: $greybackground;
+            outline: none;
+            border: none;
+        }
+        .signIn__register--option:hover {
+            background-color: $goldencolor;
+            cursor: pointer;
+        }
+        .active {
+            background-color: $goldencolor;
+        }
+        .option {
+            margin-left: 1em;
+        }
+    }
+    .email__input, .password__input {
+        font-family: $Montserrat;
+        padding-left: 1em;
+        position: relative;
+        width: 19em;
+        height: 2.5em;
+        outline: none;
+        border: none;
+    }
+    .email__input {
+        top: 5em;
+    }
+    .password__input {
+        top: 6em;
+    }
+    .password__icon {
+        z-index: 2;
+        position: relative;
+        top: 2.65em;
+        font-size: 20px;
+        left: 5.7em;
+    }
+    .not--slashed {
+        display: block;
+    }
+    .slashed {
+        display: none;
+    }
+}
