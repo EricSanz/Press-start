@@ -1,5 +1,3 @@
-const axios = require('axios');
-
 function videogameController(VideogameModel) {
     function getVideogames(req, res) {
         const query = {};
