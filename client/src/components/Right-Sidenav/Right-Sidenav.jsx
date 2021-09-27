@@ -3,8 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Right-Sidenav.scss';
 import googleLogo from '../../svg/google.svg';
 import facebookLogo from '../../svg/facebook.svg';
+import { connect } from 'react-redux';
+import { signInWithGoogle, signOut } from '../../redux/actions/userActions';
+import { useDispatch } from 'react-redux';
 
 function RightSidenav() {
+
+    const dispatch = useDispatch();
+
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    const user = userLocalStorage?.user;
+    // const [user, setUser] = useState(null)
+    console.log(user)
+    const userId = user?.uid;
 
     const [togglePassword, setTogglePassword] = useState(false);
     const [toggleActiveOption, setToggleActiveOption] = useState(false);
@@ -48,15 +59,28 @@ function RightSidenav() {
                 <button className="signIn__button">Sign In</button>
                 <p className="p__signin">Or sign in easily with:</p>
                 <div className="logos__container">
-                    <img src={googleLogo} alt="google" />
+                    <img src={googleLogo} alt="google" onClick={() => {dispatch(signInWithGoogle())}}/>
                     <img src={facebookLogo} alt="facebook" />
                 </div>
+                {user ? (
+                    <>
+                        <button onClick={() => {dispatch(signOut())}} >LOG OUT</button>
+                        <p className="hey">{user.displayName}</p>
+                    </>
+                ) : null}
             </div>
             <div id="register__menu--id" className="register__menu">
 
             </div>
         </div>
     )
+};
+
+function mapStateToProps({userReducer}) {
+    return {
+        user: userReducer.user,
+        // isLogged: userReducer.isLogged
+    };
 }
 
-export default RightSidenav;
+export default connect(mapStateToProps)(RightSidenav);
