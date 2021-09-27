@@ -5,10 +5,13 @@ import Loading from '../Loading/Loading';
 import SearchComponent from '../Search/Search';
 import FilterComponent from '../Filter/Filter';
 import { loadVideogames } from '../../redux/actions/videogameActions';
+import { useDispatch } from 'react-redux';
 import Card from './Card/Card';
 import './VideogamesList.scss';
 
-function VideogameList({ videogamesList, dispatch, loading, error, filteredVideogameList, platformVideogames}) {
+function VideogameList({ videogamesList, loading, error, filteredVideogameList, platformVideogames}) {
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
         if (!videogamesList?.length) {
