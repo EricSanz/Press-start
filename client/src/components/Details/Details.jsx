@@ -252,9 +252,6 @@ function Details ({dispatch, videogame, match, loading}) {
                                 </div>
                             </div>
                         </div>
-                        {/* {videogame.edition.stock ? (
-                            <p className="in__stock">In Stock <span><FontAwesomeIcon className="check__icon" icon="check-circle"/></span>&nbsp; Immediate shipping! &nbsp; <Link to="/delivering-options">+ Info</Link></p>
-                        ) : null} */}
                         <div className="conditions__warranty--container">
                             <div className="shipping__conditions--title" id="shipping__title">
                                 <p id="shipping" onClick={(id) => expandInfo(id)}>Shipping Conditions:<span><FontAwesomeIcon id="shipping__icon" className="icons" icon="angle-double-down"/></span></p>  
