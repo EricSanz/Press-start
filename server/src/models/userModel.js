@@ -6,7 +6,8 @@ const userSchema = new Schema({
     email: String,
     photoURL: String,
     favorites: [{ type: Schema.Types.ObjectId, ref: 'videogame' }],
-    messages: [{ type: Schema.Types.ObjectId, ref: 'message'}],
+    messages: [{ type: Schema.Types.ObjectId, ref: 'message' }],
+    shoppingCart: [{ type: Schema.Types.ObjectId, ref: 'cart' }]
 });
 
 module.exports = model('user', userSchema);
