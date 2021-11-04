@@ -20809,5 +20809,1647 @@
         ],
         "card": "https://i.ibb.co/1Lyr19h/pokemon-brilliant-diamond-shining-pearl-card.png",
         "other_editions": []
+    },
+    {
+        "game": {
+            "first_title": "Metroid Dread",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 227,
+        "genres": [
+            "Action",
+            "Shooter"
+        ],
+        "developer": "Nintendo",
+        "images": [
+            "https://i.ibb.co/Jscbbtj/metroid-dread-image-0.jpg",
+            "https://i.ibb.co/1J7gPcb/metroid-dread-image-1.jpg",
+            "https://i.ibb.co/nwDSnGt/metroid-dread-image-3.jpg",
+            "https://i.ibb.co/ryHV1Cs/metroid-dread-image-4.jpg",
+            "https://i.ibb.co/DW95kC6/metroid-dread-image-5.jpg",
+            "https://i.ibb.co/4fd2KYC/metroid-dread-image-6.jpg",
+            "https://i.ibb.co/hfxg4Xy/metroid-dread-image-7.jpg",
+            "https://i.ibb.co/pKMYPdX/metroid-dread-image-8.jpg"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2021-10-08",
+            "day": "8",
+            "month": "10",
+            "year": "2021",
+            "no_date": "",
+            "released": true
+        },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": true,
+        "pc": false,
+        "edition": {
+            "version": "Nintendo Switch",
+            "name": "Standard",
+            "price": "54.95",
+            "cover": "https://i.ibb.co/hMv99pZ/metroid-dread-switch-standard.webp",
+            "stock": true,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": ["Join bounty hunter Samus Aran as she escapes a deadly alien world plagued by a mechanical menace in Metroid Dread for Nintendo Switch."
+                ],
+                "features": [
+                    {
+                        "title": "",
+                        "text": [
+                            "Samus’ story continues after the events of Metroid Fusion when she descends upon planet ZDR to investigate a mysterious transmission sent to the Galactic Federation. The remote planet has become overrun by vicious alien lifeforms and chilling mechanical menaces. Samus is more agile and capable than ever, but can she overcome the inhuman threat stalking the depths of ZDR?",
+                            "Once DNA-extracting research machines, the imposing E.M.M.I. are now hunting Samus down. Tensions are high as you evade these E.M.M.I. to avoid a cruel death while finding a way to take them down. Find out what turned these robotic wonders into the scourge of ZDR and escape with your life.",
+                            "Acquire new and familiar abilities as you traverse the many environments of this dangerous world. Parkour over obstacles, slide through tight spaces, counter enemies, and battle your way through the planet. Return to areas and use your new abilities to find upgrades, alternate paths, and a way forward. Explore the sprawling map, evade and destroy E.M.M.I. robots, and overcome the dread plaguing ZDR."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/z8rp4pT/metroid-dread-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Metroid Dread",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 228,
+        "genres": [
+            "Action",
+            "Shooter"
+        ],
+        "developer": "Nintendo",
+        "images": [
+            "https://i.ibb.co/Jscbbtj/metroid-dread-image-0.jpg",
+            "https://i.ibb.co/1J7gPcb/metroid-dread-image-1.jpg",
+            "https://i.ibb.co/nwDSnGt/metroid-dread-image-3.jpg",
+            "https://i.ibb.co/ryHV1Cs/metroid-dread-image-4.jpg",
+            "https://i.ibb.co/DW95kC6/metroid-dread-image-5.jpg",
+            "https://i.ibb.co/4fd2KYC/metroid-dread-image-6.jpg",
+            "https://i.ibb.co/hfxg4Xy/metroid-dread-image-7.jpg",
+            "https://i.ibb.co/pKMYPdX/metroid-dread-image-8.jpg"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2021-10-08",
+            "day": "8",
+            "month": "10",
+            "year": "2021",
+            "no_date": "",
+            "released": true
+        },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": true,
+        "pc": false,
+        "edition": {
+            "version": "Nintendo Switch",
+            "name": "Special",
+            "price": "89.99",
+            "cover": "https://i.ibb.co/jVxHTGR/metroid-dread-switch-especial.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/J3rtRhd/metroid-dread-switch-especial-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "The Limited Edition of Metroid: Dread includes: ",
+                    "pack": [
+                        "Metroid Dread game.",
+                        "Steelbook of the game.",
+                        "5 high quality cards with artwork of each game.",
+                        "190-page art book covering the 5 entries of the saga."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": ["Join bounty hunter Samus Aran as she escapes a deadly alien world plagued by a mechanical menace in Metroid Dread for Nintendo Switch."
+                ],
+                "features": [
+                    {
+                        "title": "",
+                        "text": [
+                            "Samus’ story continues after the events of Metroid Fusion when she descends upon planet ZDR to investigate a mysterious transmission sent to the Galactic Federation. The remote planet has become overrun by vicious alien lifeforms and chilling mechanical menaces. Samus is more agile and capable than ever, but can she overcome the inhuman threat stalking the depths of ZDR?",
+                            "Once DNA-extracting research machines, the imposing E.M.M.I. are now hunting Samus down. Tensions are high as you evade these E.M.M.I. to avoid a cruel death while finding a way to take them down. Find out what turned these robotic wonders into the scourge of ZDR and escape with your life.",
+                            "Acquire new and familiar abilities as you traverse the many environments of this dangerous world. Parkour over obstacles, slide through tight spaces, counter enemies, and battle your way through the planet. Return to areas and use your new abilities to find upgrades, alternate paths, and a way forward. Explore the sprawling map, evade and destroy E.M.M.I. robots, and overcome the dread plaguing ZDR."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/z8rp4pT/metroid-dread-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Kena:",
+            "second_title": "Bridge of Spirits",
+            "dual_title": true
+        },
+        "id": 229,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Ember Lab",
+        "images": [
+            "https://i.ibb.co/gDhd7Hy/kena-image-0.webp",
+            "https://i.ibb.co/12NVvNF/kena-image-1.webp",
+            "https://i.ibb.co/GJp5J7K/kena-image-2.webp",
+            "https://i.ibb.co/QJYsGpZ/kena-image-3.webp",
+            "https://i.ibb.co/bHhCrCf/kena-image-4.webp",
+            "https://i.ibb.co/BwzCftp/kena-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2021-11-19",
+            "day": "19",
+            "month": "11",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": true,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 4",
+            "name": "Deluxe",
+            "price": "46.95",
+            "cover": "https://i.ibb.co/QXmjXkb/kena-ps4-deluxe.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/Px1wR6b/kena-deluxe-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "Kena: Bridge of Spirits – Physical Deluxe Edition includes:",
+                    "pack": [
+                        "Base Game.",
+                        "Official Digital Soundtrack.",
+                        "Unique Kena Staff.",
+                        "Golden Rot Skin.",
+                        "Retail Exclusive Sticker Sheet",
+                        "Unique Celebration Hats for Rots"
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "A story-driven, action adventure combining exploration with fast-paced combat.",
+                    "As Kena, players find and grow a team of charming spirit companions called the Rot, enhancing their abilities and creating new ways to manipulate the environment.",
+                    "Kena, a young Spirit Guide, travels to an abandoned village in search of the sacred mountain shrine. She struggles to uncover the secrets of this forgotten community hidden in an overgrown forest where wandering spirits are trapped."
+                ],
+                "features": [
+                    {
+                        "title": "Key Features:",
+                        "text": [
+                            "Find the Rot: Timid and illusive spirits scattered throughout the forest. They maintain balance by decomposing dead and rotting elements.",
+                            "Build Your Team: Find and collect Rot to gain powerful abilities, make discoveries, and transform the environment.",
+                            "Explore: A forgotten village and a strange curse. Draw on the power of the Spirit Realm to restore this once-majestic world.",
+                            "Fast-Paced Combat: Spirits have become corrupt, trapped, and unable to move on, challenging Kena at every turn."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/cxcSJ17/kena-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Kena:",
+            "second_title": "Bridge of Spirits",
+            "dual_title": true
+        },
+        "id": 230,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Ember Lab",
+        "images": [
+            "https://i.ibb.co/gDhd7Hy/kena-image-0.webp",
+            "https://i.ibb.co/12NVvNF/kena-image-1.webp",
+            "https://i.ibb.co/GJp5J7K/kena-image-2.webp",
+            "https://i.ibb.co/QJYsGpZ/kena-image-3.webp",
+            "https://i.ibb.co/bHhCrCf/kena-image-4.webp",
+            "https://i.ibb.co/BwzCftp/kena-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2021-11-19",
+            "day": "19",
+            "month": "11",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": true,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 5",
+            "name": "Deluxe",
+            "price": "46.95",
+            "cover": "https://i.ibb.co/xMkBBQ2/kena-ps5-deluxe.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/Px1wR6b/kena-deluxe-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "Kena: Bridge of Spirits – Physical Deluxe Edition includes:",
+                    "pack": [
+                        "Base Game.",
+                        "Official Digital Soundtrack.",
+                        "Unique Kena Staff.",
+                        "Golden Rot Skin.",
+                        "Retail Exclusive Sticker Sheet",
+                        "Unique Celebration Hats for Rots"
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "A story-driven, action adventure combining exploration with fast-paced combat.",
+                    "As Kena, players find and grow a team of charming spirit companions called the Rot, enhancing their abilities and creating new ways to manipulate the environment.",
+                    "Kena, a young Spirit Guide, travels to an abandoned village in search of the sacred mountain shrine. She struggles to uncover the secrets of this forgotten community hidden in an overgrown forest where wandering spirits are trapped."
+                ],
+                "features": [
+                    {
+                        "title": "Key Features:",
+                        "text": [
+                            "Find the Rot: Timid and illusive spirits scattered throughout the forest. They maintain balance by decomposing dead and rotting elements.",
+                            "Build Your Team: Find and collect Rot to gain powerful abilities, make discoveries, and transform the environment.",
+                            "Explore: A forgotten village and a strange curse. Draw on the power of the Spirit Realm to restore this once-majestic world.",
+                            "Fast-Paced Combat: Spirits have become corrupt, trapped, and unable to move on, challenging Kena at every turn."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/cxcSJ17/kena-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Horizon II:",
+            "second_title": "Forbidden West",
+            "dual_title": true
+        },
+        "id": 231,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Guerrilla",
+        "images": [
+            "https://i.ibb.co/yBDYZ96/horizon-2-forbbiden-west-image-0.webp",
+            "https://i.ibb.co/2tFYGp8/horizon-2-forbbiden-west-image-1.webp",
+            "https://i.ibb.co/FHV7c43/horizon-2-forbbiden-west-image-2.webp",
+            "https://i.ibb.co/5xrsrvy/horizon-2-forbbiden-west-image-3.webp",
+            "https://i.ibb.co/xLfBCqF/horizon-2-forbbiden-west-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-02-18",
+            "day": "18",
+            "month": "2",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": true,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 4",
+            "name": "Standard",
+            "price": "59.95",
+            "cover": "https://i.ibb.co/xjLNsGN/horizon-2-forbbiden-west-ps4-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+                ],
+                "features": [
+                    {
+                        "title": "RISE ABOVE OUR RUIN",
+                        "text": [
+                            "Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon.",
+                            "The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why.",
+                            "It's up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past – all the while trying to stay one step ahead of a seemingly undefeatable new enemy."
+                        ]
+                    },
+                    {
+                        "title": "An epic Action/RPG Adventure:",
+                        "text": [
+                            "Brave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.",
+                            "A majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America.",
+                            "Confront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.",
+                            "Unravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past... one that will change Aloy forever."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/qYrdtxX/horizon-2-forbbiden-west-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Horizon II:",
+            "second_title": "Forbidden West",
+            "dual_title": true
+        },
+        "id": 232,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Guerrilla",
+        "images": [
+            "https://i.ibb.co/yBDYZ96/horizon-2-forbbiden-west-image-0.webp",
+            "https://i.ibb.co/2tFYGp8/horizon-2-forbbiden-west-image-1.webp",
+            "https://i.ibb.co/FHV7c43/horizon-2-forbbiden-west-image-2.webp",
+            "https://i.ibb.co/5xrsrvy/horizon-2-forbbiden-west-image-3.webp",
+            "https://i.ibb.co/xLfBCqF/horizon-2-forbbiden-west-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-02-18",
+            "day": "18",
+            "month": "2",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": true,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 4",
+            "name": "Special",
+            "price": "79.99",
+            "cover": "https://i.ibb.co/YjvSQH6/horizon-2-forbbiden-west-ps4-special.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/rpzHpQf/horizon-2-forbbiden-west-ps4-ps5-special-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "Horizon Forbidden West Special Edition includes:",
+                    "pack": [
+                        "Full Game.",
+                        "Steelbook.",
+                        "Mini art book.",
+                        "Digital soundtrack."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+                ],
+                "features": [
+                    {
+                        "title": "RISE ABOVE OUR RUIN",
+                        "text": [
+                            "Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon.",
+                            "The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why.",
+                            "It's up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past – all the while trying to stay one step ahead of a seemingly undefeatable new enemy."
+                        ]
+                    },
+                    {
+                        "title": "An epic Action/RPG Adventure:",
+                        "text": [
+                            "Brave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.",
+                            "A majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America.",
+                            "Confront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.",
+                            "Unravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past... one that will change Aloy forever."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/qYrdtxX/horizon-2-forbbiden-west-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Horizon II:",
+            "second_title": "Forbidden West",
+            "dual_title": true
+        },
+        "id": 233,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Guerrilla",
+        "images": [
+            "https://i.ibb.co/yBDYZ96/horizon-2-forbbiden-west-image-0.webp",
+            "https://i.ibb.co/2tFYGp8/horizon-2-forbbiden-west-image-1.webp",
+            "https://i.ibb.co/FHV7c43/horizon-2-forbbiden-west-image-2.webp",
+            "https://i.ibb.co/5xrsrvy/horizon-2-forbbiden-west-image-3.webp",
+            "https://i.ibb.co/xLfBCqF/horizon-2-forbbiden-west-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-02-18",
+            "day": "18",
+            "month": "2",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": true,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 5",
+            "name": "Standard",
+            "price": "59.95",
+            "cover": "https://i.ibb.co/bNK20C6/horizon-2-forbbiden-west-ps5-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+                ],
+                "features": [
+                    {
+                        "title": "RISE ABOVE OUR RUIN",
+                        "text": [
+                            "Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon.",
+                            "The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why.",
+                            "It's up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past – all the while trying to stay one step ahead of a seemingly undefeatable new enemy."
+                        ]
+                    },
+                    {
+                        "title": "An epic Action/RPG Adventure:",
+                        "text": [
+                            "Brave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.",
+                            "A majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America.",
+                            "Confront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.",
+                            "Unravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past... one that will change Aloy forever."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/qYrdtxX/horizon-2-forbbiden-west-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Horizon II:",
+            "second_title": "Forbidden West",
+            "dual_title": true
+        },
+        "id": 234,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Guerrilla",
+        "images": [
+            "https://i.ibb.co/yBDYZ96/horizon-2-forbbiden-west-image-0.webp",
+            "https://i.ibb.co/2tFYGp8/horizon-2-forbbiden-west-image-1.webp",
+            "https://i.ibb.co/FHV7c43/horizon-2-forbbiden-west-image-2.webp",
+            "https://i.ibb.co/5xrsrvy/horizon-2-forbbiden-west-image-3.webp",
+            "https://i.ibb.co/xLfBCqF/horizon-2-forbbiden-west-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-02-18",
+            "day": "18",
+            "month": "2",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": true,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 5",
+            "name": "Special",
+            "price": "79.99",
+            "cover": "https://i.ibb.co/SfHtt4N/horizon-2-forbbiden-west-ps5-special.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/rpzHpQf/horizon-2-forbbiden-west-ps4-ps5-special-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "Horizon Forbidden West Special Edition includes:",
+                    "pack": [
+                        "Full Game.",
+                        "Steelbook.",
+                        "Mini art book.",
+                        "Digital soundtrack."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+                ],
+                "features": [
+                    {
+                        "title": "RISE ABOVE OUR RUIN",
+                        "text": [
+                            "Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon.",
+                            "The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why.",
+                            "It's up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past – all the while trying to stay one step ahead of a seemingly undefeatable new enemy."
+                        ]
+                    },
+                    {
+                        "title": "An epic Action/RPG Adventure:",
+                        "text": [
+                            "Brave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.",
+                            "A majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America.",
+                            "Confront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.",
+                            "Unravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past... one that will change Aloy forever."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/qYrdtxX/horizon-2-forbbiden-west-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Horizon II:",
+            "second_title": "Forbidden West",
+            "dual_title": true
+        },
+        "id": 235,
+        "genres": [
+            "action",
+            "Adventure"
+        ],
+        "developer": "Guerrilla",
+        "images": [
+            "https://i.ibb.co/yBDYZ96/horizon-2-forbbiden-west-image-0.webp",
+            "https://i.ibb.co/2tFYGp8/horizon-2-forbbiden-west-image-1.webp",
+            "https://i.ibb.co/FHV7c43/horizon-2-forbbiden-west-image-2.webp",
+            "https://i.ibb.co/5xrsrvy/horizon-2-forbbiden-west-image-3.webp",
+            "https://i.ibb.co/xLfBCqF/horizon-2-forbbiden-west-image-4.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-02-18",
+            "day": "18",
+            "month": "2",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": true,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 5",
+            "name": "Collector's",
+            "price": "199.99",
+            "cover": "https://i.ibb.co/9W0jz7P/horizon-2-forbbiden-west-ps5-collectors.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/SfxrmcL/horizon-2-forbbiden-west-ps5-collectors-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "Horizon Forbidden West Collector's Edition includes:",
+                    "pack": [
+                        "Full game for PS4™ and PS5™.",
+                        "SteelBook® display case.",
+                        "Mini art book.",
+                        "Tremortusk* and Aloy statues.",
+                        "Digital soundtrack.",
+                        "Digital comic book",
+                        "Carja Behemoth Elite outfit.",
+                        "Carja Behemoth Short Bow.",
+                        "Nora Thunder Elite outfit.",
+                        "Nora Thunder Sling.",
+                        "Apex Clawstrider Machine Strike piece.",
+                        "In-Game Resources Pack.",
+                        "Photo Mode unlocks (special pose and face paint)."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+                ],
+                "features": [
+                    {
+                        "title": "RISE ABOVE OUR RUIN",
+                        "text": [
+                            "Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon.",
+                            "The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why.",
+                            "It's up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past – all the while trying to stay one step ahead of a seemingly undefeatable new enemy."
+                        ]
+                    },
+                    {
+                        "title": "An epic Action/RPG Adventure:",
+                        "text": [
+                            "Brave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.",
+                            "A majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America.",
+                            "Confront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.",
+                            "Unravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past... one that will change Aloy forever."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/qYrdtxX/horizon-2-forbbiden-west-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Triangle Strategy",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 236,
+        "genres": [
+            "Manga",
+            "Rol / Rpg"
+        ],
+        "developer": "Square Enix",
+        "images": [
+            "https://i.ibb.co/tbgQcp2/triangle-strategy-image-0.webp",
+            "https://i.ibb.co/7RNYs1y/triangle-strategy-image-1.webp",
+            "https://i.ibb.co/cxch63C/triangle-strategy-image-2.webp",
+            "https://i.ibb.co/TtDwCCm/triangle-strategy-image-3.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2022-03-04",
+            "day": "4",
+            "month": "3",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+            },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": true,
+        "pc": false,
+        "edition": {
+            "version": "Nintendo Switch",
+            "name": "Standard",
+            "price": "59.95",
+            "cover": "https://i.ibb.co/ZxDHFJt/triangle-strategy-switch-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    ""
+                ],
+                "features": [
+                    {
+                        "title": "Three nations battle for control of the dwindling resources of salt and iron.",
+                        "text": [
+                            "Make choices and build your Conviction in TRIANGLE STRATEGY™, a tactical RPG from Square Enix on Nintendo Switch. In this tale told through beautiful HD-2D graphics, where will your sense of justice take you...?",
+                            "Command a group of warriors as Serenoa, heir of House Wolffort, in a tangled plot where your decisions make all the difference. Key choices you make will bolster one of three convictions—Utility, Morality, Liberty—which together make up Serenoa’s world view and influence how the story will unfold. When faced with truly momentous decisions, multiple characters will weigh in by casting their votes on the Scales of Conviction. In these moments, your allies and decisions you make can determine the fate of whole nations and the continent of Norzelia itself.",
+                            "Finding the best location in turn-based battles can tip the tide of combat in your favour. Position units on higher ground to take control of the battlefield and gain the advantage with increased range. You can also flank enemies on both sides, then strike from behind for a powerful follow-up attack. Elemental chain reactions are also an important part of combat. For example, use fire to melt icy terrain, then use lightning to electrocute it. Push the enemy into the electrified water to see sparks fly!"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/2vvZWYN/triangle-strategy-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Triangle Strategy",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 237,
+        "genres": [
+            "Manga",
+            "Rol / Rpg"
+        ],
+        "developer": "Square Enix",
+        "images": [
+            "https://i.ibb.co/tbgQcp2/triangle-strategy-image-0.webp",
+            "https://i.ibb.co/7RNYs1y/triangle-strategy-image-1.webp",
+            "https://i.ibb.co/cxch63C/triangle-strategy-image-2.webp",
+            "https://i.ibb.co/TtDwCCm/triangle-strategy-image-3.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2022-03-04",
+            "day": "4",
+            "month": "3",
+            "year": "2022",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": true,
+        "pc": false,
+        "edition": {
+            "version": "Nintendo Switch",
+            "name": "Tactician's Limited",
+            "price": "99.99",
+            "cover": "https://i.ibb.co/DgmySLP/triangle-strategy-switch-tacticians-limited.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                "https://i.ibb.co/9pR61nq/triangle-strategy-switch-tacticians-limited-image.webp"
+            ],
+            "content": [
+                {
+                    "title": "The Triangle Strategy Special Edition includes:",
+                    "pack": [
+                        "The Triangle Strategy game.",
+                        "Steelbook of the game.",
+                        "Set of 6 custom dice.",
+                        "Deck of collectible cards.",
+                        "Double-sided poster.",
+                        "Collector's box 'Diary of Orlaea'."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    ""
+                ],
+                "features": [
+                    {
+                        "title": "Three nations battle for control of the dwindling resources of salt and iron.",
+                        "text": [
+                            "Make choices and build your Conviction in TRIANGLE STRATEGY™, a tactical RPG from Square Enix on Nintendo Switch. In this tale told through beautiful HD-2D graphics, where will your sense of justice take you...?",
+                            "Command a group of warriors as Serenoa, heir of House Wolffort, in a tangled plot where your decisions make all the difference. Key choices you make will bolster one of three convictions—Utility, Morality, Liberty—which together make up Serenoa’s world view and influence how the story will unfold. When faced with truly momentous decisions, multiple characters will weigh in by casting their votes on the Scales of Conviction. In these moments, your allies and decisions you make can determine the fate of whole nations and the continent of Norzelia itself.",
+                            "Finding the best location in turn-based battles can tip the tide of combat in your favour. Position units on higher ground to take control of the battlefield and gain the advantage with increased range. You can also flank enemies on both sides, then strike from behind for a powerful follow-up attack. Elemental chain reactions are also an important part of combat. For example, use fire to melt icy terrain, then use lightning to electrocute it. Push the enemy into the electrified water to see sparks fly!"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/2vvZWYN/triangle-strategy-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Astria Ascending",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 238,
+        "genres": [
+            "Adventure",
+            "Rol / Rpg"
+        ],
+        "developer": "Maximum Games",
+        "images": [
+            "https://i.ibb.co/JQfZ2vt/astra-ascending-image-0.webp",
+            "https://i.ibb.co/K9pHqnT/astra-ascending-image-1.webp",
+            "https://i.ibb.co/QD3F8sr/astra-ascending-image-2.webp",
+            "https://i.ibb.co/tpKLrFZ/astra-ascending-image-3.webp",
+            "https://i.ibb.co/KzBWrSw/astra-ascending-image-4.webp",
+            "https://i.ibb.co/7KL7mxw/astra-ascending-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2022-11-02",
+            "day": "2",
+            "month": "11",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": true,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 4",
+            "name": "Standard",
+            "price": "36.95",
+            "cover": "https://i.ibb.co/BP7CMfp/astra-ascending-ps4-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Explore a vast world on the brink of chaos in a mature, emotional JRPG. Experience an epic story with rewarding turn-based combat and expansive customisation rendered in glorious 4K hand drawn visuals."
+                ],
+                "features": [
+                    {
+                        "title": "Explore the vast and beautiful world of Orcanon:",
+                        "text": [
+                            "Visit five different cities populated by unique creatures and solve more than 20 dangerous dungeons. With over 50 hours of gameplay and a range of fun mini-games - including shoot ‘em ups, an original fantasy-themed card game and challenging environmental puzzles."
+                        ]
+                    },
+                    {
+                        "title": "A grand tale of fate and sacrifice:",
+                        "text": [
+                            "Immerse yourself in a fascinating narrative rife with betrayal, sacrifice, and terrors. A story based around adult characters, Astria Ascending offers a more mature experience and extensive dialog."
+                        ]
+                    },
+                    {
+                        "title": "A rewarding turn-based combat system:",
+                        "text": [
+                            "Fight over 200 different monsters in captivating turn-based combat. Collect and summon legendary beasts into the fight and build up your power to wield legendary Cosmo Breaks."
+                        ]
+                    },
+                    {
+                        "title": "Meet an unforgettable cast of characters:",
+                        "text": [
+                            "Pick from eight customisable player characters spanning a range of fantastical races and skills, and assemble a heroic team that must sacrifice everything to save the world. With 20 classes to pick from and an array of unique skills to command, their fates are doomed, but the world is not."
+                        ]
+                    },
+                    {
+                        "title": "A hand-drawn adventure crafted with skill and passion:",
+                        "text": [
+                            "From a team featuring developers from Final Fantasy, Nier Automata, and Bravely Default, Astria Ascending includes full voice acting in Japanese and English, a traditionally animated fully hand-drawn 2D world, and a dynamic weather system."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/4JhjfJj/astra-ascending-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Astria Ascending",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 239,
+        "genres": [
+            "Adventure",
+            "Rol / Rpg"
+        ],
+        "developer": "Maximum Games",
+        "images": [
+            "https://i.ibb.co/JQfZ2vt/astra-ascending-image-0.webp",
+            "https://i.ibb.co/K9pHqnT/astra-ascending-image-1.webp",
+            "https://i.ibb.co/QD3F8sr/astra-ascending-image-2.webp",
+            "https://i.ibb.co/tpKLrFZ/astra-ascending-image-3.webp",
+            "https://i.ibb.co/KzBWrSw/astra-ascending-image-4.webp",
+            "https://i.ibb.co/7KL7mxw/astra-ascending-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2022-11-02",
+            "day": "2",
+            "month": "11",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": true,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 5",
+            "name": "Standard",
+            "price": "36.95",
+            "cover": "https://i.ibb.co/n68Q5Np/astra-ascending-ps5-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Explore a vast world on the brink of chaos in a mature, emotional JRPG. Experience an epic story with rewarding turn-based combat and expansive customisation rendered in glorious 4K hand drawn visuals."
+                ],
+                "features": [
+                    {
+                        "title": "Explore the vast and beautiful world of Orcanon:",
+                        "text": [
+                            "Visit five different cities populated by unique creatures and solve more than 20 dangerous dungeons. With over 50 hours of gameplay and a range of fun mini-games - including shoot ‘em ups, an original fantasy-themed card game and challenging environmental puzzles."
+                        ]
+                    },
+                    {
+                        "title": "A grand tale of fate and sacrifice:",
+                        "text": [
+                            "Immerse yourself in a fascinating narrative rife with betrayal, sacrifice, and terrors. A story based around adult characters, Astria Ascending offers a more mature experience and extensive dialog."
+                        ]
+                    },
+                    {
+                        "title": "A rewarding turn-based combat system:",
+                        "text": [
+                            "Fight over 200 different monsters in captivating turn-based combat. Collect and summon legendary beasts into the fight and build up your power to wield legendary Cosmo Breaks."
+                        ]
+                    },
+                    {
+                        "title": "Meet an unforgettable cast of characters:",
+                        "text": [
+                            "Pick from eight customisable player characters spanning a range of fantastical races and skills, and assemble a heroic team that must sacrifice everything to save the world. With 20 classes to pick from and an array of unique skills to command, their fates are doomed, but the world is not."
+                        ]
+                    },
+                    {
+                        "title": "A hand-drawn adventure crafted with skill and passion:",
+                        "text": [
+                            "From a team featuring developers from Final Fantasy, Nier Automata, and Bravely Default, Astria Ascending includes full voice acting in Japanese and English, a traditionally animated fully hand-drawn 2D world, and a dynamic weather system."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/4JhjfJj/astra-ascending-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Astria Ascending",
+            "second_title": "",
+            "dual_title": false
+        },
+        "id": 240,
+        "genres": [
+            "Adventure",
+            "Rol / Rpg"
+        ],
+        "developer": "Maximum Games",
+        "images": [
+            "https://i.ibb.co/JQfZ2vt/astra-ascending-image-0.webp",
+            "https://i.ibb.co/K9pHqnT/astra-ascending-image-1.webp",
+            "https://i.ibb.co/QD3F8sr/astra-ascending-image-2.webp",
+            "https://i.ibb.co/tpKLrFZ/astra-ascending-image-3.webp",
+            "https://i.ibb.co/KzBWrSw/astra-ascending-image-4.webp",
+            "https://i.ibb.co/7KL7mxw/astra-ascending-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/c8mzX2s/pegi12.png",
+        "release": {
+            "date": "2022-11-02",
+            "day": "2",
+            "month": "11",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": true,
+        "pc": false,
+        "edition": {
+            "version": "Nintendo Switch",
+            "name": "Standard",
+            "price": "36.95",
+            "cover": "https://i.ibb.co/zRHSJzF/astra-ascending-switch-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Explore a vast world on the brink of chaos in a mature, emotional JRPG. Experience an epic story with rewarding turn-based combat and expansive customisation rendered in glorious 4K hand drawn visuals."
+                ],
+                "features": [
+                    {
+                        "title": "Explore the vast and beautiful world of Orcanon:",
+                        "text": [
+                            "Visit five different cities populated by unique creatures and solve more than 20 dangerous dungeons. With over 50 hours of gameplay and a range of fun mini-games - including shoot ‘em ups, an original fantasy-themed card game and challenging environmental puzzles."
+                        ]
+                    },
+                    {
+                        "title": "A grand tale of fate and sacrifice:",
+                        "text": [
+                            "Immerse yourself in a fascinating narrative rife with betrayal, sacrifice, and terrors. A story based around adult characters, Astria Ascending offers a more mature experience and extensive dialog."
+                        ]
+                    },
+                    {
+                        "title": "A rewarding turn-based combat system:",
+                        "text": [
+                            "Fight over 200 different monsters in captivating turn-based combat. Collect and summon legendary beasts into the fight and build up your power to wield legendary Cosmo Breaks."
+                        ]
+                    },
+                    {
+                        "title": "Meet an unforgettable cast of characters:",
+                        "text": [
+                            "Pick from eight customisable player characters spanning a range of fantastical races and skills, and assemble a heroic team that must sacrifice everything to save the world. With 20 classes to pick from and an array of unique skills to command, their fates are doomed, but the world is not."
+                        ]
+                    },
+                    {
+                        "title": "A hand-drawn adventure crafted with skill and passion:",
+                        "text": [
+                            "From a team featuring developers from Final Fantasy, Nier Automata, and Bravely Default, Astria Ascending includes full voice acting in Japanese and English, a traditionally animated fully hand-drawn 2D world, and a dynamic weather system."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/4JhjfJj/astra-ascending-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Tiny Tina's",
+            "second_title": "Wonderland",
+            "dual_title": true
+        },
+        "id": 241,
+        "genres": [
+            "Adventure",
+            "Action",
+            "Shooter"
+        ],
+        "developer": "Gearbox",
+        "images": [
+            "https://i.ibb.co/RbW27zW/tiny-tinas-wonderland-image-0.webp",
+            "https://i.ibb.co/VCkj2p6/tiny-tinas-wonderland-image-1.webp",
+            "https://i.ibb.co/s9F6sSd/tiny-tinas-wonderland-image-2.webp",
+            "https://i.ibb.co/6WqnwsX/tiny-tinas-wonderland-image-3.webp",
+            "https://i.ibb.co/ykBxh24/tiny-tinas-wonderland-image-4.webp",
+            "https://i.ibb.co/FDYQkBD/tiny-tinas-wonderland-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-03-25",
+            "day": "25",
+            "month": "3",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": true,
+        "ps5": false,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 4",
+            "name": "Standard",
+            "price": "54.95",
+            "cover": "https://i.ibb.co/WcRrwXY/tiny-tinas-wonderland-ps4-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Bullets, magic, and broadswords collide across this chaotic fantasy world brought to life by the unpredictable Tiny Tina, who makes the rules, changes the world on the fly, and guides players on their journey.",
+                    "Customise your own multiclass hero and loot, shoot, slash, and cast your way through outlandish monsters and treasure-filled dungeons on a quest to stop the tyrannical Dragon Lord. Everyone's welcome, so join the party, throw on your adventuring boots, and be Chaotic Great!"
+                ],
+                "features": [
+                    {
+                        "title": "AN UNPREDICTABLE FANTASY WORLD:",
+                        "text": [
+                            "Tiny Tina is your disorderly guide through an extraordinary tabletop realm where rules rarely apply. Explore majestic cities, dank mushroom forests, foreboding fortresses, and more, all of which are connected by a vast Overworld. "
+                        ]
+                    },
+                    {
+                        "title": "PERSONALISE YOUR HERO: ",
+                        "text": [
+                            "Create your own hero with an expansive multiclass system that lets you mix and match six unique character skill trees, all with their own awesome abilities. Level up, refine your build, expand your arsenal, and become the ultimate Fatemaker."
+                        ]
+                    },
+                    {
+                        "title": "GUNS, SPELLS, AND MORE:",
+                        "text": [
+                            "Defeat evil with devastating spells, powerful guns, and unique Action Skills in frenetic first-person battles. Use your firepower to vanquish legions of enemies, including smack-talking skeletons, land-roaming sharks, and colossal bosses."
+                        ]
+                    },
+                    {
+                        "title": "A FANTASTICAL CAST OF CHARACTERS:",
+                        "text": [
+                            "Joining you for the experience are headstrong captain Valentine (Andy Samberg) and rule-obsessed robot Frette (Wanda Sykes). During your quest to defeat the Dragon Lord (Will Arnett), you'll meet a cast of lovable misfits – like a lute-wielding Bardbarian and your very own Fairy Punchfather – who bring this colourful world to life."
+                        ]
+                    },
+                    {
+                        "title": "BAND TOGETHER IN CHAOTIC CO-OP:",
+                        "text": [
+                            "Enjoy the story solo or start a party with up to three friends in seamless online multiplayer or local split-screen. Share the spoils or rush to get the shiniest loot—how you play is up to you!"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/vYdWWXr/tiny-tinas-wonderland-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Tiny Tina's",
+            "second_title": "Wonderland",
+            "dual_title": true
+        },
+        "id": 242,
+        "genres": [
+            "Adventure",
+            "Action",
+            "Shooter"
+        ],
+        "developer": "Gearbox",
+        "images": [
+            "https://i.ibb.co/RbW27zW/tiny-tinas-wonderland-image-0.webp",
+            "https://i.ibb.co/VCkj2p6/tiny-tinas-wonderland-image-1.webp",
+            "https://i.ibb.co/s9F6sSd/tiny-tinas-wonderland-image-2.webp",
+            "https://i.ibb.co/6WqnwsX/tiny-tinas-wonderland-image-3.webp",
+            "https://i.ibb.co/ykBxh24/tiny-tinas-wonderland-image-4.webp",
+            "https://i.ibb.co/FDYQkBD/tiny-tinas-wonderland-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-03-25",
+            "day": "25",
+            "month": "3",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": true,
+        "xboxOne": false,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "PlayStation 5",
+            "name": "Next Level",
+            "price": "59.95",
+            "cover": "https://i.ibb.co/Tc9Nct8/tiny-tinas-wonderland-ps5-next-level.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "The Next Level Edition of Tiny Tina's Wonderlands includes:",
+                    "pack": [
+                        "Tiny Tina's Wonderlands game optimized for PS5.",
+                        "A legendary weapon.",
+                        "Legendary spell 'Calaverantir'.",
+                        "Armor set Tyrant's attire (5 items).",
+                        "Predefined face Villain face (2 objects).",
+                        "Face of Death Makeup Pack (3 items).",
+                        "Emperor of the Dead banner set (3 items).",
+                        "Material of the heroic statue: 'kuarzo'."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Bullets, magic, and broadswords collide across this chaotic fantasy world brought to life by the unpredictable Tiny Tina, who makes the rules, changes the world on the fly, and guides players on their journey.",
+                    "Customise your own multiclass hero and loot, shoot, slash, and cast your way through outlandish monsters and treasure-filled dungeons on a quest to stop the tyrannical Dragon Lord. Everyone's welcome, so join the party, throw on your adventuring boots, and be Chaotic Great!"
+                ],
+                "features": [
+                    {
+                        "title": "AN UNPREDICTABLE FANTASY WORLD:",
+                        "text": [
+                            "Tiny Tina is your disorderly guide through an extraordinary tabletop realm where rules rarely apply. Explore majestic cities, dank mushroom forests, foreboding fortresses, and more, all of which are connected by a vast Overworld. "
+                        ]
+                    },
+                    {
+                        "title": "PERSONALISE YOUR HERO: ",
+                        "text": [
+                            "Create your own hero with an expansive multiclass system that lets you mix and match six unique character skill trees, all with their own awesome abilities. Level up, refine your build, expand your arsenal, and become the ultimate Fatemaker."
+                        ]
+                    },
+                    {
+                        "title": "GUNS, SPELLS, AND MORE:",
+                        "text": [
+                            "Defeat evil with devastating spells, powerful guns, and unique Action Skills in frenetic first-person battles. Use your firepower to vanquish legions of enemies, including smack-talking skeletons, land-roaming sharks, and colossal bosses."
+                        ]
+                    },
+                    {
+                        "title": "A FANTASTICAL CAST OF CHARACTERS:",
+                        "text": [
+                            "Joining you for the experience are headstrong captain Valentine (Andy Samberg) and rule-obsessed robot Frette (Wanda Sykes). During your quest to defeat the Dragon Lord (Will Arnett), you'll meet a cast of lovable misfits – like a lute-wielding Bardbarian and your very own Fairy Punchfather – who bring this colourful world to life."
+                        ]
+                    },
+                    {
+                        "title": "BAND TOGETHER IN CHAOTIC CO-OP:",
+                        "text": [
+                            "Enjoy the story solo or start a party with up to three friends in seamless online multiplayer or local split-screen. Share the spoils or rush to get the shiniest loot—how you play is up to you!"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/vYdWWXr/tiny-tinas-wonderland-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Tiny Tina's",
+            "second_title": "Wonderland",
+            "dual_title": true
+        },
+        "id": 243,
+        "genres": [
+            "Adventure",
+            "Action",
+            "Shooter"
+        ],
+        "developer": "Gearbox",
+        "images": [
+            "https://i.ibb.co/RbW27zW/tiny-tinas-wonderland-image-0.webp",
+            "https://i.ibb.co/VCkj2p6/tiny-tinas-wonderland-image-1.webp",
+            "https://i.ibb.co/s9F6sSd/tiny-tinas-wonderland-image-2.webp",
+            "https://i.ibb.co/6WqnwsX/tiny-tinas-wonderland-image-3.webp",
+            "https://i.ibb.co/ykBxh24/tiny-tinas-wonderland-image-4.webp",
+            "https://i.ibb.co/FDYQkBD/tiny-tinas-wonderland-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-03-25",
+            "day": "25",
+            "month": "3",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": true,
+        "xboxSeriesSX": false,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "Xbox One",
+            "name": "Standard",
+            "price": "54.95",
+            "cover": "https://i.ibb.co/D8ZMGcX/tiny-tinas-wonderland-xbox-one-standard.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": false,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "",
+                    "pack": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Bullets, magic, and broadswords collide across this chaotic fantasy world brought to life by the unpredictable Tiny Tina, who makes the rules, changes the world on the fly, and guides players on their journey.",
+                    "Customise your own multiclass hero and loot, shoot, slash, and cast your way through outlandish monsters and treasure-filled dungeons on a quest to stop the tyrannical Dragon Lord. Everyone's welcome, so join the party, throw on your adventuring boots, and be Chaotic Great!"
+                ],
+                "features": [
+                    {
+                        "title": "AN UNPREDICTABLE FANTASY WORLD:",
+                        "text": [
+                            "Tiny Tina is your disorderly guide through an extraordinary tabletop realm where rules rarely apply. Explore majestic cities, dank mushroom forests, foreboding fortresses, and more, all of which are connected by a vast Overworld. "
+                        ]
+                    },
+                    {
+                        "title": "PERSONALISE YOUR HERO: ",
+                        "text": [
+                            "Create your own hero with an expansive multiclass system that lets you mix and match six unique character skill trees, all with their own awesome abilities. Level up, refine your build, expand your arsenal, and become the ultimate Fatemaker."
+                        ]
+                    },
+                    {
+                        "title": "GUNS, SPELLS, AND MORE:",
+                        "text": [
+                            "Defeat evil with devastating spells, powerful guns, and unique Action Skills in frenetic first-person battles. Use your firepower to vanquish legions of enemies, including smack-talking skeletons, land-roaming sharks, and colossal bosses."
+                        ]
+                    },
+                    {
+                        "title": "A FANTASTICAL CAST OF CHARACTERS:",
+                        "text": [
+                            "Joining you for the experience are headstrong captain Valentine (Andy Samberg) and rule-obsessed robot Frette (Wanda Sykes). During your quest to defeat the Dragon Lord (Will Arnett), you'll meet a cast of lovable misfits – like a lute-wielding Bardbarian and your very own Fairy Punchfather – who bring this colourful world to life."
+                        ]
+                    },
+                    {
+                        "title": "BAND TOGETHER IN CHAOTIC CO-OP:",
+                        "text": [
+                            "Enjoy the story solo or start a party with up to three friends in seamless online multiplayer or local split-screen. Share the spoils or rush to get the shiniest loot—how you play is up to you!"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/vYdWWXr/tiny-tinas-wonderland-card.png",
+        "other_editions": [],
+        "other_platforms": []
+    },
+    {
+        "game": {
+            "first_title": "Tiny Tina's",
+            "second_title": "Wonderland",
+            "dual_title": true
+        },
+        "id": 244,
+        "genres": [
+            "Adventure",
+            "Action",
+            "Shooter"
+        ],
+        "developer": "Gearbox",
+        "images": [
+            "https://i.ibb.co/RbW27zW/tiny-tinas-wonderland-image-0.webp",
+            "https://i.ibb.co/VCkj2p6/tiny-tinas-wonderland-image-1.webp",
+            "https://i.ibb.co/s9F6sSd/tiny-tinas-wonderland-image-2.webp",
+            "https://i.ibb.co/6WqnwsX/tiny-tinas-wonderland-image-3.webp",
+            "https://i.ibb.co/ykBxh24/tiny-tinas-wonderland-image-4.webp",
+            "https://i.ibb.co/FDYQkBD/tiny-tinas-wonderland-image-5.webp"
+        ],
+        "pegi": "https://i.ibb.co/tXvXC5p/pegi16.png",
+        "release": {
+            "date": "2022-03-25",
+            "day": "25",
+            "month": "3",
+            "year": "2021",
+            "no_date": "",
+            "released": false
+        },
+        "ps4": false,
+        "ps5": false,
+        "xboxOne": true,
+        "xboxSeriesSX": true,
+        "nintendoSwitch": false,
+        "pc": false,
+        "edition": {
+            "version": "Xbox One & Xbox Series S/X",
+            "name": "Next Level",
+            "price": "59.95",
+            "cover": "https://i.ibb.co/RpSx3sp/tiny-tinas-wonderland-xbox-one-series-next-level.webp",
+            "stock": false,
+            "sale": false,
+            "salePrice": "",
+            "is_content": true,
+            "content_image": [
+                ""
+            ],
+            "content": [
+                {
+                    "title": "The Next Level Edition of Tiny Tina's Wonderlands includes:",
+                    "pack": [
+                        "Tiny Tina's Wonderlands game optimized for PS5.",
+                        "A legendary weapon.",
+                        "Legendary spell 'Calaverantir'.",
+                        "Armor set Tyrant's attire (5 items).",
+                        "Predefined face Villain face (2 objects).",
+                        "Face of Death Makeup Pack (3 items).",
+                        "Emperor of the Dead banner set (3 items).",
+                        "Material of the heroic statue: 'kuarzo'."
+                    ]
+                }
+            ]
+        },
+        "description": [
+            {
+                "global": [
+                    "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Bullets, magic, and broadswords collide across this chaotic fantasy world brought to life by the unpredictable Tiny Tina, who makes the rules, changes the world on the fly, and guides players on their journey.",
+                    "Customise your own multiclass hero and loot, shoot, slash, and cast your way through outlandish monsters and treasure-filled dungeons on a quest to stop the tyrannical Dragon Lord. Everyone's welcome, so join the party, throw on your adventuring boots, and be Chaotic Great!"
+                ],
+                "features": [
+                    {
+                        "title": "AN UNPREDICTABLE FANTASY WORLD:",
+                        "text": [
+                            "Tiny Tina is your disorderly guide through an extraordinary tabletop realm where rules rarely apply. Explore majestic cities, dank mushroom forests, foreboding fortresses, and more, all of which are connected by a vast Overworld. "
+                        ]
+                    },
+                    {
+                        "title": "PERSONALISE YOUR HERO: ",
+                        "text": [
+                            "Create your own hero with an expansive multiclass system that lets you mix and match six unique character skill trees, all with their own awesome abilities. Level up, refine your build, expand your arsenal, and become the ultimate Fatemaker."
+                        ]
+                    },
+                    {
+                        "title": "GUNS, SPELLS, AND MORE:",
+                        "text": [
+                            "Defeat evil with devastating spells, powerful guns, and unique Action Skills in frenetic first-person battles. Use your firepower to vanquish legions of enemies, including smack-talking skeletons, land-roaming sharks, and colossal bosses."
+                        ]
+                    },
+                    {
+                        "title": "A FANTASTICAL CAST OF CHARACTERS:",
+                        "text": [
+                            "Joining you for the experience are headstrong captain Valentine (Andy Samberg) and rule-obsessed robot Frette (Wanda Sykes). During your quest to defeat the Dragon Lord (Will Arnett), you'll meet a cast of lovable misfits – like a lute-wielding Bardbarian and your very own Fairy Punchfather – who bring this colourful world to life."
+                        ]
+                    },
+                    {
+                        "title": "BAND TOGETHER IN CHAOTIC CO-OP:",
+                        "text": [
+                            "Enjoy the story solo or start a party with up to three friends in seamless online multiplayer or local split-screen. Share the spoils or rush to get the shiniest loot—how you play is up to you!"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "card": "https://i.ibb.co/vYdWWXr/tiny-tinas-wonderland-card.png",
+        "other_editions": [],
+        "other_platforms": []
     }
 ]
