@@ -1,0 +1,162 @@
+@import '../styles/colors';
+@import '../../fonts/fonts';
+
+.login__container {
+    background-color: $greybackground;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login {
+        flex-direction: column;
+        position: relative;
+        background-color: $blackbackground;
+        width: 20em;
+        height: 26em;
+        border-radius: 2em;
+        .signIn__register {
+            position: relative;
+            top: 2.2em;
+            display: flex;
+            justify-content: center;
+            .signIn__register--option {
+                padding: .5em 1.25em;
+                color: $blackbackground;
+                font-family: $Montserrat;
+                font-weight: 600;
+                font-size: 18px;
+                background-color: $greybackground;
+                outline: none;
+                border: none;
+            }
+            .signIn__register--option:hover {
+                transition: 1s;
+            }
+            .active {
+                background-color: $goldencolor;
+                margin-right: .5em;
+                margin-left: .5em;
+                border-top-left-radius: .3em;
+            }
+            .option {
+                background-color: $whitecolor;
+                margin-left: .5em;
+                margin-right: .5em;
+                border-top-right-radius: .3em;
+            }
+            .option:hover {
+                background-color: $goldencolor;
+                cursor: pointer;
+            }
+        }
+        .signIn__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .e__signin__notfilled {
+                font-family: $Montserrat;
+                font-size: 13px;
+                display: none;
+                position: relative;
+                top: 3.5em;
+                margin-bottom: -1.1em;
+                color: $redcolor;
+            }
+            .password__signin__error__message {
+                font-family: $Montserrat;
+                font-size: 13px;
+                display: none;
+                position: relative;
+                top: 4em;
+                margin-top: 2em;
+                margin-bottom: -1.1em;
+                color: $redcolor;
+            }
+            .error {
+                position: relative;
+                font-size: 13px;
+                display: block;
+                color: $redcolor;
+                top: 4.2em;
+                margin-bottom: -1em;
+            }
+            .email__input, .password__input {
+                font-family: $Montserrat;
+                padding-left: 1em;
+                position: relative;
+                outline: none;
+                border: none;
+                width: 17.6em;
+                height: 2.5em;
+            }
+            .password__completed {
+                color: $blackbackground;
+            }
+            .password__not__completed {
+                color: $redcolor;
+            }
+            .email__input {
+                top: 5em;
+            }
+            .password__input {
+                top: 5.5em;
+            }
+            .password__icon {
+                z-index: 2;
+                position: relative;
+                top: 2.25em;
+                font-size: 20px;
+                left: 5.3em;
+            }
+            .not--slashed {
+                display: none;
+            }
+            .slashed {
+                display: block;
+            }
+            .signIn__button, .signIn__button__not__active {
+                position: relative;
+                font-family: $Montserrat;
+                outline: none;
+                border: none;
+                font-weight: 600;
+                top: 4.5em;
+                width: 13.9em;
+                height: 2.2em;
+                font-size: 18px;
+            }
+            .signIn__button {
+                background-color: $goldencolor;
+            }
+            .signIn__button__not__active {
+                background-color: $greybackground;
+            }
+            .signIn__button:hover {
+                cursor: pointer;
+                background-color: $goldenstrongcolor;
+                transition: 1s;
+            }
+            .p__signin {
+                font-size: 16px;
+                top: 5.5em;
+                position: relative;
+                color: $whitecolor;
+            }
+            .logos__container {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 10em;
+                top: 5.5em;
+            }
+            .logos__container > img {
+                padding-left: .5em;
+                padding-right: .5em;
+                width: 4em;
+                height: 4em;
+                cursor: pointer;
+            }
+        }
+    }
+}
