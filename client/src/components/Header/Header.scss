@@ -49,9 +49,6 @@ header {
             .open__right {
                 display: block;
             }
-            .close__right {
-                display: none;
-            }
             .navbar__option:hover {
                 transition: 1s;
                 color: $goldenstrongcolor;
@@ -111,21 +108,6 @@ header {
     background-color: $blackbackground;
     box-shadow: 0 0 10px 0 rgba(#161616, .9);
     border-right: 1px solid #161616;
-    z-index: 5;
-}
-
-.rightSidenav__container {
-    top: 81px;
-    position: fixed;
-    right: -340px;
-    transition: .5s;
-    width: 20em;
-    height: 40vh;
-    overflow-x: hidden;
-    background-color: $blackbackground;
-    box-shadow: 0 0 10px 0 rgba(#161616, .9);
-    border-left: 1px solid #161616;
-    border-bottom: 1px solid #161616;
     z-index: 5;
 }
 

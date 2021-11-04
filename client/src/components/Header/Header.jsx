@@ -10,7 +10,6 @@ import { signOut } from '../../redux/actions/userActions';
 function Header({isLogged}) {
 
     const [leftSidenav, setLeftSidenav] = useState(false);
-    // const [rightSidenav, setRightSidenav] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -33,20 +32,6 @@ function Header({isLogged}) {
         leftSidenav ? openLeftMiniSidenav.style.display = 'block' : openLeftMiniSidenav.style.display = 'none';
         leftSidenav ? closeLeftMiniSidenav.style.display = 'none' : closeLeftMiniSidenav.style.display = 'block';
     }
-
-    // function handleRightSidenav() {
-    //     setRightSidenav(!rightSidenav);
-
-    //     const toggleRightSidenav = document.getElementById('rightSidenav__id');
-    //     const openRightSidenav = document.getElementById('open__rightSidenav__icon');
-    //     const closeRightSidenav = document.getElementById('close__rightSidenav__icon');
-    //     const openRightMiniSidenav = document.getElementById('open__rightmini__icon');
-    //     const closeRightMiniSidenav = document.getElementById('close__rightmini__icon');
-
-    //     rightSidenav ? toggleRightSidenav.style.transform = 'translateX(340px)' : toggleRightSidenav.style.transform = 'translate(-340px)';
-    //     rightSidenav ? openRightSidenav.style.display = 'block' : openRightSidenav.style.display = 'none';
-    //     rightSidenav ? closeRightSidenav.style.display = 'none' : closeRightSidenav.style.display = 'block';
-    // }
 
     return (
         <>
@@ -111,8 +96,6 @@ function Header({isLogged}) {
                     <FontAwesomeIcon id="close__mininavbar__icon" className="icon close" icon="times" onClick={() => handleLeftSidenav()} />
                     <FontAwesomeIcon className="icon" icon="newspaper" />
                     <FontAwesomeIcon className="icon" icon="calendar-alt" />
-                    {/* <FontAwesomeIcon id="open__rightmini__icon" className="icon open__right" icon="sign-in-alt" onClick={() => handleRightSidenav()}/> */}
-                    {/* <FontAwesomeIcon id="close__rightmini__icon" className="icon close__right" icon="sign-in-alt" onClick={() => handleRightSidenav()}/> */}
                     <FontAwesomeIcon className="icon" icon="shopping-cart" />
                 </div>
             </header>
