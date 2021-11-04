@@ -14,9 +14,9 @@ function Header({isLogged}) {
     const dispatch = useDispatch();
 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    const user = userLocalStorage?.user;
-    console.log(user);
-    const userId = user?.data.uid;
+    const activeUser = userLocalStorage?.user;
+    console.log(activeUser);
+    const userId = activeUser?.data.uid;
 
     function handleLeftSidenav() {
         setLeftSidenav(!leftSidenav);
@@ -56,7 +56,7 @@ function Header({isLogged}) {
                         <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
                     </Link>
                     <div className="navbar__options-right">
-                        {isLogged === true ? (
+                        {isLogged ? (
                             <>
                                 <div className="navbar__option">
                                     <Link className="link" to={`/dashboard/${userId}`}>
