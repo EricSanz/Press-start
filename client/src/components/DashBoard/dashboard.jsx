@@ -3,10 +3,10 @@ import { connect, useDispatch } from 'react-redux';
 
 function UserProfile() {
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    console.log(userLocalStorage.user.uid);
+    // console.log(userLocalStorage.user.data.uid);
     const dispatch = useDispatch()
 
-    const [userId] = useState(userLocalStorage.user.uid);
+    // const [userId] = useState(userLocalStorage.user.data.uid);
 
 
     return (
