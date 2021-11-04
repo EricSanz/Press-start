@@ -1,0 +1,151 @@
+@import '../styles/colors';
+@import '../../fonts/fonts';
+
+.register__container {
+    background-color: $greybackground;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .register {
+        flex-direction: column;
+        position: relative;
+        background-color: $blackbackground;
+        width: 20em;
+        height: 22em;
+        border-radius: 2em;
+        .signIn__register {
+            position: relative;
+            top: 2.2em;
+            display: flex;
+            justify-content: center;
+            .signIn__register--option {
+                padding: .5em 1.25em;
+                color: $blackbackground;
+                font-family: $Montserrat;
+                font-weight: 600;
+                font-size: 18px;
+                background-color: $greybackground;
+                outline: none;
+                border: none;
+            }
+            .signIn__register--option:hover {
+                transition: 1s;
+            }
+            .active {
+                background-color: $goldencolor;
+                margin-right: .5em;
+                margin-left: .5em;
+                border-top-right-radius: .3em;
+            }
+            .option {
+                background-color: $whitecolor;
+                margin-left: .5em;
+                margin-right: .5em;
+                border-top-left-radius: .3em;
+            }
+            .option:hover {
+                background-color: $goldencolor;
+                cursor: pointer;
+            }
+        }
+        .register__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .user__notfilled {
+                font-family: $Montserrat;
+                font-size: 13px;
+                display: none;
+                position: relative;
+                top: 3.8em;
+                margin-bottom: -1em;
+                color: $redcolor;
+            }
+            .invalid__email {
+                font-family: $Montserrat;
+                font-size: 13px;
+                display: none;
+                position: relative;
+                top: 4.8em;
+                margin-bottom: -.5em;
+                color: $redcolor;
+            }
+            .e__notfilled {
+                font-family: $Montserrat;
+                font-size: 13px;
+                display: none;
+                position: relative;
+                top: 4.8em;
+                margin-bottom: -.5em;
+                color: $redcolor;
+            }
+            .password__error__message {
+                font-family: $Montserrat;
+                font-size: 13px;
+                display: none;
+                position: relative;
+                top: 5.3em;
+                margin-bottom: -.5em;
+                color: $redcolor;
+            }
+            .error {
+                position: relative;
+                font-size: 13px;
+                display: block;
+                color: $redcolor;
+                top: 7.5em;
+            }
+            .email__input, .password__input, .userName__input {
+                font-family: $Montserrat;
+                padding-left: 1em;
+                position: relative;
+                width: 17.6em;
+                height: 2.5em;
+                outline: none;
+                border: none;
+            }
+            .userName__input {
+                top: 5em;
+            }
+            .email__input {
+                top: 5.5em;
+            }
+            .password__input {
+                top: 6em;
+            }
+            .password__icon {
+                z-index: 2;
+                position: relative;
+                top: 2.65em;
+                font-size: 20px;
+                left: 5.3em;
+            }
+            .not--slashed {
+                display: none;
+            }
+            .slashed {
+                display: block;
+            }
+            .register__button {
+                position: relative;
+                font-family: $Montserrat;
+                outline: none;
+                border: none;
+                top: 4.7em;
+                width: 12.55em;
+                height: 2em;
+                font-size: 20px;
+                font-weight: 600;
+                background-color: $goldencolor;
+                border-bottom-left-radius: .3em;
+                border-bottom-right-radius: .3em;
+            }
+            .register__button:hover {
+                cursor: pointer;
+                background-color: $goldenstrongcolor;
+                transition: 1s;
+            }
+        }
+    }
+}
