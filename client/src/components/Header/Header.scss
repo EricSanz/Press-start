@@ -37,10 +37,14 @@ header {
                 flex-direction: column;
                 align-items: center;
                 padding-right: 22px;
-            }
-            .icon {
-                font-size: 25px;
-                margin-bottom: -10px;
+                .link {
+                    color: $whitecolor;
+                    text-decoration: none;
+                }
+                .icon {
+                    font-size: 25px;
+                    margin-bottom: -10px;
+                }
             }
             .open__right {
                 display: block;
@@ -52,6 +56,10 @@ header {
                 transition: 1s;
                 color: $goldenstrongcolor;
                 cursor: pointer;
+                .link {
+                    transition: 1s;
+                    color: $goldenstrongcolor;
+                }
             }
         }
         .navbar__options-left {
@@ -123,7 +131,7 @@ header {
 
 @media (max-width: 1536px ) {
     .rightSidenav__container {
-        height: 50vh;
+        height: 46.5vh;
     }
 }
 
