@@ -15,7 +15,8 @@ export default function userReducer(state = {}, action) {
         case actionTypes.AUTH_LOGIN_ERROR:
             newState = {
                 ...state,
-                error: action.error
+                error: action.error,
+                isLogged: false
             };
             break;
         case actionTypes.AUTH_LOGOUT:
