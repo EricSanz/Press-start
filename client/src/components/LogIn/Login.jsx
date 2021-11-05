@@ -8,13 +8,14 @@ import { signInWithGoogle, loginUser } from '../../redux/actions/userActions';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-function Login(error) {
+function Login({error, isLogged}) {
 
     const dispatch = useDispatch();
 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const user = userLocalStorage?.user;
     console.log(user);
+    console.log(isLogged)
     const userId = user?.data.uid;
 
     const emailLogin = document.getElementById('email__login')?.value;
@@ -72,11 +73,11 @@ function Login(error) {
                     <input id="password__login" className="password__input" name="password" type="password" placeholder="Password" onChange={(event) => checkPasswordCompleted(event)}/>
                     <FontAwesomeIcon id="see__login__password" className="password__icon not--slashed" icon="eye" onClick={() => seeHidePassword()}/>
                     <FontAwesomeIcon id="hide__login__password" className="password__icon slashed" icon="eye-slash" onClick={() => seeHidePassword()}/>
-                    {error.error ? (
-                        <p id="errorId" className="error">{error.error.msg}</p>
+                    {error?.loginError ? (
+                        <p id="errorId" className="error">{error.loginError.msg}</p>
                     ) : null}
                     {loginButton ? (
-                        <Link to={''} onClick={() => dispatch(loginUser(emailLogin, passwordLogin))}>
+                        <Link to={'/login'} onClick={() => dispatch(loginUser(emailLogin, passwordLogin))}>
                             <button className="signIn__button">Sign In</button>
                         </Link>
                     ) : (
@@ -97,6 +98,7 @@ function mapStateToProps({ userReducer }) {
     return {
         user: userReducer.user,
         error: userReducer.error,
+        isLogged: userReducer.isLogged,
     };
 }
 
