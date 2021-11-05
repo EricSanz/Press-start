@@ -78,8 +78,8 @@ function Register(error) {
                         <button className="register__button" >Register</button>
                     </Link>
                     {/* <p id="errorId" className="error">User name already exist.</p> */}
-                    {error.error ? (
-                        <p id="errorId" className="error">{error.error.msg}</p>
+                    {error.registerError ? (
+                        <p id="errorId" className="error">{error.registerError.msg}</p>
                     ) : null}
                 </div>
             </div>
