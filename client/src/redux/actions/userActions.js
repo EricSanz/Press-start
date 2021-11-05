@@ -133,9 +133,9 @@ export function registerUser(email, password, displayName) {
             // const { data } = axios.post(userUrl, userData);
             const response = await axios.post(userRegisterUrl, userData);
             console.log(response);
-            if (response.data.error) {
-                console.log(response.data.error.msg)
-                dispatch(registerError(response.data.error))
+            if (response.data.registerError) {
+                console.log(response.data.registerError.msg)
+                dispatch(registerError(response.data.registerError))
             } else {
                 console.log(response.statusText);
                 localStorage.user = JSON.stringify({ user: { ...response } });
@@ -146,7 +146,7 @@ export function registerUser(email, password, displayName) {
                 // dispatch(registerError(error))
                 // console.log(response.data.error.msg);
             }
-            // console.log(localStorage.user.user);
+            console.log(localStorage.user.user);
             // console.log(data);
         } catch (error) {
             console.log(error);
@@ -163,11 +163,15 @@ export function loginUser(email, password) {
         try {
             const response = await axios.post(userLoginUrl, userData);
             console.log(response);
-            if (response.data.error) {
-                dispatch(signInError(response.data.error));
+            const user = response.data;
+            if (user.loginError) {
+                dispatch(signInError(user));
             } else {
                 localStorage.user = JSON.stringify({ user: {...response } });
-                const { user } = response;
+                // const { user } = response.data;
+                // const user = response.data;
+                // console.log(response.data);
+                console.log(user);
                 dispatch(signInSuccess(user));
             }
         } catch (error) {
