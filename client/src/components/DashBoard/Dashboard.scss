@@ -1,0 +1,24 @@
+@import "../styles/colors";
+@import "../../fonts/fonts";
+
+.profile__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $greyborder;
+    margin: 5em;
+    .profile {
+        display: flex;
+        width: inherit;
+        .profile__left__container {
+            width: 30%;
+            height: 70vh;
+            // margin: 7em 0 0 5em;
+            // margin-top: 7em;
+            background-color: $greylightbackground;
+        }
+        .profile__right__container {
+
+        }
+
+    }
+}
