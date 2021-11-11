@@ -115,42 +115,24 @@ export function registerError(error) {
     };
 };
 
-// const email = document.getElementById('email').value;
-// const password = document.getElementById('password').value;
-// const userName = document.getElementById('user_Name').value;
 export function registerUser(email, password, displayName) {
-    // const auth = getAuth();
     return async (dispatch) => {
         const userData = { email, password, displayName };
-        // localStorage.setItem('user', JSON.stringify({
-        //     email: userData.email,
-        //     password: userData.password,
-        //     displayName: userData.displayName,
-        // }));
         console.log(userData);
-        // dispatch(signInSuccess(userData));
         try {
-            // const { data } = axios.post(userUrl, userData);
             const response = await axios.post(userRegisterUrl, userData);
             console.log(response);
-            if (response.data.registerError) {
-                console.log(response.data.registerError.msg)
-                dispatch(registerError(response.data.registerError))
+            const user = response.data;
+            if (user.registerError) {
+                console.log(user.registerError)
+                dispatch(registerError(user))
             } else {
                 console.log(response.statusText);
                 localStorage.user = JSON.stringify({ user: { ...response } });
-                console.log(localStorage.user);
-                const { user } = response;
+                console.log(user);
                 dispatch(registerSuccess(user));
-                // dispatch(signInSuccess(response));
-                // dispatch(registerError(error))
-                // console.log(response.data.error.msg);
             }
-            console.log(localStorage.user.user);
-            // console.log(data);
         } catch (error) {
-            console.log(error);
-            // console.log(response.error.msg);
             dispatch(registerError(error))
         }
     }
@@ -163,14 +145,12 @@ export function loginUser(email, password) {
         try {
             const response = await axios.post(userLoginUrl, userData);
             console.log(response);
-            const user = response.data;
+            const user = response;
             if (user.loginError) {
+                console.log(user.loginError);
                 dispatch(signInError(user));
             } else {
                 localStorage.user = JSON.stringify({ user: {...response } });
-                // const { user } = response.data;
-                // const user = response.data;
-                // console.log(response.data);
                 console.log(user);
                 dispatch(signInSuccess(user));
             }
@@ -179,24 +159,3 @@ export function loginUser(email, password) {
         }
     }
 }
-
-
-
-// export function registerUser() {
-//     const auth = getAuth();
-//     const email = document.getElementById('email').value;
-//     const password = document.getElementById('password').value;
-//     const userName = document.getElementById('user_Name').value;
-//     return async (dispatch) => {
-//         try {
-//             createUserWithEmailAndPassword(auth, email, password, userName)
-//             .then((userCredential) => {
-//                 const user = userCredential.user;
-//                 console.log(user)
-//                 dispatch(registerSuccess(user));
-//             } )
-//         } catch (error) {
-//             dispatch(registerError(error))
-//         }
-//     }
-// }
