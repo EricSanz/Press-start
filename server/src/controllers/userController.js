@@ -24,7 +24,7 @@ function userController(UserModel) {
         const user = new UserModel({displayName, email, password, uid});
 
         if (emailAlreadyRegistered) {
-            res.json(emailAlreadyRegisteredError);
+            res.json(emailAlreadyRegisteredError); 
         } else if (displayNameAlreadyRegistered) {
             res.json(displayNameAlreadyRegisteredError);
         } else {
@@ -36,7 +36,7 @@ function userController(UserModel) {
     const loginPostUser = async (req, res) => {
         const { email, password } = req.body;
         console.log(req.body);
-        const notUserFound = ({ loginError: { msg: "User doesn't exist."} });
+        const notUserFound = ({ loginError: { msg: "User email doesn't exist."} });
         const invalidPassword = ({ loginError: { msg: "Invalid password."} });
 
         const user = await UserModel.findOne({ email });
@@ -46,8 +46,6 @@ function userController(UserModel) {
         } else {
             user.password === password ? res.json(user) : res.json(invalidPassword);
         }
-        // if (!user) return res.json(notUserFound);
-        // (user.password === password) ? res.json(user) : res.json(invalidPassword);
     }
 
     return {
