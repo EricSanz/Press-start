@@ -76,10 +76,16 @@
                 position: relative;
                 font-size: 13px;
                 display: block;
+                // display: none;
                 color: $redcolor;
                 top: 4.2em;
                 margin-bottom: -1em;
             }
+            
+            .error__not__displayed {
+                display: none;
+            }
+
             .email__input, .password__input {
                 font-family: $Montserrat;
                 padding-left: 1em;

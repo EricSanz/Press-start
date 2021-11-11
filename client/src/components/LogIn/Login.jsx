@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Login.scss';
 import googleLogo from '../../svg/google.svg';
 import facebookLogo from '../../svg/facebook.svg';
@@ -6,23 +6,55 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { connect } from 'react-redux';
 import { signInWithGoogle, loginUser } from '../../redux/actions/userActions';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-function Login({error, isLogged}) {
+function Login({user, error, isLogged}) {
 
     const dispatch = useDispatch();
+    let history = useHistory();
 
-    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    const user = userLocalStorage?.user;
+    // console.log(user?.data);
     console.log(user);
+    console.log(error);
     console.log(isLogged)
-    const userId = user?.data.uid;
+    const userId = user?.uid;
 
-    const emailLogin = document.getElementById('email__login')?.value;
-    const passwordLogin = document.getElementById('password__login')?.value;
+    let emailLogin = document.getElementById('email__login')?.value;
+    let passwordLogin = document.getElementById('password__login')?.value;
 
     const [togglePassword, setTogglePassword] = useState(false);
-    const [loginButton, setLoginButton] = useState(false);
+    const [loginButtonActive, setLoginButtonActive] = useState(false);
+    const [checkedEmailState, setCheckedEmailState] = useState(false);
+    const [checkedPasswordState, setCheckedPasswordState] = useState(false);
+    const [login, setLogin] = useState(false);
+
+    const loginError_ID = document.getElementById('loginError__ID');
+
+    useEffect(() => {
+        if (isLogged) {
+            history.replace(`/dashboard/${userId}`);
+        }
+
+        if (error) {
+            loginError_ID.className = 'error';
+            setTimeout(() => (displayLoginError()), 3500 );
+        }
+
+        function displayLoginError() {
+            loginError_ID.className = 'error__not__displayed';
+        }
+
+        if (checkedEmailState && checkedPasswordState) {
+            setLoginButtonActive(true);
+        }
+
+        if (login) {
+            dispatch(loginUser(emailLogin, passwordLogin));
+            console.log(user);
+            setLogin(false);
+        }
+
+    }, [isLogged, history, error, loginError_ID, checkedEmailState, checkedPasswordState, emailLogin, passwordLogin, login, dispatch, userId, user])
 
     function seeHidePassword() {
         console.log(user);
@@ -38,23 +70,22 @@ function Login({error, isLogged}) {
         togglePassword ? passwordInputLogin.type = 'password' : passwordInputLogin.type = 'text';
     }
 
-    function checkPasswordCompleted({target}) {
-
-        target.value.length < 8 ? target.className = 'password__input password__not__completed' : target.className = 'password__input password__completed';
-
-        if (emailLogin?.includes('@') && emailLogin?.includes('.') && target?.value.length >= 8) {
-            setLoginButton(true);
-        } else {
-            setLoginButton(false)
+    function checkEmail({target}) {
+        if (target.value.includes('@') && target.value.includes('.')) {
+            console.log(target.value);
+            setCheckedEmailState(true);
         }
     }
 
-    function checkEmailCompleted({target}) {
-        if (target.value.includes('@') && target.value.includes('.') && passwordLogin?.length >= 8) {
-            setLoginButton(true);
-        } else {
-            setLoginButton(false);
-        }
+    function checkPassword({target}) {
+
+        target.value.length < 8 ? target.className = 'password__input password__not__completed' : target.className = 'password__input password__completed';
+
+        if (target.value.length >= 8) {
+            setCheckedPasswordState(true);
+            console.log(target.value);
+        } 
+        // target?.value.length >= 8 ? setLoginButton(true) : setLoginButton(false);
     }
 
     return (
@@ -68,18 +99,14 @@ function Login({error, isLogged}) {
                 </div>
                 <div id="signIn__menu--id" className="signIn__menu">
                     <p className="e__signin__notfilled" id="email__login__notfilled">Email adress is not filled in.</p>
-                    <input id="email__login" className="email__input" type="text" name="email" placeholder="Email" onChange={(event) => checkEmailCompleted(event)}/>
+                    <input id="email__login" className="email__input" type="text" placeholder="Email" onChange={(event) => checkEmail(event)}/>
                     <p className="password__signin__error__message" id="password__login__length__error">Password - minimum 8 characters.</p>
-                    <input id="password__login" className="password__input" name="password" type="password" placeholder="Password" onChange={(event) => checkPasswordCompleted(event)}/>
+                    <input id="password__login" className="password__input" name="password" type="password" placeholder="Password" onChange={(event) => checkPassword(event)}/>
                     <FontAwesomeIcon id="see__login__password" className="password__icon not--slashed" icon="eye" onClick={() => seeHidePassword()}/>
                     <FontAwesomeIcon id="hide__login__password" className="password__icon slashed" icon="eye-slash" onClick={() => seeHidePassword()}/>
-                    {error?.loginError ? (
-                        <p id="errorId" className="error">{error.loginError.msg}</p>
-                    ) : null}
-                    {loginButton ? (
-                        <Link to={'/login'} onClick={() => dispatch(loginUser(emailLogin, passwordLogin))}>
-                            <button className="signIn__button">Sign In</button>
-                        </Link>
+                    <p id="loginError__ID" className="error__not__displayed">{error?.loginError?.msg}</p>
+                    {loginButtonActive ? (
+                        <button className="signIn__button" onClick={() => setLogin(true)}>Sign In</button>
                     ) : (
                         <button className="signIn__button__not__active">Sign In</button>
                     )}
