@@ -96,6 +96,10 @@
                 color: $redcolor;
                 top: 7.5em;
             }
+            .error__not__displayed {
+                display: none;
+            }
+            
             .email__input, .password__input, .userName__input {
                 font-family: $Montserrat;
                 padding-left: 1em;
