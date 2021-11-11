@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LeftSidenav from '../Left-Sidenav/Left-Sidenav';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { loginUser, signOut } from '../../redux/actions/userActions';
+import { signOut } from '../../redux/actions/userActions';
 
 function Header({user, isLogged}) {
 
@@ -13,18 +13,12 @@ function Header({user, isLogged}) {
 
     const dispatch = useDispatch();
 
-    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    const activeUser = userLocalStorage?.user;
-    console.log(activeUser);
-    console.log(user)
-    console.log(isLogged)
-    const userId = activeUser?.data.uid;
-
-    useEffect(() => {
-        if (activeUser && !isLogged) {
-            loginUser(activeUser.email, activeUser.password);
-        }
-    }, [activeUser, isLogged])
+    // const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    // const activeUser = userLocalStorage?.user;
+    // console.log(activeUser);
+    console.log(user);
+    console.log(isLogged);
+    const userId = user?.uid;
 
     function handleLeftSidenav() {
         setLeftSidenav(!leftSidenav);
@@ -64,7 +58,7 @@ function Header({user, isLogged}) {
                         <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
                     </Link>
                     <div className="navbar__options-right">
-                        {activeUser ? (
+                        {isLogged ? (
                             <>
                                 <div className="navbar__option">
                                     <Link className="link" to={`/dashboard/${userId}`}>
