@@ -146,8 +146,8 @@ export function loginUser(email, password) {
             const response = await axios.post(userLoginUrl, userData);
             console.log(response);
             const user = response;
-            if (user.loginError) {
-                console.log(user.loginError);
+            if (user.data.loginError) {
+                console.log(user.data.loginError);
                 dispatch(signInError(user));
             } else {
                 localStorage.user = JSON.stringify({ user: {...response } });
