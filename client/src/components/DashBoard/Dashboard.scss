@@ -4,20 +4,81 @@
 .profile__container {
     width: 100vw;
     height: 100vh;
-    background-color: $greyborder;
-    margin: 5em;
+    background-color: $greybackground;
     .profile {
         display: flex;
-        width: inherit;
+        max-width: inherit;
+        // height: inherit;
+        max-height: inherit;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12em;
         .profile__left__container {
-            width: 30%;
+            min-width: 22em;
             height: 70vh;
-            // margin: 7em 0 0 5em;
-            // margin-top: 7em;
+            // background-color: $greyborder;
             background-color: $greylightbackground;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .profile__image {
+                background-color: $blackbackground;
+                height: 10em;
+                width: 10em;
+                border-radius: 50%;
+            }
+            .full__name {
+                font-family: $Montserrat;
+                font-weight: 600;
+            }
+            .alias {
+                margin-top: -.8em;
+                margin-bottom: 3em;
+            }
+            .btns {
+                display: flex;
+                flex-direction: column;
+            }
+            .favorites__btn, .comments__btn, .personal__info__btn, .useful__info__btn {
+                font-family: $Montserrat;
+                font-size: .8em;
+                margin-top: .5em;
+                outline: none;
+                border: none;
+                min-width: 22em;
+                width: 26.4em;
+                height: 3em;
+                background-color: $whitecolor;
+                transition: 250ms;
+            }
+            .favorites__btn:hover, .comments__btn:hover, .personal__info__btn:hover, .useful__info__btn:hover {
+                background-color: $goldencolor;
+                font-weight: 600;
+                transform: scale(1.05);
+            }
+            .logout__btn {
+                font-family: $Montserrat;
+                font-size: .8em;
+                margin-top: 6em;
+                outline: none;
+                border: none;
+                height: 3em;
+                width: 10em;
+                transition: 250ms;
+            }
+            .logout__btn:hover {
+                background-color: $redcolor;
+                color: $whitecolor;
+                font-weight: 600;
+                transform: scale(1.05);
+            }
         }
         .profile__right__container {
-
+            height: 70vh;
+            width: 65%;
+            background-color: $whitecolor;
+            margin-left: 2em;
         }
 
     }
