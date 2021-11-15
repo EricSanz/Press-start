@@ -35,6 +35,12 @@
                 color: $whitecolor;
                 font-size: 6em;
                 text-shadow: 0.0625em 0.0625em 0.125em rgba(0, 0, 0, 0.25);
+                .gallery__image {
+                  background-size: contain;
+                  width: 100%;
+                  height: auto;
+                  margin-top: -200px;
+                }
               }
               
         }
@@ -53,7 +59,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            .small__image-1 {
+            .small__image {
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -82,138 +88,9 @@
                     }
                 }
             }
-            .small__image-2 {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 20%;
-                opacity: 0.5;
-                @include cross-fader-mini(5, 2, 4);
-                background-position: center;
-                background-size: cover;
-                background-color: rgba(0,0,0, .8) ;
-                background-blend-mode: overlay;
-                .title {
-                    color: $whitecolor;
-                    text-shadow: 1px 0px 3px rgba(255,255,255, .8);
-                    font-size: 24px;
-                }
-                &:hover {
-                    background-color: rgba(0,0,0, .1);
-                    cursor: pointer;
-                    .title {
-                        background-color: rgba(0,0,0, .6);
-                        padding-top: 4px;
-                        padding-bottom: 4px;
-                        width: 100%;
-                    }
-                }
-            }
-            .small__image-3 {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 20%;
-                opacity: 0.5;
-                @include cross-fader-mini(5, 2, 4);
-                background-position: center;
-                background-size: cover;
-                background-color: rgba(0,0,0, .8) ;
-                background-blend-mode: overlay;
-                .title {
-                    color: $whitecolor;
-                    text-shadow: 1px 0px 3px rgba(255,255,255, .8);
-                    font-size: 24px;
-                }
-                &:hover {
-                    background-color: rgba(0,0,0, .1);
-                    cursor: pointer;
-                    .title {
-                        background-color: rgba(0,0,0, .6);
-                        padding-top: 4px;
-                        padding-bottom: 4px;
-                        width: 100%;
-                    }
-                }
-            }
-            .small__image-4 {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 20%;
-                @include cross-fader-mini(5, 2, 4);
-                opacity: 0.5;
-                background-position: center;
-                background-size: cover;
-                background-color: rgba(0,0,0, .8) ;
-                background-blend-mode: overlay;
-                .title {
-                    color: $whitecolor;
-                    text-shadow: 1px 0px 3px rgba(255,255,255, .8);
-                    font-size: 24px;
-                }
-                &:hover {
-                    background-color: rgba(0,0,0, .1);
-                    cursor: pointer;
-                    .title {
-                        background-color: rgba(0,0,0, .6);
-                        padding-top: 4px;
-                        padding-bottom: 4px;
-                        width: 100%;
-                    }
-                }
-            }
-            .small__image-5 {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 20%;
-                @include cross-fader-mini(5, 2, 4);
-                opacity: 0.5;
-                background-position: center;
-                background-size: cover;
-                background-color: rgba(0,0,0, .8) ;
-                background-blend-mode: overlay;
-                .title {
-                    color: $whitecolor;
-                    text-shadow: 1px 0px 3px rgba(255,255,255, .8);
-                    font-size: 24px;
-                }
-                &:hover {
-                    background-color: rgba(0,0,0, .1);
-                    cursor: pointer;
-                    .title {
-                        background-color: rgba(0,0,0, .6);
-                        padding-top: 4px;
-                        padding-bottom: 4px;
-                        width: 100%;
-                    }
-                }
-            }
         }
     }
 }
-
-.gallery__slide--1 { background-image: url(https://i.ibb.co/qN5WjBp/immortals-fenyx-rising-main-slider.jpg); }
-.gallery__slide--2 { background-image: url(https://i.ibb.co/mzs83Y1/far-cry-6-main-slider.webp); }
-.gallery__slide--3 { background-image: url(https://i.ibb.co/Pjm83zR/ghost-of-tsushima-main-slider.jpg); }
-.gallery__slide--4 { background-image: url(https://i.ibb.co/vmqQVNj/resident-evil-village-main-slider.jpg); }
-.gallery__slide--5 { background-image: url(https://i.ibb.co/Kbr6D6t/no-mans-sky-main-slider.webp); }
-
-.small__slide--1 { background-image: url(https://i.ibb.co/qN5WjBp/immortals-fenyx-rising-main-slider.jpg); }
-.small__slide--2 { background-image: url(https://i.ibb.co/mzs83Y1/far-cry-6-main-slider.webp); }
-.small__slide--3 { background-image: url(https://i.ibb.co/Pjm83zR/ghost-of-tsushima-main-slider.jpg); }
-.small__slide--4 { background-image: url(https://i.ibb.co/vmqQVNj/resident-evil-village-main-slider.jpg); }
-.small__slide--5 { background-image: url(https://i.ibb.co/Kbr6D6t/no-mans-sky-main-slider.webp); }
-
 
 @media screen and (max-width: 1024px) {
   .main-slider {
@@ -232,7 +109,7 @@
       .small__image-container {
         height: 40vh;
         flex-direction: row;
-        .small__image-1, .small__image-2, .small__image-3, .small__image-4, .small__image-5 {
+        .small__image {
           .title {
             font-size: 14px;
           }
@@ -248,7 +125,7 @@
       height: 6vh;
       .small__image-container {
         height: 30vh;
-        .small__image-1, .small__image-2, .small__image-3, .small__image-4, .small__image-5 {
+        .small__image {
           .title {
             font-size: 9px;
           }
