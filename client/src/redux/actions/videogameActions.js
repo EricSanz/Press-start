@@ -101,3 +101,10 @@ export function fillFullVideogameList() {
         type: actionTypes.FILL_FULL_VIDEOGAME_LIST,
     };
 }
+
+export function sortVideogamesByDate(videogamesList) {
+    return {
+        type: actionTypes.SORT_VIDEOGAMES_BY_DATE,
+        videogamesList,
+    };
+}
