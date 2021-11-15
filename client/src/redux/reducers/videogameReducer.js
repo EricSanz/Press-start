@@ -3,6 +3,7 @@ import actionTypes from '../actions/actionTypes';
 
 export default function videogameReducer(state = {}, action) {
     let newState = null;
+    let sortedByDate;
     let filteredVideogames;
     let platformFilterVideogames;
     const ps4Checked = document.getElementById('ps4');
@@ -2163,6 +2164,25 @@ export default function videogameReducer(state = {}, action) {
                 loading: false,
                 platformVideogames: state.videogamesList
             };
+            break;
+        case actionTypes.SORT_VIDEOGAMES_BY_DATE:
+            sortedByDate = state.videogamesList.slice();
+            sortedByDate = sortedByDate.filter((videogame, index, self) => 
+            index === self.findIndex((duplicate) => (
+                duplicate.release.date === videogame.release.date
+            ))).filter((videogame) => (
+                videogame.release.date !== '' && new Date(videogame.release.date) < Date.now()
+            )).sort((a,b) => (
+                new Date(b.release.date) - new Date(a.release.date)
+            )).slice(0,5);
+
+            console.log(sortedByDate)
+
+            newState = {
+                ...state,
+                videogamesList: state.videogamesList,
+                sortedByDate: sortedByDate,
+            }
             break;
         default:
             newState = state;
