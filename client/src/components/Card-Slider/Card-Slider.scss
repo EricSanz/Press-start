@@ -1,70 +1,209 @@
-.card-slider__container {
-    position: relative;
-    margin-top: 60px;
+@import '../styles/colors';
+@import '../../fonts/fonts';
+@import '../styles/keyframes';
+
+img {
     max-width: 100%;
-    // height: 300px;
-    .card-slider__title-container {
-        padding-bottom: 20px;
-        margin-left: 40px;
-        .card-slider__title {
-            font-weight: 600;
-            font-size: 26px;
-        }
+}
+
+.btn {
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    background: $goldenstrongcolor;
+    border-radius: 100vw;
+    padding: .5em 1.5em;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.game {
+    position: relative;
+    min-width: 12.5em;
+    margin-bottom: 8em;
+    margin-top: 8em;
+    margin-left: 4em;
+    h1, h2, h3, p {
+        margin: 0;
     }
-    .scrollable__card {
+}
+
+.streamers {
+    display: flex;
+    text-align: center;
+    img {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+    }
+}
+
+.rank {
+    position: absolute;
+    top: .5em;
+    left: -1.5em;
+    z-index: 5;
+    padding: .3em 1em .3em;
+    width: 4em;
+    text-align: center;
+    transform: rotate(-45deg);
+    color: $whitecolor;
+    // font-weight: 600;
+    // background: rgba($redcolor, .7);
+    background: $redcolor;
+    clip-path: polygon(30% 0%, 68% 0, 98% 100%, 0% 100%);
+    transition: transform 200ms cubic-bezier(.21, 1.00, .81, 1.00);
+}
+
+.front {
+    transition: 250ms;
+    .thumbnail {
+        border-radius: .5em;
+        z-index: 1000;
+    }
+    .name__first {
+        margin-top: 1em;
+        margin-bottom: 1.25em;
+        font-size: 14px;
+    }
+    .name__first__second {
+        margin-top: .4em;
+        margin-bottom: .5em;
+        font-size: 14px;
+    }
+    .name__second {
+        font-size: 14px;
+        margin-top: -.5em;
+        margin-bottom: .6em;
+    }
+    .name__first__second__long {
+        margin-top: .4em;
+        margin-bottom: .5em;
+        font-size: 14px;
+    }
+    .name__second__long {
+        font-size: 14px;
+        margin-top: -.5em;
+        margin-bottom: .6em;
+    }
+    .stats {
         display: flex;
-        background-color: #e2e4e4;
-        overflow-x: hidden;
-        .card {
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-left: 20px;
-            .card__cover {
-                width: 315px;
-                height: 20vh;
-            }
-            .card__title {
-                padding-top: 15px;
-                padding-bottom: 15px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
+        justify-content: space-between;
+        align-items: center;
+    }
+    .streamers img {
+        border: 2px solid $greylightbackground;
+        &:nth-child(1) {
+            transform: translateX(80%);
+            z-index: 2;
+        }
+        &:nth-child(2) {
+            transform: translateX(35%);
+            z-index: 1;
+        }
+        &:nth-child(3) {
+            transform: translateX(-10%);
         }
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .card-slider__container {
-        margin-top: 0px;
-        top: -220px;
-        .card-slider__title-container {
-            padding-bottom: 10px;
-        }
-        .scrollable__card {
-            .card {
-                margin-left: 10px;
-                .card__cover {
-                    width: 220px;
-                    height: 15vh;
-                }
-            }
+.back {
+    opacity: 0;
+    color: $whitecolor;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .streamer-info {
+        columns: 2;
+        column-rule: 1px solid rgba($whitecolor, .7);
+        margin: 1.5em 0.5em;
+    }
+    .game-stat {
+        font-size: .8rem;
+        text-align: center;
+        span {
+            display: block;
+            font-size: .7rem;
         }
     }
 }
 
-@media screen and (max-width: 620px) {
-    .card-slider__container {
-        top: -250px;
-        .scrollable__card {
-            .card {
-                .card__cover {
-                    width: 150px;
-                    height: 10vh;
+.background {
+    background: $blackbackground;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scale(.2, .9);
+    border-radius: .5em;
+    opacity: 0;
+}
+
+.game:hover {
+    .rank {
+        // transform: translate(130%, -66.5%);
+        transform: rotate(-45deg) translate(-3%, -138%);
+        // background-color: $goldenstrongcolor;
+        color: $blackbackground;
+        font-weight: bold;
+        z-index: 100;
+    }
+    .front {
+        transform: translateY(-40%) scale(.8);
+        .name__first, .name__second, .name__first__second, .name__first__second__long, .name__second__long {
+            animation: nameGame 250ms forwards;
+        }
+        .name__first__second {
+            margin-top: 1em;
+            font-size: 16px;
+        }
+        .name__second {
+            margin-bottom: 2.8em;
+            font-size: 16px;
+        }
+        .name__first {
+            margin-top: 1.2em;
+            margin-bottom: 1.8em;
+            font-size: 19px;
+        }
+        .name__first__second__long {
+            margin-left: -.6em;
+            margin-top: 1.5em;
+            font-size: 16px;
+            width: 110%;
+        }
+        .name__second__long {
+            margin-bottom: 2.5em;
+            font-size: 16px;
+        }
+        .stats {
+            opacity: 0;
+        }
+    }
+    .back {
+        opacity: 1;
+        .streamers {
+            width: 100%;
+            justify-content: space-between;
+            .streamer {
+                font-size: .8rem;
+                .name {
+                    font-weight: 600;
                 }
             }
         }
+    }
+    .background {
+        transition: 
+            transform 200ms cubic-bezier(.21, 1.00, .81, 1.00),
+            opacity 100ms linear;
+        opacity: 1;
+        transform: scale(1.3, 1.2);
     }
 }
