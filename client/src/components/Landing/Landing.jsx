@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { loadVideogames, sortVideogamesByDate } from '../../redux/actions/videogameActions';
+import { loadVideogames, sortVideogamesByDate, sortCardVideogames } from '../../redux/actions/videogameActions';
 import Loading from '../Loading/Loading';
 import { useDispatch } from 'react-redux';
 import MainSlider from '../Main-Slider/Main-Slider';
 import CardSlider from '../Card-Slider/Card-Slider';
 import './Landing.scss';
 
-function Landing({ videogamesList, sortedByDate }) {
+function Landing({ videogamesList, sortedByDate, cardVideogames }) {
    
     const dispatch = useDispatch();
 
@@ -20,7 +20,11 @@ function Landing({ videogamesList, sortedByDate }) {
             dispatch(sortVideogamesByDate(videogamesList));
         }
 
-    }, [dispatch, videogamesList, sortedByDate])
+        if (videogamesList?.length && !cardVideogames) {
+            dispatch(sortCardVideogames(videogamesList));
+        }
+
+    }, [dispatch, videogamesList, sortedByDate, cardVideogames])
 
 
     return (
@@ -28,7 +32,11 @@ function Landing({ videogamesList, sortedByDate }) {
             {sortedByDate?.length > 1 && (
                 <MainSlider videogames={sortedByDate}/>
             )}
-            <CardSlider />
+            <div className="videogame__card__slider">
+                {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
+                    <CardSlider cards={videogameCards}/>
+                ))}
+            </div>
         </div>
     )
 }
@@ -37,6 +45,7 @@ function mapStateToProps({ videogameReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
         sortedByDate: videogameReducer.sortedByDate,
+        cardVideogames: videogameReducer.cardVideogames,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
     }

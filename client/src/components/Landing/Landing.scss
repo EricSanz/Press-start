@@ -3,4 +3,9 @@
 
 .body {
     margin-top: 85px;
+    .videogame__card__slider {
+        display: flex;
+        max-width: 200%;
+        // overflow-x: hidden;
+    }
 }
