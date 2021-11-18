@@ -55,7 +55,8 @@ const videogameSchema = new Schema({
     ],
     card: String,
     other_editions: [{ type: Schema.Types.ObjectId, ref: 'videogame' }],
-    other_platforms: [{ type: Schema.Types.ObjectId, ref: 'videogame' }]
+    other_platforms: [{ type: Schema.Types.ObjectId, ref: 'videogame' }],
+    available_platforms_logos: Array
 });
 
 module.exports = model('videogame', videogameSchema);
