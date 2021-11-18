@@ -1,3 +1,5 @@
+@import './colors';
+
 @keyframes pulse {
     0% {
         transform: scale(0.90);
@@ -7,5 +9,28 @@
     100% {
         transform: scale(1.20);
         opacity: 1;
+    }
+}
+
+@keyframes nameGame {
+    0% {
+        text-align: left;
+        opacity: 1;
+    }
+
+    20% {
+        text-align: left;
+        opacity: 0;
+    }
+
+    60% {
+        text-align: center;
+        opacity: 0;
+    }
+
+    100% {
+        text-align: center;
+        opacity: 1;
+        color: $whitecolor;
     }
 }
