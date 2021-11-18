@@ -108,3 +108,10 @@ export function sortVideogamesByDate(videogamesList) {
         videogamesList,
     };
 }
+
+export function sortCardVideogames(videogamesList) {
+    return {
+        type: actionTypes.SORT_CARD_VIDEOGAMES,
+        videogamesList,
+    };
+}
