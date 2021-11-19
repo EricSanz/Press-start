@@ -8,7 +8,7 @@ img {
 
 .btn {
     cursor: pointer;
-    margin-bottom: 1.5em;
+    margin-top: 1.5em;
     background: $goldenstrongcolor;
     border-radius: 100vw;
     padding: .5em 1.5em;
@@ -28,7 +28,7 @@ img {
     }
 }
 
-.streamers {
+.platforms--1, .platforms--2, .platforms--3, .platforms--4, .platforms--5, .platforms--1__back, .platforms--2__back, .platforms--3__back, .platforms--4__back, .platforms--5__back {
     display: flex;
     text-align: center;
     img {
@@ -48,8 +48,6 @@ img {
     text-align: center;
     transform: rotate(-45deg);
     color: $whitecolor;
-    // font-weight: 600;
-    // background: rgba($redcolor, .7);
     background: $redcolor;
     clip-path: polygon(30% 0%, 68% 0, 98% 100%, 0% 100%);
     transition: transform 200ms cubic-bezier(.21, 1.00, .81, 1.00);
@@ -61,48 +59,106 @@ img {
         border-radius: .5em;
         z-index: 1000;
     }
-    .name__first {
+    .name__first, .name__first__sale, .name__first__long, .name__first__long__sale {
         margin-top: 1em;
         margin-bottom: 1.25em;
         font-size: 14px;
     }
-    .name__first__second {
+    .name__first__second, .name__first__second__sale {
         margin-top: .4em;
         margin-bottom: .5em;
         font-size: 14px;
     }
-    .name__second {
+    .name__second, .name__second__sale {
         font-size: 14px;
         margin-top: -.5em;
         margin-bottom: .6em;
     }
-    .name__first__second__long {
+    .name__first__second__long, .name__first__second__long__sale {
         margin-top: .4em;
         margin-bottom: .5em;
         font-size: 14px;
     }
-    .name__second__long {
+    .name__second__long, .name__second__long__sale {
         font-size: 14px;
         margin-top: -.5em;
         margin-bottom: .6em;
     }
-    .stats {
+    .information {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .streamers img {
-        border: 2px solid $greylightbackground;
-        &:nth-child(1) {
-            transform: translateX(80%);
-            z-index: 2;
+        .platforms--1 img {
+            border: 2px solid $greylightbackground;
+            &:nth-child(1) {
+                transform: translateX(-5%);
+            }
         }
-        &:nth-child(2) {
-            transform: translateX(35%);
-            z-index: 1;
+        .platforms--2 img {
+            border: 2px solid $greylightbackground;
+            &:nth-child(1) {
+                transform: translateX(45%);
+                z-index: 1;
+            }
+            &:nth-child(2) {
+                transform: translateX(-5%);
+            }
         }
-        &:nth-child(3) {
-            transform: translateX(-10%);
+        .platforms--3 img {
+            border: 2px solid $greylightbackground;
+            &:nth-child(1) {
+                transform: translateX(95%);
+                z-index: 4;
+            }
+            &:nth-child(2) {
+                transform: translateX(45%);
+                z-index: 3;
+            }
+            &:nth-child(3) {
+                transform: translateX(-5%);
+                z-index: 2;
+            }
+        }
+        .platforms--4 img {
+            border: 2px solid $greylightbackground;
+            &:nth-child(1) {
+                transform: translateX(145%);
+                z-index: 4;
+            }
+            &:nth-child(2) {
+                transform: translateX(95%);
+                z-index: 3;
+            }
+            &:nth-child(3) {
+                transform: translateX(45%);
+                z-index: 2;
+            }
+            &:nth-child(4) {
+                transform: translateX(-5%);
+                z-index: 1;
+            }
+        }
+        .platforms--5 img {
+            border: 2px solid $greylightbackground;
+            &:nth-child(1) {
+                transform: translateX(195%);
+                z-index: 4;
+            }
+            &:nth-child(2) {
+                transform: translateX(145%);
+                z-index: 3;
+            }
+            &:nth-child(3) {
+                transform: translateX(95%);
+                z-index: 2;
+            }
+            &:nth-child(4) {
+                transform: translateX(45%);
+                z-index: 1;
+            }
+            &:nth-child(5) {
+                transform: translateX(-5%);
+            }
         }
     }
 }
@@ -117,17 +173,34 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .streamer-info {
+    .prices__info-sale {
         columns: 2;
         column-rule: 1px solid rgba($whitecolor, .7);
-        margin: 1.5em 0.5em;
+        margin-top: .5em;
+        margin-bottom: .8em;
+        .add-favorite {
+            font-size: 1.8rem;
+            margin-top: .35em;
+            margin-left: .5em;
+        }
     }
-    .game-stat {
-        font-size: .8rem;
+    .prices__info {
+        columns: 2;
+        column-rule: 1px solid rgba($whitecolor, .7);
+        margin-bottom: .8em;
         text-align: center;
+        .add-favorite {
+            font-size: 1.8rem;
+            margin-left: -.8em;
+        }
+    }
+    .prices {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-right: .5em;
         span {
             display: block;
-            font-size: .7rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -147,56 +220,142 @@ img {
 
 .game:hover {
     .rank {
-        // transform: translate(130%, -66.5%);
         transform: rotate(-45deg) translate(-3%, -138%);
-        // background-color: $goldenstrongcolor;
         color: $blackbackground;
         font-weight: bold;
-        z-index: 100;
+        z-index: 0;
     }
     .front {
         transform: translateY(-40%) scale(.8);
-        .name__first, .name__second, .name__first__second, .name__first__second__long, .name__second__long {
+        .name__first, .name__first__sale, .name__first__long, .name__first__long__sale, .name__second, .name__second__sale, .name__first__second, .name__first__second__sale, .name__first__second__long, .name__second__long, .name__first__second__long__sale, .name__second__long__sale {
             animation: nameGame 250ms forwards;
         }
         .name__first__second {
             margin-top: 1em;
-            font-size: 16px;
+            font-size: 17px;
+        }
+        .name__first__second__sale {
+            font-size: 17px;
+            margin-top: .8em;
         }
         .name__second {
-            margin-bottom: 2.8em;
-            font-size: 16px;
+            margin-bottom: 1.4em;
+            font-size: 17px;
+        }
+        .name__second__sale {
+            font-size: 17px;
+            margin-bottom: 2.1em;
         }
         .name__first {
-            margin-top: 1.2em;
-            margin-bottom: 1.8em;
+            margin-bottom: 1.7em;
+            margin-top: .7em;
             font-size: 19px;
         }
+        .name__first__sale {
+            font-size: 19px;
+            margin-top: .8em;
+            margin-bottom: 2.3em;
+        }
+        .name__first__long {
+            font-size: 18px;
+            margin-bottom: 1.7em;
+            width: 120%;
+            margin-left: -1.2em;
+        }
+        .name__first__long__sale {
+            font-size: 18px;
+            margin-bottom: 2.2em;
+            width: 130%;
+            margin-left: -1.8em;
+        }
         .name__first__second__long {
-            margin-left: -.6em;
-            margin-top: 1.5em;
-            font-size: 16px;
-            width: 110%;
+            margin-left: -1.2em;
+            margin-top: 1.2em;
+            font-size: 18px;
+            width: 120%;
+        }
+        .name__first__second__long__sale {
+            width: 120%;
+            font-size: 18px;
+            margin-left: -1.2em;
+            margin-top: .9em;
         }
         .name__second__long {
-            margin-bottom: 2.5em;
-            font-size: 16px;
+            margin-bottom: 1em;
+            font-size: 18px;
         }
-        .stats {
+        .name__second__long__sale {
+            font-size: 18px;
+            margin-bottom: 1.7em;
+        }
+        .information {
             opacity: 0;
         }
     }
     .back {
         opacity: 1;
-        .streamers {
+        .platforms {
             width: 100%;
-            justify-content: space-between;
-            .streamer {
-                font-size: .8rem;
-                .name {
-                    font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .platforms--1__back img {
+                border: 2px solid $whitecolor;
+            }
+            .platforms--2__back img {
+                border: 2px solid $whitecolor;
+                &:nth-child(1) {
+                    transform: translateX(-5%);
+                }
+                &:nth-child(2) {
+                    transform: translateX(5%);
                 }
             }
+            .platforms--3__back img {
+                border: 2px solid $whitecolor;
+                &:nth-child(1) {
+                    transform: translateX(-10%);
+                }
+                &:nth-child(3) {
+                    transform: translateX(10%);
+                }
+            }
+            .platforms--4__back img {
+                border: 2px solid $whitecolor;
+                &:nth-child(1) {
+                    transform: translateX(-15%);
+                }
+                &:nth-child(2) {
+                    transform: translateX(-5%);
+                }
+                &:nth-child(3) {
+                    transform: translateX(5%);
+                }
+                &:nth-child(4) {
+                    transform: translateX(15%);
+                }
+            }
+            .platforms--5__back img {
+                border: 2px solid $whitecolor;
+                &:nth-child(1) {
+                    transform: translateX(-20%);
+                }
+                &:nth-child(2) {
+                    transform: translateX(-10%);
+                }
+                &:nth-child(4) {
+                    transform: translateX(10%);
+                }
+                &:nth-child(5) {
+                    transform: translateX(20%);
+                }
+            }
+        }
+        .platforms p {
+            font-family: $Montserrat;
+            font-size: .9rem;
+            margin-bottom: 1em;
         }
     }
     .background {
