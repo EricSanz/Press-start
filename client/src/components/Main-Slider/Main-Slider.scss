@@ -20,7 +20,7 @@
             height: 100%;
             .gallery__slide {
                 @include cross-fader(5, 2, 4);
-                
+                opacity: 0;
                 position: absolute;
                 top: 0;
                 left: 0;
