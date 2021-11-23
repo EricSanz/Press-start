@@ -3,7 +3,7 @@ import axios from 'axios';
 import { GoogleAuthProvider, getAuth, signInWithPopup, createUserWithEmailAndPassword } from 'firebase/auth';
 import actionTypes from './actionTypes';
 
-const userUrl = 'http://localhost:5000/user';
+const userUrl = 'http://localhost:5000/user/';
 const userLoginUrl = 'http://localhost:5000/user/login';
 const userRegisterUrl = 'http://localhost:5000/user/register';
 
@@ -157,5 +157,32 @@ export function loginUser(email, password) {
         } catch (error) {
             dispatch(signInError(error))
         }
+    }
+}
+
+export function getUser(uid) {
+    return async (dispatch) => {
+        const backEndPoint = `${userUrl}${uid}`
+        try {
+            const user = await axios.get(backEndPoint);
+            console.log(user.data);
+            dispatch(getUserSucces(user.data))
+        } catch (error) {
+            dispatch(getUserError(error))
+        }
+    };
+}
+
+function getUserSucces(user) {
+    return {
+        type: actionTypes.GET_USER,
+        user,
+    }
+}
+
+function getUserError(error) {
+    return {
+        type: actionTypes.GET_USER_ERROR,
+        error,
     }
 }
