@@ -5,11 +5,11 @@ import VideogamesList from './components/List/VideogamesList';
 import Details from './components/Details/Details';
 import Dashboard from './components/DashBoard/Dashboard';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes, faCheckCircle, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes, faCheckCircle, faEye, faEyeSlash, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Login from './components/LogIn/Login';
 import Register from './components/Register/Register';
 
-library.add(faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes, faCheckCircle, faEye, faEyeSlash)
+library.add(faBars, faSearch, faUser, faNewspaper, faShoppingCart, faSignInAlt, faCalendarAlt, faHome, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp, faEnvelopeOpenText, faHeart, faTimes, faCheckCircle, faEye, faEyeSlash, faArrowRight)
 
 function App() {
   return (
