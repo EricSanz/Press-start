@@ -3,9 +3,79 @@
 
 .body {
     margin-top: 85px;
-    .videogame__card__slider {
-        display: flex;
-        max-width: 200%;
-        // overflow-x: hidden;
+    position: relative;
+    overflow-x: hidden;
+    
+    .card__slider--container {
+        position: relative;
+        .title__cards {
+            position: absolute;
+            top: 1.5em;
+            left: 1.4em;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .see__all-link {
+            text-decoration: none;
+            color: $blackbackground;
+            position: absolute;
+            top: 5em;
+            right: 3em;
+            p {
+                font-weight: 600;
+            }
+        }
+        .see__all-link:hover {
+            text-decoration: underline;
+        }
+        .go__left {
+            z-index: 4;
+            position: absolute;
+            top: 45%;
+            left: 2em;
+            height: 3em;
+            width: 3em;
+            background-color: rgba($blackbackground, .7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            .icon__left {
+                font-size: 2rem;
+                color: $goldenstrongcolor;
+            }
+        }
+        .go__left:hover {
+            cursor: pointer;
+            background-color: $blackbackground;
+            transition: 1250ms;
+        }
+        .go__right {
+            z-index: 4;
+            position: absolute;
+            right: 2em;
+            top: 45%;
+            height: 3em;
+            width: 3em;
+            background-color: rgba($blackbackground, .7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            .icon__right {
+                font-size: 2rem;
+                color: $goldenstrongcolor;
+                transition: 1250ms;
+            }
+        }
+        .go__right:hover {
+            cursor: pointer;
+            background-color: $blackbackground;
+        }
+        .videogame__card__slider {
+            position: relative;
+            display: flex;
+            transition: 1250ms;
+        }
     }
 }
