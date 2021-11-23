@@ -34,12 +34,13 @@ function userController(UserModel) {
     }
 
     const loginPostUser = async (req, res) => {
-        const { email, password } = req.body;
-        console.log(req.body);
+        const email = req.body.email;
+        const password = req.body.password;
+        console.log(email,password);
         const notUserFound = ({ loginError: { msg: "User email doesn't exist."} });
         const invalidPassword = ({ loginError: { msg: "Invalid password."} });
 
-        const user = await UserModel.findOne({ email });
+        const user = await UserModel.findOne({ email: email }).populate('favorites');
 
         if (!user) {
             res.json(notUserFound)
@@ -48,11 +49,49 @@ function userController(UserModel) {
         }
     }
 
+
+    function getUnicUser(req, res) {
+        const { userId } = req.params;
+        console.log(userId);
+
+        UserModel.findOne({ uid: userId }).populate('favorites').exec((errorFindUser, user) => (errorFindUser) ? res.send(errorFindUser) : res.json(user));
+    }
+
+    function addFavorite({ body }, res) {
+
+        const userId = body.uid;
+        const query = {uid: userId};
+
+        UserModel.findOne(query, (errorFindUser, user) => {
+            console.log(user);
+    
+            if (user) {
+                const findVideogame = user.favorites.some((videogame) => String(videogame) === body.videogame );
+                if (findVideogame) {
+                    const videogameFilter = user.favorites.filter((videogame) => String(videogame) !== body.videogame);
+                    user.favorites = videogameFilter;
+                    user.save();
+                    res.send('delete');
+                } else {
+                    console.log('Hey');
+                    user.favorites = [...user.favorites, body.videogame];
+                    user.save();
+                    res.json('save');
+                }
+            } else {
+                console.log("hey2");
+                res.send(errorFindUser);
+            }
+        })
+    }
+
     return {
         getUser,
         putUser,
         postUser,
-        loginPostUser
+        loginPostUser,
+        getUnicUser,
+        addFavorite
     };
 };
 
