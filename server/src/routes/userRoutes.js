@@ -8,10 +8,16 @@ function userRoute(User) {
     userRouter.route('/register')
         .get(user.getUser)
         .put(user.putUser)
-        .post(user.postUser);
+        .post(user.postUser)
 
     userRouter.route('/login')
-        .post(user.loginPostUser);
+        .post(user.loginPostUser)
+
+    userRouter.route('/favorites')
+        .post(user.addFavorite)
+
+    userRouter.route('/:userId')
+        .get(user.getUnicUser)
 
     return userRouter;
 };
