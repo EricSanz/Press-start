@@ -13,4 +13,4 @@ const messageSchema = new Schema({
     rating: String 
 });
 
-module.exports = model('messages', messageSchema);
+module.exports = model('message', messageSchema);
