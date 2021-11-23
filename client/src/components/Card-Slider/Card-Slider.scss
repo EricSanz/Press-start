@@ -42,7 +42,7 @@ img {
     position: absolute;
     top: .5em;
     left: -1.5em;
-    z-index: 5;
+    z-index: 3;
     padding: .3em 1em .3em;
     width: 4em;
     text-align: center;
@@ -58,6 +58,9 @@ img {
     .thumbnail {
         border-radius: .5em;
         z-index: 1000;
+    }
+    .edition__name, .edition__name__second, .edition__name__second__long__sale,  .edition__name__second__sale, .edition__name__second__long, .edition__name__sale, .edition__name__first__long, .edition__name__first__long__sale {
+        display: none;
     }
     .name__first, .name__first__sale, .name__first__long, .name__first__long__sale {
         margin-top: 1em;
@@ -174,34 +177,58 @@ img {
     flex-direction: column;
     align-items: center;
     .prices__info-sale {
-        columns: 2;
-        column-rule: 1px solid rgba($whitecolor, .7);
-        margin-top: .5em;
-        margin-bottom: .8em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2em;
+        .prices {
+            border-right: 1px solid rgba($whitecolor, .7);
+            .sale__price, .sale__price__normal {
+                margin-right: 1.2em;
+                text-align: center;
+            }
+            .sale__price__normal::after {
+                border-bottom: 0.25em solid $redcolor;
+                content: "";
+                width: 57px;
+                position: absolute;
+                left: 37px;
+                top: 27px;
+                transform: rotate(-15deg);
+            }
+        }
         .add-favorite {
             font-size: 1.8rem;
-            margin-top: .35em;
-            margin-left: .5em;
+            margin-left: .7em;
+        }
+        .add-favorite:hover {
+            transition: 500ms;
+            color: $redcolor;
+            cursor: pointer;
         }
     }
     .prices__info {
-        columns: 2;
-        column-rule: 1px solid rgba($whitecolor, .7);
-        margin-bottom: .8em;
+        display: flex;
+        width: 9em;
+        margin-bottom: 1em;
         text-align: center;
+        justify-content: center;
         .add-favorite {
             font-size: 1.8rem;
-            margin-left: -.8em;
+            margin-left: .7em;
         }
-    }
-    .prices {
+        .add-favorite:hover {
+                transition: 500ms;
+                color: $redcolor;
+                cursor: pointer;
+            }
+        }
+    .price {
+        border-right: 1px solid rgba($whitecolor, .7);
+        display: flex;
+        flex-direction: column;
         font-size: 1.2rem;
         text-align: center;
-        padding-right: .5em;
-        span {
-            display: block;
-            font-size: 1.2rem;
-        }
+        padding-right: 1em;
     }
 }
 
@@ -220,13 +247,85 @@ img {
 
 .game:hover {
     .rank {
-        transform: rotate(-45deg) translate(-3%, -138%);
+        transform: rotate(-45deg) translate(-2.5%, -142.5%);
         color: $blackbackground;
         font-weight: bold;
         z-index: 0;
     }
     .front {
         transform: translateY(-40%) scale(.8);
+        .edition__name {
+            position: relative;
+            display: block;
+            color: $whitecolor;
+            text-align: center;
+            margin-top: -2.2em;
+            margin-bottom: 1.8em;
+            font-size: 14px;
+        }
+        .edition__name__first__long {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -1.8em;
+            margin-bottom: 1.6em;
+        }
+        .edition__name__second__long {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -.8em;
+            margin-bottom: .8em;
+        }
+        .edition__name__sale {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -2.8em;
+            margin-bottom: 2.5em;
+        }
+        .edition__name__first__long__sale {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -2.5em;
+            margin-bottom: 2.6em;
+        }
+        .edition__name__second {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -1.3em;
+            margin-bottom: 1.1em;
+        }
+        .edition__name__second__sale {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -2em;
+            margin-bottom: 1.8em;
+        }
+        .edition__name__second__long__sale {
+            display: block;
+            position: relative;
+            color: $whitecolor;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -1.9em;
+            margin-bottom: 1.6em;
+        }
         .name__first, .name__first__sale, .name__first__long, .name__first__long__sale, .name__second, .name__second__sale, .name__first__second, .name__first__second__sale, .name__first__second__long, .name__second__long, .name__first__second__long__sale, .name__second__long__sale {
             animation: nameGame 250ms forwards;
         }
@@ -350,6 +449,11 @@ img {
                 &:nth-child(5) {
                     transform: translateX(20%);
                 }
+            }
+        }
+        .prices__info {
+            .heart-pulse:hover {
+                cursor: pointer;
             }
         }
         .platforms p {
