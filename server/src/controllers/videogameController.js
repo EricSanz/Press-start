@@ -62,34 +62,34 @@ function videogameController(VideogameModel) {
         });
     }
 
-    // function putPlatform({ body }, res) {
-    //     const videogameId = body.id;
-    //     VideogameModel.findOne({ id: videogameId }, (errorFindUser, videogame) => {
-    //         if (videogame) {
-    //             const findVideogame = videogame.other_platforms.some(
-    //                 (videogame) => String(videogame) === body.videogame,
-    //             );
-    //             if (findVideogame) {
-    //                 const videogameFilter = videogame.other_platforms.filter((videogame) => String(videogame) !== body.videogame);
-    //                 videogame.other_platforms = videogameFilter;
-    //                 videogame.save();
-    //                 res.send('deleted');
-    //             } else {
-    //                 videogame.other_platforms = [...videogame.other_platforms, body.videogame];
-    //                 videogame.save();
-    //                 res.json('saved');
-    //             }
-    //         } else {
-    //             res.send(errorFindUser);
-    //         }
-    //     });
-    // }
+    function postPlatform({ body }, res) {
+        const videogameId = body.id;
+        VideogameModel.findOne({ id: videogameId }, (errorFindUser, videogame) => {
+            if (videogame) {
+                const findVideogame = videogame.other_platforms.some(
+                    (videogame) => String(videogame) === body.videogame,
+                );
+                if (findVideogame) {
+                    const videogameFilter = videogame.other_platforms.filter((videogame) => String(videogame) !== body.videogame);
+                    videogame.other_platforms = videogameFilter;
+                    videogame.save();
+                    res.send('deleted');
+                } else {
+                    videogame.other_platforms = [...videogame.other_platforms, body.videogame];
+                    videogame.save();
+                    res.json('saved');
+                }
+            } else {
+                res.send(errorFindUser);
+            }
+        });
+    }
 
     return {
         getVideogames,
         getOneVideogame,
         postEdition,
-        // putPlatform,
+        postPlatform,
         putPlatformsAvailable,
     };
 }
