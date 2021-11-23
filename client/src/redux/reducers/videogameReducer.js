@@ -2187,12 +2187,13 @@ export default function videogameReducer(state = {}, action) {
             break;
         case actionTypes.SORT_CARD_VIDEOGAMES:
             cardVideogames = state.videogamesList.slice();
+            cardVideogames = cardVideogames.sort(() => .5 - Math.random());
             cardVideogames = cardVideogames.filter((videogames, index, self) => 
             index === self.findIndex((duplicate) => (
                 duplicate.card === videogames.card
             )));
 
-            cardVideogames = cardVideogames.sort(() => .5 - Math.random()).slice(0,10);
+            cardVideogames = cardVideogames.sort(() => .5 - Math.random()).slice(0,15);
 
             console.log(cardVideogames);
 
