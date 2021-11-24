@@ -1,6 +1,7 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { loadVideogames, sortVideogamesByDate, sortCardVideogames } from '../../redux/actions/videogameActions';
+import { getUser } from '../../redux/actions/userActions';
 import Loading from '../Loading/Loading';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -9,14 +10,14 @@ import MainSlider from '../Main-Slider/Main-Slider';
 import CardSlider from '../Card-Slider/Card-Slider';
 import './Landing.scss';
 
-function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged }) {
+function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged, cardIds, favoritesGamesID }) {
    
     const dispatch = useDispatch();
-    console.log(user);
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    const localStorageUser = userLocalStorage.user.data;
 
     let scrollTranslation = 0;
-
-    const cardsContainerID = document.getElementById('videogame__cards-id');
+    let i = -1;
 
     useEffect(() => {
         if (!videogamesList?.length) {
@@ -30,10 +31,15 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged 
         if (videogamesList?.length && !cardVideogames) {
             dispatch(sortCardVideogames(videogamesList));
         }
+        
+        if(!user) {
+            dispatch(getUser(localStorageUser.uid));
+        }
 
-    }, [dispatch, videogamesList, sortedByDate, cardVideogames]);
+    }, [dispatch, videogamesList, sortedByDate, cardVideogames, user, localStorageUser]);
 
     function moveToLeft() {
+        let cardsContainerID = document.getElementById('videogame__cards-id');
 
         if (scrollTranslation > -0.01) {
             scrollTranslation += 0;
@@ -44,7 +50,8 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged 
     }
     
     function moveToRight() {
-        
+        let cardsContainerID = document.getElementById('videogame__cards-id');
+ 
         if (scrollTranslation < -114) {
             scrollTranslation += 0;
         } else {
@@ -65,7 +72,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged 
                 </div>
                 <div className="videogame__card__slider" id="videogame__cards-id">
                     {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
-                        <CardSlider cards={videogameCards} loggedUser={user}/>
+                        <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
                     ))}
                 </div>
                 <div className="go__right" id="go__right-id" onClick={() => moveToRight()}>
@@ -84,7 +91,9 @@ function mapStateToProps({ videogameReducer, userReducer }) {
         videogamesList: videogameReducer.videogamesList,
         sortedByDate: videogameReducer.sortedByDate,
         cardVideogames: videogameReducer.cardVideogames,
+        cardIds: videogameReducer.cardIds,
         user: userReducer.user,
+        favoritesGamesID: userReducer.favoritesGamesID,
         isLogged: userReducer.isLogged,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
