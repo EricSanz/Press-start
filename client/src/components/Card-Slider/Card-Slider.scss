@@ -200,6 +200,12 @@ img {
             font-size: 1.8rem;
             margin-left: .7em;
         }
+        .red {
+            color: $redcolor;
+        }
+        .white {
+            color: $whitecolor;
+        }
         .add-favorite:hover {
             transition: 500ms;
             color: $redcolor;
@@ -216,10 +222,33 @@ img {
             font-size: 1.8rem;
             margin-left: .7em;
         }
+        .red {
+            color: $redcolor;
+        }
+        .white {
+            color: $whitecolor;
+        }
         .add-favorite:hover {
                 transition: 500ms;
                 color: $redcolor;
                 cursor: pointer;
+            }
+        }
+        .notlogged {
+            display: none;
+            position: absolute;
+            width: 10em;
+            border-radius: 1em;
+            bottom: 6.5em;
+            left: 4.5em;
+            z-index: 200;
+            background-color: rgba($redcolor, .8);
+            transition: 1250ms;
+            p {
+                color: $whitecolor;
+                padding: .3em;
+                font-size: 12px;
+                font-weight: 600;
             }
         }
     .price {
