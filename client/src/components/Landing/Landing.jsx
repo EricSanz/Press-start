@@ -14,7 +14,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
    
     const dispatch = useDispatch();
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    const localStorageUser = userLocalStorage.user.data;
+    const localStorageUser = userLocalStorage?.user?.data;
 
     let scrollTranslation = 0;
     let i = -1;
@@ -31,9 +31,9 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
         if (videogamesList?.length && !cardVideogames) {
             dispatch(sortCardVideogames(videogamesList));
         }
-        
-        if(!user) {
-            dispatch(getUser(localStorageUser.uid));
+
+        if (!user && localStorageUser) {
+            dispatch(getUser(localStorageUser.uid))
         }
 
     }, [dispatch, videogamesList, sortedByDate, cardVideogames, user, localStorageUser]);
