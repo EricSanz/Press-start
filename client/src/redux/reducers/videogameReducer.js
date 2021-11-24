@@ -2195,12 +2195,17 @@ export default function videogameReducer(state = {}, action) {
 
             cardVideogames = cardVideogames.sort(() => .5 - Math.random()).slice(0,15);
 
-            console.log(cardVideogames);
+            let cardIds = cardVideogames.slice();
+
+            cardIds =  cardIds.map((cards) => (
+                cards.id
+            ));
 
             newState = {
                 ...state,
                 videogamesList: state.videogamesList,
                 cardVideogames: cardVideogames,
+                cardIds: cardIds,
             }
             break;
         default:
