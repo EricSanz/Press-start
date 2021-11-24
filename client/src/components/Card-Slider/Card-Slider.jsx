@@ -1,14 +1,62 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { addFavorite, getUser } from '../../redux/actions/userActions';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Card-Slider.scss';
 
-function CardSlider({ cards, loggedUser }) {
+function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
 
-    
-    function vamosavel() {
-        console.log(cards)
-        console.log(loggedUser);
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    const localStorageUser = userLocalStorage.user.data;
+
+    const userId = loggedUser?.uid;
+    const videogameId = cards?._id;
+    let newCardIndex = cardIndex + 100;
+    // console.log(cardIndex);
+    // console.log(loggedUser.favorites);
+    const favCardFound = favGamesID.find(id => id === cards.id);
+
+    // console.log(cardids);
+
+    const dispatch = useDispatch();
+
+    function displayErrorNone() {
+        const notloggedId = document.getElementById(cardIndex);
+        notloggedId.style.display = "none";
+    }
+
+    function favoriteGame() {
+        const notloggedId = document.getElementById(cardIndex);
+        if (!loggedUser) {
+            const cardFound = cardids.find(id => id === cards.id);
+            // console.log(cardFound);
+            const cardFoundIndex = (element) => element === cardFound;
+            const index = (cardids.findIndex(cardFoundIndex))
+            // console.log(index);
+
+            if (index === cardIndex) {
+                notloggedId.style.display = "block";
+                setTimeout(() => (displayErrorNone()), 1250 );
+            }
+
+        } else {
+            dispatch(addFavorite(userId, videogameId));
+            dispatch(getUser(localStorageUser.uid));
+            const fav = document.getElementById(newCardIndex);
+            const cardFound = cardids.find(id => id === cards.id);
+            // console.log(cardFound);
+            const cardFoundIndex = (element) => element === cardFound;
+            const index = (cardids.findIndex(cardFoundIndex))
+            // console.log(index);
+            if (index === cardIndex) {
+                if (fav.style.color === 'red') {
+                    fav.style.color = 'white';
+                } else {
+                    fav.style.color = 'red';
+                }
+            }
+        }
     }
 
     return (
@@ -140,12 +188,25 @@ function CardSlider({ cards, loggedUser }) {
                             <p className="sale__price">{cards.edition.salePrice}€</p>
                             <p className="sale__price__normal">{cards.edition.price}€</p>
                         </div>
-                        <FontAwesomeIcon className="add-favorite" icon="heart"/>
+                        {!loggedUser && (
+                            <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => favoriteGame())}/>
+                        )}
+                        {loggedUser && (
+                            <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newCardIndex} icon="heart" onClick={(() => favoriteGame())}/>
+                        )}
                     </div>
                 ) : (
                     <div className="prices__info">
                         <p className="price">{cards.edition.price}€</p>
-                        <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => vamosavel())}/>
+                        {!loggedUser && (
+                            <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => favoriteGame())}/>
+                        )}
+                        {loggedUser && (
+                            <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newCardIndex} icon="heart" onClick={(() => favoriteGame())}/>
+                        )}
+                        <div id={cardIndex} className="notlogged">
+                            <p>You are not logged in</p>
+                        </div>
                     </div>
                 )}
                 <div className="platforms">
