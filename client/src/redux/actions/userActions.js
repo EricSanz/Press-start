@@ -6,6 +6,7 @@ import actionTypes from './actionTypes';
 const userUrl = 'http://localhost:5000/user/';
 const userLoginUrl = 'http://localhost:5000/user/login';
 const userRegisterUrl = 'http://localhost:5000/user/register';
+const userFavoritesUrl = 'http://localhost:5000/user/favorites';
 
 export function signInSuccess(user) {
     return {
@@ -183,6 +184,35 @@ function getUserSucces(user) {
 function getUserError(error) {
     return {
         type: actionTypes.GET_USER_ERROR,
+        error,
+    }
+}
+
+export function addFavorite(userId, videogameId) {
+    const neededData = {userId, videogameId}
+    // console.log(neededData);
+    return async (dispatch) => {
+        // console.log('Hey');
+        try {
+            const response = await axios.post(userFavoritesUrl, neededData);
+            console.log(response);
+            dispatch(addFavoriteSuccess(response)) 
+        } catch (error) {
+            dispatch(addFavoriteError(error))
+        }
+    }
+}
+
+function addFavoriteSuccess(added) {
+    return {
+        type: actionTypes.ADD_FAVORITE,
+        added
+    }
+}
+
+function addFavoriteError(error) {
+    return {
+        type: actionTypes.ADD_FAVORITE_ERROR,
         error,
     }
 }
