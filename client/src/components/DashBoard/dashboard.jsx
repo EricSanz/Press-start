@@ -8,11 +8,10 @@ function UserProfile({user, match, activeUser}) {
     const localStorageUser = userLocalStorage.user.data;
     // console.log(userLocalStorage.user.data.uid);
     const dispatch = useDispatch()
-    console.log(user)
-    console.log(localStorageUser);
+    // console.log(user)
+    // console.log(localStorageUser);
 
     const [uid] = useState(match.params.userId);
-
 
     useEffect(() => {
 
