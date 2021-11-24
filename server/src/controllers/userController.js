@@ -57,29 +57,29 @@ function userController(UserModel) {
         UserModel.findOne({ uid: userId }).populate('favorites').exec((errorFindUser, user) => (errorFindUser) ? res.send(errorFindUser) : res.json(user));
     }
 
-    function addFavorite({ body }, res) {
+    function addFavorite( {body}, res) {
 
-        const userId = body.uid;
-        const query = {uid: userId};
+        const userId = body.userId;
+        const videogameId = body.videogameId;
+        // console.log(userId);
+        // console.log(videogameId);
 
-        UserModel.findOne(query, (errorFindUser, user) => {
+        UserModel.findOne({uid: userId }, (errorFindUser, user) => {
             console.log(user);
     
             if (user) {
-                const findVideogame = user.favorites.some((videogame) => String(videogame) === body.videogame );
+                const findVideogame = user.favorites.some((videogame) => String(videogame) === videogameId );
                 if (findVideogame) {
-                    const videogameFilter = user.favorites.filter((videogame) => String(videogame) !== body.videogame);
+                    const videogameFilter = user.favorites.filter((videogame) => String(videogame) !== videogameId);
                     user.favorites = videogameFilter;
                     user.save();
-                    res.send('delete');
+                    res.json('delete');
                 } else {
-                    console.log('Hey');
-                    user.favorites = [...user.favorites, body.videogame];
+                    user.favorites = [...user.favorites, videogameId];
                     user.save();
                     res.json('save');
                 }
             } else {
-                console.log("hey2");
                 res.send(errorFindUser);
             }
         })
