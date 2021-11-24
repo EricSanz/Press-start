@@ -190,9 +190,7 @@ function getUserError(error) {
 
 export function addFavorite(userId, videogameId) {
     const neededData = {userId, videogameId}
-    // console.log(neededData);
     return async (dispatch) => {
-        // console.log('Hey');
         try {
             const response = await axios.post(userFavoritesUrl, neededData);
             console.log(response);
