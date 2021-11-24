@@ -34,7 +34,6 @@ export function loadVideogames() {
         const backEndPoint = `${baseUrl}${videogamesUrl}`;
         try {
             const videogamesList = await axios.get(backEndPoint);
-            console.log(videogamesList)
             dispatch(loadVideogamesSuccess(videogamesList.data));
         } catch (error) {
             dispatch(loadVideogamesError(error));
@@ -62,7 +61,6 @@ export function loadOneVideogame(videogameId) {
         const backEndPoint = `${baseUrl}${videogameUrl}${videogameId}`;
         try {
             const videogame = await axios.get(backEndPoint);
-            console.log(videogame);
             dispatch(loadOneVideogameSuccess(videogame.data))
         } catch (error) {
             dispatch(loadOneVideogameError(error))
