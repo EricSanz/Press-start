@@ -8,14 +8,15 @@ import './Card-Slider.scss';
 function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    const localStorageUser = userLocalStorage.user.data;
+    const localStorageUser = userLocalStorage?.user?.data;
 
     const userId = loggedUser?.uid;
     const videogameId = cards?._id;
     let newCardIndex = cardIndex + 100;
+    let newNewCardIndex = cardIndex + 200;
     // console.log(cardIndex);
     // console.log(loggedUser.favorites);
-    const favCardFound = favGamesID.find(id => id === cards.id);
+    const favCardFound = favGamesID?.find(id => id === cards.id);
 
     // console.log(cardids);
 
@@ -52,10 +53,45 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
             if (index === cardIndex) {
                 if (fav.style.color === 'red') {
                     fav.style.color = 'white';
-                } else {
+                } else if (fav.style.color === 'white') {
                     fav.style.color = 'red';
                 }
             }
+            dispatch(getUser(localStorageUser.uid));
+        }
+    }
+
+    function favoriteGameSale() {
+        const notloggedId = document.getElementById(cardIndex);
+        if (!loggedUser) {
+            const cardFound = cardids.find(id => id === cards.id);
+            // console.log(cardFound);
+            const cardFoundIndex = (element) => element === cardFound;
+            const index = (cardids.findIndex(cardFoundIndex))
+            // console.log(index);
+
+            if (index === cardIndex) {
+                notloggedId.style.display = "block";
+                setTimeout(() => (displayErrorNone()), 1250 );
+            }
+
+        } else {
+            dispatch(addFavorite(userId, videogameId));
+            dispatch(getUser(localStorageUser.uid));
+            const favTwo = document.getElementById(newNewCardIndex);
+            const cardFound = cardids.find(id => id === cards.id);
+            // console.log(cardFound);
+            const cardFoundIndex = (element) => element === cardFound;
+            const index = (cardids.findIndex(cardFoundIndex))
+            // console.log(index);
+            if (index === cardIndex) {
+                if (favTwo.style.color === 'red') {
+                    favTwo.style.color = 'white';
+                } else if (favTwo.style.color === 'white') {
+                    favTwo.style.color = 'red';
+                }
+            }
+            dispatch(getUser(localStorageUser.uid));
         }
     }
 
@@ -189,10 +225,10 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                             <p className="sale__price__normal">{cards.edition.price}€</p>
                         </div>
                         {!loggedUser && (
-                            <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => favoriteGame())}/>
+                            <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => favoriteGameSale())}/>
                         )}
                         {loggedUser && (
-                            <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newCardIndex} icon="heart" onClick={(() => favoriteGame())}/>
+                            <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newNewCardIndex} icon="heart" onClick={(() => favoriteGameSale())}/>
                         )}
                     </div>
                 ) : (
