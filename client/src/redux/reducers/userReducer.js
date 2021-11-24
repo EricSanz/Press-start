@@ -62,9 +62,16 @@ export default function userReducer(state = {}, action) {
             }
             break;
         case actionTypes.GET_USER:
+
+            let favoritesGamesID = action.user.favorites.slice();
+            favoritesGamesID = favoritesGamesID.map((games) => (
+                games.id
+            ));
+
             newState = {
                 ...state,
                 user: action.user,
+                favoritesGamesID: favoritesGamesID,
                 isLogged: true
             }
             break;
@@ -73,6 +80,12 @@ export default function userReducer(state = {}, action) {
                 ...state,
                 error: action.error,
                 isLogged: false
+            }
+            break;
+        case actionTypes.ADD_FAVORITE:
+            newState = {
+                ...state,
+                added: action.added,
             }
             break;
         default:
