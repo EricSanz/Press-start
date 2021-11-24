@@ -21,6 +21,8 @@ const actionTypes = {
     REGISTER_USER_ERROR: 'REGISTER_USER_ERROR',
     GET_USER: 'GET_USER',
     GET_USER_ERROR: 'GET_USER_ERROR',
+    ADD_FAVORITE: 'ADD_FAVORITE',
+    ADD_FAVORITE_ERROR: 'ADD_FAVORITE_ERROR',
 }
 
 export default actionTypes;
