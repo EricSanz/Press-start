@@ -16,7 +16,6 @@ function VideogameList({ videogamesList, loading, error, filteredVideogameList, 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
     let i = -1;
-    console.log(cardIds);
 
     useEffect(() => {
         if (!videogamesList?.length) {
