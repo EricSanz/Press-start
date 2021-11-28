@@ -7,6 +7,7 @@ export default function videogameReducer(state = {}, action) {
     let cardVideogames;
     let filteredVideogames;
     let platformFilterVideogames;
+    let cardIds;
     const ps4Checked = document.getElementById('ps4');
     const ps5Checked = document.getElementById('ps5');
     const xboxOneChecked = document.getElementById('xboxOne');
@@ -23,10 +24,17 @@ export default function videogameReducer(state = {}, action) {
             newState = { ...state, loading: true };
             break;
         case actionTypes.LOAD_VIDEOGAMES:
+            cardIds = action.videogamesList.slice();
+
+            cardIds =  cardIds.map((cards) => (
+                cards.id
+            ));
+
             newState = {
                 ...state,
                 loading: false,
                 videogamesList: action.videogamesList,
+                cardIds: cardIds,
             };
             break;
         case actionTypes.LOAD_VIDEOGAMES_ERROR:
@@ -2195,7 +2203,7 @@ export default function videogameReducer(state = {}, action) {
 
             cardVideogames = cardVideogames.sort(() => .5 - Math.random()).slice(0,15);
 
-            let cardIds = cardVideogames.slice();
+            cardIds = cardVideogames.slice();
 
             cardIds =  cardIds.map((cards) => (
                 cards.id
