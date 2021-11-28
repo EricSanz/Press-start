@@ -5,29 +5,39 @@ import Loading from '../Loading/Loading';
 import SearchComponent from '../Search/Search';
 import FilterComponent from '../Filter/Filter';
 import { loadVideogames } from '../../redux/actions/videogameActions';
+import { getUser } from '../../redux/actions/userActions';
 import { useDispatch } from 'react-redux';
 import Card from './Card/Card';
 import './VideogamesList.scss';
 
-function VideogameList({ videogamesList, loading, error, filteredVideogameList, platformVideogames}) {
+function VideogameList({ videogamesList, loading, error, filteredVideogameList, platformVideogames, user, cardIds, favoritesGamesID}) {
 
     const dispatch = useDispatch();
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    const localStorageUser = userLocalStorage?.user?.data;
+    let i = -1;
+    console.log(cardIds);
 
     useEffect(() => {
         if (!videogamesList?.length) {
             dispatch(loadVideogames());
         }
-    }, [videogamesList?.length, filteredVideogameList?.length, platformVideogames?.length]);
+
+        if (!user && localStorageUser) {
+            dispatch(getUser(localStorageUser.uid))
+        }
+
+    }, [videogamesList?.length, filteredVideogameList?.length, platformVideogames?.length, user, localStorageUser, dispatch]);
 
     const displayVideogameList = (
 
         <>  
             {!platformVideogames?.length && videogamesList?.length && videogamesList.map((videogame) => (
-                <Card Games={videogame}/>
+                <Card Games={videogame} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
             ))}
 
             {platformVideogames?.length && platformVideogames.map((videogame) => (
-                <Card Games={videogame} />
+                <Card Games={videogame} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
             ))}
 
             {!platformVideogames?.length && platformVideogames?.length === 0 && <h3 className="notExist">A videogame with that name does not exist</h3>}
@@ -44,11 +54,14 @@ function VideogameList({ videogamesList, loading, error, filteredVideogameList, 
     )
 }
 
-function mapStateToProps({ videogameReducer }) {
+function mapStateToProps({ videogameReducer, userReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
         filteredVideogameList: videogameReducer.filteredVideogameList,
         platformVideogames: videogameReducer.platformVideogames,
+        cardIds: videogameReducer.cardIds,
+        user: userReducer.user,
+        favoritesGamesID: userReducer.favoritesGamesID,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
     }
