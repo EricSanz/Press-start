@@ -201,14 +201,14 @@ img {
             margin-left: .7em;
         }
         .red {
-            color: red;
+            color: $redcolor;
         }
         .white {
-            color: white;
+            color: $whitecolor;
         }
         .add-favorite:hover {
             transition: 500ms;
-            color: red;
+            color: $redcolor;
             cursor: pointer;
         }
     }
@@ -223,14 +223,14 @@ img {
             margin-left: .7em;
         }
         .red {
-            color: red;
+            color: $redcolor;
         }
         .white {
-            color: white;
+            color: $whitecolor;
         }
         .add-favorite:hover {
                 transition: 500ms;
-                color: red;
+                color: $redcolor;
                 cursor: pointer;
             }
         }
@@ -249,6 +249,11 @@ img {
                 padding: .3em;
                 font-size: 12px;
                 font-weight: 600;
+            }
+        }
+        .notlogged-sale {
+            p {
+                text-align: center;
             }
         }
     .price {

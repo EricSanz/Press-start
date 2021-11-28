@@ -45,39 +45,6 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
             dispatch(addFavorite(userId, videogameId));
             dispatch(getUser(localStorageUser.uid));
             const fav = document.getElementById(newCardIndex);
-            const cardFound = cardids.find(id => id === cards.id);
-            // console.log(cardFound);
-            const cardFoundIndex = (element) => element === cardFound;
-            const index = (cardids.findIndex(cardFoundIndex))
-            // console.log(index);
-            if (index === cardIndex) {
-                if (fav.style.color === 'red') {
-                    fav.style.color = 'white';
-                } else if (fav.style.color === 'white') {
-                    fav.style.color = 'red';
-                }
-            }
-            dispatch(getUser(localStorageUser.uid));
-        }
-    }
-
-    function favoriteGameSale() {
-        const notloggedId = document.getElementById(cardIndex);
-        if (!loggedUser) {
-            const cardFound = cardids.find(id => id === cards.id);
-            // console.log(cardFound);
-            const cardFoundIndex = (element) => element === cardFound;
-            const index = (cardids.findIndex(cardFoundIndex))
-            // console.log(index);
-
-            if (index === cardIndex) {
-                notloggedId.style.display = "block";
-                setTimeout(() => (displayErrorNone()), 1250 );
-            }
-
-        } else {
-            dispatch(addFavorite(userId, videogameId));
-            dispatch(getUser(localStorageUser.uid));
             const favTwo = document.getElementById(newNewCardIndex);
             const cardFound = cardids.find(id => id === cards.id);
             // console.log(cardFound);
@@ -85,10 +52,19 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
             const index = (cardids.findIndex(cardFoundIndex))
             // console.log(index);
             if (index === cardIndex) {
-                if (favTwo.style.color === 'red') {
-                    favTwo.style.color = 'white';
-                } else if (favTwo.style.color === 'white') {
-                    favTwo.style.color = 'red';
+                if (fav) {
+                    if (fav.style.color === '#e02d39') {
+                        fav.style.color = '#fff';
+                    } else if (fav.style.color === '#fff') {
+                        fav.style.color = '#e02d39';
+                    }
+                }
+                if (favTwo) {
+                    if (favTwo.style.color === '#e02d39') {
+                        favTwo.style.color = '#fff';
+                    } else if (favTwo.style.color === '#fff') {
+                        favTwo.style.color = '#e02d39';
+                    }
                 }
             }
             dispatch(getUser(localStorageUser.uid));
@@ -225,11 +201,14 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                             <p className="sale__price__normal">{cards.edition.price}€</p>
                         </div>
                         {!loggedUser && (
-                            <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => favoriteGameSale())}/>
+                            <FontAwesomeIcon className="add-favorite" icon="heart" onClick={(() => favoriteGame())}/>
                         )}
                         {loggedUser && (
-                            <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newNewCardIndex} icon="heart" onClick={(() => favoriteGameSale())}/>
+                            <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newNewCardIndex} icon="heart" onClick={(() => favoriteGame())}/>
                         )}
+                        <div id={cardIndex} className="notlogged notlogged-sale">
+                            <p>You are not logged in</p>
+                        </div>
                     </div>
                 ) : (
                     <div className="prices__info">
