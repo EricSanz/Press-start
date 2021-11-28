@@ -10,6 +10,23 @@
         overflow: hidden;
         position: relative;
         transition: 0.3s;
+        .notlogged {
+            display: none;
+            position: absolute;
+            width: 10em;
+            border-radius: .7em;
+            top: 50%;
+            right: 15%;
+            z-index: 200;
+            background-color: rgba($redcolor, .8);
+            transition: 1250ms;
+            p {
+                text-align: center;
+                color: $whitecolor;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
         .title__container {
             height: 55px;
             background: $goldencolor;
@@ -26,19 +43,32 @@
             font-weight: bold;
             font-size: 14px;
         }
-        .videogame__favorite--container {
+        .heart {
             position: absolute;
-            top: 62px;
-            right: 50px;
-            background: $goldencolor;
-            height: 35px;
-            width: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            font-size: 14px;
+            top: 4.1em;
+            right: 3.2em;
+            height: 1.7em;
+            width: 1.7em;
         }
+        .heart-black {
+            color: $blackbackground;
+        }
+        .heart-red {
+            color: $redcolor;
+        }
+        // .videogame__favorite--container {
+        //     position: absolute;
+        //     top: 62px;
+        //     right: 50px;
+        //     background: $goldencolor;
+        //     height: 35px;
+        //     width: 35px;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     border-radius: 50%;
+        //     font-size: 14px;
+        // }
         .videogame__card-image{
             padding-top: 40px;
             padding-bottom: 10px;
@@ -153,12 +183,14 @@
             background: $blackbackground;
             color: $whitecolor;
         }
-        .videogame__favorite--container:hover {
-            .heart-icon {
-                animation: pulse 1250ms infinite;
-            }
-            color: $redlightcolor;
+
+        .pulse {
+            animation: pulse 1250ms infinite;
+            color: $redcolor;
         }
+
+        // .videogame__favorite--container:hover {
+        // }
         .videogame__buy--container {
             background: $blackbackground;
             color: $whitecolor;

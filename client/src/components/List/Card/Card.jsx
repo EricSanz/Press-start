@@ -1,11 +1,57 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fillFullVideogameList } from '../../../redux/actions/videogameActions';
+import { addFavorite, getUser } from '../../../redux/actions/userActions';
+import { useDispatch } from 'react-redux';
 import './Card.scss';
 
-function Card({Games, dispatch}) {
+function Card({Games, loggedUser, cardids, cardIndex, favGamesID}) {
+
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    const localStorageUser = userLocalStorage?.user?.data;
+
+    const userId = loggedUser?.uid;
+    const videogameId = Games?._id;
+    let cardListIndex = cardIndex + 200;
+    let gamesID = Games.id;
+    console.log(cardids);
+
+    const favCardFound = favGamesID?.find(id => id === Games.id);
+
+    const dispatch = useDispatch();
+
+    function displayErrorNoUser() {
+        const notloggedId = document.getElementById(gamesID);
+        notloggedId.style.display = "none";
+    }
+
+    function favoriteGameList() {
+        const notloggedId = document.getElementById(gamesID);
+        if (!loggedUser) {
+            notloggedId.style.display = "block";
+            setTimeout(() => (displayErrorNoUser()), 1250 );
+        } else {
+            dispatch(addFavorite(userId, videogameId));
+            dispatch(getUser(localStorageUser.uid));
+            const favList = document.getElementById(cardListIndex);
+            const cardFound = cardids.find(id => id === Games.id);
+            console.log(cardFound);
+            const cardFoundIndex = (element) => element === cardFound;
+            const index = (cardids.findIndex(cardFoundIndex))
+            console.log(index);
+            if (index === cardIndex) {
+                if (favList) {
+                    if (favList.style.color === '#e02d39') {
+                        favList.style.color = '#161616';
+                    } else if (favList.style.color === '#161616') {
+                        favList.style.color = '#e02d39';
+                    }
+                }
+            }
+            dispatch(getUser(localStorageUser.uid));
+        }
+    }
 
     function cardColor() {
         switch (Games.edition.version) {
@@ -35,7 +81,7 @@ function Card({Games, dispatch}) {
             <div className="videogame__card">
                 {Games.game.dual_title ? (
                     <div className="title__container">
-                    <p className="videogame__card-title">{Games.game.first_title}</p>
+                        <p className="videogame__card-title">{Games.game.first_title}</p>
                         <p className="videogame__card-title">{Games.game.second_title}</p>
                     </div>
                 ) : (
@@ -46,8 +92,17 @@ function Card({Games, dispatch}) {
                 <div className={cardColor()}>
                     <p>{Games.edition.version}</p>
                 </div>
-                <div className="videogame__favorite--container">
+                {/* <div className="videogame__favorite--container">
                     <FontAwesomeIcon className="heart-icon" icon="heart"/>
+                </div> */}
+                {!loggedUser && (
+                    <FontAwesomeIcon className="heart heart-black" icon="heart" onClick={(() => favoriteGameList())}/>
+                )}
+                {loggedUser && (
+                    <FontAwesomeIcon className={favCardFound ? 'heart heart-red' : 'heart heart-black pulse'} id={cardListIndex} icon="heart" onClick={(() => favoriteGameList())}/>
+                )}
+                <div id={gamesID} className="notlogged">
+                    <p>You are not logged in</p>
                 </div>
                 <div className="videogame__buy--container">
                     <FontAwesomeIcon icon="shopping-cart" className={Games.edition.stock ? "shopping-cart__green" : "shopping-cart__red"} />
@@ -77,14 +132,15 @@ function Card({Games, dispatch}) {
     )
 }
 
-function mapStateToProps({ videogameReducer }) {
-    return {
-        videogamesList: videogameReducer.videogamesList,
-        filteredVideogameList: videogameReducer.filteredVideogameList,
-        platformVideogames: videogameReducer.platformVideogames,
-        loading: videogameReducer.loading,
-        error: videogameReducer.error,
-    }
-}
+// function mapStateToProps({ videogameReducer }) {
+//     return {
+//         videogamesList: videogameReducer.videogamesList,
+//         filteredVideogameList: videogameReducer.filteredVideogameList,
+//         platformVideogames: videogameReducer.platformVideogames,
+//         loading: videogameReducer.loading,
+//         error: videogameReducer.error,
+//     }
+// }
 
-export default connect(mapStateToProps)(Card);
+// export default connect(mapStateToProps)(Card);
+export default Card;
