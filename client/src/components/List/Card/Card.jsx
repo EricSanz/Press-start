@@ -15,7 +15,6 @@ function Card({Games, loggedUser, cardids, cardIndex, favGamesID}) {
     const videogameId = Games?._id;
     let cardListIndex = cardIndex + 200;
     let gamesID = Games.id;
-    console.log(cardids);
 
     const favCardFound = favGamesID?.find(id => id === Games.id);
 
@@ -92,9 +91,6 @@ function Card({Games, loggedUser, cardids, cardIndex, favGamesID}) {
                 <div className={cardColor()}>
                     <p>{Games.edition.version}</p>
                 </div>
-                {/* <div className="videogame__favorite--container">
-                    <FontAwesomeIcon className="heart-icon" icon="heart"/>
-                </div> */}
                 {!loggedUser && (
                     <FontAwesomeIcon className="heart heart-black" icon="heart" onClick={(() => favoriteGameList())}/>
                 )}
@@ -132,15 +128,4 @@ function Card({Games, loggedUser, cardids, cardIndex, favGamesID}) {
     )
 }
 
-// function mapStateToProps({ videogameReducer }) {
-//     return {
-//         videogamesList: videogameReducer.videogamesList,
-//         filteredVideogameList: videogameReducer.filteredVideogameList,
-//         platformVideogames: videogameReducer.platformVideogames,
-//         loading: videogameReducer.loading,
-//         error: videogameReducer.error,
-//     }
-// }
-
-// export default connect(mapStateToProps)(Card);
 export default Card;

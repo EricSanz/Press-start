@@ -56,19 +56,6 @@
         .heart-red {
             color: $redcolor;
         }
-        // .videogame__favorite--container {
-        //     position: absolute;
-        //     top: 62px;
-        //     right: 50px;
-        //     background: $goldencolor;
-        //     height: 35px;
-        //     width: 35px;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     border-radius: 50%;
-        //     font-size: 14px;
-        // }
         .videogame__card-image{
             padding-top: 40px;
             padding-bottom: 10px;
@@ -188,9 +175,6 @@
             animation: pulse 1250ms infinite;
             color: $redcolor;
         }
-
-        // .videogame__favorite--container:hover {
-        // }
         .videogame__buy--container {
             background: $blackbackground;
             color: $whitecolor;
@@ -206,16 +190,3 @@
         }
     }
 }
-
-// @media (max-width: 768px ) {
-//     .videogame__list {
-//         .videogame__card {
-//             .title__container {
-//                 height: 40px;
-//             }
-//             .videogame__card-title {
-//                 font-size: 12px;
-//             }
-//         }
-//     }
-// }
