@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { loadOneVideogame } from '../../redux/actions/videogameActions';
+import { getUser } from '../../redux/actions/userActions';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Loading from '../Loading/Loading';
 import EditionButton from './Edition-Button/Edition-Button';
@@ -10,18 +12,28 @@ import Popup from 'reactjs-popup';
 import './Pop-Up/Popup.scss';
 import './Details.scss';
 
-function Details ({dispatch, videogame, match, loading}) {
+function Details ({videogame, match, loading, user}) {
 
     const [id] = useState(match.params.videogameId);
     const [expandShipping, setExpandShipping] = useState(true); 
     const [expandWarranty, setExpandWarranty] = useState(true);
     const [expandReturn, setExpandReturn] = useState(true);
 
+    const dispatch = useDispatch();
+
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    const localStorageUser = userLocalStorage?.user?.data;
+
     useEffect(() => {
         if (!videogame || videogame._id !== id) {
             dispatch(loadOneVideogame(id))
         }
-    }, [])
+
+        if (!user && localStorageUser) {
+            dispatch(getUser(localStorageUser.uid))
+        }
+
+    }, [dispatch, user, videogame, id, localStorageUser])
 
     function expandInfo({target}) {
 
@@ -413,11 +425,14 @@ function Details ({dispatch, videogame, match, loading}) {
     )
 };
 
-function mapStateToProps({videogameReducer}) {
+function mapStateToProps({videogameReducer, userReducer}) {
     return {
         videogame: videogameReducer.videogame,
         loading: videogameReducer.loading,
         error: videogameReducer.error,
+        cardIds: videogameReducer.cardIds,
+        user: userReducer.user,
+        favoritesGamesID: userReducer.favoritesGamesID,
     }
 }
 
