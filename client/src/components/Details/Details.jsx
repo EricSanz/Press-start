@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { loadOneVideogame } from '../../redux/actions/videogameActions';
-import { getUser } from '../../redux/actions/userActions';
+import { getUser, addFavorite } from '../../redux/actions/userActions';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +12,7 @@ import Popup from 'reactjs-popup';
 import './Pop-Up/Popup.scss';
 import './Details.scss';
 
-function Details ({videogame, match, loading, user}) {
+function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) {
 
     const [id] = useState(match.params.videogameId);
     const [expandShipping, setExpandShipping] = useState(true); 
@@ -24,7 +24,10 @@ function Details ({videogame, match, loading, user}) {
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
 
+    const favCardFound = favoritesGamesID?.find(id => id === videogame.id);
+
     useEffect(() => {
+
         if (!videogame || videogame._id !== id) {
             dispatch(loadOneVideogame(id))
         }
@@ -128,6 +131,37 @@ function Details ({videogame, match, loading, user}) {
         }
     }
 
+    function displayErrorNoLoggedUser() {
+        const notloggedMessageId = document.getElementById('not__logged-message-id');
+        notloggedMessageId.style.display = "none";
+    }
+
+    function favoriteGameDetail() {
+        const notloggedMessageId = document.getElementById('not__logged-message-id');
+        const userId = user?.uid;
+        const videogameId = videogame._id;
+        if (!user) {
+            notloggedMessageId.style.display = "block";
+            setTimeout(() => (displayErrorNoLoggedUser()), 1250 );
+        } else {
+            dispatch(addFavorite(userId, videogameId));
+            dispatch(getUser(localStorageUser.uid));
+            const favDetail = document.getElementById("fav__heart-id");
+            const cardFound = favoritesGamesID.find(id => id === videogame.id);
+
+            if (cardFound) {
+                if (favDetail) {
+                    if (favDetail.style.color === '#e02d39') {
+                        favDetail.style.color = '#161616';
+                    } else if (favDetail.style.color === '#161616') {
+                        favDetail.style.color = '#e02d39';
+                    }
+                }
+            }
+            dispatch(getUser(localStorageUser.uid));
+        }
+    }
+
     return (
         <main className="main">
             <div className="main__left">
@@ -141,8 +175,18 @@ function Details ({videogame, match, loading, user}) {
                             )}
                             <p className="title--addon">{videogame.edition.version} ({videogame.edition.name} Edition)</p>
                         </div>
-                        <div className="videogame__favorite">
-                            <FontAwesomeIcon className="heart-icon" icon="heart"/>
+                        {!user && (
+                            <div className="videogame__favorite">
+                                <FontAwesomeIcon className="heart heart-black" icon="heart" onClick={(() => favoriteGameDetail())}/>
+                            </div>
+                        )}
+                        {user && (
+                            <div className="videogame__favorite">
+                                <FontAwesomeIcon className={favCardFound ? 'heart heart-red' : 'heart heart-black'} id="fav__heart-id" icon="heart" onClick={(() => favoriteGameDetail())}/>
+                            </div>
+                        )}
+                        <div id="not__logged-message-id" className="notlogged">
+                            <p>You are not logged in</p>
                         </div>
                         {videogame.edition.sale ? (
                             <div className="onsale__tag">

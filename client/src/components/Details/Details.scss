@@ -1,5 +1,6 @@
 @import "../styles/colors";
 @import "../../fonts/fonts";
+@import "../styles/keyframes";
 
 .main {
     width: 100vw;
@@ -42,34 +43,56 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            right: 150px;
-            top: 167px;
+            left: 8em;
+            top: 14em;
             font-weight: 600;
-            border-radius: 10px;
-            height: 50px;
-            width: 100px;
+            border-radius: .6em;
+            height: 3.2em;
+            width: 6.4em;
             background-color: $redlightcolor;
             box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
         }
         .videogame__favorite {
             position: absolute;
-            top: 167px;
-            right: 80px;
-            width: 50px;
-            height: 50px;
+            top: 14em;
+            left: 4.5em;
+            width: 3.2em;
+            height: 3.2em;
             background-color: $whitecolor ;
-            border-radius: 10px;
+            border-radius: .6em;
             display: flex;
             justify-content: center;
             align-items: center;
             box-shadow: rgba(18, 18, 19, 0.25) 5px 10px 15px -5px, rgba(0, 0, 0, 0.3) 0px 0px 16px -5px;
-            .heart-icon {
-                font-size: 24px;
+            .heart {
+                font-size: 1.7rem;
+            }
+            .heart-black {
                 color: $blackbackground;
             }
-            .heart-icon:hover {
+            .heart-red {
+                color: $redcolor;
+            }
+            .heart:hover {
                 cursor: pointer;
-                color: $redlightcolor;
+                color: $redcolor;
+            }
+        }
+        .notlogged {
+            display: none;
+            position: absolute;
+            width: 10em;
+            border-radius: .7em;
+            top: 17.5em;
+            left: 4.5em;
+            z-index: 200;
+            background-color: rgba($redcolor, .8);
+            transition: 1250ms;
+            p {
+                text-align: center;
+                color: $whitecolor;
+                font-size: 12px;
+                font-weight: 600;
             }
         }
         .cover__container {
@@ -522,10 +545,8 @@
                 left: 42px;
                 width: 40px;
                 height: 40px;
-                .heart-icon {
+                .heart {
                     font-size: 22px;
-                }
-                .heart-icon:hover {
                 }
             }
             .cover__container {
@@ -548,10 +569,6 @@
                         padding: 2px;
                     }
                 }
-                .selected-edition__container {
-                }
-                .selected-platform__container {
-                }
             }
         }
         .main__right {
@@ -562,49 +579,19 @@
                 margin-bottom: 10em;
                 .info--wrapper {
                     margin-bottom: 0em;
-                    input[type='radio'] {
-                    }
-                    label {
-                    }
-                    label:hover {
-                    }
-                    .label--left {
-                    }
-                    input[type='radio']:checked + .label--content {
-                    }
-                    input[type='radio']:checked + .label--pictures {
-                    }
-                    input[type='radio']:checked + .label--description {
-                    }
-                    .left__button {
-                    }
                 }
                 .content__info, .pictures__info, .description__info {
                     height: auto;
-                }
-                .content__info--image {
-                    .content__image--container {
-                        .content__image {
-                        }
-                    }
                 }
                 .content__info {
                     padding-bottom: 5px;
                     .content__info__pack {
                         padding-bottom: 10px;
                         border-bottom: 1px solid $greyborder;
-                        .packInfo__title {
-                        }
-                        .packInfo__list {
-                        }
                     }
                 }
                 .pictures__info {
                     border-bottom: 1px solid $greyborder;
-                    .videogame__images {
-                    }
-                }
-                .pictures__active {
                 }
                 .description__info {
                     border-bottom: 1px solid $greyborder;
