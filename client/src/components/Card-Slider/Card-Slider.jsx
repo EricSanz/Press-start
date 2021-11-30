@@ -72,9 +72,9 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
     }
 
     return (
-        <div className="game">
+        <div className="cards">
             {cards.edition.sale ? (
-                <div className="rank">
+                <div className="sale">
                     Sale
                 </div>
             ) : null}
@@ -112,7 +112,6 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                                         <h3 className="name__second">{cards.game.second_title}</h3>
                                         <p className="edition__name__second">({cards.edition.name} Edition)</p>
                                     </>
-
                                 )}
                             </>
                         ) }
@@ -267,7 +266,6 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                 </Link>
             </div>
             <div className="background">
-
             </div>
         </div>
     )

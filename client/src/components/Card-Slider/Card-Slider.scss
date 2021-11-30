@@ -17,7 +17,23 @@ img {
     border: none;
 }
 
-.game {
+// .see__all-link {
+//     text-decoration: none;
+//     color: $blackbackground;
+//     position: absolute;
+//     top: 5em;
+//     right: 3em;
+//     z-index: 0;
+//     .link-all {
+//         font-weight: lighter;
+//         font-size: 1rem;
+//     }
+// }
+// .see__all-link:hover {
+//     text-decoration: underline;
+// }
+
+.cards {
     position: relative;
     min-width: 12.5em;
     margin-bottom: 8em;
@@ -38,7 +54,7 @@ img {
     }
 }
 
-.rank {
+.sale {
     position: absolute;
     top: .5em;
     left: -1.5em;
@@ -279,8 +295,8 @@ img {
     opacity: 0;
 }
 
-.game:hover {
-    .rank {
+.cards:hover {
+    .sale {
         transform: rotate(-45deg) translate(-2.5%, -142.5%);
         color: $blackbackground;
         font-weight: bold;
@@ -344,6 +360,8 @@ img {
         }
         .edition__name__second__sale {
             display: block;
+            width: 130%;
+            margin-left: -2.2em;
             position: relative;
             color: $whitecolor;
             text-align: center;
@@ -358,7 +376,7 @@ img {
             text-align: center;
             font-size: 14px;
             margin-top: -1.9em;
-            margin-bottom: 1.6em;
+            margin-bottom: 1.7em;
         }
         .name__first, .name__first__sale, .name__first__long, .name__first__long__sale, .name__second, .name__second__sale, .name__first__second, .name__first__second__sale, .name__first__second__long, .name__second__long, .name__first__second__long__sale, .name__second__long__sale {
             animation: nameGame 250ms forwards;
@@ -402,15 +420,15 @@ img {
             margin-left: -1.8em;
         }
         .name__first__second__long {
-            margin-left: -1.2em;
+            margin-left: -2.3em;
             margin-top: 1.2em;
             font-size: 18px;
-            width: 120%;
+            width: 140%;
         }
         .name__first__second__long__sale {
-            width: 120%;
+            width: 140%;
             font-size: 18px;
-            margin-left: -1.2em;
+            margin-left: -2.3em;
             margin-top: .9em;
         }
         .name__second__long {
