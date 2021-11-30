@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { loadVideogames, sortVideogamesByDate, sortCardVideogames } from '../../redux/actions/videogameActions';
 import { getUser } from '../../redux/actions/userActions';
@@ -39,10 +39,16 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
     }, [dispatch, videogamesList, sortedByDate, cardVideogames, user, localStorageUser]);
 
     function moveToLeft() {
-        let cardsContainerID = document.getElementById('videogame__cards-id');
+        const cardsContainerID = document.getElementById('videogame__cards-id');
+        const leftB = document.getElementById('go__left-id');
+        const rigthB = document.getElementById('go__right-id');
 
-        if (scrollTranslation > -0.01) {
-            scrollTranslation += 0;
+        rigthB.style.display = 'flex';
+
+        if (scrollTranslation > -15) {
+            scrollTranslation += 14.5;
+            cardsContainerID.style.transform = `translateX(${scrollTranslation}%)`;
+            leftB.style.display = 'none';
         } else {
             scrollTranslation += 14.5;
             cardsContainerID.style.transform = `translateX(${scrollTranslation}%)`;
@@ -50,12 +56,18 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
     }
     
     function moveToRight() {
-        let cardsContainerID = document.getElementById('videogame__cards-id');
+        const cardsContainerID = document.getElementById('videogame__cards-id');
+        const leftB = document.getElementById('go__left-id');
+        const rigthB = document.getElementById('go__right-id');
+
+        leftB.style.display = 'flex';
  
-        if (scrollTranslation < -114) {
-            scrollTranslation += 0;
+        if (scrollTranslation < -99) {
+            scrollTranslation -= 14.5;
+            rigthB.style.display = 'none';
+            cardsContainerID.style.transform = `translateX(${scrollTranslation}%)`;
         } else {
-            scrollTranslation -= 14.3;
+            scrollTranslation -= 14.5;
             cardsContainerID.style.transform = `translateX(${scrollTranslation}%)`;
         }
     }
@@ -74,13 +86,16 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
                     {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
                         <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
                     ))}
+                    <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
+                        <p>See all <span><FontAwesomeIcon icon="arrow-right" /></span></p>
+                    </Link>
                 </div>
                 <div className="go__right" id="go__right-id" onClick={() => moveToRight()}>
                     <FontAwesomeIcon className="icon__right" icon="angle-double-right"/>
                 </div>
-                <Link className="see__all-link" to={"/all-games"}>
+                {/* <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
                     <p>See all <span><FontAwesomeIcon icon="arrow-right" /></span></p>
-                </Link>
+                </Link> */}
             </div>
         </div>
     )
