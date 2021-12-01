@@ -8,6 +8,7 @@ export default function videogameReducer(state = {}, action) {
     let filteredVideogames;
     let platformFilterVideogames;
     let cardIds;
+    let mainSliderIds;
     const ps4Checked = document.getElementById('ps4');
     const ps5Checked = document.getElementById('ps5');
     const xboxOneChecked = document.getElementById('xboxOne');
@@ -2183,14 +2184,19 @@ export default function videogameReducer(state = {}, action) {
                 videogame.release.date !== '' && new Date(videogame.release.date) < Date.now()
             )).sort((a,b) => (
                 new Date(b.release.date) - new Date(a.release.date)
-            )).slice(0,5);
+            )).slice(0,6);
 
-            console.log(sortedByDate)
+            mainSliderIds  = sortedByDate.slice();
+
+            mainSliderIds = mainSliderIds.map((sliderIds) => (
+                sliderIds.id
+            ));
 
             newState = {
                 ...state,
                 videogamesList: state.videogamesList,
                 sortedByDate: sortedByDate,
+                mainSliderIds: mainSliderIds,
             }
             break;
         case actionTypes.SORT_CARD_VIDEOGAMES:
@@ -2205,7 +2211,7 @@ export default function videogameReducer(state = {}, action) {
 
             cardIds = cardVideogames.slice();
 
-            cardIds =  cardIds.map((cards) => (
+            cardIds = cardIds.map((cards) => (
                 cards.id
             ));
 
