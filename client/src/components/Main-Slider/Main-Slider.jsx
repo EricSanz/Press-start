@@ -1,14 +1,29 @@
+/* eslint-disable no-loop-func */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Main-Slider.scss';
 
-function MainSlider({ videogames }) {
+function MainSlider({ videogames, sliderIds }) {
 
     const gameImgs = document?.querySelectorAll('.main__slider--container img');
+    const gameNames = document?.querySelectorAll('.options');
     const leftArrow = document.querySelector('.arrow__left');
     const rightArrow = document.querySelector('.arrow__right');
+    let time = 8000;
     let currentIndex = 0;
-    let time = 10000;
+
+    const autoSlider = (startPos, index) => {
+        if (gameImgs.length) {
+            for (let i = startPos; i < gameImgs.length; i++) {
+                gameImgs[i].style.display = 'none';
+                gameNames[i].style.backgroundColor = '#fff';
+            }
+            gameImgs[index].style.display = 'block';
+            gameNames[index].style.backgroundColor = '#e8a92c';
+        }
+    };
+
+    autoSlider(1,0);
 
     leftArrow?.addEventListener('click', function () {
         currentIndex <= 0 ? currentIndex = gameImgs.length - 1 : currentIndex--;
@@ -18,25 +33,32 @@ function MainSlider({ videogames }) {
     rightArrow?.addEventListener('click', function(){
         currentIndex >= gameImgs.length - 1 ? currentIndex = 0 : currentIndex++;
         autoSlider(0, currentIndex);
-    })
+    });
 
-    const autoSlider = (startPos, index) => {
-        if (gameImgs.length) {
-            for (let i = startPos; i < gameImgs.length; i++) {
-                gameImgs[i].style.display = 'none';
+    for (let i = 0; i < gameNames.length; i++) {
+        gameNames[i].addEventListener('click', function({target}){
+            let index = 0;
+            let targetID = parseFloat(target.id)
+            const sliderFound = sliderIds.find(id => id === targetID);
+            const sliderFoundIndex = (element) => element === sliderFound;
+            index = (sliderIds.findIndex(sliderFoundIndex));
+            for (let j = 0; j < gameNames.length; j++) {
+                gameNames[j].style.backgroundColor = '#fff';
             }
-            gameImgs[index].style.display = 'block';
-        }
-    };
+            gameNames[index].style.backgroundColor = '#ecbc5a';
 
-    autoSlider(1,0);
-    const startAutoSlide = () => {
+            currentIndex = index;
 
-        setInterval(() => {
-            currentIndex >= gameImgs.length - 1 ? currentIndex = 0 : currentIndex++;
             autoSlider(0, currentIndex);
-        }, time);
-    };
+        })
+    }
+
+    function sliderIndexInterval() {
+        currentIndex >= gameImgs.length - 1 ? currentIndex = 0 : currentIndex++;
+        autoSlider(0, currentIndex);
+    }
+
+    const startAutoSlide = () => setInterval(sliderIndexInterval, time)
 
     startAutoSlide();
 
@@ -53,7 +75,7 @@ function MainSlider({ videogames }) {
             ))}
             <div className="slider__options">
                 {videogames.map((videogamesNames) => (
-                    <div className="options">
+                    <div className="options" id={videogamesNames.id}>
                         {videogamesNames.game.dual_title ? (
                             <p>{videogamesNames.game.first_title}&nbsp;<span>{videogamesNames.game.second_title}</span></p>
                         ) : (

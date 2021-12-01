@@ -1,5 +1,6 @@
 @import "../styles/mixins";
 @import "../styles/colors";
+@import "../styles/keyframes";
 
 .main__slider--container {
   width: 100%;
@@ -67,7 +68,7 @@
     justify-content: space-around;
     .options {
       width: 100%;
-      background-color: $whitecolor;
+      box-shadow: rgba(0, 0, 0, .45) 5px 7px 7px -5px, rgba(0, 0, 0, .6) 0px 0px 15px -20px;
       border-radius: 3em;
       margin-right: .5em;
       margin-left: .5em;
@@ -77,16 +78,13 @@
         background-color: $goldencolor;
         cursor: pointer;
       }
+      p {
+        pointer-events: none;
+        span {
+          pointer-events: none;
+        }
+      }
     }
     
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .1;
-  }
-  to {
-    opacity: 1;
   }
 }
