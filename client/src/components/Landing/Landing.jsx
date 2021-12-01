@@ -87,7 +87,10 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
                         <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
                     ))}
                     <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
-                        <p>See all <span><FontAwesomeIcon icon="arrow-right" /></span></p>
+                        <div className="link-container">
+                            <p>See all</p>
+                            <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/>
+                        </div>
                     </Link>
                 </div>
                 <div className="go__right" id="go__right-id" onClick={() => moveToRight()}>
