@@ -299,13 +299,13 @@ img {
         width: .5em;
     }
     .videogame__platform--playstation {
-        background: linear-gradient(45deg, $ps4color 50%, $ps5color 50%);
+        background: linear-gradient(45deg, $ps4color 50%, $greylightbackground 50%);
     }
     .videogame__platform--ps4 {
         background: $ps4color;
     }
     .videogame__platform--ps5 {
-        background: $ps5color;
+        background: $greylightbackground;
         color: $blackbackground;
     }
     .videogame__platform--xbox {
