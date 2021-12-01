@@ -71,6 +71,29 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
         }
     }
 
+    function versionColor() {
+        switch (cards.edition.version) {
+            case "PlayStation 4":
+                return "videogame__platform--ps4";
+            case "PlayStation 5":
+                return "videogame__platform--ps5";
+            case "PlayStation 4 & PlayStation 5":
+                return "videogame__platform--playstation";
+            case "Xbox One":
+                return "videogame__platform--xbox";
+            case "Xbox Series S/X":
+                return "videogame__platform--xbox";
+            case "Xbox One & Xbox Series S/X":
+                return "videogame__platform--xbox";
+            case "Nintendo Switch":
+                return "videogame__platform--nintendo";
+            case "PC":
+                return "videogame__platform--pc";
+            default:
+                return "title__container";
+        }
+    }
+
     return (
         <div className="cards">
             {cards.edition.sale ? (
@@ -266,6 +289,8 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                 </Link>
             </div>
             <div className="background">
+                <div className={versionColor()}>
+                </div>
             </div>
         </div>
     )
