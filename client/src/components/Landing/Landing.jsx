@@ -10,7 +10,7 @@ import MainSlider from '../Main-Slider/Main-Slider';
 import CardSlider from '../Card-Slider/Card-Slider';
 import './Landing.scss';
 
-function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged, cardIds, favoritesGamesID }) {
+function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged, cardIds, favoritesGamesID, mainSliderIds }) {
    
     const dispatch = useDispatch();
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
@@ -75,7 +75,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
     return (
         <div className="body">
             {sortedByDate?.length > 1 && (
-                <MainSlider videogames={sortedByDate}/>
+                <MainSlider videogames={sortedByDate} sliderIds={mainSliderIds}/>
             )}
             <div className="card__slider--container">
                 <p className="title__cards">All Videogames</p>
@@ -96,9 +96,6 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
                 <div className="go__right" id="go__right-id" onClick={() => moveToRight()}>
                     <FontAwesomeIcon className="icon__right" icon="angle-double-right"/>
                 </div>
-                {/* <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
-                    <p>See all <span><FontAwesomeIcon icon="arrow-right" /></span></p>
-                </Link> */}
             </div>
         </div>
     )
@@ -108,6 +105,7 @@ function mapStateToProps({ videogameReducer, userReducer }) {
     return {
         videogamesList: videogameReducer.videogamesList,
         sortedByDate: videogameReducer.sortedByDate,
+        mainSliderIds: videogameReducer.mainSliderIds,
         cardVideogames: videogameReducer.cardVideogames,
         cardIds: videogameReducer.cardIds,
         user: userReducer.user,
