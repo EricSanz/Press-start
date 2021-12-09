@@ -74,7 +74,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
 
     return (
         <div className="body">
-            {sortedByDate?.length > 1 && (
+            {sortedByDate?.length > 0 && (
                 <MainSlider videogames={sortedByDate} sliderIds={mainSliderIds}/>
             )}
             <div className="card__slider--container">
