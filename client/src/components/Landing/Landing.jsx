@@ -74,28 +74,34 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
 
     return (
         <div className="body">
-            {sortedByDate?.length > 0 && (
+            {sortedByDate?.length > 0 ? (
                 <MainSlider videogames={sortedByDate} sliderIds={mainSliderIds}/>
-            )}
+            ) : <Loading/>}
             <div className="card__slider--container">
                 <p className="title__cards">All Videogames</p>
-                <div className="go__left" id="go__left-id" onClick={() => moveToLeft()}>
-                    <FontAwesomeIcon className="icon__left" icon="angle-double-left"/>
-                </div>
-                <div className="videogame__card__slider" id="videogame__cards-id">
-                    {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
-                        <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
-                    ))}
-                    <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
-                        <div className="link-container">
-                            <p>See all</p>
-                            <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/>
+                {cardVideogames?.length > 0 ? (
+                    <>
+                        <div className="go__left" id="go__left-id" onClick={() => moveToLeft()}>
+                            <FontAwesomeIcon className="icon__left" icon="angle-double-left"/>
                         </div>
-                    </Link>
-                </div>
-                <div className="go__right" id="go__right-id" onClick={() => moveToRight()}>
-                    <FontAwesomeIcon className="icon__right" icon="angle-double-right"/>
-                </div>
+                        <div className="videogame__card__slider" id="videogame__cards-id">
+                            {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
+                                <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
+                            ))}
+                            <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
+                                <div className="link-container">
+                                    <p>See all</p>
+                                    <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="go__right" id="go__right-id" onClick={() => moveToRight()}>
+                            <FontAwesomeIcon className="icon__right" icon="angle-double-right"/>
+                        </div>
+                    </>
+                ):(
+                    <Loading/>
+                )}
             </div>
         </div>
     )
