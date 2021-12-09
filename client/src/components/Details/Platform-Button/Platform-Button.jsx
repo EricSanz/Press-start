@@ -8,7 +8,6 @@ import { useDispatch } from 'react-redux';
 function PlatformButton({ platforms }) {
 
     const dispatch = useDispatch();
-    console.log(platforms._id);
     
     return (
         <div className="platforms__buttons">
