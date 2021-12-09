@@ -83,6 +83,7 @@
                     text-align: center;
                     border-top-right-radius: 3em;
                     border-bottom-right-radius: 3em;
+                    transition: 500ms;
                     p {
                         display: flex;
                         flex-direction: row;
@@ -96,6 +97,9 @@
                     transition: 500ms;
                     color: $goldenstrongcolor;
                 }
+            }
+            .see__all-link:active {
+                color: $goldenstrongcolor;
             }
             .see__all-link:hover {
                 text-decoration: underline;
