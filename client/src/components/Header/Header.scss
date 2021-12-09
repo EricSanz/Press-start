@@ -11,7 +11,7 @@ header {
     box-shadow: 0px -15px 20px 15px rgb(0,0,0/80%);
     border-bottom: 1px solid $whitecolor;
     font-family: $Montserrat;
-    z-index: 2;
+    z-index: 1000;
     .navbar__options {
         position: absolute;
         display: flex;

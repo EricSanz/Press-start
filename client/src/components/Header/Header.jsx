@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LeftSidenav from '../Left-Sidenav/Left-Sidenav';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { signOut } from '../../redux/actions/userActions';
@@ -12,7 +12,13 @@ function Header({user, isLogged}) {
     const [leftSidenav, setLeftSidenav] = useState(false);
 
     const dispatch = useDispatch();
-
+    const history = useHistory();
+      
+    function reloadHome() {
+        const home = history.push('/')
+        history.go(home);
+    }
+      
     // const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     // const activeUser = userLocalStorage?.user;
     // console.log(activeUser);
@@ -54,9 +60,7 @@ function Header({user, isLogged}) {
                             <p>Calendar</p>
                         </div>
                     </div>
-                    <Link to={''} className="link" key={'Home'}>
-                        <img className="navbar__logo" src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
-                    </Link>
+                    <img className="navbar__logo" onClick={() => reloadHome()} src="https://i.ibb.co/DGPL6tk/press-start-logo-grey.png" alt="press-start-logo"></img>
                     <div className="navbar__options-right">
                         {isLogged ? (
                             <>
@@ -101,8 +105,8 @@ function Header({user, isLogged}) {
                     <FontAwesomeIcon className="icon" icon="shopping-cart" />
                 </div>
             </header>
-            <div className="leftSidenav__container" id="leftSidenav__id">
-                <LeftSidenav />
+            <div className="leftSidenav__container" id="leftSidenav__id" onClick={() => setLeftSidenav(!leftSidenav)}>
+                <LeftSidenav/>
             </div>
         </>
     )
