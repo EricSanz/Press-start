@@ -1,24 +1,29 @@
 /* eslint-disable no-loop-func */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import './Main-Slider.scss';
 
 function MainSlider({ videogames, sliderIds }) {
 
     const gameImgs = document?.querySelectorAll('.main__slider--container img');
     const gameNames = document?.querySelectorAll('.options');
+    const gameLinks = document?.querySelectorAll('.info__container');
     const leftArrow = document.querySelector('.arrow__left');
     const rightArrow = document.querySelector('.arrow__right');
-    let time = 8000;
+
+    let time = 10000;
     let currentIndex = 0;
 
     const autoSlider = (startPos, index) => {
         if (gameImgs.length) {
             for (let i = startPos; i < gameImgs.length; i++) {
                 gameImgs[i].style.display = 'none';
+                gameLinks[i].style.display = 'none';
                 gameNames[i].style.backgroundColor = '#fff';
             }
             gameImgs[index].style.display = 'block';
+            gameLinks[index].style.display = 'block';
             gameNames[index].style.backgroundColor = '#e8a92c';
         }
     };
@@ -48,7 +53,6 @@ function MainSlider({ videogames, sliderIds }) {
             gameNames[index].style.backgroundColor = '#ecbc5a';
 
             currentIndex = index;
-
             autoSlider(0, currentIndex);
         })
     }
@@ -58,7 +62,7 @@ function MainSlider({ videogames, sliderIds }) {
         autoSlider(0, currentIndex);
     }
 
-    const startAutoSlide = () => setInterval(sliderIndexInterval, time)
+    const startAutoSlide = () => setInterval(sliderIndexInterval, time);
 
     startAutoSlide();
 
@@ -71,7 +75,21 @@ function MainSlider({ videogames, sliderIds }) {
                 <FontAwesomeIcon className="arrow__right--icon" icon="angle-double-right"/>
             </div>
             {videogames.map((mainVideogamesSlider) => (
-                <img className="slider__img" src={mainVideogamesSlider.card} alt={mainVideogamesSlider.id} />
+                <>
+                    <img className="slider__img" src={mainVideogamesSlider.main_slider} alt={mainVideogamesSlider.id} />
+                    <div className="info__container">
+                        <div className="info__triangle"></div>
+                        {mainVideogamesSlider.game.dual_title ? (
+                                <p className='info__title--first__title'>{mainVideogamesSlider.game.first_title} <span>{mainVideogamesSlider.game.second_title}</span></p>
+                        ) : (
+                            <p className='info__title'>{mainVideogamesSlider.game.first_title}</p>
+                        )}
+                        <p className='info__price'>From: {mainVideogamesSlider.edition.price}€</p>
+                        <Link to={`product/${mainVideogamesSlider._id}`} className="link__details">
+                            <p className="more__details">More details</p>
+                        </Link>
+                    </div>
+                </>
             ))}
             <div className="slider__options">
                 {videogames.map((videogamesNames) => (
