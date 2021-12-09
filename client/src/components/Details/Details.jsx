@@ -24,11 +24,11 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
 
-    const favCardFound = favoritesGamesID?.find(id => id === videogame.id);
+    const favCardFound = favoritesGamesID?.find(id => id === videogame?.id);
 
     useEffect(() => {
 
-        if (!videogame || videogame._id !== id) {
+        if (!videogame) {
             dispatch(loadOneVideogame(id))
         }
 

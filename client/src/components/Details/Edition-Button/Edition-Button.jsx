@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loadOneVideogame } from '../../../redux/actions/videogameActions';
+import { useDispatch } from 'react-redux';
 import "./Edition-Button.scss";
 
-function EditionButton({dispatch, editions}) {
+function EditionButton({ editions }) {
+
+    const dispatch = useDispatch();
+
     return (
         <div className="editions__buttons">
             <Link className="editions__links" to={`${editions._id}`} onClick={() => dispatch(loadOneVideogame(editions._id))}>
