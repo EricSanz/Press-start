@@ -1,10 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import categories from '../../constants/categories';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Left-Sidenav.scss';
 
 function LeftSidenav() {
+
+    const history = useHistory();
+      
+    function reload(category) {
+        if (category.name === 'Home') {
+            const page = history.push(`${category.route}`);
+            closeleftSidenav()
+            history.go(page);
+        } else {
+            history.push(`${category.route}`);
+            closeleftSidenav()
+        }
+    }
 
     function closeleftSidenav() {
         const closeSidenav = document.getElementById('leftSidenav__id');
@@ -19,12 +32,10 @@ function LeftSidenav() {
         <section className="left__sidenav">
             <ul>
                 {categories.map((category) => (
-                    <Link to={category.route} className="link" key={category.name}>
-                        <li className="left__sidenav-list" onClick={() => closeleftSidenav()}>
-                            <p className="left__sidenav-option">{category.name}</p>
-                            <span className="left__sidenav-icon">{category.icon}</span>
-                        </li>
-                    </Link>
+                    <li className="left__sidenav-list" onClick={() => reload(category)}>
+                        <p className="left__sidenav-option">{category.name}</p>
+                        <span className="left__sidenav-icon">{category.icon}</span>
+                    </li>
                 ))}
                 <div className="left__sidenav-newsletter">
                     <div className="title-newsletter">
