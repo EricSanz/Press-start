@@ -2177,9 +2177,13 @@ export default function videogameReducer(state = {}, action) {
             break;
         case actionTypes.SORT_VIDEOGAMES_BY_DATE:
             sortedByDate = state.videogamesList.slice();
-            sortedByDate = sortedByDate.filter((videogame, index, self) => 
-            index === self.findIndex((duplicate) => (
-                duplicate.release.date === videogame.release.date
+            sortedByDate = sortedByDate.sort((a,b) => (
+                a = a.edition.sale ? a.edition.salePrice : a.edition.price,
+                b = b.edition.sale ? b.edition.salePrice : b.edition.price,
+                a - b
+            )).filter((videogame, index, self) => 
+                index === self.findIndex((duplicate) => (
+                    duplicate.game.first_title === videogame.game.first_title
             ))).filter((videogame) => (
                 videogame.release.date !== '' && new Date(videogame.release.date) < Date.now()
             )).sort((a,b) => (
