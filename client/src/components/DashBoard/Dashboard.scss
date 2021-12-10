@@ -12,10 +12,10 @@
         max-height: inherit;
         align-items: center;
         justify-content: center;
-        padding-top: 12em;
+        // margin-top: 12em;
         .profile__left__container {
             min-width: 22em;
-            height: 70vh;
+            height: 100vh;
             // background-color: $greyborder;
             background-color: $greylightbackground;
             display: flex;
@@ -40,7 +40,7 @@
                 display: flex;
                 flex-direction: column;
             }
-            .favorites__btn, .comments__btn, .personal__info__btn, .useful__info__btn {
+            .section__btn {
                 font-family: $Montserrat;
                 font-size: .8em;
                 margin-top: .5em;
@@ -48,14 +48,26 @@
                 border: none;
                 min-width: 22em;
                 width: 26.4em;
-                height: 3em;
+                height: 3.5em;
                 background-color: $whitecolor;
                 transition: 250ms;
             }
-            .favorites__btn:hover, .comments__btn:hover, .personal__info__btn:hover, .useful__info__btn:hover {
+            .section__btn:hover {
                 background-color: $goldencolor;
                 font-weight: 600;
                 transform: scale(1.05);
+            }
+            .btn--active {
+                font-family: $Montserrat;
+                font-size: .8em;
+                margin-top: .5em;
+                outline: none;
+                border: none;
+                min-width: 22em;
+                width: 26.4em;
+                height: 3.5em;
+                background-color: $goldencolor;
+                font-weight: 600;
             }
             .logout__btn {
                 font-family: $Montserrat;
@@ -75,12 +87,14 @@
             }
         }
         .profile__right__container {
-            height: 70vh;
+            margin-top: 5em;
+            height: 80vh;
             width: 65%;
             background-color: $whitecolor;
             margin-left: 2em;
-            p {
-                font-size: 20px;
+            overflow-y: auto;
+            .favorites__section {
+                padding: 0 1em;
             }
         }
 
