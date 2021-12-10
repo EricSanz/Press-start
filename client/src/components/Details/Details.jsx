@@ -58,7 +58,6 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                 expandWarranty ? warranty.style.display = 'flex' : warranty.style.display = 'none';
                 expandWarranty ? warranty_title.style.backgroundColor = '#f0f2f2' : warranty_title.style.backgroundColor = '#fff';
                 expandWarranty ? warranty_icon.style.transform = 'rotate(180deg)' : warranty_icon.style.transform = 'rotate(0deg)';
-                
                 break;
             case 'return':
                 const returnConditions = document.getElementById('return__conditions');
