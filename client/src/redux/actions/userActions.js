@@ -1,6 +1,6 @@
 import './Firebase/firebaseIndex';
 import axios from 'axios';
-import { GoogleAuthProvider, getAuth, signInWithPopup, createUserWithEmailAndPassword } from 'firebase/auth';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import actionTypes from './actionTypes';
 
 const userUrl = 'http://localhost:5000/user/';
@@ -29,14 +29,14 @@ export function signInWithGoogle() {
     return async (dispatch) => {
         try {
             const result = await signInWithPopup(auth, provider);
-            const { user } = result;
+            const {user} = result;
             localStorage.setItem('user', JSON.stringify({
                 uid: user.uid,
                 email: user.email,
                 displayName: user.displayName,
                 photoURL: user.photoURL,
             }));
-            dispatch(signInSuccess(user));
+            dispatch(signInSuccess(result));
             dispatch(addUser({
                 uid: user.uid,
                 email: user.email,
@@ -119,18 +119,13 @@ export function registerError(error) {
 export function registerUser(email, password, displayName) {
     return async (dispatch) => {
         const userData = { email, password, displayName };
-        console.log(userData);
         try {
             const response = await axios.post(userRegisterUrl, userData);
-            console.log(response);
             const user = response.data;
             if (user.registerError) {
-                console.log(user.registerError)
                 dispatch(registerError(user))
             } else {
-                console.log(response.statusText);
                 localStorage.user = JSON.stringify({ user: { ...response } });
-                console.log(user);
                 dispatch(registerSuccess(user));
             }
         } catch (error) {
@@ -142,17 +137,13 @@ export function registerUser(email, password, displayName) {
 export function loginUser(email, password) {
     return async (dispatch) => {
         const userData = {email, password};
-        console.log(userData);
         try {
             const response = await axios.post(userLoginUrl, userData);
-            console.log(response);
-            const user = response;
-            if (user.data.loginError) {
-                console.log(user.data.loginError);
+            const user = response.data;
+            if (user.loginError) {
                 dispatch(signInError(user));
             } else {
                 localStorage.user = JSON.stringify({ user: {...response } });
-                console.log(user);
                 dispatch(signInSuccess(user));
             }
         } catch (error) {
@@ -166,7 +157,6 @@ export function getUser(uid) {
         const backEndPoint = `${userUrl}${uid}`
         try {
             const user = await axios.get(backEndPoint);
-            console.log(user.data);
             dispatch(getUserSucces(user.data))
         } catch (error) {
             dispatch(getUserError(error))
@@ -193,7 +183,6 @@ export function addFavorite(userId, videogameId) {
     return async (dispatch) => {
         try {
             const response = await axios.post(userFavoritesUrl, neededData);
-            console.log(response);
             dispatch(addFavoriteSuccess(response)) 
         } catch (error) {
             dispatch(addFavoriteError(error))
