@@ -8,7 +8,7 @@ export default function userReducer(state = {}, action) {
         case actionTypes.AUTH_LOGIN:
             newState = {
                 ...state,
-                user: action.user.data,
+                user: action.user,
                 error: null,
                 isLogged: true
             };
@@ -37,7 +37,8 @@ export default function userReducer(state = {}, action) {
         case actionTypes.ADD_USER:
             newState = {
                 ...state,
-                user: action.newUser
+                user: action.newUser,
+                isLogged: true
             };
             break;
         case actionTypes.ADD_USER_ERROR:
