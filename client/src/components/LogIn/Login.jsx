@@ -84,7 +84,6 @@ function Login({user, error, isLogged}) {
             setCheckedPasswordState(true);
             console.log(target.value);
         } 
-        // target?.value.length >= 8 ? setLoginButton(true) : setLoginButton(false);
     }
 
     return (
