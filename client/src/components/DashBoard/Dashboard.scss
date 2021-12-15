@@ -16,26 +16,31 @@
         .profile__left__container {
             min-width: 22em;
             height: 100vh;
-            // background-color: $greyborder;
             background-color: $greylightbackground;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            .profile__image {
-                background-color: $blackbackground;
+            img {
+                box-shadow: rgba(18, 18, 19, 0.25) 0px 5px 25px 0px, rgba(0, 0, 0, 0.8) 0px 0px 16px -5px;
                 height: 10em;
                 width: 10em;
                 border-radius: 50%;
             }
             .full__name {
+                font-size: 1.5rem;
+                margin-top: 1em;
+                margin-bottom: 2em;
                 font-family: $Montserrat;
                 font-weight: 600;
+                span {
+                    font-weight: normal;
+                }
             }
-            .alias {
-                margin-top: -.8em;
-                margin-bottom: 3em;
-            }
+            // .alias {
+            //     margin-top: -.8em;
+            //     margin-bottom: 3em;
+            // }
             .btns {
                 display: flex;
                 flex-direction: column;
@@ -91,8 +96,72 @@
             height: 80vh;
             width: 65%;
             background-color: $whitecolor;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             margin-left: 2em;
             overflow-y: auto;
+            .section {
+                padding: 1em 2em;
+                .title {
+                    padding-top: .6em;
+                    padding-left: 1em;
+                    height: 1.6em;
+                    // font-size: 1.5rem;
+                    font-weight: 600;
+                    background-color: $greylightbackground;
+                    border-bottom: 3px solid $blackbackground;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+            }
+            .useful__information--container {
+                position: relative;
+                transition: 1500ms;
+                .payment__methods {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom: 1px solid $greyborder;
+                    position: relative;
+                    font-weight: 600;
+                    padding-left: 2em;
+                    padding-right: 2em;
+                    padding-top: .5em;
+                    .expand {
+                        transition: 1000ms;
+                        position: absolute;
+                        right: 2em;
+                    }
+                    .payment__methods--content {
+                        font-weight: normal;
+                        display: none;
+                        transition: 1250ms;
+                        flex-direction: column;
+                        .title__list {
+                            margin-top: .2em;
+                            margin-bottom: .3em;
+                            text-decoration: underline;
+                        }
+                        ul {
+                            .item__list {
+                                text-align: justify;
+                                padding-bottom: .5em;
+                            }
+                            ol {
+                                margin-bottom: -1em;
+                            }
+                        }
+                        .important {
+                            font-weight: 600;
+                            span {
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+                .payment__methods:hover {
+                    cursor: pointer;
+                }
+            }
             .favorites__section {
                 padding: 0 1em;
             }
@@ -103,6 +172,5 @@
                 display: block;
             }
         }
-
     }
 }
