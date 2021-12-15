@@ -4,21 +4,26 @@ import { loadVideogames, sortVideogamesByDate, sortCardVideogames } from '../../
 import { getUser } from '../../redux/actions/userActions';
 import Loading from '../Loading/Loading';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainSlider from '../Main-Slider/Main-Slider';
 import CardSlider from '../Card-Slider/Card-Slider';
 import './Landing.scss';
+import { useState } from 'react';
 
 function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged, cardIds, favoritesGamesID, mainSliderIds }) {
    
     const dispatch = useDispatch();
+    const history = useHistory();
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
+    const localStorageUserGoogle = userLocalStorage?.user;
+
+    const [mainSliderState, setMainSliderState] = useState(false);
 
     let scrollTranslation = 0;
     let i = -1;
-
+    
     useEffect(() => {
         if (!videogamesList?.length) {
             dispatch(loadVideogames());
@@ -33,10 +38,25 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
         }
 
         if (!user && localStorageUser) {
-            dispatch(getUser(localStorageUser.uid))
+            dispatch(getUser(localStorageUser.uid));
         }
 
-    }, [dispatch, videogamesList, sortedByDate, cardVideogames, user, localStorageUser]);
+        if (!user && !localStorageUser && !mainSliderState) {
+            history.push('/');
+            setMainSliderState(!mainSliderState);
+        }
+
+        if (user && localStorageUser && !mainSliderState) {
+            history.push('/');
+            setMainSliderState(!mainSliderState);
+        }
+
+        if (user && localStorageUserGoogle && !mainSliderState) {
+            history.push('/');
+            setMainSliderState(!mainSliderState);
+        }
+
+    }, [dispatch, videogamesList, sortedByDate, cardVideogames, user, localStorageUser, localStorageUserGoogle, history, mainSliderState]);
 
     function moveToLeft() {
         const cardsContainerID = document.getElementById('videogame__cards-id');
@@ -74,7 +94,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
 
     return (
         <div className="body">
-            {sortedByDate?.length > 0 ? (
+            {sortedByDate ? (
                 <MainSlider videogames={sortedByDate} sliderIds={mainSliderIds}/>
             ) : <Loading/>}
             <div className="card__slider--container">
@@ -86,7 +106,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
                         </div>
                         <div className="videogame__card__slider" id="videogame__cards-id">
                             {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
-                                <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
+                                <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID} key={videogameCards.id}/>
                             ))}
                             <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
                                 <div className="link-container">
