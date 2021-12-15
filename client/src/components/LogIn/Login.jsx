@@ -13,7 +13,6 @@ function Login({user, error, isLogged}) {
     const dispatch = useDispatch();
     let history = useHistory();
 
-    // console.log(user?.data);
     console.log(user);
     console.log(error);
     console.log(isLogged)
@@ -35,7 +34,7 @@ function Login({user, error, isLogged}) {
             history.replace(`/dashboard/${userId}`);
         }
 
-        if (error?.data) {
+        if (error?.data && !user) {
             loginError_ID.className = 'error';
             setTimeout(() => (displayLoginError()), 3500 );
         }
@@ -104,7 +103,7 @@ function Login({user, error, isLogged}) {
                     <input id="password__login" className="password__input" name="password" type="password" placeholder="Password" onChange={(event) => checkPassword(event)}/>
                     <FontAwesomeIcon id="see__login__password" className="password__icon not--slashed" icon="eye" onClick={() => seeHidePassword()}/>
                     <FontAwesomeIcon id="hide__login__password" className="password__icon slashed" icon="eye-slash" onClick={() => seeHidePassword()}/>
-                    <p id="loginError__ID" className="error__not__displayed">{error?.data.loginError.msg}</p>
+                    <p id="loginError__ID" className="error__not__displayed">{error?.data?.loginError.msg}</p>
                     {loginButtonActive ? (
                         <button className="signIn__button" onClick={() => setLogin(true)}>Sign In</button>
                     ) : (
