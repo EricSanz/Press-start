@@ -15,13 +15,19 @@ function Header({user, isLogged}) {
     const history = useHistory();
       
     function reloadHome() {
-        const home = history.push('/')
-        history.go(home);
+
+        if (user) {
+            history.push("/");
+        } else {
+            history.push("/");
+        }
     }
       
-    // const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    // const activeUser = userLocalStorage?.user;
-    // console.log(activeUser);
+    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+
+    const userLocalStorageGoogle = userLocalStorage?.user;
+
+    userLocalStorageGoogle ? (isLogged = true) : (isLogged = false);
     console.log(user);
     console.log(isLogged);
     const userId = user?.uid;
