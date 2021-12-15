@@ -9,14 +9,8 @@ function LeftSidenav() {
     const history = useHistory();
       
     function reload(category) {
-        if (category.name === 'Home') {
-            const page = history.push(`${category.route}`);
-            closeleftSidenav()
-            history.go(page);
-        } else {
-            history.push(`${category.route}`);
-            closeleftSidenav()
-        }
+        history.push(`${category.route}`);
+        closeleftSidenav()
     }
 
     function closeleftSidenav() {
