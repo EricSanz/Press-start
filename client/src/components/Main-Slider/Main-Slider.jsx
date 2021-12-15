@@ -1,7 +1,6 @@
 /* eslint-disable no-loop-func */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 import './Main-Slider.scss';
 
 function MainSlider({ videogames, sliderIds }) {
@@ -14,7 +13,7 @@ function MainSlider({ videogames, sliderIds }) {
 
     let time = 10000;
     let currentIndex = 0;
-
+    
     const autoSlider = (startPos, index) => {
         if (gameImgs.length) {
             for (let i = startPos; i < gameImgs.length; i++) {
@@ -43,7 +42,8 @@ function MainSlider({ videogames, sliderIds }) {
     for (let i = 0; i < gameNames.length; i++) {
         gameNames[i].addEventListener('click', function({target}){
             let index = 0;
-            let targetID = parseFloat(target.id)
+            let targetID = parseFloat(target.id);
+            console.log(targetID);
             const sliderFound = sliderIds.find(id => id === targetID);
             const sliderFoundIndex = (element) => element === sliderFound;
             index = (sliderIds.findIndex(sliderFoundIndex));
@@ -61,10 +61,12 @@ function MainSlider({ videogames, sliderIds }) {
         currentIndex >= gameImgs.length - 1 ? currentIndex = 0 : currentIndex++;
         autoSlider(0, currentIndex);
     }
-
+    
     const startAutoSlide = () => setInterval(sliderIndexInterval, time);
-
-    startAutoSlide();
+    
+    if (sliderIds.length > 0) {
+        startAutoSlide();
+    }
 
     return (
         <section className="main__slider--container">
@@ -85,9 +87,7 @@ function MainSlider({ videogames, sliderIds }) {
                             <p className='info__title'>{mainVideogamesSlider.game.first_title}</p>
                         )}
                         <p className='info__price'>From: {mainVideogamesSlider.edition.price}€</p>
-                        <Link to={`product/${mainVideogamesSlider._id}`} className="link__details">
-                            <p className="more__details">More details</p>
-                        </Link>
+                        <a className="more__details" id={mainVideogamesSlider._id} href={`product/${mainVideogamesSlider._id}`}>More details</a>
                     </div>
                 </>
             ))}
