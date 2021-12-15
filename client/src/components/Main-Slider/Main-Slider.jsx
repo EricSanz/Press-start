@@ -43,7 +43,6 @@ function MainSlider({ videogames, sliderIds }) {
         gameNames[i].addEventListener('click', function({target}){
             let index = 0;
             let targetID = parseFloat(target.id);
-            console.log(targetID);
             const sliderFound = sliderIds.find(id => id === targetID);
             const sliderFoundIndex = (element) => element === sliderFound;
             index = (sliderIds.findIndex(sliderFoundIndex));
