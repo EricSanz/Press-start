@@ -17,6 +17,8 @@ function UserProfile({user, match, isLogged}) {
 
     const userId = user?.uid;
 
+    const sectionButtons = document?.querySelectorAll('.section__btn');
+
     useEffect(() => {
 
         if((!user || uid !== localStorageUserData?.uid) && localStorageUserData !== undefined) {
@@ -38,60 +40,16 @@ function UserProfile({user, match, isLogged}) {
 
     }, [user, dispatch, userLocalStorage, uid, googleUserState, localStorageUser, localStorageUserData, history, userId, isLogged]);
 
-    function activeSection({target}) {
-        const favoritesButton = document.getElementById('favoritesID');
-        const favoritesSection = document.getElementById('favoritesSectionID');
-        const commentsButton = document.getElementById('commentsID');
-        const commentsSection = document.getElementById('commentsSectionID');
-        const personalInfoButton = document.getElementById('personalInfoID');
-        const personalInfoSection = document.getElementById('personalInfoSectionID');
-        const usefulInfoButton = document.getElementById('usefulInfoID');
-        const usefulInfoSectionID = document.getElementById('usefulInfoSectionID');
-
-        switch (target.id) {
-            case "favoritesID":
-                favoritesButton.className = "btn--active";
-                favoritesSection.style.display = 'block';
-                commentsButton.className = 'section__btn';
-                commentsSection.style.display = 'none';
-                personalInfoButton.className = 'section__btn';
-                personalInfoSection.style.display = 'none';
-                usefulInfoButton.className = 'section__btn';
-                usefulInfoSectionID.style.display = 'none';
-                break;
-            case "commentsID":
-                favoritesButton.className = "section__btn";
-                favoritesSection.style.display = 'none';
-                commentsButton.className = 'btn--active';
-                commentsSection.style.display = 'block';
-                personalInfoButton.className = 'section__btn';
-                personalInfoSection.style.display = 'none';
-                usefulInfoButton.className = 'section__btn';
-                usefulInfoSectionID.style.display = 'none';
-                break;
-            case "personalInfoID":
-                favoritesButton.className = "section__btn";
-                favoritesSection.style.display = 'none';
-                commentsButton.className = 'section__btn';
-                commentsSection.style.display = 'none';
-                personalInfoButton.className = 'btn--active';
-                personalInfoSection.style.display = 'block';
-                usefulInfoButton.className = 'section__btn';
-                usefulInfoSectionID.style.display = 'none';
-                break;
-            case "usefulInfoID":
-                favoritesButton.className = "section__btn";
-                favoritesSection.style.display = 'none';
-                commentsButton.className = 'section__btn';
-                commentsSection.style.display = 'none';
-                personalInfoButton.className = 'section__btn';
-                personalInfoSection.style.display = 'none';
-                usefulInfoButton.className = 'btn--active';
-                usefulInfoSectionID.style.display = 'block';
-                break;
-            default:
-                break;
-        }
+    for (let i = 0; i < sectionButtons.length; i++) {
+        const sections = document.querySelectorAll('.section');
+        sectionButtons[i].addEventListener('click', function(){
+            for (let j = 0; j < sectionButtons.length; j++) {
+                sectionButtons[j].className = 'section__btn';
+                sections[j].className = 'section--not--active';
+            }
+            sectionButtons[i].className = 'btn--active';
+            sections[i].className = 'section--active';
+        })
     }
 
     return (
@@ -103,26 +61,27 @@ function UserProfile({user, match, isLogged}) {
                     </div>
                     <p className="full__name">Full Name</p>
                     <p className="alias">({user?.displayName})</p>
-                    <button className="section__btn" id="favoritesID" onClick={(id) => activeSection(id)}>Favorites</button>
-                    <button className="section__btn" id="commentsID" onClick={(id) => activeSection(id)}>Comments</button>
-                    <button className="section__btn" id="personalInfoID" onClick={(id) => activeSection(id)}>Personal Information</button>
-                    <button className="section__btn" id="usefulInfoID" onClick={(id) => activeSection(id)}>Useful Information</button>
+                    
+                    <button className="section__btn btn--active" id="personalInfoID" >Personal Information</button>
+                    <button className="section__btn" id="favoritesID">Favorites</button>
+                    <button className="section__btn" id="commentsID">Comments</button>
+                    <button className="section__btn" id="usefulInfoID">Useful Information</button>
                     <button className="logout__btn">Log out</button>
                 </div>
                 <div className="profile__right__container">
-                    <div className='favorites__section' id="favoritesSectionID">
+                    <div className='section section--active' id="personalInfoSectionID">
+                        <p>Personal Info Section</p>
+                    </div>
+                    <div className='section section--not--active' id="favoritesSectionID">
                         {user?.favorites?.length > 0 && user?.favorites.map((videogame) => (
-                            <p>{videogame?.game?.first_title}</p>
+                            <p key={videogame.id}>{videogame?.game?.first_title}</p>
                         ))}
                     </div>
-                    <div className='comments__section' id="commentsSectionID">
-                            <p>Comments Section</p>
+                    <div className='section section--not--active' id="commentsSectionID">
+                        <p>Comments Section</p>
                     </div>
-                    <div className='personal__info__section' id="personalInfoSectionID">
-                            <p>Personal Info Section</p>
-                    </div>
-                    <div className='useful__info__section' id="usefulInfoSectionID">
-                            <p>Useful Info Section</p>
+                    <div className='section section--not--active' id="usefulInfoSectionID">
+                        <p>Useful Info Section</p>
                     </div>
                 </div>
             </div>

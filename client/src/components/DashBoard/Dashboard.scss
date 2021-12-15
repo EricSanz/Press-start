@@ -96,6 +96,12 @@
             .favorites__section {
                 padding: 0 1em;
             }
+            .section--not--active {
+                display: none;
+            }
+            .section--active {
+                display: block;
+            }
         }
 
     }
