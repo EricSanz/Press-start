@@ -23,6 +23,17 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
+    const localStorageUserGoogle = userLocalStorage?.user;
+    let googleUser = false;
+    let emailUser = false;
+
+    if (localStorageUserGoogle !== undefined) {
+        googleUser = true;
+    }
+
+    if (localStorageUser !== undefined) {
+        emailUser = true;
+    }
 
     const favCardFound = favoritesGamesID?.find(id => id === videogame?.id);
 
@@ -36,7 +47,11 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
             dispatch(getUser(localStorageUser.uid))
         }
 
-    }, [dispatch, user, videogame, id, localStorageUser])
+        if (!user && localStorageUserGoogle) {
+            dispatch(getUser(localStorageUserGoogle.uid))
+        }
+
+    }, [dispatch, user, videogame, id, localStorageUser, localStorageUserGoogle])
 
     function expandInfo({target}) {
 
@@ -144,7 +159,12 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
             setTimeout(() => (displayErrorNoLoggedUser()), 1250 );
         } else {
             dispatch(addFavorite(userId, videogameId));
-            dispatch(getUser(localStorageUser.uid));
+            if (googleUser) {
+                dispatch(getUser(localStorageUserGoogle.uid));
+            }
+            if (emailUser) {
+                dispatch(getUser(localStorageUser.uid));
+            }
             const favDetail = document.getElementById("fav__heart-id");
             const cardFound = favoritesGamesID.find(id => id === videogame.id);
 
@@ -157,7 +177,12 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                     }
                 }
             }
-            dispatch(getUser(localStorageUser.uid));
+            if (googleUser) {
+                dispatch(getUser(localStorageUserGoogle.uid));
+            }
+            if (emailUser) {
+                dispatch(getUser(localStorageUser.uid));
+            }
         }
     }
 
@@ -167,12 +192,12 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                 {loading ? <Loading/> : videogame && (
                     <>
                         <div className="title__container">
-                            {videogame.game.dual_title ? (
-                                <p className="title__videogame">{videogame.game.first_title} <span className="second__title__videogame">{videogame.game.second_title}</span></p>
+                            {videogame?.game?.dual_title ? (
+                                <p className="title__videogame">{videogame?.game?.first_title} <span className="second__title__videogame">{videogame.game.second_title}</span></p>
                             ) : (
-                                <p className="title__videogame">{videogame.game.first_title}</p>
+                                <p className="title__videogame">{videogame?.game?.first_title}</p>
                             )}
-                            <p className="title--addon">{videogame.edition.version} ({videogame.edition.name} Edition)</p>
+                            <p className="title--addon">{videogame?.edition?.version} ({videogame?.edition?.name} Edition)</p>
                         </div>
                         {!user && (
                             <div className="videogame__favorite">
@@ -187,39 +212,39 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                         <div id="not__logged-message-id" className="notlogged">
                             <p>You are not logged in</p>
                         </div>
-                        {videogame.edition.sale ? (
+                        {videogame?.edition?.sale ? (
                             <div className="onsale__tag">
                                 <p>On Sale</p>
                             </div>
                         ) : null}
                         <div className="cover__container">
-                            <img className="cover--img" src={videogame.edition.cover} alt={videogame.id} />
+                            <img className="cover--img" src={videogame?.edition?.cover} alt={videogame?.id} />
                         </div>
-                        {videogame.other_platforms.length > 0 ? (
+                        {videogame?.other_platforms?.length > 0 ? (
                             <div className="platforms__container">
                                 <p className="platforms__title">Platforms:</p>
                                 <div className="selected-platform__container">
-                                    <p className="selected-platform">{videogame.edition.version}</p>
+                                    <p className="selected-platform">{videogame?.edition?.version}</p>
                                 </div>
-                                {videogame.other_platforms.length > 0 && videogame.other_platforms.map((platforms) => (
-                                    <PlatformButton platforms={platforms}/>
+                                {videogame?.other_platforms?.length > 0 && videogame?.other_platforms?.map((platforms) => (
+                                    <PlatformButton platforms={platforms} match={match}/>
                                     ))}
                             </div>
                         ) : (
                             <div className="platforms__container">
                             <p className="platforms__title">Platforms:</p>
                             <div className="selected-platform__container">
-                                <p className="selected-platform">{videogame.edition.version}</p>
+                                <p className="selected-platform">{videogame?.edition?.version}</p>
                             </div>
                         </div>
                         )}
-                        {videogame.other_editions.length > 0 ? (
+                        {videogame?.other_editions?.length > 0 ? (
                             <div className="editions__container">
                                 <p className="editions__title">Editions:</p>
                                 <div className="selected-edition__container">
-                                    <p className="selected-edition">{videogame.edition.name}</p>
+                                    <p className="selected-edition">{videogame?.edition?.name}</p>
                                 </div>
-                                {videogame.other_editions.length > 0 && videogame.other_editions.map((editions) => (
+                                {videogame?.other_editions?.length > 0 && videogame?.other_editions?.map((editions) => (
                                     <EditionButton editions={editions}/>
                                     ))}
                             </div>
@@ -227,7 +252,7 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                             <div className="editions__container">
                                 <p className="editions__title">Editions:</p>
                                 <div className="selected-edition__container">
-                                    <p className="selected-edition">{videogame.edition.name}</p>
+                                    <p className="selected-edition">{videogame?.edition?.name}</p>
                                 </div>
                             </div>
                         )}
@@ -238,20 +263,20 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                 {loading ? <Loading /> : videogame && (
                     <>
                     <div className="info__container">
-                            <div className={videogame.edition.stock ? "price__cart--option in__stock" : "price__cart--option"}>
-                                {videogame.edition.sale ? (
+                            <div className={videogame?.edition?.stock ? "price__cart--option in__stock" : "price__cart--option"}>
+                                {videogame?.edition?.sale ? (
                                     <div className="onsale__price--container">
-                                        <p className="normal__price__onsale">{videogame.edition.price}€</p>
-                                        <p className="onsale__price">{videogame.edition.salePrice}€</p>
+                                        <p className="normal__price__onsale">{videogame?.edition?.price}€</p>
+                                        <p className="onsale__price">{videogame?.edition?.salePrice}€</p>
                                     </div>
                                 ) : (
                                     <div className="normal__price--container">
-                                        <p className="normal__price">{videogame.edition.price}€</p>
+                                        <p className="normal__price">{videogame?.edition?.price}€</p>
                                     </div>
                                 )}
-                                {videogame.edition.stock ? (
+                                {videogame?.edition?.stock ? (
                                     <>
-                                        {videogame.release.released ? (
+                                        {videogame?.release?.released ? (
                                             <>
                                                 <button className="add__cart__container">
                                                     <p>ADD TO CART</p>
@@ -286,9 +311,9 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                     <div className="developer__genres__container">
                                         <div className="genres__container">
                                             <p className="genres__title">Genres:</p>
-                                            {videogame.genres.map((genre) => (
+                                            {videogame?.genres?.map((genre) => (
                                                 <>
-                                                    {videogame.genres.indexOf(genre) < 1 ? (
+                                                    {videogame?.genres?.indexOf(genre) < 1 ? (
                                                         <p className="genres">{genre}</p>
                                                     ) : (
                                                         <p className="genres"><span>&nbsp;/	&nbsp;&nbsp;</span>{genre}</p>
@@ -298,12 +323,12 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                         </div>
                                         <div className="developer__container">
                                                 <p className="developer__title">Developer:</p>
-                                                <p>{videogame.developer}</p>
+                                                <p>{videogame?.developer}</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="pegi__container">
-                                    <img className="pegi" src={videogame.pegi} alt="pegi" />
+                                    <img className="pegi" src={videogame?.pegi} alt="pegi" />
                                 </div>
                             </div>
                         </div>
@@ -329,7 +354,7 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                         </div>
                         <div className="videogame__info--wrapper">
                             <div className="info--wrapper">
-                                {videogame.edition.is_content ? (
+                                {videogame?.edition?.is_content ? (
                                     <>
                                         <div>
                                             <input type="radio" id="content" value="content" name="options" onChange={(value) => selectedTabOption(value)}/>
@@ -357,20 +382,20 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                     </>
                                 )}
                             </div>
-                            {videogame.edition.is_content ? (
+                            {videogame?.edition?.is_content ? (
                                 <>
                                     <div className="content__info content__info--image" id="content__info">
-                                        {videogame.edition.content_image[0] === '' ? null : (
+                                        {videogame?.edition?.content_image[0] === '' ? null : (
                                             <div className="content__image--container">
-                                                {videogame.edition.content_image.map((contentImage) => (
-                                                    <Popup trigger={<img className="content__image" src={contentImage} alt={videogame.game.first_title} />} modal nested>
+                                                {videogame?.edition?.content_image.map((contentImage) => (
+                                                    <Popup trigger={<img className="content__image" src={contentImage} alt={videogame?.game?.first_title} />} modal nested>
                                                         {close => (
                                                             <div className="modal">
                                                                 <div className="modal__content">
                                                                     <button className="close__modal" onClick={close} >
                                                                         <FontAwesomeIcon className="times-icon" icon="times"/>
                                                                     </button>
-                                                                    <img className="modal__image" src={contentImage} alt={videogame.game.first_title} />
+                                                                    <img className="modal__image" src={contentImage} alt={videogame?.game?.first_title} />
                                                                 </div>
                                                             </div>
                                                         )}
@@ -379,10 +404,10 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                             </div>
                                         )}
                                         <div className="content__info__pack">
-                                            {videogame.edition.content.map((info) => (
+                                            {videogame?.edition?.content.map((info) => (
                                                 <>
-                                                    <p className="packInfo__title">{info.title}</p>
-                                                    {info.pack.map((packInfo) => (
+                                                    <p className="packInfo__title">{info?.title}</p>
+                                                    {info?.pack?.map((packInfo) => (
                                                         <p className="packInfo__list">{packInfo}</p>
                                                     ))}
                                                 </>
@@ -390,7 +415,7 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                         </div>
                                     </div>
                                     <div className="pictures__info" id="pictures__info">
-                                        {videogame.images.map((image) => (
+                                        {videogame?.images?.map((image) => (
                                             <Popup trigger={<img className="videogame__images" src={image} alt="images" />} modal nested>
                                                 {close => (
                                                     <div className="modal">
@@ -406,15 +431,15 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                         ))}
                                     </div>
                                     <div className="description__info" id="description__info">
-                                        {videogame.description.map((global_title) => (
-                                            <p className="description__global__title">{global_title.global}</p>
+                                        {videogame?.description?.map((global_title) => (
+                                            <p className="description__global__title">{global_title?.global}</p>
                                         ))}
-                                        {videogame.description.map((videogame) => (
+                                        {videogame?.description?.map((videogame) => (
                                             <>
-                                                {videogame.features.map((featuresTitle) => (
+                                                {videogame?.features?.map((featuresTitle) => (
                                                     <>
-                                                        <p className="features__title">{featuresTitle.title}</p>
-                                                        {featuresTitle.text.map((featuresInfo) => (
+                                                        <p className="features__title">{featuresTitle?.title}</p>
+                                                        {featuresTitle?.text?.map((featuresInfo) => (
                                                             <p className="features__text">{featuresInfo}</p>
                                                         ))}
                                                     </>
@@ -426,7 +451,7 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                             ) : (
                                 <>
                                     <div className="pictures__info pictures__active" id="pictures__info">
-                                        {videogame.images.map((image) => (
+                                        {videogame?.images?.map((image) => (
                                             <Popup trigger={<img className="videogame__images" src={image} alt="images" />} modal nested>
                                                 {close => (
                                                     <div className="modal">
@@ -442,15 +467,15 @@ function Details ({videogame, match, loading, user, favoritesGamesID, cardIds}) 
                                         ))}
                                     </div>
                                     <div className="description__info" id="description__info">
-                                        {videogame.description.map((global_title) => (
-                                            <p className="description__global__title">{global_title.global}</p>
+                                        {videogame?.description?.map((global_title) => (
+                                            <p className="description__global__title">{global_title?.global}</p>
                                         ))}
-                                        {videogame.description.map((videogame) => (
+                                        {videogame?.description?.map((videogame) => (
                                             <>
-                                                {videogame.features.map((featuresTitle) => (
+                                                {videogame?.features?.map((featuresTitle) => (
                                                     <>
-                                                        <p className="features__title">{featuresTitle.title}</p>
-                                                        {featuresTitle.text.map((featuresInfo) => (
+                                                        <p className="features__title">{featuresTitle?.title}</p>
+                                                        {featuresTitle?.text?.map((featuresInfo) => (
                                                             <p className="features__text">{featuresInfo}</p>
                                                         ))}
                                                     </>
