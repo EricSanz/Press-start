@@ -7,6 +7,8 @@ img {
 }
 
 .btn {
+    color: $blackbackground;
+    text-decoration: none;
     cursor: pointer;
     margin-top: 1.5em;
     background: $goldenstrongcolor;
@@ -16,22 +18,6 @@ img {
     outline: none;
     border: none;
 }
-
-// .see__all-link {
-//     text-decoration: none;
-//     color: $blackbackground;
-//     position: absolute;
-//     top: 5em;
-//     right: 3em;
-//     z-index: 0;
-//     .link-all {
-//         font-weight: lighter;
-//         font-size: 1rem;
-//     }
-// }
-// .see__all-link:hover {
-//     text-decoration: underline;
-// }
 
 .cards {
     position: relative;
