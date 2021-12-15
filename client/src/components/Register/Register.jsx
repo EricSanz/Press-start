@@ -42,14 +42,12 @@ function Register({user, error, isLogged}) {
         }
     }
 
-    console.log(error);
-
     useEffect(() => {
         if (isLogged) {
             history.replace(`/dashboard/${userId}`);
         }
 
-        if (error) {
+        if (error && !user) {
             registerError_ID.className = 'error';
             setTimeout(() => (displayRegisterError()), 3500 );
         }
@@ -63,7 +61,7 @@ function Register({user, error, isLogged}) {
             setCheckButton(false);
         }
 
-    }, [isLogged, history, error, registerError_ID, dispatch, emailValue, passwordValue, displayNameValue, checkButton, userId])
+    }, [isLogged, history, user, error, registerError_ID, dispatch, emailValue, passwordValue, displayNameValue, checkButton, userId])
 
     function emailInputChange({target}) {
         if (target.value.includes('@') && target.value.includes('.')) {
