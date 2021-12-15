@@ -1,25 +1,42 @@
 import React, {useState, useEffect} from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { getUser } from '../../redux/actions/userActions';
+import { useHistory } from 'react-router-dom';
 import './Dashboard.scss';
 
-function UserProfile({user, match, activeUser}) {
+function UserProfile({user, match, isLogged}) {
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
-    const localStorageUser = userLocalStorage.user.data;
-    // console.log(userLocalStorage.user.data.uid);
-    const dispatch = useDispatch()
-    // console.log(user)
-    // console.log(localStorageUser);
+    const localStorageUser = userLocalStorage?.user;
+    const localStorageUserData = userLocalStorage?.user?.data;
 
+    const dispatch = useDispatch();
+    let history = useHistory();
+
+    const [googleUserState, setGoogleUserState] = useState(false);
     const [uid] = useState(match.params.userId);
+
+    const userId = user?.uid;
 
     useEffect(() => {
 
-        if(!user || uid !== localStorageUser.uid ) {
-            dispatch(getUser(localStorageUser.uid));
+        if((!user || uid !== localStorageUserData?.uid) && localStorageUserData !== undefined) {
+            dispatch(getUser(localStorageUserData?.uid));
         }
 
-    }, [user, dispatch, activeUser, localStorageUser, uid]);
+        if (!user && localStorageUser) {
+            dispatch(getUser(localStorageUser?.uid));
+        }
+
+        if(!user && userLocalStorage && googleUserState) {
+            dispatch(getUser(localStorageUser?.uid));
+        }
+
+        if (localStorageUserData === undefined && !googleUserState) {
+            dispatch(getUser(userLocalStorage.uid));
+            setGoogleUserState(!googleUserState);
+        }
+
+    }, [user, dispatch, userLocalStorage, uid, googleUserState, localStorageUser, localStorageUserData, history, userId, isLogged]);
 
     function activeSection({target}) {
         const favoritesButton = document.getElementById('favoritesID');
@@ -81,7 +98,9 @@ function UserProfile({user, match, activeUser}) {
         <div className="profile__container">
             <div className="profile">
                 <div className="profile__left__container">
-                    <div className="profile__image"></div>
+                    <div className="profile__image">
+                        <img src={user?.photoURL} alt="" />
+                    </div>
                     <p className="full__name">Full Name</p>
                     <p className="alias">({user?.displayName})</p>
                     <button className="section__btn" id="favoritesID" onClick={(id) => activeSection(id)}>Favorites</button>
@@ -92,8 +111,8 @@ function UserProfile({user, match, activeUser}) {
                 </div>
                 <div className="profile__right__container">
                     <div className='favorites__section' id="favoritesSectionID">
-                        {user?.favorites?.length > 0 && user.favorites.map((videogame) => (
-                            <p>{videogame.game.first_title}</p>
+                        {user?.favorites?.length > 0 && user?.favorites.map((videogame) => (
+                            <p>{videogame?.game?.first_title}</p>
                         ))}
                     </div>
                     <div className='comments__section' id="commentsSectionID">
