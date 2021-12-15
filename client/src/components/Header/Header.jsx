@@ -71,9 +71,9 @@ function Header({user, isLogged}) {
                         {isLogged ? (
                             <>
                                 <div className="navbar__option">
-                                    <Link className="link" to={`/dashboard/${userId}`}>
+                                    <a className='link' href={`/dashboard/${userId}`}>
                                         <FontAwesomeIcon className="icon" icon="user" />
-                                    </Link>
+                                    </a>
                                     <p>Profile</p>
                                 </div>
                                 <div className="navbar__option">
