@@ -1,24 +1,30 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { addFavorite, getUser } from '../../redux/actions/userActions';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import './Card-Slider.scss';
 
 function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
 
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
+    const localStorageUserGoogle = userLocalStorage?.user;
+
+    let googleUser = false;
+    let emailUser = false;
+
+    if (localStorageUserGoogle !== undefined) {
+        googleUser = true;
+    }
+    if (localStorageUser !== undefined) {
+        emailUser = true;
+    }
 
     const userId = loggedUser?.uid;
     const videogameId = cards?._id;
     let newCardIndex = cardIndex + 100;
     let newNewCardIndex = cardIndex + 200;
-    // console.log(cardIndex);
-    // console.log(loggedUser.favorites);
     const favCardFound = favGamesID?.find(id => id === cards.id);
-
-    // console.log(cardids);
 
     const dispatch = useDispatch();
 
@@ -31,10 +37,8 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
         const notloggedId = document.getElementById(cardIndex);
         if (!loggedUser) {
             const cardFound = cardids.find(id => id === cards.id);
-            // console.log(cardFound);
             const cardFoundIndex = (element) => element === cardFound;
             const index = (cardids.findIndex(cardFoundIndex))
-            // console.log(index);
 
             if (index === cardIndex) {
                 notloggedId.style.display = "block";
@@ -43,14 +47,17 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
 
         } else {
             dispatch(addFavorite(userId, videogameId));
-            dispatch(getUser(localStorageUser.uid));
+            if (googleUser) {
+                dispatch(getUser(localStorageUserGoogle.uid));
+            }
+            if (emailUser) {
+                dispatch(getUser(localStorageUser.uid));
+            }
             const fav = document.getElementById(newCardIndex);
             const favTwo = document.getElementById(newNewCardIndex);
             const cardFound = cardids.find(id => id === cards.id);
-            // console.log(cardFound);
             const cardFoundIndex = (element) => element === cardFound;
             const index = (cardids.findIndex(cardFoundIndex))
-            // console.log(index);
             if (index === cardIndex) {
                 if (fav) {
                     if (fav.style.color === '#e02d39') {
@@ -67,7 +74,12 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                     }
                 }
             }
-            dispatch(getUser(localStorageUser.uid));
+            if (googleUser) {
+                dispatch(getUser(localStorageUserGoogle.uid));
+            }
+            if (emailUser) {
+                dispatch(getUser(localStorageUser.uid));
+            }
         }
     }
 
@@ -284,9 +296,7 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                         </div>
                     )}
                 </div>
-                <Link to={`product/${cards._id}`}>
-                    <button className="btn">See more details</button>
-                </Link>
+                <a className="btn" id={cards._id} href={`product/${cards._id}`}>See more details</a>
             </div>
             <div className="background">
                 <div className={versionColor()}>
