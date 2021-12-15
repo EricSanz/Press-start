@@ -16,7 +16,7 @@ function UserProfile({user, match, isLogged}) {
     const [googleUserState, setGoogleUserState] = useState(false);
     const [uid] = useState(match.params.userId);
     const [expandPayment, setExpandPayment] = useState(true); 
-    // const [expandWarranty, setExpandWarranty] = useState(true);
+    const [expandShippingPolicy, setExpandShippingPolicy] = useState(true);
     // const [expandReturn, setExpandReturn] = useState(true);
 
     const userId = user?.uid;
@@ -98,6 +98,17 @@ function UserProfile({user, match, isLogged}) {
         expandPayment ? paymentIcon.style.transform = 'rotate(180deg)' : paymentIcon.style.transform = 'rotate(0deg)';
     });
 
+    const shippingPolicy = document.getElementById('shipping__policy--id');
+    
+    shippingPolicy?.addEventListener('click', () => {
+        const shippingPolicyContent = document.getElementById('shipping__policy__content--id');
+        const shippingPolicyIcon = document.getElementById('shipping__policy--icon');
+        setExpandShippingPolicy(!expandShippingPolicy);
+        expandShippingPolicy ? shippingPolicyContent.style.display = 'flex' : shippingPolicyContent.style.display = 'none';
+        expandShippingPolicy ? shippingPolicy.style.backgroundColor = '#f0f2f2' : shippingPolicy.style.backgroundColor = '#fff';
+        expandShippingPolicy ? shippingPolicyIcon.style.transform = 'rotate(180deg)' : shippingPolicyIcon.style.transform = 'rotate(0deg)';
+    })
+
     return (
         <div className="profile__container">
             <div className="profile">
@@ -162,8 +173,36 @@ function UserProfile({user, match, isLogged}) {
                                     <p>We also offer the option of payment by PayPal, the leaders in online transactions in the world: with millions of users, it is a system of all confidence and convenience, and without commissions.</p>
                                 </div>
                             </div>
-                            <div className='shipping__policy' id="shipping-policy">
-
+                            <div className='shipping__policy' id="shipping__policy--id">
+                                <h3>Delivery options and shipping policy:<span><FontAwesomeIcon id="shipping__policy--icon" className="expand" icon="angle-double-down"/></span></h3>
+                                <div className='shipping__policy--content' id='shipping__policy__content--id'>
+                                    <p className='item--p important'>- Order processing and shipping:</p>
+                                    <p className='item--p'>All order processing is done through the website, for security reasons we do not process orders via phone or email.</p>
+                                    <p className='item--p'>The shipment of the goods, except for product reservations, is made the same day of receipt of the payment confirmation if it is sent to us before 18:00 hours (working days).</p>
+                                    <p className='item--p'>The shipment of an order is pending until all products are available. To avoid delays in the delivery of available products, we recommend that you do not mix reserved products with available products and place orders separately.</p>
+                                    <p className='item--p important'>- Shipping costs:</p>
+                                    <p className='item--p'>At Press Start we calculate shipping costs according to the total weight of the order and the shipping zone. We work with different shipping companies, which you can choose when placing your order or booking: </p>
+                                    <ul>
+                                        <li className='item__list'>SEUR 24-48 hours service. - National shipments peninsula, Balearic Islands and Portugal.</li>
+                                        <li className='item__list'>Correos Express 24-48 hours service. - National shipments peninsula.</li>
+                                        <li className='item__list'>Service TIPSA-Aravinc 24-48 hours. - National shipments peninsula.</li>
+                                        <li className='item__list'>PAACK Afterwork Service - Same day delivery (Only available in Barcelona*).</li>
+                                        <li className='item__list'>Correos Express Maritime Service 48/72 hours. - Balearic Islands.</li>
+                                        <li className='item__list'>Correos Express International Service - Europe**</li>
+                                        <li className='item__list'>Certified or Urgent Certified Mail Service. - Canary Islands, Andorra, Ceuta and Melilla.</li>
+                                        <p className='item--p'>* Same day shipping offered through PAACK, for orders placed on working days until 17:00h (available for Barcelona city and neighboring towns).</p>
+                                        <p className='item--p'>** International shipping to the following destinations: Belgium, Czech Republic, Denmark, France, Germany, Holland, Hungary, Italy, Luxembourg, Poland, Czech Republic.</p>
+                                    </ul>
+                                    <p className='item--p important'>- General conditions:</p>
+                                    <p className='item--p'>Prices subject to change without notice.</p>
+                                    <p className='item--p'>Estimated delivery times.</p>
+                                    <p className='item--p'>Delivery times are valid during working days (no deliveries will be made on Saturdays, Sundays or holidays). Orders placed after 6:00 p.m. will be processed the next working day.</p>
+                                    <p className='item--p'>We do not deliver to PO Boxes.</p>
+                                    <p className='item--p'>If you have not received your order within 3 days, please contact the transport company to arrange a suitable delivery time.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Frequently Asked Questions. (FAQS)</h3>
                             </div>
                         </div>
                     </div>

@@ -101,12 +101,11 @@
             margin-left: 2em;
             overflow-y: auto;
             .section {
-                padding: 1em 2em;
+                margin-top: -1.4em;
                 .title {
-                    padding-top: .6em;
+                    padding-top: 2em;
                     padding-left: 1em;
-                    height: 1.6em;
-                    // font-size: 1.5rem;
+                    height: 1.7em;
                     font-weight: 600;
                     background-color: $greylightbackground;
                     border-bottom: 3px solid $blackbackground;
@@ -120,18 +119,22 @@
                 .payment__methods {
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
+                }
+                .payment__methods, .shipping__policy {
                     border-bottom: 1px solid $greyborder;
                     position: relative;
                     font-weight: 600;
-                    padding-left: 2em;
-                    padding-right: 2em;
+                    margin-left: 1.5em;
+                    margin-right: 1.5em;
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
                     padding-top: .5em;
                     .expand {
                         transition: 1000ms;
                         position: absolute;
                         right: 2em;
                     }
-                    .payment__methods--content {
+                    .payment__methods--content, .shipping__policy--content {
                         font-weight: normal;
                         display: none;
                         transition: 1250ms;
@@ -156,9 +159,12 @@
                                 font-weight: normal;
                             }
                         }
+                        .item--p {
+                            margin-top: .3em;
+                        }
                     }
                 }
-                .payment__methods:hover {
+                .payment__methods:hover, .shipping__policy:hover {
                     cursor: pointer;
                 }
             }
