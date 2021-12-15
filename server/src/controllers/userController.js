@@ -17,11 +17,12 @@ function userController(UserModel) {
     const postUser = async (req, res) => {
         const { displayName, email, password } = req.body;
         const uid = Math.random().toString(36).slice(2);
+        const photoURL = "https://i.ibb.co/fdYMRQv/icon-profile.png";
         const emailAlreadyRegisteredError = ({ registerError: { msg: 'Email already exist.'} });
         const displayNameAlreadyRegisteredError = ({ registerError: { msg: 'User name already exist.'} });
         const emailAlreadyRegistered = await UserModel.exists({ email });
         const displayNameAlreadyRegistered = await UserModel.exists({ displayName });
-        const user = new UserModel({displayName, email, password, uid});
+        const user = new UserModel({displayName, email, password, uid, photoURL});
 
         if (emailAlreadyRegistered) {
             res.json(emailAlreadyRegisteredError); 
