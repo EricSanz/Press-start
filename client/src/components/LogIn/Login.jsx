@@ -13,9 +13,6 @@ function Login({user, error, isLogged}) {
     const dispatch = useDispatch();
     let history = useHistory();
 
-    console.log(user);
-    console.log(error);
-    console.log(isLogged)
     const userId = user?.uid;
 
     let emailLogin = document.getElementById('email__login')?.value;
@@ -49,14 +46,12 @@ function Login({user, error, isLogged}) {
 
         if (login) {
             dispatch(loginUser(emailLogin, passwordLogin));
-            console.log(user);
             setLogin(false);
         }
 
     }, [isLogged, history, error, loginError_ID, checkedEmailState, checkedPasswordState, emailLogin, passwordLogin, login, dispatch, userId, user])
 
     function seeHidePassword() {
-        console.log(user);
 
         const seePassword = document.getElementById('see__login__password');
         const hidePassword = document.getElementById('hide__login__password'); 
@@ -71,7 +66,6 @@ function Login({user, error, isLogged}) {
 
     function checkEmail({target}) {
         if (target.value.includes('@') && target.value.includes('.')) {
-            console.log(target.value);
             setCheckedEmailState(true);
         }
     }
@@ -82,7 +76,6 @@ function Login({user, error, isLogged}) {
 
         if (target.value.length >= 8) {
             setCheckedPasswordState(true);
-            console.log(target.value);
         } 
     }
 
