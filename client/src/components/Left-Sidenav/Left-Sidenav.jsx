@@ -26,7 +26,7 @@ function LeftSidenav() {
         <section className="left__sidenav">
             <ul>
                 {categories.map((category) => (
-                    <li className="left__sidenav-list" onClick={() => reload(category)}>
+                    <li key={category.name} className="left__sidenav-list" onClick={() => reload(category)}>
                         <p className="left__sidenav-option">{category.name}</p>
                         <span className="left__sidenav-icon">{category.icon}</span>
                     </li>
