@@ -21,8 +21,6 @@ function UserProfile({user, match, isLogged}) {
 
     const userId = user?.uid;
 
-    // const sectionButtons = document?.querySelectorAll('.section__btn');
-
     useEffect(() => {
 
         if((!user || uid !== localStorageUserData?.uid) && localStorageUserData !== undefined) {
@@ -201,8 +199,8 @@ function UserProfile({user, match, isLogged}) {
                                     <p className='item--p'>If you have not received your order within 3 days, please contact the transport company to arrange a suitable delivery time.</p>
                                 </div>
                             </div>
-                            <div>
-                                <h3>Frequently Asked Questions. (FAQS)</h3>
+                            <div className='faqs' id="faqs--id">
+                                <h3>Frequently Asked Questions. (FAQS)<span><FontAwesomeIcon id="faqs--icon" className="expand" icon="angle-double-down"/></span></h3>
                             </div>
                         </div>
                     </div>

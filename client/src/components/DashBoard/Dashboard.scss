@@ -115,12 +115,12 @@
             }
             .useful__information--container {
                 position: relative;
-                transition: 1500ms;
+                // transition: 1500ms;
                 .payment__methods {
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                 }
-                .payment__methods, .shipping__policy {
+                .payment__methods, .shipping__policy, .faqs {
                     border-bottom: 1px solid $greyborder;
                     position: relative;
                     font-weight: 600;
@@ -164,7 +164,7 @@
                         }
                     }
                 }
-                .payment__methods:hover, .shipping__policy:hover {
+                .payment__methods:hover, .shipping__policy:hover, .faqs:hover {
                     cursor: pointer;
                 }
             }
