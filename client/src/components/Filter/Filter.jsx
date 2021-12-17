@@ -49,49 +49,49 @@ function FilterComponent({dispatch}) {
                 <p></p>
                 <div>
                   <input type="radio" id="allPlatforms" value="allPlatforms" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--allplatforms" for="allPlatforms">All Platforms</label>
+                  <label className="label--allplatforms" htmlFor="allPlatforms">All Platforms</label>
                 </div>
                 <div>
                   <input type="radio" id="ps4" value="ps4" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--ps4" for="ps4">PlayStation 4</label>
+                  <label className="label--ps4" htmlFor="ps4">PlayStation 4</label>
                 </div>
                 <div>
                   <input type="radio" id="ps5" value="ps5" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--ps5" for="ps5">PlayStation 5</label>
+                  <label className="label--ps5" htmlFor="ps5">PlayStation 5</label>
                 </div>
                 <div>
                   <input type="radio" id="xboxOne" value="xboxOne" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--xboxone" for="xboxOne">Xbox One</label>
+                  <label className="label--xboxone" htmlFor="xboxOne">Xbox One</label>
                 </div>
                 <div>
                   <input type="radio" id="xboxSeriesSX" value="xboxSeriesSX" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--xboxseriesxs" for="xboxSeriesSX">Xbox Series S/X</label>
+                  <label className="label--xboxseriesxs" htmlFor="xboxSeriesSX">Xbox Series S/X</label>
                 </div>
                 <div>
                   <input type="radio" id="nintendoSwitch" value="nintendoSwitch" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--nintendoswitch" for="nintendoSwitch">Nintendo Switch</label>
+                  <label className="label--nintendoswitch" htmlFor="nintendoSwitch">Nintendo Switch</label>
                 </div>
                 <div>
                   <input type="radio" id="pc" value="pc" name="platform" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--pc" for="pc">PC</label>
+                  <label className="label--pc" htmlFor="pc">PC</label>
                 </div>
                 <p className="filter__title">Prices:</p>
                 <div>
                   <input type="radio" id="notSale" value="notSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--notsale" for="notSale">All Prices</label>
+                  <label className="label--notsale" htmlFor="notSale">All Prices</label>
                 </div>
                 <div>
                   <input type="radio" id="onSale" value="onSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--onsale" for="onSale">On sale</label>
+                  <label className="label--onsale" htmlFor="onSale">On sale</label>
                 </div>
                 <p className="filter__title">Order:</p>
                 <div>
                   <input type="radio" id="lowHigh" value="lowHigh" name="prices" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--lowhigh" for="lowHigh">Lowest to highest</label>
+                  <label className="label--lowhigh" htmlFor="lowHigh">Lowest to highest</label>
                 </div>
                 <div>
                   <input type="radio" id="highLow" value="highLow" name="prices" onChange={(value) => handleChangeChecked(value)}/>
-                  <label className="label--highlow" for="highLow">Highest to lowest</label>
+                  <label className="label--highlow" htmlFor="highLow">Highest to lowest</label>
                 </div>
               </div>
             </div>
