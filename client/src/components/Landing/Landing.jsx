@@ -8,8 +8,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainSlider from '../Main-Slider/Main-Slider';
 import CardSlider from '../Card-Slider/Card-Slider';
-import './Landing.scss';
 import { useState } from 'react';
+import './Landing.scss';
 
 function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged, cardIds, favoritesGamesID, mainSliderIds }) {
    
@@ -91,7 +91,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
             cardsContainerID.style.transform = `translateX(${scrollTranslation}%)`;
         }
     }
-
+    
     return (
         <div className="body">
             {sortedByDate ? (
@@ -106,7 +106,7 @@ function Landing({ videogamesList, sortedByDate, cardVideogames, user, isLogged,
                         </div>
                         <div className="videogame__card__slider" id="videogame__cards-id">
                             {cardVideogames?.length > 0 && cardVideogames.map((videogameCards) => (
-                                <CardSlider cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID} key={videogameCards.id}/>
+                                <CardSlider key={videogameCards.id} cards={videogameCards} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
                             ))}
                             <Link id="link-all-id" className="see__all-link" to={"/all-games"}>
                                 <div className="link-container">
