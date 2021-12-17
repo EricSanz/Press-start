@@ -92,7 +92,7 @@ function MainSlider({ videogames, sliderIds }) {
             ))}
             <div className="slider__options">
                 {videogames.map((videogamesNames) => (
-                    <div className="options" id={videogamesNames.id}>
+                    <div key={videogamesNames.id} className="options" id={videogamesNames.id}>
                         {videogamesNames.game.dual_title ? (
                             <p>{videogamesNames.game.first_title}&nbsp;<span>{videogamesNames.game.second_title}</span></p>
                         ) : (
