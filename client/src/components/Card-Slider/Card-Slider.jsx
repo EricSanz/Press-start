@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { addFavorite, getUser } from '../../redux/actions/userActions';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import './Card-Slider.scss';
 
 function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
@@ -27,6 +28,11 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
     const favCardFound = favGamesID?.find(id => id === cards.id);
 
     const dispatch = useDispatch();
+
+    function generateKey() {
+        let key = uuidv4();
+        return key;
+    }
 
     function displayErrorNone() {
         const notloggedId = document.getElementById(cardIndex);
@@ -193,35 +199,35 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                     {cards.available_platforms_logos?.length > 4 && (
                         <div className="platforms--5">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 4 && (
                         <div className="platforms--4">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 3 && (
                         <div className="platforms--3">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 2 && (
                         <div className="platforms--2">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 1 && (
                         <div className="platforms--1">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
@@ -263,35 +269,35 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                     {cards.available_platforms_logos?.length > 4 && (
                         <div className="platforms--5__back">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 4 && (
                         <div className="platforms--4__back">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 3 && (
                         <div className="platforms--3__back">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 2 && (
                         <div className="platforms--2__back">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
                     {cards.available_platforms_logos?.length === 1 && (
                         <div className="platforms--1__back">
                             {cards.available_platforms_logos.map((logos) => (
-                                <img src={logos} alt={logos} />
+                                <img key={generateKey()} src={logos} alt={logos} />
                             ))}
                         </div>
                     )}
