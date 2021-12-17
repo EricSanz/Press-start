@@ -32,11 +32,11 @@ function VideogameList({ videogamesList, loading, error, filteredVideogameList, 
 
         <>  
             {!platformVideogames?.length && videogamesList?.length && videogamesList.map((videogame) => (
-                <Card Games={videogame} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
+                <Card key={videogame.id} Games={videogame} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
             ))}
 
             {platformVideogames?.length && platformVideogames.map((videogame) => (
-                <Card Games={videogame} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
+                <Card key={videogame.id} Games={videogame} loggedUser={user} cardids={cardIds} cardIndex={i+=1} favGamesID={favoritesGamesID}/>
             ))}
 
             {!platformVideogames?.length && platformVideogames?.length === 0 && <h3 className="notExist">A videogame with that name does not exist</h3>}
