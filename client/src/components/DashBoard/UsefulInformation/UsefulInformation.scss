@@ -1,0 +1,85 @@
+@import "../../styles/colors";
+@import "../../../fonts/fonts";
+
+.title {
+    padding-top: 2em;
+    padding-left: 1em;
+    height: 1.7em;
+    font-weight: 600;
+    // background-color: $greylightbackground;
+    background-color: $goldencolor;
+    border-bottom: 3px solid $blackbackground;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
+}
+
+.useful__information--container {
+    position: relative;
+    // transition: 1500ms;
+    .info__us {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    .info__list {
+        text-align: justify;
+        padding-bottom: .5em;
+    }
+    .payment__methods {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .payment__methods, .shipping__policy, .faqs {
+        position: relative;
+        font-weight: 600;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: .5em;
+        border-bottom: 1px solid $blackbackground;
+        background-color: $greybackground;
+        .info__list {
+            text-align: justify;
+            padding-bottom: .5em;
+        }
+        .expand {
+            transition: 1000ms;
+            position: absolute;
+            right: 2em;
+        }
+        .payment__methods--content, .shipping__policy--content, .faqs__content {
+            font-weight: normal;
+            display: none;
+            transition: 1250ms;
+            flex-direction: column;
+            .title__list {
+                margin-top: .2em;
+                margin-bottom: .3em;
+                text-decoration: underline;
+            }
+            ul {
+                .item__list {
+                    text-align: justify;
+                    padding-bottom: .5em;
+                }
+                ol {
+                    margin-bottom: -1em;
+                }
+            }
+            .important {
+                font-weight: 600;
+                span {
+                    font-weight: normal;
+                }
+            }
+            .item--p {
+                margin-top: .3em;
+            }
+        }
+    }
+    .payment__methods:hover, .shipping__policy:hover, .faqs:hover {
+        cursor: pointer;
+    }
+}
