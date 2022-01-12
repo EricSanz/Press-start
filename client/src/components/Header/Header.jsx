@@ -28,8 +28,6 @@ function Header({user, isLogged}) {
     const userLocalStorageGoogle = userLocalStorage?.user;
 
     userLocalStorageGoogle ? (isLogged = true) : (isLogged = false);
-    console.log(user);
-    console.log(isLogged);
     const userId = user?.uid;
 
     function handleLeftSidenav() {
