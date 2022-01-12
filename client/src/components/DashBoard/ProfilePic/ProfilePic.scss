@@ -1,0 +1,78 @@
+@import '../../styles/colors';
+@import '../../../fonts/fonts';
+
+.title__options {
+    padding: .5em 2em .1em;
+    font-size: 1.2rem;
+    position: relative;
+    color: $whitecolor;
+}
+
+.save__btn {
+    position: absolute;
+    font-family: $Montserrat;
+    font-weight: bold;
+    font-size: 1.1rem;
+    top: 1.5em;
+    right: 2em;
+    border: none;
+    outline: none;
+    padding: .5em 2em;
+    border-radius: 1em;
+    transition: 500ms;
+    &:hover {
+        transition: 500ms;
+        background-color: $goldenstrongcolor;
+        cursor: pointer;
+    }
+}
+
+.close__options {
+    top: .5em;
+    right: .6em;
+    position: absolute;
+    font-size: 1.3rem;
+    color: $whitecolor;
+    transition: 500ms;
+    &:hover {
+        cursor: pointer;
+        transition: 500ms;
+        color: $goldenstrongcolor;
+    }
+}
+
+.pic__option--container {
+    display: flex;
+    justify-content: center;
+    .pic__option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10em;
+        height: 10em;
+        padding: 1em;
+        .input--container {
+            display: flex;
+            align-items: center;
+            padding-top: 1em;
+            .checkbox__option {
+                appearance: none;
+                width: 1em;
+                height: 1em;
+                background-color: $whitecolor;
+                &:checked {
+                    background-color: $goldenstrongcolor;
+                }
+                &:active {
+                    transform: scale(1.2);
+                }
+            }
+            .option__name {
+                font-size: .9rem;
+                font-weight: 600;
+                color: $whitecolor;
+                padding-left: .5em;
+            }
+        }
+    }
+}
