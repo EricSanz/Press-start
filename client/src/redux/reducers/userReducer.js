@@ -89,6 +89,12 @@ export default function userReducer(state = {}, action) {
                 added: action.added,
             }
             break;
+        case actionTypes.CHANGE_PROFILE_PIC:
+            newState = {
+                ...state,
+                user: action.user,
+            }
+            break;
         default:
             newState = state;
         break;
