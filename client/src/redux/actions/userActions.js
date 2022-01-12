@@ -157,6 +157,7 @@ export function getUser(uid) {
         const backEndPoint = `${userUrl}${uid}`
         try {
             const user = await axios.get(backEndPoint);
+            // localStorage.user = JSON.stringify({ user: {...user } });
             dispatch(getUserSucces(user.data))
         } catch (error) {
             dispatch(getUserError(error))
@@ -193,13 +194,40 @@ export function addFavorite(userId, videogameId) {
 function addFavoriteSuccess(added) {
     return {
         type: actionTypes.ADD_FAVORITE,
-        added
+        added,
     }
 }
 
 function addFavoriteError(error) {
     return {
         type: actionTypes.ADD_FAVORITE_ERROR,
+        error,
+    }
+}
+
+export function changeProfilePic(userId, photoUrl) {
+    const data = {userId, photoUrl};
+    const backEndPoint = `${userUrl}${userId}`
+    return async (dispatch) => {
+        try {
+            const response = await axios.post(backEndPoint, data);
+            dispatch(changeProfilePicSuccess(response))
+        } catch (error) {
+            dispatch(changeProfilePicError(error))
+        }
+    }
+}
+
+function changeProfilePicSuccess(user) {
+    return {
+        type: actionTypes.CHANGE_PROFILE_PIC,
+        user,
+    }
+}
+
+function changeProfilePicError(error) {
+    return {
+        type: actionTypes.CHANGE_PROFILE_PIC_ERROR,
         error,
     }
 }
