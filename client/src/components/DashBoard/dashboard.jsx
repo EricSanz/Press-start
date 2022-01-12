@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { getUser } from '../../redux/actions/userActions';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import UserFavorites from './UserFavorites/UserFavorites';
 import UsefulInformation from './UsefulInformation/UsefulInformation';
 import './Dashboard.scss';
 
 function UserProfile({user, match, isLogged}) {
-    const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
+    let userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user;
     const localStorageUserData = userLocalStorage?.user?.data;
 
@@ -60,24 +60,24 @@ function UserProfile({user, match, isLogged}) {
                     commentsSectionID.className = 'section section--not--active';
                     usefulInfoSectionID.className = 'section section--not--active';
                     break;
-                case 1:
-                    personalSectionID.className = 'section section--not--active';
-                    favoritesSectionID.className = 'section section--active';
-                    commentsSectionID.className = 'section section--not--active';
-                    usefulInfoSectionID.className = 'section section--not--active';
-                    break;
+                // case 1:
+                //     personalSectionID.className = 'section section--not--active';
+                //     favoritesSectionID.className = 'section section--active';
+                //     commentsSectionID.className = 'section section--not--active';
+                //     usefulInfoSectionID.className = 'section section--not--active';
+                //     break;
                 case 2:
                     personalSectionID.className = 'section section--not--active';
                     favoritesSectionID.className = 'section section--not--active';
                     commentsSectionID.className = 'section section--active';
                     usefulInfoSectionID.className = 'section section--not--active';
                     break;
-                case 3:
-                    personalSectionID.className = 'section section--not--active';
-                    favoritesSectionID.className = 'section section--not--active';
-                    commentsSectionID.className = 'section section--not--active';
-                    usefulInfoSectionID.className = 'section section--active';
-                    break;
+                // case 3:
+                //     personalSectionID.className = 'section section--not--active';
+                //     favoritesSectionID.className = 'section section--not--active';
+                //     commentsSectionID.className = 'section section--not--active';
+                //     usefulInfoSectionID.className = 'section section--active';
+                //     break;
                 default:
                     break;
             }
@@ -91,9 +91,13 @@ function UserProfile({user, match, isLogged}) {
                     <img src={user?.photoURL} alt="" />
                     <p className="full__name">Welcome &nbsp;<span className="alias">{user?.displayName}!</span></p>
                     <button className="section__btn btn--active" id="0" >Personal Information</button>
-                    <button className="section__btn" id="1">Favorites</button>
+                    <Link to={`/dashboard/${userId}/favorites`}>
+                        <button className="section__btn" id="1">Favorites</button>
+                    </Link>
                     <button className="section__btn" id="2">Comments</button>
-                    <button className="section__btn" id="3">Useful Information</button>
+                    <Link to={`/dashboard/${userId}/useful-information`}>
+                        <button className="section__btn" id="3">Useful Information</button>
+                    </Link>
                     <button className="logout__btn">Log out</button>
                 </div>
                 <div className="profile__right__container">
@@ -101,18 +105,11 @@ function UserProfile({user, match, isLogged}) {
                         <p className='title'>Personal Information</p>
                     </div>
                     <div className='section section--not--active' id="favoritesSectionID">
-                        <h1 className='title'>My favorites<FontAwesomeIcon className='heart__count' icon="heart"/><span className={ user?.favorites?.length >= 10 ? 'favorites__count--2' : 'favorites__count'}>{user?.favorites?.length}</span></h1>
-                        <div className='user__favorites--container'>
-                            {user?.favorites?.length > 0 && user?.favorites.map((favorites) => (
-                                <UserFavorites favorites={favorites}/>
-                            ))}
-                        </div>
                     </div>
                     <div className='section section--not--active' id="commentsSectionID">
                         <p className='title'>Comments Section</p>
                     </div>
                     <div className='section section--not--active' id="usefulInfoSectionID">
-                        <UsefulInformation />
                     </div>
                 </div>
             </div>
