@@ -62,12 +62,8 @@ function userController(UserModel) {
 
         const userId = body.userId;
         const videogameId = body.videogameId;
-        // console.log(userId);
-        // console.log(videogameId);
 
         UserModel.findOne({uid: userId }, (errorFindUser, user) => {
-            console.log(user);
-    
             if (user) {
                 const findVideogame = user.favorites.some((videogame) => String(videogame) === videogameId );
                 if (findVideogame) {
@@ -86,13 +82,24 @@ function userController(UserModel) {
         })
     }
 
+    const changeProfilePic = async ({body}, res) => {
+        const query = { uid: body.userId};
+        const photoUrl = { photoURL: body.photoUrl };
+
+        const user = await UserModel.findOneAndUpdate(query, photoUrl, {new: true})
+        if (user) {
+            res.json(user);
+        }
+    }
+
     return {
         getUser,
         putUser,
         postUser,
         loginPostUser,
         getUnicUser,
-        addFavorite
+        addFavorite,
+        changeProfilePic
     };
 };
 
