@@ -18,6 +18,7 @@ function userRoute(User) {
 
     userRouter.route('/:userId')
         .get(user.getUnicUser)
+        .post(user.changeProfilePic)
 
     return userRouter;
 };
