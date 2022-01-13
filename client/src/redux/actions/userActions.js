@@ -153,11 +153,12 @@ export function loginUser(email, password) {
 }
 
 export function getUser(uid) {
+    console.log(uid);
     return async (dispatch) => {
         const backEndPoint = `${userUrl}${uid}`
         try {
             const user = await axios.get(backEndPoint);
-            // localStorage.user = JSON.stringify({ user: {...user } });
+            // localStorage.user = JSON.stringify({ user: {...user.data } });
             dispatch(getUserSucces(user.data))
         } catch (error) {
             dispatch(getUserError(error))
@@ -184,7 +185,7 @@ export function addFavorite(userId, videogameId) {
     return async (dispatch) => {
         try {
             const response = await axios.post(userFavoritesUrl, neededData);
-            dispatch(addFavoriteSuccess(response)) 
+            dispatch(addFavoriteSuccess(response));
         } catch (error) {
             dispatch(addFavoriteError(error))
         }
@@ -212,6 +213,7 @@ export function changeProfilePic(userId, photoUrl) {
         try {
             const response = await axios.post(backEndPoint, data);
             dispatch(changeProfilePicSuccess(response))
+            localStorage.user = JSON.stringify({ user: {...response } });
         } catch (error) {
             dispatch(changeProfilePicError(error))
         }
