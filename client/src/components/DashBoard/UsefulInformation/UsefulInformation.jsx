@@ -106,16 +106,16 @@ function UsefulInformation({user, match}) {
                         <ProfilePic profilePicOptions={profilePicOptions} profilePictureOptions={profilePictureOptions} setProfilePictureOptions={setProfilePictureOptions} user={user} dispatch={dispatch} />
                     </div>
                     <p className="full__name">Welcome &nbsp;<span className="alias">{localStorageUserData?.displayName}!</span></p>
-                    <Link to={`/dashboard/${userId}`}>
-                        <button className="section__btn" id="0" >Personal Information</button>
-                    </Link>
+                    <a href={`/dashboard/${userId}`}>
+                        <button className="section__btn">Personal Information</button>
+                    </a>
                     <a href={`/dashboard/${userId}/favorites`}>
-                        <button className="section__btn" id="1">Favorites</button>
+                        <button className="section__btn">Favorites</button>
                     </a>
                     <Link to={`/dashboard/${userId}`}>
-                        <button className="section__btn" id="2">Comments</button>
+                        <button className="section__btn">Comments</button>
                     </Link>
-                    <button className="section__btn btn--active" id="3">Useful Information</button>
+                    <button className="section__btn btn--active">Useful Information</button>
                     <button className="logout__btn">Log out</button>
                 </div>
                 <div className="profile__right__container">

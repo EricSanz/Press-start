@@ -76,15 +76,15 @@ function UserFavorites({ favoritesGamesID, user, match}) {
                         <ProfilePic profilePicOptions={profilePicOptions} profilePictureOptions={profilePictureOptions} setProfilePictureOptions={setProfilePictureOptions} user={user} dispatch={dispatch} />
                     </div>
                     <p className="full__name">Welcome &nbsp;<span className="alias">{localStorageUserData?.displayName}!</span></p>
+                    <a href={`/dashboard/${userId}`}>
+                    <button className="section__btn">Personal Information</button>
+                    </a>
+                    <button className="section__btn btn--active">Favorites</button>
                     <Link to={`/dashboard/${userId}`}>
-                    <button className="section__btn" id="0" >Personal Information</button>
-                    </Link>
-                    <button className="section__btn btn--active" id="1">Favorites</button>
-                    <Link to={`/dashboard/${userId}`}>
-                    <button className="section__btn" id="2">Comments</button>
+                    <button className="section__btn">Comments</button>
                     </Link>
                     <a href={`/dashboard/${userId}/useful-information`}>
-                        <button className="section__btn" id="3">Useful Information</button>
+                        <button className="section__btn">Useful Information</button>
                     </a>
                     <button className="logout__btn">Log out</button>
                 </div>
