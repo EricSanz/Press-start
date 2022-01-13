@@ -153,7 +153,6 @@ export function loginUser(email, password) {
 }
 
 export function getUser(uid) {
-    console.log(uid);
     return async (dispatch) => {
         const backEndPoint = `${userUrl}${uid}`
         try {
