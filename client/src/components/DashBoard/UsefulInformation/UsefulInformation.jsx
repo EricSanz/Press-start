@@ -100,12 +100,12 @@ function UsefulInformation({user, match}) {
         <div className="profile__container">
             <div className="profile">
                 <div className="profile__left__container">
-                    <img src={user?.photoURL} alt=""/>
+                    <img src={localStorageUserData?.photoURL} alt=""/>
                     <FontAwesomeIcon icon="exchange-alt" id="change__profile__pic--id" className='change__profile__pic'/>
                     <div className='profile__pic--container' id='prodile__pic__options--id'>
-                        <ProfilePic profilePicOptions={profilePicOptions} profilePictureOptions={profilePictureOptions} setProfilePictureOptions={setProfilePictureOptions} user={user} dispatch={dispatch}/>
+                        <ProfilePic profilePicOptions={profilePicOptions} profilePictureOptions={profilePictureOptions} setProfilePictureOptions={setProfilePictureOptions} user={user} dispatch={dispatch} />
                     </div>
-                    <p className="full__name">Welcome &nbsp;<span className="alias">{user?.displayName}!</span></p>
+                    <p className="full__name">Welcome &nbsp;<span className="alias">{localStorageUserData?.displayName}!</span></p>
                     <Link to={`/dashboard/${userId}`}>
                         <button className="section__btn" id="0" >Personal Information</button>
                     </Link>
