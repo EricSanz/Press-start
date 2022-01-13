@@ -4,6 +4,7 @@ import { connect, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getUser } from '../../../redux/actions/userActions';
 import CardFavorite from './CardFavorites/CardFavorites';
+import ProfilePic from '../ProfilePic/ProfilePic';
 import './UserFavorites.scss';
 
 function UserFavorites({ favoritesGamesID, user, match}) {
@@ -17,10 +18,12 @@ function UserFavorites({ favoritesGamesID, user, match}) {
     let googleUser = false;
     let emailUser = false;
     let numberOfFavorites = user?.favorites?.length;
+    let toggle = false;
 
     const [googleUserState, setGoogleUserState] = useState(false);
     const [uid] = useState(match.params.userId);
     const [favoritesUpdated, setFavoritesUpdated] = useState(false);
+    const [profilePictureOptions, setProfilePictureOptions] = useState(true);
 
     const userId = user?.uid;
 
@@ -54,12 +57,25 @@ function UserFavorites({ favoritesGamesID, user, match}) {
 
     }, [user, user?.favorites?.length, numberOfFavorites, localStorageUserData, localStorageUser, setFavoritesUpdated, favoritesUpdated, dispatch, favoritesGamesID?.length, userLocalStorage, uid, googleUserState, userId, googleUser, emailUser]);
 
+    const changeProfilePic = document.getElementById('change__profile__pic--id');
+    const profilePicOptions = document.getElementById('prodile__pic__options--id');
+
+    changeProfilePic?.addEventListener('click', () => {
+        setProfilePictureOptions(!profilePictureOptions);
+        toggle = !toggle;
+        profilePictureOptions ? profilePicOptions.style.display = 'block' : profilePicOptions.style.display = 'none';
+    })
+
     return (
         <div className="profile__container">
             <div className="profile">
                 <div className="profile__left__container">
-                    <img src={user?.photoURL} alt=""/>
-                    <p className="full__name">Welcome &nbsp;<span className="alias">{user?.displayName}!</span></p>
+                    <img src={localStorageUserData?.photoURL} alt=""/>
+                    <FontAwesomeIcon icon="exchange-alt" id="change__profile__pic--id" className='change__profile__pic'/>
+                    <div className='profile__pic--container' id='prodile__pic__options--id'>
+                        <ProfilePic profilePicOptions={profilePicOptions} profilePictureOptions={profilePictureOptions} setProfilePictureOptions={setProfilePictureOptions} user={user} dispatch={dispatch} />
+                    </div>
+                    <p className="full__name">Welcome &nbsp;<span className="alias">{localStorageUserData?.displayName}!</span></p>
                     <Link to={`/dashboard/${userId}`}>
                     <button className="section__btn" id="0" >Personal Information</button>
                     </Link>
@@ -82,7 +98,7 @@ function UserFavorites({ favoritesGamesID, user, match}) {
                                 </div>
                             </div>
                             <div className='user__favorites--container'>
-                                {user?.favorites.length > 0 && user?.favorites.map((favorites) => (
+                                {user?.favorites?.length > 0 && user?.favorites.map((favorites) => (
                                     <CardFavorite key={favorites.id} favoritesCard={favorites} loggedUser={user}/>
                                 ))}
                             </div>
