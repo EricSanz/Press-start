@@ -95,9 +95,9 @@ function UserProfile({user, match, isLogged}) {
                         <button className="section__btn" id="1">Favorites</button>
                     </Link>
                     <button className="section__btn" id="2">Comments</button>
-                    <Link to={`/dashboard/${userId}/useful-information`}>
+                    <a href={`/dashboard/${userId}/useful-information`}>
                         <button className="section__btn" id="3">Useful Information</button>
-                    </Link>
+                    </a>
                     <button className="logout__btn">Log out</button>
                 </div>
                 <div className="profile__right__container">

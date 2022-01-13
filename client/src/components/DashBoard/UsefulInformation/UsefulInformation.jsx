@@ -109,9 +109,9 @@ function UsefulInformation({user, match}) {
                     <Link to={`/dashboard/${userId}`}>
                         <button className="section__btn" id="0" >Personal Information</button>
                     </Link>
-                    <Link to={`/dashboard/${userId}/favorites`}>
+                    <a href={`/dashboard/${userId}/favorites`}>
                         <button className="section__btn" id="1">Favorites</button>
-                    </Link>
+                    </a>
                     <Link to={`/dashboard/${userId}`}>
                         <button className="section__btn" id="2">Comments</button>
                     </Link>
