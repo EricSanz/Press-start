@@ -181,7 +181,7 @@ img {
     .prices__info-sale {
         display: flex;
         align-items: center;
-        margin-bottom: 1.2em;
+        margin-bottom: 1em;
         .prices {
             border-right: 1px solid rgba($whitecolor, .7);
             .sale__price, .sale__price__normal {
@@ -217,7 +217,7 @@ img {
     .prices__info {
         display: flex;
         width: 9em;
-        margin-bottom: 1em;
+        margin-bottom: .5em;
         text-align: center;
         justify-content: center;
         .add-favorite {
@@ -442,8 +442,10 @@ img {
             margin-top: .9em;
         }
         .name__second__long {
+            margin-left: -2.3em;
             margin-bottom: 1em;
             font-size: 18px;
+            width: 140%;
         }
         .name__second__long__sale {
             font-size: 18px;
