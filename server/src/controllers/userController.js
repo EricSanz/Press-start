@@ -92,6 +92,23 @@ function userController(UserModel) {
         }
     }
 
+    const updateUserInfo = async ({body}, res) => {
+        const query = { uid: body.userId };
+        const updateInfo = {};
+
+        body.firstName === '' ? null : updateInfo.firstName = body.firstName;
+        body.lastName === '' ? null : updateInfo.lastName = body.lastName;
+        body.birthDate === '' ? null : updateInfo.birthDate = body.birthDate;
+        body.gender === '' ? null : updateInfo.gender = body.gender;
+        body.mobile === '' ? null : updateInfo.mobile = body.mobile;
+        body.landline === '' ? null : updateInfo.landline = body.landline;
+
+        const user = await UserModel.findOneAndUpdate(query, updateInfo, {new: true});
+        if (user) {
+            res.json(user);
+        }        
+    }
+
     return {
         getUser,
         putUser,
@@ -99,7 +116,8 @@ function userController(UserModel) {
         loginPostUser,
         getUnicUser,
         addFavorite,
-        changeProfilePic
+        changeProfilePic,
+        updateUserInfo
     };
 };
 
