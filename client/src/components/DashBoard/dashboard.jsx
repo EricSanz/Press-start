@@ -45,49 +45,6 @@ function UserProfile({user, match, isLogged}) {
 
     }, [user, dispatch, userLocalStorage, uid, googleUserState, localStorageUser, localStorageUserData, history, userId, isLogged]);
 
-    // const sectionButtons = document.querySelectorAll('.section__btn');
-    // const personalSectionID = document.getElementById('personalInfoSectionID');
-    // const favoritesSectionID = document.getElementById('favoritesSectionID');
-    // const commentsSectionID = document.getElementById('commentsSectionID');
-    // const usefulInfoSectionID = document.getElementById('usefulInfoSectionID');
-
-    // for (let i = 0; i < sectionButtons.length; i++) {
-    //     sectionButtons[i]?.addEventListener('click', () => {
-    //         for (let j = 0; j < sectionButtons.length; j++) {
-    //             sectionButtons[j].className = 'section__btn';
-    //         }
-    //         sectionButtons[i].className = 'btn--active';
-    //         switch (i) {
-    //             case 0:
-    //                 personalSectionID.className = 'section section--active';
-    //                 favoritesSectionID.className = 'section section--not--active';
-    //                 commentsSectionID.className = 'section section--not--active';
-    //                 usefulInfoSectionID.className = 'section section--not--active';
-    //                 break;
-    //             // case 1:
-    //             //     personalSectionID.className = 'section section--not--active';
-    //             //     favoritesSectionID.className = 'section section--active';
-    //             //     commentsSectionID.className = 'section section--not--active';
-    //             //     usefulInfoSectionID.className = 'section section--not--active';
-    //             //     break;
-    //             case 2:
-    //                 personalSectionID.className = 'section section--not--active';
-    //                 favoritesSectionID.className = 'section section--not--active';
-    //                 commentsSectionID.className = 'section section--active';
-    //                 usefulInfoSectionID.className = 'section section--not--active';
-    //                 break;
-    //             // case 3:
-    //             //     personalSectionID.className = 'section section--not--active';
-    //             //     favoritesSectionID.className = 'section section--not--active';
-    //             //     commentsSectionID.className = 'section section--not--active';
-    //             //     usefulInfoSectionID.className = 'section section--active';
-    //             //     break;
-    //             default:
-    //                 break;
-    //         }
-    //     })
-    // }
-
     const changeProfilePic = document.getElementById('change__profile__pic--id');
     const profilePicOptions = document.getElementById('prodile__pic__options--id');
 
@@ -95,6 +52,25 @@ function UserProfile({user, match, isLogged}) {
         setProfilePictureOptions(!profilePictureOptions);
         toggle = !toggle;
         profilePictureOptions ? profilePicOptions.style.display = 'block' : profilePicOptions.style.display = 'none';
+    })
+
+    const changeInfo = document.getElementById('change__info--id');
+
+    changeInfo?.addEventListener('click', () => {
+
+    })
+
+    const saveChanges = document.getElementById('save__changes--id');
+    const firstName = document.getElementById('input__firstname--id');
+    const lastName = document.getElementById('input__lastname--id');
+    const displayName = document.getElementById('input__displayname--id');
+    const birthDate = document.getElementById('input__birthdate--id');
+    const genderOptions = document.querySelectorAll('.gender__option');
+    const mobilePhone = document.getElementById('input__mobile--id');
+    const landlinePhone = document.getElementById('input__landline--id');
+
+    saveChanges?.addEventListener('click', () => {
+        console.log(birthDate.value);
     })
 
     return (
@@ -118,15 +94,114 @@ function UserProfile({user, match, isLogged}) {
                     <button className="logout__btn">Log out</button>
                 </div>
                 <div className="profile__right__container">
-                    <div className='section section--active' id="personalInfoSectionID">
-                        <p className='title'>Personal Information</p>
-                    </div>
-                    <div className='section section--not--active' id="favoritesSectionID">
-                    </div>
-                    <div className='section section--not--active' id="commentsSectionID">
-                        <p className='title'>Comments Section</p>
-                    </div>
-                    <div className='section section--not--active' id="usefulInfoSectionID">
+                    <div className='section'>
+                        <h1 className='title'>Personal Information</h1>
+                        {/* <div className='personal__info--container active'>
+                            <div className='personal--container'>
+                                <p className='mini__title'>Personal Information:</p>
+                                <div className='names--container'>
+                                    <div className='name'>
+                                        <p className='options__title'>First name:</p>
+                                        <p className='options__info'>{user?.firstName}</p>
+                                    </div>
+                                    <div className='lastname'>
+                                        <p className='options__title'>Last name:</p>
+                                        <p className='options__info'>{user?.lastName}</p>
+                                    </div>
+                                    <div className='displayname'>
+                                        <p className='options__title'>First name:</p>
+                                        <p className='options__info'>{user?.displayName}</p>
+                                    </div>
+                                </div>
+                                <div className='birthdate'>
+                                    <p className='options__title'>Birth date:</p>
+                                    <p className='options__info'>{user?.birthDate}</p>
+                                </div>
+                                <div className='gender--container'>
+                                    <p>Gender:</p>
+                                    <div className='gender'>
+                                        <div className={user?.gender === 'Male' ? 'active' : 'inactive'}></div>
+                                        <p>Male</p>
+                                        <div className={user?.gender === 'Female' ? 'active' : 'inactive'}></div>
+                                        <p>Female</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='contact--container'>
+                                <p className='mini__title'>Contact Information:</p>
+                                <div className='contact__options'>
+                                    <div className='mobile'>
+                                        <p className='options__title'>Mobile phone:</p>
+                                        <p className='options__info'>{user?.mobile}</p>
+                                    </div>
+                                    <div className='landline'>
+                                        <p className='options__title'>Land line:</p>
+                                        <p className='options__info'>{user?.landline}</p>
+                                    </div>
+                                </div>
+                                <button id='change__info--id' className='submit' type='button'>Change info</button>
+                            </div>
+                        </div> */}
+                        <div className='personal__info--container'>
+                            <div className='personal--container'>
+                                <p className='mini__title'>Personal Information:</p>
+                                <div className='names--container'>
+                                    <div className='name'>
+                                        <label htmlFor="name">First name:</label>
+                                        <input type="text" name='name' id="input__firstname--id"></input>
+                                    </div>
+                                    <div className='lastname'>
+                                        <label htmlFor="lastname">Last name:</label>
+                                        <input type="text" name='lastname' id='input__lastname--id'></input>
+                                    </div>
+                                    <div className='displayname'>
+                                        <label htmlFor="displayname">Alias:</label>
+                                        <input type="text" name='displayname' id='input__displayname--id' ></input>
+                                    </div>
+                                </div>
+                                <div className='birthdate'>
+                                    <label htmlFor="birthdate">Birth date:</label>
+                                    <input type='date' name='birthdate' id="input__birthdate--id"></input>
+                                </div>
+                                <div className='gender--container'>
+                                    <p>Gender:</p>
+                                    <div className='gender'>
+                                        <input type="radio" name='gender' className='gender__option' value='Male'/>
+                                        <label htmlFor="gender">Male</label>
+                                        <input type="radio" name='gender' className='gender__option' value='Female'/>
+                                        <label htmlFor="gender">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='contact--container'>
+                                <p className='mini__title'>Contact Information:</p>
+                                <div className='contact__options'>
+                                    <div className='mobile'>
+                                        <label htmlFor="mobile">Mobile phone:</label>
+                                        <input type="text" name='mobile' id="input__mobile--id"/>
+                                    </div>
+                                    <div className='landline'>
+                                        <label htmlFor="landline">Land line:</label>
+                                        <input type="text" name='landline' id='input__landline--id'/>
+                                    </div>
+                                </div>
+                                <button className='submit' type='button' id="save__changes--id">Save changes</button>
+                            </div>
+                        </div>
+                        <div className='change__password--container'>
+                            <p className='mini__title'>Change your password:</p>
+                            <div className='password__options'>
+                                <div className='old__password'>
+                                    <label htmlFor="oldPassword">Actual password:</label>
+                                    <input type="password" name='oldPassword'/>
+                                </div>
+                                <div className='new__password'>
+                                    <label htmlFor="newPassword">New password:</label>
+                                    <input type="text" name='newPassword' />
+                                </div>
+                                <button className='submit' type='button' >Change password</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

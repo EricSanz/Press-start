@@ -121,30 +121,184 @@
             margin-left: 2em;
             overflow-y: scroll;
             .title {
-                position: relative;
                 padding-top: 2em;
                 padding-left: 1em;
                 height: 1.7em;
                 font-weight: 600;
                 background-color: $greybackground;
                 border-bottom: 3px solid $blackbackground;
-                .favorites__count {
-                    position: absolute;
-                    right: 3em;
-                    bottom: .95em;
-                    color: $whitecolor;
+            }
+            .active {
+                display: block;
+            }
+            .inactive {
+                display: none;
+            }   
+            .personal__info--container {
+                position: relative;
+                .personal--container {
+                    padding: 0 3em;
+                    .mini__title {
+                        font-size: 1.4rem;
+                        padding: .5em 1em;
+                        border-left: 3px solid $blackbackground;
+                    }
+                    .names--container {
+                        display: flex;
+                    }
+                    .name, .lastname, .displayname, .birthdate {
+                        display: flex;
+                        flex-direction: column;
+                        width: 20em;
+                        padding: 0 1em 1em 1em;
+                        label, .options__title {
+                            padding: 1em 0;
+                        }
+                        input, .options__info {
+                            font-family: $Montserrat;
+                            outline: none;
+                            border: none;
+                            height: 2.5em;
+                            padding: 0 1em;
+                        }
+                        .options__info {
+                            background-color: $whitecolor;
+                            padding: 1em 1em;
+                        }
+                        .options__title {
+                            margin-bottom: -1em;
+                            margin-top: -.5em;
+                        }
+                    }
+                    .gender--container {
+                        display: flex;
+                        flex-direction: column;
+                        width: 20em;
+                        padding: 0 1em 1em 1em;
+                        .gender {
+                            label {
+                                padding: 0 2em 0 .5em;
+                            }
+                            input {
+                                appearance: none;
+                                width: 1em;
+                                height: 1em;
+                                background-color: $whitecolor;
+                                &:checked {
+                                    background-color: $goldenstrongcolor;
+                                }
+                                &:active {
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
                 }
-                .favorites__count--2 {
-                    position: absolute;
-                    right: 2.75em;
-                    bottom: .95em;
-                    color: $whitecolor;
+                .contact--container {
+                    padding: 0 3em;
+                    position: relative;
+                    .mini__title {
+                        font-size: 1.4rem;
+                        padding: 0.5em 1em;
+                        border-left: 3px solid $blackbackground;
+                    }
+                    .contact__options {
+                        display: flex;                            
+                        .mobile, .landline {
+                            display: flex;
+                            flex-direction: column;
+                            width: 20em;
+                            padding: 0 1em 1em 1em;
+                            label, .options__title {
+                                padding: 1em 0;
+                            }
+                            input, .options__info {
+                                font-family: $Montserrat;
+                                outline: none;
+                                border: none;
+                                height: 2.5em;
+                                padding: 0 1em;
+                            }
+                            .options__info {
+                                background-color: $whitecolor;
+                            }
+                            .options__title {
+                                margin-bottom: -1em;
+                                margin-top: -.5em;
+                            }
+                        }
+                    }
+                    .submit {
+                        position: absolute;
+                        right: 5em;
+                        bottom: .5em;
+                        outline: none;
+                        border: none;
+                        padding: 1em 1em;
+                        border-radius: .5em;
+                        font-family: $Montserrat;
+                        font-weight: 600;
+                        transition: 500ms;
+                        background-color: $blackbackground;
+                        color: $whitecolor;
+                        &:hover {
+                            color: $blackbackground;
+                            background-color: $goldenstrongcolor;
+                            transform: scale(1.07);
+                            transition: 500ms;
+                            cursor: pointer;
+                        }
+                    }
                 }
-                .heart__count {
-                    position: absolute;
-                    right: 1.4em;
-                    bottom: .35em;
-                    font-size: 3.5rem;
+            }
+            .change__password--container {
+                padding: 0 3em;
+                .mini__title {
+                    font-size: 1.4rem;
+                    padding: .5em 1em;
+                    border-left: 3px solid $blackbackground;
+                }
+                .password__options {
+                    display: flex;
+                    position: relative;
+                    padding-bottom: 4em;
+                    .old__password, .new__password {
+                        display: flex;
+                        flex-direction: column;
+                        width: 20em;
+                        padding: 0 1em 1em 1em;
+                        label {
+                            padding: 1em 0;
+                        }
+                        input {
+                            font-family: $Montserrat;
+                            outline: none;
+                            border: none;
+                            height: 2.5em;
+                            padding: 0 1em;
+                        }
+                    }
+                    .submit {
+                        position: absolute;
+                        right: 1em;
+                        bottom: 5.5em;
+                        outline: none;
+                        border: none;
+                        padding: 1em 1em;
+                        border-radius: .5em;
+                        font-family: $Montserrat;
+                        font-weight: 600;
+                        transition: 500ms;
+                        background-color: $blackbackground;
+                        color: $whitecolor;
+                        &:hover {
+                            color: $blackbackground;
+                            background-color: $goldenstrongcolor;
+                            transform: scale(1.07);
+                            transition: 500ms;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
             .section {
