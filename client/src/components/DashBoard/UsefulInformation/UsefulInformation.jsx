@@ -119,7 +119,7 @@ function UsefulInformation({user, match}) {
                     <button className="logout__btn">Log out</button>
                 </div>
                 <div className="profile__right__container">
-                    <div className='section' id="favoritesSectionID">
+                    <div className='section'>
                         <h1 className='title'>Useful Information</h1>
                         <div className='useful__information--container'>
                             <div className='info__us'>
