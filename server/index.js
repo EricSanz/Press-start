@@ -12,8 +12,9 @@ const userRouter = require('./src/routes/userRoutes')(UserModel);
 
 const app = express();
 const port = process.env.PORT || 5000;
+const secret = require('./secrets/secrets');
 
-connect('mongodb+srv://Eric:One_Hosting_10@ericcluster.lqwr5.mongodb.net/pressStartDb', {
+connect(`mongodb+srv://Eric:${secret}@ericcluster.lqwr5.mongodb.net/pressStartDb`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
