@@ -95,6 +95,18 @@ export default function userReducer(state = {}, action) {
                 user: action.user,
             }
             break;
+        case actionTypes.UPDATE_USER_INFO:
+            newState = {
+                ...state,
+                user: action.user
+            }
+            break;
+        case actionTypes.UPDATE_USER_INFO_ERROR:
+            newState = {
+                ...state,
+                error: action.error,
+            }
+            break;
         default:
             newState = state;
         break;
