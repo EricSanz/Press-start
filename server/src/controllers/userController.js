@@ -98,8 +98,9 @@ function userController(UserModel) {
 
         body.firstName === '' ? null : updateInfo.firstName = body.firstName;
         body.lastName === '' ? null : updateInfo.lastName = body.lastName;
+        body.displayName === '' ? null : updateInfo.displayName = body.displayName;
         body.birthDate === '' ? null : updateInfo.birthDate = body.birthDate;
-        body.gender === '' ? null : updateInfo.gender = body.gender;
+        body.gender === ('' || undefined) ? null : updateInfo.gender = body.gender;
         body.mobile === '' ? null : updateInfo.mobile = body.mobile;
         body.landline === '' ? null : updateInfo.landline = body.landline;
 
