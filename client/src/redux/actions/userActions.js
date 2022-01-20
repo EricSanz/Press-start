@@ -232,3 +232,31 @@ function changeProfilePicError(error) {
         error,
     }
 }
+
+export function updateUserInfo(userId, firstName, lastName, displayName, birthDate, gender, mobile, landline) {
+    const data = { userId, firstName, lastName, displayName, birthDate, gender, mobile, landline };
+    const backEndPoint = `${userUrl}${userId}`;
+    return async (dispatch) => {
+        try {
+            const response = await axios.patch(backEndPoint, data);
+            dispatch(updateUserInfoSuccess(response));
+            localStorage.user = JSON.stringify({ user: {...response } });
+        } catch (error) {
+            dispatch(updateUserInfoError(error));
+        }
+    }
+}
+
+function updateUserInfoSuccess(user) {
+    return {
+        type: actionTypes.UPDATE_USER_INFO,
+        user,
+    }
+}
+
+function updateUserInfoError(error) {
+    return {
+        type: actionTypes.UPDATE_USER_INFO_ERROR,
+        error,
+    }
+}
