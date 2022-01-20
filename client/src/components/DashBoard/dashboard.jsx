@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { connect, useDispatch } from 'react-redux';
-import { getUser } from '../../redux/actions/userActions';
+import { getUser, updateUserInfo } from '../../redux/actions/userActions';
 import { Link, useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfilePic from './ProfilePic/ProfilePic';
-import UserFavorites from './UserFavorites/UserFavorites';
-import UsefulInformation from './UsefulInformation/UsefulInformation';
 import './Dashboard.scss';
 
 function UserProfile({user, match, isLogged}) {
@@ -61,17 +59,46 @@ function UserProfile({user, match, isLogged}) {
     })
 
     const saveChanges = document.getElementById('save__changes--id');
-    const firstName = document.getElementById('input__firstname--id');
-    const lastName = document.getElementById('input__lastname--id');
-    const displayName = document.getElementById('input__displayname--id');
-    const birthDate = document.getElementById('input__birthdate--id');
-    const genderOptions = document.querySelectorAll('.gender__option');
-    const mobilePhone = document.getElementById('input__mobile--id');
-    const landlinePhone = document.getElementById('input__landline--id');
-
+    const updateInfo = document.getElementById('update__info--id');
+    const personalInfoSubmit = document.getElementById('personal__info__submit--id');
+    const personalInfo = document.getElementById('personal__info--id');
+    const firstNameInput = document.getElementById('input__firstname--id');
+    const lastNameInput = document.getElementById('input__lastname--id');
+    const displayNameInput = document.getElementById('input__displayname--id');
+    const birthDateInput = document.getElementById('input__birthdate--id');
+    const mobileInput = document.getElementById('input__mobile--id');
+    const landlineInput = document.getElementById('input__landline--id');
+    
     saveChanges?.addEventListener('click', () => {
-        console.log(birthDate.value);
+        let genderOptions = document.querySelectorAll('.gender__options');
+        let gender;
+        const firstName = firstNameInput.value;
+        const lastName = lastNameInput.value;
+        const displayName = displayNameInput.value;
+        const birthDate = birthDateInput.value;
+        const mobile = mobileInput.value;
+        const landline = landlineInput.value;
+
+        for (let i = 0; i < genderOptions.length; i++) {
+            if (genderOptions[i].checked) {
+                gender = genderOptions[i].value;
+            }
+        }
+        dispatch(updateUserInfo(userId, firstName, lastName, displayName, birthDate, gender, mobile, landline));
+        const updateUser = () => dispatch(getUser(userId));;
+        setTimeout(updateUser, 500);
+
+        personalInfoSubmit.classList.add('not--active');
+        personalInfo.classList.remove('not--active');
     })
+    
+    updateInfo?.addEventListener('click', () => {
+        personalInfoSubmit.classList.remove('not--active')
+        personalInfo.classList.add('not--active')
+    })
+
+    let userBirthdate = user?.birthDate;
+    userBirthdate = userBirthdate?.slice(0,-14);
 
     return (
         <div className="profile__container">
@@ -96,34 +123,34 @@ function UserProfile({user, match, isLogged}) {
                 <div className="profile__right__container">
                     <div className='section'>
                         <h1 className='title'>Personal Information</h1>
-                        {/* <div className='personal__info--container active'>
+                        <div className='personal__info--container' id='personal__info--id'>
                             <div className='personal--container'>
                                 <p className='mini__title'>Personal Information:</p>
                                 <div className='names--container'>
                                     <div className='name'>
-                                        <p className='options__title'>First name:</p>
-                                        <p className='options__info'>{user?.firstName}</p>
+                                        <label htmlFor="name">First name:</label>
+                                        <p className='firstname'>{user?.firstName}</p>
                                     </div>
                                     <div className='lastname'>
-                                        <p className='options__title'>Last name:</p>
-                                        <p className='options__info'>{user?.lastName}</p>
+                                        <label htmlFor="lastname">Last name:</label>
+                                        <p className='lastnameP'>{user?.lastName}</p>
                                     </div>
                                     <div className='displayname'>
-                                        <p className='options__title'>First name:</p>
-                                        <p className='options__info'>{user?.displayName}</p>
+                                        <label htmlFor="displayname">Alias:</label>
+                                        <p className='alias'>{user?.displayName}</p>
                                     </div>
                                 </div>
                                 <div className='birthdate'>
-                                    <p className='options__title'>Birth date:</p>
-                                    <p className='options__info'>{user?.birthDate}</p>
+                                    <label htmlFor="birthdate">Birth date:</label>
+                                    <p className='birthdateP'>{userBirthdate}</p>
                                 </div>
                                 <div className='gender--container'>
                                     <p>Gender:</p>
                                     <div className='gender'>
-                                        <div className={user?.gender === 'Male' ? 'active' : 'inactive'}></div>
-                                        <p>Male</p>
-                                        <div className={user?.gender === 'Female' ? 'active' : 'inactive'}></div>
-                                        <p>Female</p>
+                                        <input type="radio" name='gender' className={user?.gender === 'Male' ? 'gender__checked' : 'gender__not__checked'} id="male__disabled--id" value='Male' disabled/>
+                                        <label htmlFor="gender">Male</label>
+                                        <input type="radio" name='gender' className={user?.gender === 'Female' ? 'gender__checked' : 'gender__not__checked'} id="female__disabled--id" value='Female' disabled/>
+                                        <label htmlFor="gender">Female</label>
                                     </div>
                                 </div>
                             </div>
@@ -131,18 +158,18 @@ function UserProfile({user, match, isLogged}) {
                                 <p className='mini__title'>Contact Information:</p>
                                 <div className='contact__options'>
                                     <div className='mobile'>
-                                        <p className='options__title'>Mobile phone:</p>
-                                        <p className='options__info'>{user?.mobile}</p>
+                                        <label htmlFor="mobile">Mobile phone:</label>
+                                        <p className='mobileP'>{user?.mobile}</p>
                                     </div>
                                     <div className='landline'>
-                                        <p className='options__title'>Land line:</p>
-                                        <p className='options__info'>{user?.landline}</p>
+                                        <label htmlFor="landline">Land line:</label>
+                                        <p className='landlineP'>{user?.landline}</p>
                                     </div>
                                 </div>
-                                <button id='change__info--id' className='submit' type='button'>Change info</button>
+                                <button className='submit' type='button' id="update__info--id">Change information</button>
                             </div>
-                        </div> */}
-                        <div className='personal__info--container'>
+                        </div>
+                        <div className='personal__info--container not--active' id='personal__info__submit--id'>
                             <div className='personal--container'>
                                 <p className='mini__title'>Personal Information:</p>
                                 <div className='names--container'>
@@ -156,7 +183,7 @@ function UserProfile({user, match, isLogged}) {
                                     </div>
                                     <div className='displayname'>
                                         <label htmlFor="displayname">Alias:</label>
-                                        <input type="text" name='displayname' id='input__displayname--id' ></input>
+                                        <input type="text" name='displayname' id='input__displayname--id'></input>
                                     </div>
                                 </div>
                                 <div className='birthdate'>
@@ -166,9 +193,9 @@ function UserProfile({user, match, isLogged}) {
                                 <div className='gender--container'>
                                     <p>Gender:</p>
                                     <div className='gender'>
-                                        <input type="radio" name='gender' className='gender__option' value='Male'/>
+                                        <input type="radio" name='gender' className={user?.gender === 'Male' ? 'gender__checked gender__options' : 'gender__not__checked gender__options'} id="male__abled--id" value='Male'/>
                                         <label htmlFor="gender">Male</label>
-                                        <input type="radio" name='gender' className='gender__option' value='Female'/>
+                                        <input type="radio" name='gender' className={user?.gender === 'Female' ? 'gender__checked gender__options' : 'gender__not__checked gender__options'} id="female__abled--id" value='Female'/>
                                         <label htmlFor="gender">Female</label>
                                     </div>
                                 </div>
@@ -188,6 +215,7 @@ function UserProfile({user, match, isLogged}) {
                                 <button className='submit' type='button' id="save__changes--id">Save changes</button>
                             </div>
                         </div>
+
                         <div className='change__password--container'>
                             <p className='mini__title'>Change your password:</p>
                             <div className='password__options'>

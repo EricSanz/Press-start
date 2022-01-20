@@ -128,14 +128,9 @@
                 background-color: $greybackground;
                 border-bottom: 3px solid $blackbackground;
             }
-            .active {
-                display: block;
-            }
-            .inactive {
-                display: none;
-            }   
             .personal__info--container {
                 position: relative;
+                display: block;
                 .personal--container {
                     padding: 0 3em;
                     .mini__title {
@@ -160,6 +155,11 @@
                             border: none;
                             height: 2.5em;
                             padding: 0 1em;
+                        }
+                        .firstname, .lastnameP, .alias, .birthdateP {
+                            font-weight: 600;
+                            margin-top: -.1em;
+                            padding-left: .5em;
                         }
                         .options__info {
                             background-color: $whitecolor;
@@ -190,6 +190,12 @@
                                 &:active {
                                     transform: scale(1.2);
                                 }
+                            }
+                            .gender__checked {
+                                background-color: $redcolor;
+                            }
+                            .gender__not__checked {
+                                background-color: $whitecolor;
                             }
                         }
                     }
@@ -226,6 +232,11 @@
                                 margin-bottom: -1em;
                                 margin-top: -.5em;
                             }
+                            .mobileP, .landlineP {
+                                font-weight: 600;
+                                margin-top: -.1em;
+                                padding-left: .5em;
+                            }
                         }
                     }
                     .submit {
@@ -250,6 +261,9 @@
                         }
                     }
                 }
+            }
+            .not--active {
+                display: none;
             }
             .change__password--container {
                 padding: 0 3em;
