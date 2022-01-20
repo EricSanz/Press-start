@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 import { fillFullVideogameList } from '../../../redux/actions/videogameActions';
 import { addFavorite, getUser } from '../../../redux/actions/userActions';
 import { useDispatch } from 'react-redux';
@@ -75,6 +74,11 @@ function Card({Games, loggedUser, cardids, cardIndex, favGamesID}) {
         }
     }
 
+    function fillList() {
+        const fillvideogameList = () => dispatch(fillFullVideogameList());
+        setTimeout(fillvideogameList, 1500);
+    }
+
     return (
         <div className="videogame__list">
             <div className="videogame__card">
@@ -103,9 +107,9 @@ function Card({Games, loggedUser, cardids, cardIndex, favGamesID}) {
                 <div className="videogame__buy--container">
                     <FontAwesomeIcon icon="shopping-cart" className={Games.edition.stock ? "shopping-cart__green" : "shopping-cart__red"} />
                 </div>
-                <Link to={`product/${Games._id}`} onClick={() => dispatch(fillFullVideogameList())}>
+                <a href={`product/${Games._id}`} onClick={() => fillList()}>
                     <img className="videogame__card-image" alt={Games.id} src={Games.edition.cover}></img>
-                </Link>
+                </a>
                 <div className="videogame__card-price--container">
                     {Games.edition.sale ? (
                         <>
