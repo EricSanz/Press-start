@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import Loading from '../Loading/Loading';
 import SearchComponent from '../Search/Search';
@@ -15,6 +15,10 @@ function VideogameList({ videogamesList, loading, error, filteredVideogameList, 
     const dispatch = useDispatch();
     const userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user?.data;
+    const localStorageUserData = userLocalStorage?.user?.data;
+
+    const [googleUserState, setGoogleUserState] = useState(false);
+
     let i = -1;
 
     useEffect(() => {
@@ -26,7 +30,16 @@ function VideogameList({ videogamesList, loading, error, filteredVideogameList, 
             dispatch(getUser(localStorageUser.uid))
         }
 
-    }, [videogamesList?.length, filteredVideogameList?.length, platformVideogames?.length, user, localStorageUser, dispatch]);
+        if(!user && userLocalStorage && googleUserState) {
+            dispatch(getUser(localStorageUser?.uid));
+        }
+
+        if (localStorageUserData === undefined && !googleUserState) {
+            dispatch(getUser(userLocalStorage.uid));
+            setGoogleUserState(!googleUserState);
+        }
+
+    }, [videogamesList?.length, filteredVideogameList?.length, platformVideogames?.length, user, localStorageUser, localStorageUserData, googleUserState, dispatch]);
 
     const displayVideogameList = (
 
