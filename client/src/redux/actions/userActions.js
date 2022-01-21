@@ -260,3 +260,32 @@ function updateUserInfoError(error) {
         error,
     }
 }
+
+export function changePassword(userId, actualPassword, newPassword) {
+    const data = { userId, actualPassword, newPassword };
+    const backEndPoint = `${userUrl}${userId}`;
+    return async (dispatch) => {
+        try {
+            const response = await axios.put(backEndPoint, data);
+            dispatch(changePasswordSuccess(response));
+            console.log(response);
+            // localStorage.user = JSON.stringify({ user: {...response } });
+        } catch (error) {
+            dispatch(changePasswordError(error));
+        }
+    }
+}
+
+function changePasswordSuccess(user) {
+    return {
+        type: actionTypes.CHANGE_PASSWORD,
+        user,
+    }
+}
+
+function changePasswordError(error) {
+    return {
+        type: actionTypes.CHANGE_PASSWORD_ERROR,
+        error,
+    }
+}

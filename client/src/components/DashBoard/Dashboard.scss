@@ -276,7 +276,7 @@
                     display: flex;
                     position: relative;
                     padding-bottom: 4em;
-                    .old__password, .new__password {
+                    .actual__password, .new__password {
                         display: flex;
                         flex-direction: column;
                         width: 20em;
@@ -291,11 +291,22 @@
                             height: 2.5em;
                             padding: 0 1em;
                         }
+                        .password__info {
+                            margin-top: .5em;
+                            font-size: .8rem;
+                            align-self: center;
+                        }
+                        .white {
+                            background-color: $whitecolor;
+                        }
+                        .red {
+                            background-color: $redlightcolor;
+                        }
                     }
                     .submit {
                         position: absolute;
                         right: 1em;
-                        bottom: 5.5em;
+                        bottom: 6.5em;
                         outline: none;
                         border: none;
                         padding: 1em 1em;
@@ -303,8 +314,14 @@
                         font-family: $Montserrat;
                         font-weight: 600;
                         transition: 500ms;
-                        background-color: $blackbackground;
                         color: $whitecolor;
+                    }
+                    .not__ready {
+                        background-color: $greybackground;
+                        color: $blackbackground;
+                    }
+                    .ready {
+                        background-color: $blackbackground;
                         &:hover {
                             color: $blackbackground;
                             background-color: $goldenstrongcolor;

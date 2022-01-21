@@ -65,7 +65,6 @@ function Register({user, error, isLogged}) {
 
     function emailInputChange({target}) {
         if (target.value.includes('@') && target.value.includes('.')) {
-            console.log(target.value);
             setEmailState(true);
         }
     }
@@ -73,14 +72,12 @@ function Register({user, error, isLogged}) {
     function displayNameInputChange({target}) {
         if (target.value !== '') {
             setDisplayNameState(true);
-            console.log(target.value);
         }
     }
 
     function passwordInputChange({target}) {
         if (target.value.length >= 8) {
             setPasswordState(true);
-            console.log(target.value);
         } 
     }
 

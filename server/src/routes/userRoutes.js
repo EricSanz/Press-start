@@ -20,6 +20,7 @@ function userRoute(User) {
         .get(user.getUnicUser)
         .post(user.changeProfilePic)
         .patch(user.updateUserInfo)
+        .put(user.updatePassword)
 
     return userRouter;
 };

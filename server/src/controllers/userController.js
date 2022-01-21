@@ -110,6 +110,25 @@ function userController(UserModel) {
         }        
     }
 
+    const updatePassword = async ({body}, res) => {
+        const query = { uid: body.userId };
+        const actualPassword = body.actualPassword;
+        const newPassword = body.newPassword;
+        const messageError = {
+            error: "Your actual password doesn't match"
+        };
+
+        const user = await UserModel.findOne(query);
+
+        if (user.password === actualPassword) {
+                user.password = newPassword;
+                user.save();
+                res.json(user);
+        } else {
+            res.send(messageError);
+        }
+    };
+
     return {
         getUser,
         putUser,
@@ -118,7 +137,8 @@ function userController(UserModel) {
         getUnicUser,
         addFavorite,
         changeProfilePic,
-        updateUserInfo
+        updateUserInfo,
+        updatePassword
     };
 };
 

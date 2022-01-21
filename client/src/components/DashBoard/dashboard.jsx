@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import { connect, useDispatch } from 'react-redux';
-import { getUser, updateUserInfo } from '../../redux/actions/userActions';
+import { getUser, updateUserInfo, changePassword } from '../../redux/actions/userActions';
 import { Link, useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfilePic from './ProfilePic/ProfilePic';
 import './Dashboard.scss';
 
-function UserProfile({user, match, isLogged}) {
+function UserProfile({user, match, isLogged, error}) {
     let userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user;
     const localStorageUserData = userLocalStorage?.user?.data;
@@ -17,6 +17,7 @@ function UserProfile({user, match, isLogged}) {
     const [googleUserState, setGoogleUserState] = useState(false);
     const [uid] = useState(match.params.userId);
     const [profilePictureOptions, setProfilePictureOptions] = useState(true);
+    const [submitNewPassword, setSubmitNewPassword] = useState(false);
 
     let toggle = false;
 
@@ -68,6 +69,9 @@ function UserProfile({user, match, isLogged}) {
     const birthDateInput = document.getElementById('input__birthdate--id');
     const mobileInput = document.getElementById('input__mobile--id');
     const landlineInput = document.getElementById('input__landline--id');
+    const changePasswordButton = document.getElementById('changePassword--id');
+    const actualPasswordInput = document.getElementById('actualPassword--id');
+    const newPasswordInput = document.getElementById('newPassword--id');
     
     saveChanges?.addEventListener('click', () => {
         let genderOptions = document.querySelectorAll('.gender__options');
@@ -97,8 +101,36 @@ function UserProfile({user, match, isLogged}) {
         personalInfo.classList.add('not--active')
     })
 
+    changePasswordButton?.addEventListener('click', () => {
+        const actualPassword = actualPasswordInput.value;
+        const newPassword = newPasswordInput.value;
+
+        dispatch(changePassword(userId, actualPassword, newPassword));
+        newPasswordInput.value = '';
+        actualPasswordInput.value = '';
+        const updatePassword = () => dispatch(getUser(userId));;
+        setTimeout(updatePassword, 500);
+        setSubmitNewPassword(!submitNewPassword);
+    })
+
     let userBirthdate = user?.birthDate;
     userBirthdate = userBirthdate?.slice(0,-14);
+
+    function newPasswordDetails({target}) {
+
+        if (target.value.length < 1) {
+            newPasswordInput?.classList.remove('red');
+            newPasswordInput?.classList.add('white');
+        } else if (target.value.length >= 8) {
+            newPasswordInput?.classList.remove('red');
+            newPasswordInput?.classList.add('white');
+            setSubmitNewPassword(true);
+        } else {
+            newPasswordInput?.classList.remove('white');
+            newPasswordInput?.classList.add('red');
+            setSubmitNewPassword(false);
+        }
+    }
 
     return (
         <div className="profile__container">
@@ -219,15 +251,23 @@ function UserProfile({user, match, isLogged}) {
                         <div className='change__password--container'>
                             <p className='mini__title'>Change your password:</p>
                             <div className='password__options'>
-                                <div className='old__password'>
-                                    <label htmlFor="oldPassword">Actual password:</label>
-                                    <input type="password" name='oldPassword'/>
+                                <div className='actual__password'>
+                                    <label htmlFor="actualPassword">Actual password:</label>
+                                    <input type="text" name='actualPassword' id="actualPassword--id"/>
+                                    {error ? (
+                                        <p>{error?.message}</p>
+                                    ) : null}
                                 </div>
                                 <div className='new__password'>
                                     <label htmlFor="newPassword">New password:</label>
-                                    <input type="text" name='newPassword' />
+                                    <input type="text" name='newPassword' id="newPassword--id" onChange={(target) => newPasswordDetails(target)}/>
+                                    <p className='password__info'>New password must have 8 characters at least.</p>
                                 </div>
-                                <button className='submit' type='button' >Change password</button>
+                                {submitNewPassword ? (
+                                    <button className='submit ready' type='button' id="changePassword--id">Change password</button>
+                                ) : (
+                                    <button className='submit not__ready' type='button'>Change password</button>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -241,6 +281,7 @@ function mapStateToProps({ userReducer }) {
     return {
         user: userReducer.user,
         isLogged: userReducer.isLogged,
+        error: userReducer.error
     }
 }
 
