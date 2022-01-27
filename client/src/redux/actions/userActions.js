@@ -268,7 +268,6 @@ export function changePassword(userId, actualPassword, newPassword) {
         try {
             const response = await axios.put(backEndPoint, data);
             dispatch(changePasswordSuccess(response));
-            console.log(response);
             // localStorage.user = JSON.stringify({ user: {...response } });
         } catch (error) {
             dispatch(changePasswordError(error));
