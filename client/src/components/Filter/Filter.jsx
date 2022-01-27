@@ -75,7 +75,7 @@ function FilterComponent({dispatch}) {
                   <input type="radio" id="pc" value="pc" name="platform" onChange={(value) => handleChangeChecked(value)}/>
                   <label className="label--pc" htmlFor="pc">PC</label>
                 </div>
-                <p className="filter__title">Prices:</p>
+                <p className="filter__title">Offer:</p>
                 <div>
                   <input type="radio" id="notSale" value="notSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
                   <label className="label--notsale" htmlFor="notSale">All Prices</label>
@@ -84,7 +84,7 @@ function FilterComponent({dispatch}) {
                   <input type="radio" id="onSale" value="onSale" name="sales" onChange={(value) => handleChangeChecked(value)}/>
                   <label className="label--onsale" htmlFor="onSale">On sale</label>
                 </div>
-                <p className="filter__title">Order:</p>
+                <p className="filter__title">Price:</p>
                 <div>
                   <input type="radio" id="lowHigh" value="lowHigh" name="prices" onChange={(value) => handleChangeChecked(value)}/>
                   <label className="label--lowhigh" htmlFor="lowHigh">Lowest to highest</label>
