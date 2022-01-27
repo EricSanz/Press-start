@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfilePic from './ProfilePic/ProfilePic';
 import './Dashboard.scss';
 
-function UserProfile({user, match, isLogged, error}) {
+function UserProfile({user, match, isLogged, message}) {
     let userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user;
     const localStorageUserData = userLocalStorage?.user?.data;
@@ -18,6 +18,7 @@ function UserProfile({user, match, isLogged, error}) {
     const [uid] = useState(match.params.userId);
     const [profilePictureOptions, setProfilePictureOptions] = useState(true);
     const [submitNewPassword, setSubmitNewPassword] = useState(false);
+    const [actualPasswordWrong, setActualPasswordWrong] = useState(false);
 
     let toggle = false;
 
@@ -101,16 +102,32 @@ function UserProfile({user, match, isLogged, error}) {
         personalInfo.classList.add('not--active')
     })
 
+    const noMatchMessage = document.getElementById('no__match--id');
+
     changePasswordButton?.addEventListener('click', () => {
         const actualPassword = actualPasswordInput.value;
         const newPassword = newPasswordInput.value;
 
-        dispatch(changePassword(userId, actualPassword, newPassword));
-        newPasswordInput.value = '';
-        actualPasswordInput.value = '';
-        const updatePassword = () => dispatch(getUser(userId));;
-        setTimeout(updatePassword, 500);
-        setSubmitNewPassword(!submitNewPassword);
+        if (actualPassword === user.password) {
+            dispatch(changePassword(userId, actualPassword, newPassword));
+            newPasswordInput.value = '';
+            actualPasswordInput.value = '';
+            const updatePassword = () => dispatch(getUser(userId));
+            setTimeout(updatePassword, 500);
+            setSubmitNewPassword(!submitNewPassword);
+            // noMatchMessage.style.display = 'none';
+            setActualPasswordWrong(!actualPasswordWrong);
+        }
+
+        if ((actualPassword !== user.password) && (actualPasswordWrong === true)) {
+            noMatchMessage.style.display = 'block';
+
+            setTimeout(() => lolo(), 3500 );
+            function lolo() {
+                noMatchMessage.style.display = 'none';
+
+            }
+        }
     })
 
     let userBirthdate = user?.birthDate;
@@ -254,9 +271,12 @@ function UserProfile({user, match, isLogged, error}) {
                                 <div className='actual__password'>
                                     <label htmlFor="actualPassword">Actual password:</label>
                                     <input type="text" name='actualPassword' id="actualPassword--id"/>
-                                    {error ? (
-                                        <p>{error?.message}</p>
-                                    ) : null}
+                                    <p className='none' id='no__match--id'>Your actual password doesn't match</p>
+                                    {message?.message ? (
+                                        <p>{message.message}</p>
+                                    ) : (
+                                        null
+                                    )}
                                 </div>
                                 <div className='new__password'>
                                     <label htmlFor="newPassword">New password:</label>
@@ -281,7 +301,7 @@ function mapStateToProps({ userReducer }) {
     return {
         user: userReducer.user,
         isLogged: userReducer.isLogged,
-        error: userReducer.error
+        message: userReducer.message
     }
 }
 

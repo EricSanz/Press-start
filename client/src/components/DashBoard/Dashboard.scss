@@ -281,6 +281,9 @@
                         flex-direction: column;
                         width: 20em;
                         padding: 0 1em 1em 1em;
+                        .none {
+                            display: none;
+                        }
                         label {
                             padding: 1em 0;
                         }
