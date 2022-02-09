@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfilePic from './ProfilePic/ProfilePic';
 import './Dashboard.scss';
 
-function UserProfile({user, match, isLogged, message}) {
+function UserProfile({user, match, isLogged}) {
     let userLocalStorage = JSON.parse(window.localStorage.getItem('user'));
     const localStorageUser = userLocalStorage?.user;
     const localStorageUserData = userLocalStorage?.user?.data;
@@ -17,11 +17,13 @@ function UserProfile({user, match, isLogged, message}) {
     const [googleUserState, setGoogleUserState] = useState(false);
     const [uid] = useState(match.params.userId);
     const [profilePictureOptions, setProfilePictureOptions] = useState(true);
-    const [submitNewPassword, setSubmitNewPassword] = useState(false);
+    const [submitNewPassword, setSubmitNewPassword] = useState(true);
+    const [submitActualPassword, setSubmitActualPassword] = useState(true);
     const [actualPasswordWrong, setActualPasswordWrong] = useState(false);
 
     let toggle = false;
 
+    // const userId = localStorageUserData?.uid;
     const userId = user?.uid;
 
     useEffect(() => {
@@ -52,12 +54,6 @@ function UserProfile({user, match, isLogged, message}) {
         setProfilePictureOptions(!profilePictureOptions);
         toggle = !toggle;
         profilePictureOptions ? profilePicOptions.style.display = 'block' : profilePicOptions.style.display = 'none';
-    })
-
-    const changeInfo = document.getElementById('change__info--id');
-
-    changeInfo?.addEventListener('click', () => {
-
     })
 
     const saveChanges = document.getElementById('save__changes--id');
@@ -102,31 +98,36 @@ function UserProfile({user, match, isLogged, message}) {
         personalInfo.classList.add('not--active')
     })
 
-    const noMatchMessage = document.getElementById('no__match--id');
+    const pruebaMessage = document.getElementById('prueba__message--id');
 
     changePasswordButton?.addEventListener('click', () => {
         const actualPassword = actualPasswordInput.value;
         const newPassword = newPasswordInput.value;
 
-        if (actualPassword === user.password) {
+        console.log(actualPassword);
+        console.log(localStorageUserData?.password);
+        console.log(user?.data?.message);
+
+        while (actualPasswordInput.value.length >=8) {
             dispatch(changePassword(userId, actualPassword, newPassword));
-            newPasswordInput.value = '';
-            actualPasswordInput.value = '';
             const updatePassword = () => dispatch(getUser(userId));
             setTimeout(updatePassword, 500);
-            setSubmitNewPassword(!submitNewPassword);
-            // noMatchMessage.style.display = 'none';
-            setActualPasswordWrong(!actualPasswordWrong);
-        }
-
-        if ((actualPassword !== user.password) && (actualPasswordWrong === true)) {
-            noMatchMessage.style.display = 'block';
-
-            setTimeout(() => lolo(), 3500 );
-            function lolo() {
-                noMatchMessage.style.display = 'none';
-
+            newPasswordInput.value = '';
+            actualPasswordInput.value = '';
+            if (user?.data?.message) {
+                pruebaMessage.classList.remove('hola');
+                pruebaMessage.classList.add('adios');
+                console.log('Hey');
+            } else {
+                pruebaMessage.classList.remove('adios');
+                pruebaMessage.classList.add('hola');
+                console.log('Hola');
             }
+            const updateClassList = () => {
+                pruebaMessage.classList.remove('hola');
+                pruebaMessage.classList.add('adios');
+            }
+            setTimeout(updateClassList, 1500);
         }
     })
 
@@ -134,18 +135,32 @@ function UserProfile({user, match, isLogged, message}) {
     userBirthdate = userBirthdate?.slice(0,-14);
 
     function newPasswordDetails({target}) {
-
         if (target.value.length < 1) {
             newPasswordInput?.classList.remove('red');
             newPasswordInput?.classList.add('white');
+            setSubmitActualPassword(false);
         } else if (target.value.length >= 8) {
             newPasswordInput?.classList.remove('red');
             newPasswordInput?.classList.add('white');
-            setSubmitNewPassword(true);
+            setSubmitActualPassword(true);
         } else {
             newPasswordInput?.classList.remove('white');
             newPasswordInput?.classList.add('red');
+        }
+    }
+
+    function actualPasswordDetails({target}) {
+        if (target.value.length < 1) {
+            actualPasswordInput?.classList.remove('red');
+            actualPasswordInput?.classList.add('white');
             setSubmitNewPassword(false);
+        } else if (target.value.length >= 8) {
+            actualPasswordInput?.classList.remove('red');
+            actualPasswordInput?.classList.add('white');
+            setSubmitNewPassword(true);
+        } else {
+            actualPasswordInput?.classList.remove('white');
+            actualPasswordInput?.classList.add('red');
         }
     }
 
@@ -270,20 +285,19 @@ function UserProfile({user, match, isLogged, message}) {
                             <div className='password__options'>
                                 <div className='actual__password'>
                                     <label htmlFor="actualPassword">Actual password:</label>
-                                    <input type="text" name='actualPassword' id="actualPassword--id"/>
-                                    <p className='none' id='no__match--id'>Your actual password doesn't match</p>
-                                    {message?.message ? (
-                                        <p>{message.message}</p>
-                                    ) : (
-                                        null
-                                    )}
+                                    <input type="text" name='actualPassword' id="actualPassword--id" onChange={(target) => actualPasswordDetails(target)}/>
+                                    {/* <p className='adios' id='no__match--id'>Your actual password doesn't match</p> */}
+                                    <p className='adios' id='prueba__message--id'>Your password has been updated succesfully</p>
+                                    {/* <p className='adios' >{message?.message}</p>
+                                    <p className='adios' id='prueba__error--id'>{message?.error}</p> */}
+                                    <p>{user?.data?.message}</p>
                                 </div>
                                 <div className='new__password'>
                                     <label htmlFor="newPassword">New password:</label>
                                     <input type="text" name='newPassword' id="newPassword--id" onChange={(target) => newPasswordDetails(target)}/>
                                     <p className='password__info'>New password must have 8 characters at least.</p>
                                 </div>
-                                {submitNewPassword ? (
+                                {submitNewPassword && submitActualPassword ? (
                                     <button className='submit ready' type='button' id="changePassword--id">Change password</button>
                                 ) : (
                                     <button className='submit not__ready' type='button'>Change password</button>
@@ -301,7 +315,7 @@ function mapStateToProps({ userReducer }) {
     return {
         user: userReducer.user,
         isLogged: userReducer.isLogged,
-        message: userReducer.message
+        // message: userReducer.message
     }
 }
 

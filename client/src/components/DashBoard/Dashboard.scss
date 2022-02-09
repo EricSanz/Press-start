@@ -281,7 +281,10 @@
                         flex-direction: column;
                         width: 20em;
                         padding: 0 1em 1em 1em;
-                        .none {
+                        .hola {
+                            display: block;
+                        }
+                        .none, .adios {
                             display: none;
                         }
                         label {
