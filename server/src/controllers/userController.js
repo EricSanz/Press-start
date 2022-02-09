@@ -39,7 +39,7 @@ function userController(UserModel) {
         const password = req.body.password;
         console.log(email,password);
         const notUserFound = ({ loginError: { msg: "User email doesn't exist."} });
-        const invalidPassword = ({ loginError: { msg: "Invalid password."} });
+        const invalidPassword = ({ loginError: { msg: "Password doesn't match."} });
 
         const user = await UserModel.findOne({ email: email }).populate('favorites');
 
@@ -134,13 +134,18 @@ function userController(UserModel) {
         const actualPassword = body.actualPassword;
         const newPassword = body.newPassword;
         
-        UserModel.findOne(query, (message, user) => {
-            if (user.password === actualPassword) {
-                user.password = newPassword;
-                user.save();
-                res.json(user);
+        UserModel.findOne(query, (errorFindUser, user) => {
+            const error = ({ message: "Your actual password doesn't match." });
+            if (user) {
+                if (user.password === actualPassword) {
+                    user.password = newPassword;
+                    user.save();
+                    res.json(user);
+                } else {
+                    res.send(error);
+                }
             } else {
-                res.send(message);
+                res.send(errorFindUser)
             }
         })
     }
