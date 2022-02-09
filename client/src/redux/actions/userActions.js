@@ -263,12 +263,14 @@ function updateUserInfoError(error) {
 
 export function changePassword(userId, actualPassword, newPassword) {
     const data = { userId, actualPassword, newPassword };
+    console.log(data);
     const backEndPoint = `${userUrl}${userId}`;
     return async (dispatch) => {
         try {
             const response = await axios.put(backEndPoint, data);
-            dispatch(changePasswordSuccess(response));
+            console.log(response);
             // localStorage.user = JSON.stringify({ user: {...response } });
+            dispatch(changePasswordSuccess(response));
         } catch (error) {
             dispatch(changePasswordError(error));
         }

@@ -102,11 +102,9 @@ export default function userReducer(state = {}, action) {
             }
             break;
         case actionTypes.CHANGE_PASSWORD:
-            const error = { message: "Your password has been updated" }
             newState = {
                 ...state,
                 user: action.user,
-                message: error,
             }
             break;
         default:
