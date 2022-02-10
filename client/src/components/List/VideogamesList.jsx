@@ -34,7 +34,7 @@ function VideogameList({ videogamesList, loading, error, filteredVideogameList, 
             dispatch(getUser(localStorageUser?.uid));
         }
 
-        if (localStorageUserData === undefined && !googleUserState) {
+        if (user !== undefined && localStorageUserData === undefined && !googleUserState) {
             dispatch(getUser(userLocalStorage.uid));
             setGoogleUserState(!googleUserState);
         }
