@@ -35,18 +35,25 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
     }
 
     function displayErrorNone() {
-        const notloggedId = document.getElementById(cardIndex);
+        const notloggedId = document.getElementById(cards.id);
         notloggedId.style.display = "none";
     }
 
     function favoriteGame() {
-        const notloggedId = document.getElementById(cardIndex);
+        const notloggedId = document.getElementById(cards.id);
         if (!loggedUser) {
             const cardFound = cardids.find(id => id === cards.id);
-            const cardFoundIndex = (element) => element === cardFound;
-            const index = (cardids.findIndex(cardFoundIndex))
-
-            if (index === cardIndex) {
+            const cardFoundIndex = (id) => id === cardFound;
+            let index = (cardids.findIndex(cardFoundIndex));
+            if (index <= 6) {
+                index = index + 1;
+            } else if (index > 6 && index <= 74) {
+                index = index + 3;
+            } else if (index > 74 && index <= 300) {
+                index = index + 4;
+            }
+            
+            if (index === cards.id) {
                 notloggedId.style.display = "block";
                 setTimeout(() => (displayErrorNone()), 1250 );
             }
@@ -246,7 +253,7 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                         {loggedUser && (
                             <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newNewCardIndex} icon="heart" onClick={(() => favoriteGame())}/>
                         )}
-                        <div id={cardIndex} className="notlogged notlogged-sale">
+                        <div id={cards.id} className="notlogged notlogged-sale">
                             <p>You are not logged in</p>
                         </div>
                     </div>
@@ -259,7 +266,7 @@ function CardSlider({ cards, loggedUser, cardids, cardIndex, favGamesID }) {
                         {loggedUser && (
                             <FontAwesomeIcon className={favCardFound ? 'add-favorite red' : 'add-favorite white'} id={newCardIndex} icon="heart" onClick={(() => favoriteGame())}/>
                         )}
-                        <div id={cardIndex} className="notlogged">
+                        <div id={cards.id} className="notlogged">
                             <p>You are not logged in</p>
                         </div>
                     </div>
