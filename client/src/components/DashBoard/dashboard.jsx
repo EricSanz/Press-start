@@ -226,8 +226,8 @@ function UserProfile({user, match, isLogged}) {
                                         <p className='mobileP'>{user?.mobile}</p>
                                     </div>
                                     <div className='landline'>
-                                        <label htmlFor="landline">Land line:</label>
-                                        <p className='landlineP'>{user?.landline}</p>
+                                        <label htmlFor="landline">Email:</label>
+                                        <p className='landlineP'>{user?.email}</p>
                                     </div>
                                 </div>
                                 <button className='submit' type='button' id="update__info--id">Change information</button>
