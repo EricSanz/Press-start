@@ -25,7 +25,9 @@ export default function videogameReducer(state = {}, action) {
             newState = { ...state, loading: true };
             break;
         case actionTypes.LOAD_VIDEOGAMES:
-            cardIds = action.videogamesList.slice();
+            cardIds = action.videogamesList.slice().sort((a,b) => (
+                a.id - b.id
+            ));
 
             cardIds =  cardIds.map((cards) => (
                 cards.id
