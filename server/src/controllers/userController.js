@@ -102,7 +102,6 @@ function userController(UserModel) {
         body.birthDate === '' ? null : updateInfo.birthDate = body.birthDate;
         body.gender === ('' || undefined) ? null : updateInfo.gender = body.gender;
         body.mobile === '' ? null : updateInfo.mobile = body.mobile;
-        body.landline === '' ? null : updateInfo.landline = body.landline;
 
         const user = await UserModel.findOneAndUpdate(query, updateInfo, {new: true});
         if (user) {

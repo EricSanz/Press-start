@@ -233,8 +233,8 @@ function changeProfilePicError(error) {
     }
 }
 
-export function updateUserInfo(userId, firstName, lastName, displayName, birthDate, gender, mobile, landline) {
-    const data = { userId, firstName, lastName, displayName, birthDate, gender, mobile, landline };
+export function updateUserInfo(userId, firstName, lastName, displayName, birthDate, gender, mobile) {
+    const data = { userId, firstName, lastName, displayName, birthDate, gender, mobile };
     const backEndPoint = `${userUrl}${userId}`;
     return async (dispatch) => {
         try {

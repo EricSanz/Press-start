@@ -65,7 +65,6 @@ function UserProfile({user, match, isLogged}) {
     const displayNameInput = document.getElementById('input__displayname--id');
     const birthDateInput = document.getElementById('input__birthdate--id');
     const mobileInput = document.getElementById('input__mobile--id');
-    const landlineInput = document.getElementById('input__landline--id');
     const changePasswordButton = document.getElementById('changePassword--id');
     const actualPasswordInput = document.getElementById('actualPassword--id');
     const newPasswordInput = document.getElementById('newPassword--id');
@@ -78,14 +77,13 @@ function UserProfile({user, match, isLogged}) {
         const displayName = displayNameInput.value;
         const birthDate = birthDateInput.value;
         const mobile = mobileInput.value;
-        const landline = landlineInput.value;
 
         for (let i = 0; i < genderOptions.length; i++) {
             if (genderOptions[i].checked) {
                 gender = genderOptions[i].value;
             }
         }
-        dispatch(updateUserInfo(userId, firstName, lastName, displayName, birthDate, gender, mobile, landline));
+        dispatch(updateUserInfo(userId, firstName, lastName, displayName, birthDate, gender, mobile));
         const updateUser = () => dispatch(getUser(userId));;
         setTimeout(updateUser, 500);
 
@@ -272,8 +270,8 @@ function UserProfile({user, match, isLogged}) {
                                         <input type="text" name='mobile' id="input__mobile--id"/>
                                     </div>
                                     <div className='landline'>
-                                        <label htmlFor="landline">Land line:</label>
-                                        <input type="text" name='landline' id='input__landline--id'/>
+                                        <label htmlFor="landline">Email:</label>
+                                        <p className='landlineP'>{user?.email}</p>
                                     </div>
                                 </div>
                                 <button className='submit' type='button' id="save__changes--id">Save changes</button>
