@@ -15,7 +15,7 @@ function Register({user, error, isLogged}) {
     let emailValue = document.getElementById('email__register')?.value;
     let passwordValue = document.getElementById('password__register')?.value;
     let displayNameValue = document.getElementById('user__name')?.value;
-    const registerError_ID = document.getElementById('registerError__ID');
+    const registerError_ID = document?.getElementById('registerError__ID');
     
     const [togglePassword, setTogglePassword] = useState(false);
     const [emailState, setEmailState] = useState(false);
