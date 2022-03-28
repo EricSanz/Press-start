@@ -2,7 +2,14 @@
 
 Development of an e-commerce website for practice.
 
-Actual features:
+Demo video to have a closer look of what's done --> https://www.loom.com/share/ccf960182c99465189d5b6277f3c62e7
+
+## Principal technologies used
+
+React  |  Redux  |  JavaScript  |  HTML5  |  SASS  |  BEM  |  NodeJs  | ExpressJs  |  MongoDB  |  Postman
+
+## Actual features
+
 - Login via Google or Email.
 - Register via Email.
 - Product List (all videogames in navbar) and details.
@@ -12,7 +19,8 @@ Actual features:
 - Add and delete products of your favorites.
 - Change your personal information, your password and your profile pic.
 
-Next features:
+## Next features to be implemented
+
 - Encrypt passwords in database.
 - Cart (add and delete products).
 - User could comment and grade the product in products details.
