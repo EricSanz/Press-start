@@ -2,7 +2,7 @@
 
 Development of an e-commerce website for practice.
 
-Demo video to have a closer look of what's done --> https://www.loom.com/share/ccf960182c99465189d5b6277f3c62e7
+It's not deployed yet, but here [Demo video](https://www.loom.com/share/ccf960182c99465189d5b6277f3c62e7) you can have a closer look on what's already done.
 
 ## Principal technologies used
 
